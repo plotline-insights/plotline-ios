@@ -12496,28 +12496,28 @@
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1901,
+      "offset": 1919,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2006,
+      "offset": 2024,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "StringLiteral",
-      "offset": 2181,
+      "offset": 2199,
       "length": 18,
       "value": "\"PlotlineCheckBox\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "StringLiteral",
-      "offset": 2373,
+      "offset": 2391,
       "length": 18,
       "value": "\"PlotlineCheckBox\""
     },
@@ -12652,7 +12652,7 @@
       "kind": "StringLiteral",
       "offset": 324,
       "length": 7,
-      "value": "\"1.3.7\""
+      "value": "\"1.3.8\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -12705,38 +12705,10 @@
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 266,
-      "length": 19,
-      "value": "\"plotline.Plotline\""
-    },
-    {
-      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 310,
-      "length": 18,
-      "value": "\"CorePlotlineData\""
-    },
-    {
-      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 546,
-      "length": 6,
-      "value": "\"momd\""
-    },
-    {
-      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 878,
-      "length": 33,
-      "value": "\"Loading of store failed: \""
-    },
-    {
-      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 910,
-      "length": 2,
-      "value": "\"\""
+      "kind": "BooleanLiteral",
+      "offset": 265,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PEvent.swift",
@@ -12958,28 +12930,28 @@
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/OptionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2010,
+      "offset": 2020,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/OptionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2115,
+      "offset": 2125,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/OptionView.swift",
       "kind": "StringLiteral",
-      "offset": 2293,
+      "offset": 2303,
       "length": 24,
       "value": "\"PlotlineUncheckedRadio\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/OptionView.swift",
       "kind": "StringLiteral",
-      "offset": 2491,
+      "offset": 2501,
       "length": 24,
       "value": "\"PlotlineUncheckedRadio\""
     },
@@ -13126,9 +13098,23 @@
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 6565,
+      "offset": 7240,
       "length": 3,
       "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7661,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7690,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/TParty\/Alamofire\/Request.swift",
