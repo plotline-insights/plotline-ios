@@ -25,6 +25,7 @@
 
 #pragma clang diagnostic ignored "-Wduplicate-method-match"
 #pragma clang diagnostic ignored "-Wauto-import"
+#import <CoreData/CoreData.h>
 #if defined(__OBJC__)
 #include <Foundation/Foundation.h>
 #endif
@@ -36,7 +37,6 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#import <CoreData/CoreData.h>
 #endif
 
 #if !defined(SWIFT_TYPEDEFS)

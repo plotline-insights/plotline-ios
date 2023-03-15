@@ -25,6 +25,7 @@
 
 #pragma clang diagnostic ignored "-Wduplicate-method-match"
 #pragma clang diagnostic ignored "-Wauto-import"
+#import <CoreData/CoreData.h>
 #if defined(__OBJC__)
 #include <Foundation/Foundation.h>
 #endif
@@ -36,7 +37,6 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#import <CoreData/CoreData.h>
 #endif
 
 #if !defined(SWIFT_TYPEDEFS)
@@ -392,6 +392,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 #pragma clang diagnostic ignored "-Wduplicate-method-match"
 #pragma clang diagnostic ignored "-Wauto-import"
+#import <CoreData/CoreData.h>
 #if defined(__OBJC__)
 #include <Foundation/Foundation.h>
 #endif
@@ -403,7 +404,6 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#import <CoreData/CoreData.h>
 #endif
 
 #if !defined(SWIFT_TYPEDEFS)
