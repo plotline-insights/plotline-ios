@@ -154,6 +154,7 @@ public protocol InitCallback {
   @objc public static func showMockStudy()
   @objc public static func setLocale(locale: Swift.String)
   @objc public static func setColor(colors: [Swift.String : Swift.String])
+  @objc public static func logout()
   @objc deinit
 }
 public class EligibilityTask {

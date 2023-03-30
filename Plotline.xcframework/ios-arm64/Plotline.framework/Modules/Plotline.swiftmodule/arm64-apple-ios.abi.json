@@ -4421,6 +4421,29 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)logout",
+            "mangledName": "$s8PlotlineAAC6logoutyyFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -12652,7 +12675,7 @@
       "kind": "StringLiteral",
       "offset": 324,
       "length": 7,
-      "value": "\"1.3.9\""
+      "value": "\"1.4.0\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",

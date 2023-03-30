@@ -311,6 +311,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
 + (void)setColorWithColors:(NSDictionary<NSString *, NSString *> * _Nonnull)colors;
++ (void)logout;
 @end
 
 
@@ -678,6 +679,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
 + (void)setColorWithColors:(NSDictionary<NSString *, NSString *> * _Nonnull)colors;
++ (void)logout;
 @end
 
 
