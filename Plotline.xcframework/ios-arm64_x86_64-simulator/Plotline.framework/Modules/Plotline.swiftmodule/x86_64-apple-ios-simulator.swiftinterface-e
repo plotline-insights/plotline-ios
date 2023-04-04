@@ -68,6 +68,13 @@ public protocol PlotlineViewPositionCallback {
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class EventsBatchUploader {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DebugHelper {
+  public static func log(_ message: Swift.String)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MultiChoiceMultiCorrect : UIKit.UIView {
   @objc deinit
 }
@@ -272,6 +279,8 @@ public protocol InitCallback {
   public func addSwiftUICoordinates(label: Swift.String, rect: CoreFoundation.CGRect)
   public func onSwiftUIViewDisappear(label: Swift.String)
   public func onSwiftUIViewAppear(label: Swift.String)
+  public func getEventsBatchUploader() -> Plotline.EventsBatchUploader?
+  public func setEventsBatchUploader(eventsBatchUploader: Plotline.EventsBatchUploader)
   public static func getInstance() -> Plotline.Plotline
   public func initKeys(apiKey: Swift.String, userId: Swift.String)
   public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String, deviceId: Swift.String)
@@ -287,6 +296,7 @@ public protocol InitCallback {
   @objc public static func trackPage(pageName: Swift.String)
   @objc public static func initAlong(_ url: Foundation.URL)
   @objc public static func debug(shouldDebug: Swift.Bool)
+  @objc public static func logout()
   @objc deinit
 }
 @available(iOS 13.0, *)

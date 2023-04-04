@@ -377,6 +377,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)trackPageWithPageName:(NSString * _Nonnull)pageName;
 + (void)initAlong:(NSURL * _Nonnull)url SWIFT_METHOD_FAMILY(none);
 + (void)debugWithShouldDebug:(BOOL)shouldDebug;
++ (void)logout;
 @end
 
 
