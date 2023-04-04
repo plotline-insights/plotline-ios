@@ -192,6 +192,7 @@ public class InitTask {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineFloatingButton : UIKit.UIStackView {
+  @_Concurrency.MainActor(unsafe) public var tvViewController: UIKit.UITextView?
   @_Concurrency.MainActor(unsafe) public func setClickListener(listener: @escaping () -> ())
   @objc deinit
 }
@@ -254,6 +255,7 @@ public protocol InitCallback {
   public func setSearchIntervalMillis(searchIntervalMillis: Swift.Int64)
   public func getCurrentPage() -> Swift.String
   public func setCurrentPage(currentPage: Swift.String)
+  public func setCurrentPageListener(pageListener: @escaping (Swift.String) -> ())
   public func getFramework() -> Swift.String
   @objc public static func setPlotlineFramework(framework: Swift.String)
   public func getElementSearchTask() -> Plotline.ElementSearchTask?
