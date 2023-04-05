@@ -299,6 +299,7 @@ public protocol InitCallback {
   @objc public static func initAlong(_ url: Foundation.URL)
   @objc public static func debug(shouldDebug: Swift.Bool)
   @objc public static func logout()
+  @objc public static func notifyScroll()
   @objc deinit
 }
 @available(iOS 13.0, *)
@@ -640,6 +641,7 @@ public class ElementSearchObject {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ElementSearchTask : ObjectiveC.NSObject, UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) public func notifyScroll()
   @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor(unsafe) public func getCurrentViewController() -> UIKit.UIViewController?
   @_Concurrency.MainActor(unsafe) public func intervalFunction()
