@@ -4,6 +4,8 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CoreData
+import CoreGraphics
+import CoreText
 import Foundation
 @_exported import Plotline
 import Swift
@@ -37,6 +39,7 @@ public class StepStyles {
   public var lineHeight: Swift.Int
   public var textDecoration: [Swift.String]
   public var fontFamily: Swift.String
+  public var fontURL: Swift.String
   public init(_ json: [Swift.String : Any])
   @objc deinit
 }
@@ -370,8 +373,8 @@ public class PAttribute {
 public protocol CoachMarkInfoView : UIKit.UIView {
   var viewSize: CoreFoundation.CGSize { get }
   var centerOffset: CoreFoundation.CGPoint { get }
-  func setText(title: Swift.String, fontFamily: Swift.String, fontSize: CoreFoundation.CGFloat, textDecoration: [Swift.String])
-  func setInfo(info: Swift.String, fontFamily: Swift.String, fontSize: CoreFoundation.CGFloat, textDecoration: [Swift.String])
+  func setText(title: Swift.String, fontFamily: Swift.String, fontSize: CoreFoundation.CGFloat, textDecoration: [Swift.String], fontURL: Swift.String)
+  func setInfo(info: Swift.String, fontFamily: Swift.String, fontSize: CoreFoundation.CGFloat, textDecoration: [Swift.String], fontURL: Swift.String)
   func setTitleColor(color: UIKit.UIColor)
   func setInfoColor(color: UIKit.UIColor)
 }
@@ -426,6 +429,11 @@ public class FlowStore {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Rating : UIKit.UIView {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FontHelper {
+  public var fontMapping: [Swift.String : Swift.String?]
+  public static func downloadAndRegisterFont(from urlString: Swift.String, completion: @escaping (UIKit.UIFont?, (any Swift.Error)?) -> Swift.Void)
   @objc deinit
 }
 public class Study : Plotline.Campaign {
