@@ -379,6 +379,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)debugWithShouldDebug:(BOOL)shouldDebug;
 + (void)logout;
 + (void)notifyScroll;
++ (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
 @end
 
 
@@ -880,6 +881,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)debugWithShouldDebug:(BOOL)shouldDebug;
 + (void)logout;
 + (void)notifyScroll;
++ (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
 @end
 
 

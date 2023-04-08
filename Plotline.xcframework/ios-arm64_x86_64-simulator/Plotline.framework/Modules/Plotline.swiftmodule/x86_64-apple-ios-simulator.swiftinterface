@@ -101,6 +101,7 @@ public class AttributeTask {
 @_hasMissingDesignatedInitializers public class Utils {
   public static func currentTimeInMilliSeconds() -> Swift.Int64
   public static func getQueryParameter(url: Foundation.URL, paramName: Swift.String) -> Swift.String?
+  public static func sendPlotlineEvent(eventName: Swift.String, properties: [Swift.String : Any])
   @objc deinit
 }
 public struct CoachRing {
@@ -286,6 +287,7 @@ public protocol InitCallback {
   public func onSwiftUIViewAppear(label: Swift.String)
   public func getEventsBatchUploader() -> EventsBatchUploader?
   public func setEventsBatchUploader(eventsBatchUploader: EventsBatchUploader)
+  public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public static func getInstance() -> Plotline
   public func initKeys(apiKey: Swift.String, userId: Swift.String)
   public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String, deviceId: Swift.String)
@@ -303,6 +305,7 @@ public protocol InitCallback {
   @objc public static func debug(shouldDebug: Swift.Bool)
   @objc public static func logout()
   @objc public static func notifyScroll()
+  @objc public static func setPlotlineEventsListener(listener: @escaping (Swift.String, [Swift.String : Any]) -> ())
   @objc deinit
 }
 @available(iOS 13.0, *)
