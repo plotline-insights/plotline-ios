@@ -435,6 +435,7 @@ public class FlowStore {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class FontHelper {
+  public var fontResMapping: [Swift.String : UIKit.UIFont?]
   public var fontMapping: [Swift.String : Swift.String?]
   public static func downloadAndRegisterFont(from urlString: Swift.String, completion: @escaping (UIKit.UIFont?, (any Swift.Error)?) -> Swift.Void)
   @objc deinit
