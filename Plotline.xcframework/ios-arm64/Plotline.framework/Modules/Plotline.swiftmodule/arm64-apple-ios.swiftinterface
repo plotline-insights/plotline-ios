@@ -162,6 +162,7 @@ public class Campaign {
   public var id: Swift.String
   public var triggerEvents: [Swift.String]
   public var userFilter: [Condition]
+  public var userAttributes: [Swift.String]
   public var campaignType: Swift.String
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
