@@ -492,6 +492,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -984,6 +985,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 
 

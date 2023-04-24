@@ -49,7 +49,6 @@ public protocol PlotlineScreenshotCallback {
 public protocol PlotlineViewPositionCallback {
   func getAllElements(for view: UIKit.UIView, plotlineScreenshotPositionsCompleteListener: @escaping ([[Swift.String : Any]]) -> ())
   func getViewPosition(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String, plotlineViewPositionCompleteListener: @escaping (CoreFoundation.CGRect?) -> Swift.Void)
-  func isViewPresent(for view: UIKit.UIView, accessibilityIdentifier: Swift.String) -> Swift.Bool
   func areViewsPresent(for view: UIKit.UIView, elementSearchObjects: [Plotline.ElementSearchObject], plotlineViewsPresenceListener: @escaping ([Plotline.ElementSearchObject]) -> ())
   func getView(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String) -> UIKit.UIView?
 }
@@ -385,6 +384,7 @@ public class Flow : Plotline.Campaign {
   public var clientElementId: Swift.String
   public var clientFragmentId: Swift.String
   public var flowType: Swift.String
+  public var marginFilter: [CoreFoundation.CGFloat]?
   public static var FLOW_TYPE_PAGE: Swift.String
   public static var FLOW_TYPE_ELEMENT: Swift.String
   public init(json: [Swift.String : Any])
@@ -554,9 +554,8 @@ public enum PopoverOption {
   @objc @_Concurrency.MainActor(unsafe) open func dismiss()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
   public class Builder {
-    public init(rootView: UIKit.UIView)
+    public init(rootView: UIKit.UIView, builtView: UIKit.UIView, anchorRect: CoreFoundation.CGRect)
     public func build() -> Plotline.PlotlineTooltipView
-    public func anchorRect(anchorRect: CoreFoundation.CGRect) -> Plotline.PlotlineTooltipView.Builder
     public func flowStep(flowStep: Plotline.FlowStep) -> Plotline.PlotlineTooltipView.Builder
     public func actionListener(actionListener: any Plotline.ActionListener) -> Plotline.PlotlineTooltipView.Builder
     @objc deinit
@@ -579,6 +578,7 @@ public class FlowStep {
   public var triggerEvents: [Swift.String]
   public var clientElementId: Swift.String
   public var clientFragmentId: Swift.String
+  public var marginFilter: [CoreFoundation.CGFloat]?
   public var delay: Swift.Int
   public var dismissAfter: Swift.Int
   public var showBackdrop: Swift.Bool
@@ -648,7 +648,9 @@ public class ElementSearchObject {
   public var clientFragmentId: Swift.String
   public var clientElementId: Swift.String
   public var isActiveFlow: Swift.Bool
+  public var marginFilter: [CoreFoundation.CGFloat]?
   public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String)
+  public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String, marginFilter: [CoreFoundation.CGFloat]?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ElementSearchTask : ObjectiveC.NSObject, UIKit.UIScrollViewDelegate {
