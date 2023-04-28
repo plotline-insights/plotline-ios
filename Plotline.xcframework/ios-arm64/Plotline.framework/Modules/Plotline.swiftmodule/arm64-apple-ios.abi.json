@@ -36250,7 +36250,7 @@
       "kind": "StringLiteral",
       "offset": 324,
       "length": 7,
-      "value": "\"2.1.4\""
+      "value": "\"2.1.5\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -47133,14 +47133,14 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 4493,
+      "offset": 4665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 4500,
+      "offset": 4672,
       "length": 3,
       "value": "0.0"
     },
