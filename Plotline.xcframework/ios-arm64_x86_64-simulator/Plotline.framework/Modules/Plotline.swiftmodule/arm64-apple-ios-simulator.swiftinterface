@@ -27,6 +27,12 @@ import _StringProcessing
   public func empty() -> Swift.Bool
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PassthroughView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public class StepStyles {
   public var bgColor: Swift.String
   public var borderSize: Swift.Int
@@ -504,7 +510,7 @@ public enum PopoverOption {
     get
   }
 }
-@objc @objcMembers @_Concurrency.MainActor(unsafe) open class PlotlineTooltipView : UIKit.UIView, PlotlineViewListener {
+@objc @objcMembers @_Concurrency.MainActor(unsafe) open class PlotlineTooltipView : PassthroughView, PlotlineViewListener {
   @objc @_Concurrency.MainActor(unsafe) public func show()
   @objc @_Concurrency.MainActor(unsafe) public func isShowing() -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public func onAction(stepId: Swift.String?, action: Swift.String?, effect: Swift.String?, target: Swift.String?, platform: Swift.String?, requireDismiss: Swift.Bool, isDismissed: Swift.Bool)

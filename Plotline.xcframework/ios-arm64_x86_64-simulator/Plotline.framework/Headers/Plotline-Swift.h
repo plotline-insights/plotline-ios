@@ -358,6 +358,15 @@ SWIFT_CLASS("_TtC8Plotline8OpenText")
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
+@class UIEvent;
+
+SWIFT_CLASS("_TtC8Plotline15PassthroughView")
+@interface PassthroughView : UIView
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSURL;
 
 SWIFT_CLASS("_TtC8Plotline8Plotline")
@@ -408,7 +417,7 @@ SWIFT_CLASS("_TtC8Plotline22PlotlineFloatingButton")
 @class UIBlurEffect;
 
 SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
-@interface PlotlineTooltipView : UIView
+@interface PlotlineTooltipView : PassthroughView
 - (void)show;
 - (BOOL)isShowing SWIFT_WARN_UNUSED_RESULT;
 - (void)onActionWithStepId:(NSString * _Nullable)stepId action:(NSString * _Nullable)action effect:(NSString * _Nullable)effect target:(NSString * _Nullable)target platform:(NSString * _Nullable)platform requireDismiss:(BOOL)requireDismiss isDismissed:(BOOL)isDismissed;
@@ -861,6 +870,15 @@ SWIFT_CLASS("_TtC8Plotline8OpenText")
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
 
+@class UIEvent;
+
+SWIFT_CLASS("_TtC8Plotline15PassthroughView")
+@interface PassthroughView : UIView
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSURL;
 
 SWIFT_CLASS("_TtC8Plotline8Plotline")
@@ -911,7 +929,7 @@ SWIFT_CLASS("_TtC8Plotline22PlotlineFloatingButton")
 @class UIBlurEffect;
 
 SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
-@interface PlotlineTooltipView : UIView
+@interface PlotlineTooltipView : PassthroughView
 - (void)show;
 - (BOOL)isShowing SWIFT_WARN_UNUSED_RESULT;
 - (void)onActionWithStepId:(NSString * _Nullable)stepId action:(NSString * _Nullable)action effect:(NSString * _Nullable)effect target:(NSString * _Nullable)target platform:(NSString * _Nullable)platform requireDismiss:(BOOL)requireDismiss isDismissed:(BOOL)isDismissed;
