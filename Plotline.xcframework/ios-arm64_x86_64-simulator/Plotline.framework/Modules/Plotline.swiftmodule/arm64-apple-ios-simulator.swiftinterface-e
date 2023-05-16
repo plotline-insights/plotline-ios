@@ -666,6 +666,7 @@ public class ElementSearchObject {
   @_Concurrency.MainActor(unsafe) public func notifyScroll()
   @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor(unsafe) public func getCurrentViewController() -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) public func cleanAssignScrollDelegates(currentVC: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) public func intervalFunction()
   @_Concurrency.MainActor(unsafe) public func runNextLoop()
   @objc deinit
