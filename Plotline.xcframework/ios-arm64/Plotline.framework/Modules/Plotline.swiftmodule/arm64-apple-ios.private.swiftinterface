@@ -142,6 +142,7 @@ public protocol PageListener {
   public var xPos: Swift.Double
   public var yPos: Swift.Double
   public var button: PlotlineFloatingButton?
+  public var player: AVFAudio.AVAudioPlayer?
   public func setPosition(newX: Swift.Double, newY: Swift.Double)
   public static func getInstance() -> Flows
   public static func showFloatingButton(view: UIKit.UIView)
@@ -604,6 +605,10 @@ public class FlowStep {
   public var showAnimation: Swift.Bool
   public var spotlightRadius: Swift.Int
   public var spotlightPadding: Swift.Int
+  public var audioUrl: Swift.String
+  public var audioRepeat: Swift.Bool
+  public var isAudioCorrupted: Swift.Bool
+  public static var PLOTLINE_AUDIO_PREFIX: Swift.String
   public static var TRANSITION_FADE: Swift.String
   public static var TRANSITION_SCALE: Swift.String
   public static var TRANSITION_NONE: Swift.String
