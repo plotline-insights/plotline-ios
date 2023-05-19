@@ -70,6 +70,22 @@ public protocol PlotlineViewPositionCallback {
   public static func evaluatePostfix(exp: [Plotline.Condition]) -> Swift.Bool
   @objc deinit
 }
+public class CarouselSettings {
+  public var activeSize: Swift.Int
+  public var inactiveSize: Swift.Int
+  public var activeColor: Swift.String
+  public var inactiveColor: Swift.String
+  public var indicatorSpacing: Swift.Int
+  public var selectedIndex: Swift.Int
+  public var indicatorTopMargin: Swift.Int
+  public var indicatorBottomMargin: Swift.Int
+  public var autoScroll: Swift.Bool
+  public var autoScrollDelay: Swift.Int
+  public var showIndicators: Swift.Bool
+  public init(_ json: [Swift.String : Any])
+  public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class CoachRingRenderer : ObjectiveC.NSObject {
   @objc dynamic public class func drawCoachRing(ringColor: UIKit.UIColor = UIColor(red: 0.000, green: 0.387, blue: 0.742, alpha: 0.737), controlRadius: CoreFoundation.CGFloat = 20, controlCenter: CoreFoundation.CGPoint = CGPoint(x: 199, y: 137), ringRadius: CoreFoundation.CGFloat = 144, ringCenter: CoreFoundation.CGPoint = CGPoint(x: 179, y: 171))
   @objc dynamic public class func drawCoachRingEcho(ringEchoColor: UIKit.UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000), controlRadius: CoreFoundation.CGFloat = 20, ringRadius: CoreFoundation.CGFloat = 144, ringCenter: CoreFoundation.CGPoint = CGPoint(x: 179, y: 171), echoOpacity: CoreFoundation.CGFloat = 0.491)
@@ -353,6 +369,7 @@ public class StepLayout {
   public var layoutWeight: Swift.Int
   public var layouts: [Plotline.StepLayout]
   public var onAction: Plotline.StepAction
+  public var carouselSettings: Plotline.CarouselSettings
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
