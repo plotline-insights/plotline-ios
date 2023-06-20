@@ -389,6 +389,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)logout;
 + (void)notifyScroll;
 + (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
++ (void)setPlotlineRedirectListenerWithListener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
 @end
 
 
@@ -491,6 +492,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 
 
@@ -901,6 +903,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)logout;
 + (void)notifyScroll;
 + (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
++ (void)setPlotlineRedirectListenerWithListener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
 @end
 
 
@@ -1003,6 +1006,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 
 

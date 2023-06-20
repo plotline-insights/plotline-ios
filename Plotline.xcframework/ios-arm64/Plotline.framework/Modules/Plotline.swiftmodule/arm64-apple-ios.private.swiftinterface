@@ -154,13 +154,15 @@ public protocol PageListener {
   @objc override dynamic public init()
   public var plotlineViewListener: (any PlotlineViewListener)?
   public var delayRunTask: Dispatch.DispatchWorkItem?
-  public var activeStepId: Swift.String
+  public var activeStep: FlowStep?
+  public var activePosition: CoreFoundation.CGRect?
   public var xPos: Swift.Double
   public var yPos: Swift.Double
   public var button: PlotlineFloatingButton?
   public var player: AVFAudio.AVAudioPlayer?
   public func setPosition(newX: Swift.Double, newY: Swift.Double)
   public static func getInstance() -> Flows
+  public static func getActiveStepId() -> Swift.String
   public static func showFloatingButton(view: UIKit.UIView)
   public static func getElementInView(view: UIKit.UIView, fragmentId: Swift.String, elementId: Swift.String) -> UIKit.UIView?
   public static func getPlotlineViewListener(view: UIKit.UIView, flowStep: FlowStep, stepListener: any FlowStepListener, plotlineViewListenerReady: @escaping ((any PlotlineViewListener)?) -> ())
@@ -190,8 +192,9 @@ public class Campaign {
   public var campaignType: Swift.String
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
+  public static var CAMPAIGN_JOURNEY: Swift.String
   public init(json: [Swift.String : Any], id: Swift.String, campaignType: Swift.String)
-  public static func checkEligibility(campaigns: [Campaign], eligibilityCallback: @escaping ([Campaign]) -> ())
+  public static func checkEligibility(campaigns: [Campaign], eligibilityCallback: @escaping ([Campaign], [Campaign]) -> ())
   @objc deinit
 }
 public struct MarkInfo {
@@ -247,6 +250,10 @@ public class PEvent {
   public init()
   @objc deinit
 }
+public class Journey : Campaign {
+  public init(json: [Swift.String : Any])
+  @objc deinit
+}
 public protocol InitCallback {
   func onInitialized()
 }
@@ -277,6 +284,7 @@ public protocol InitCallback {
   public func setShouldEnableDebug(shouldEnableDebug: Swift.Bool)
   public func getShouldEnableDebug() -> Swift.Bool
   public func getFlowStore() -> FlowStore
+  public func getJourneyStore() -> JourneyStore
   public func isShouldEnableFlows() -> Swift.Bool
   public func setShouldEnableFlows(shouldEnableFlows: Swift.Bool)
   public func getSearchIntervalMillis() -> Swift.Int64
@@ -311,7 +319,10 @@ public protocol InitCallback {
   public func onSwiftUIViewAppear(label: Swift.String)
   public func getEventsBatchUploader() -> EventsBatchUploader?
   public func setEventsBatchUploader(eventsBatchUploader: EventsBatchUploader)
+  public func getDecisionTask() -> DecisionTask?
+  public func setDecisionTask(decisionTask: DecisionTask)
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
+  public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
   public static func getInstance() -> Plotline
   public func initKeys(apiKey: Swift.String, userId: Swift.String)
   public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String, deviceId: Swift.String)
@@ -330,6 +341,7 @@ public protocol InitCallback {
   @objc public static func logout()
   @objc public static func notifyScroll()
   @objc public static func setPlotlineEventsListener(listener: @escaping (Swift.String, [Swift.String : Any]) -> ())
+  @objc public static func setPlotlineRedirectListener(listener: @escaping ([Swift.String : Swift.String]) -> ())
   @objc deinit
 }
 @available(iOS 13.0, *)
@@ -344,7 +356,7 @@ extension SwiftUI.View {
   
 }
 public class EligibilityTask {
-  public init(campaigns: [Campaign], eligibilityCallback: @escaping ([Campaign]) -> ())
+  public init(campaigns: [Campaign], eligibilityCallback: @escaping ([Campaign], [Campaign]) -> ())
   public func execute()
   public static func compareString(str1: Swift.String, str2: Swift.String) -> Swift.Int
   public static func compareLong(value1: Swift.Int64, value2: Swift.Int64) -> Swift.Int
@@ -374,6 +386,14 @@ public class StepLayout {
   public init(_ json: [Swift.String : Any])
   @objc deinit
 }
+public class JourneyStore {
+  public var journeys: [Swift.String : Journey]
+  public var triggerEvents: [Swift.String : Swift.Set<Swift.String>]
+  public init()
+  public func removeJourney(journeyId: Swift.String)
+  public func addData(journeyData: [[Swift.String : Any]])
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MultiChoiceSingleCorrect : UIKit.UIView {
   @objc deinit
 }
@@ -395,7 +415,7 @@ public class PAttribute {
   public static func track(eventName: Swift.String)
   public static func track(eventName: Swift.String, properties: [Swift.String : Any])
   public static func checkEligibilityAndTriggerCampaign(campaigns: [Campaign], eventName: Swift.String?, eligibleEvents: Swift.Set<Swift.String>, properties: [Swift.String : Any]?)
-  public static func triggerCampaign(eligibleStudyIds: [Swift.String], eligibleFlowIds: [Swift.String], eventName: Swift.String?, compositeEvents: Swift.Set<Swift.String>?, properties: [Swift.String : Any]?)
+  public static func triggerCampaign(eligibleCampaigns: [Campaign], eventName: Swift.String?, compositeEvents: Swift.Set<Swift.String>?, properties: [Swift.String : Any]?)
   @objc deinit
 }
 public protocol CoachMarkInfoView : UIKit.UIView {
@@ -407,12 +427,15 @@ public protocol CoachMarkInfoView : UIKit.UIView {
   func setInfoColor(color: UIKit.UIColor)
 }
 public class Flow : Campaign {
+  public var journeyId: Swift.String?
   public var clientElementId: Swift.String
   public var clientFragmentId: Swift.String
   public var flowType: Swift.String
   public var marginFilter: [CoreFoundation.CGFloat]?
+  public var shouldSendOnlyTrue: Swift.Bool
   public static var FLOW_TYPE_PAGE: Swift.String
   public static var FLOW_TYPE_ELEMENT: Swift.String
+  public static var FLOW_TYPE_DECISION: Swift.String
   public init(json: [Swift.String : Any])
   @objc deinit
 }
@@ -426,6 +449,7 @@ public class Condition {
   public static let VAL_ATTRIBUTE: Swift.String
   public static let VAL_EVENT: Swift.String
   public static let VAL_OPERATOR: Swift.String
+  public static let VAL_TIMESTAMP: Swift.String
   public static let VAL_PROPERTY: Swift.String
   public init(condition: [Swift.String : Any])
   public init(type: Swift.String, key: Swift.String, aggregate: Swift.String, relation: Swift.String, value: Swift.String, pOperator: Swift.String)
@@ -433,13 +457,22 @@ public class Condition {
   @objc deinit
 }
 public class FlowStore {
-  public var flows: [Swift.String : Flow]
+  public var flows: [Swift.String : Flow] {
+    get
+    set
+  }
   public var triggerEvents: [Swift.String : Swift.Set<Swift.String>]
-  public var activeFlowQueue: Queue<FlowStep>
+  public var activeFlowArray: [FlowStep]
+  public var activeFlowIndex: Swift.Int
   public var activeFlowId: Swift.String
+  public var activeJourneyId: Swift.String?
   public init()
+  public func peekActiveFlowStep() -> FlowStep?
+  public func popActiveFlowStep() -> FlowStep?
+  public func clearActiveFlowArray()
+  public func removeFlow(flowId: Swift.String)
   public func addData(flowData: [[Swift.String : Any]])
-  public func addQueue(flowId: Swift.String, flowStepsData: [Any])
+  public func addQueue(flowId: Swift.String, journeyId: Swift.String?, flowStepsData: [Any])
   public func actOnQueue(compositeTriggerEvents: Swift.Set<Swift.String>?)
   public func showFlowStep(view: UIKit.UIView)
   @_hasMissingDesignatedInitializers public class FlowStepListenerImpl : FlowStepListener {
@@ -455,6 +488,9 @@ public class FlowStore {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OpenText : UIKit.UIView, UIKit.UITextViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc public func textViewDidBeginEditing(_ textbox: UIKit.UITextView)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DecisionTask {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Rating : UIKit.UIView {
@@ -476,11 +512,11 @@ public class Study : Campaign {
   public static func initialize(callback: @escaping ([Swift.String : Any]) -> Swift.Void)
   public static func registerEvent(eventName: Swift.String, propertyKeys: [Swift.String]?)
   public static func registerAttributes(attributes: [Swift.String])
-  public static func triggerCampaign(eligibleFlowIds: [Swift.String], eligibleStudyIds: [Swift.String], triggerEvent: Swift.String?, properties: [Swift.String : Any]?, callback: @escaping ([Swift.String : Any]) -> ())
+  public static func triggerCampaign(eligibleCampaigns: [Campaign], triggerEvent: Swift.String?, properties: [Swift.String : Any]?, callback: @escaping ([Swift.String : Any]) -> ())
   public static func sendResponse(studyId: Swift.String, questionId: Swift.String, answer: [Swift.String], isCompleted: Swift.Bool)
   public static func uploadScreenshotImage(clientPageId: Swift.String, imgFile: Swift.String, callback: @escaping (Swift.String) -> ())
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
-  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
+  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]])
   @objc deinit
 }
@@ -635,6 +671,7 @@ public class FlowStep {
   public static var TYPE_BOTTOMSHEET: Swift.String
   public static var TYPE_COACHMARK: Swift.String
   public static var TYPE_SPOTLIGHT: Swift.String
+  public static var TYPE_BANNER: Swift.String
   public static var TYPES_ELEMENT: [Swift.String]
   public init(json: [Swift.String : Any])
   @objc deinit
