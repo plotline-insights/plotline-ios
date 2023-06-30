@@ -119,6 +119,9 @@ public class AttributeTask {
   public static func getEligibleCompositeEvents(compositeEventsList: [[Swift.String : Any]], properties: [Swift.String : Any]) -> [Swift.String]
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class VideoSettings {
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Utils {
   public static func currentTimeInMilliSeconds() -> Swift.Int64
   public static func getQueryParameter(url: Foundation.URL, paramName: Swift.String) -> Swift.String?
@@ -382,6 +385,7 @@ public class StepLayout {
   public var layouts: [StepLayout]
   public var onAction: StepAction
   public var carouselSettings: CarouselSettings
+  public var videoSettings: VideoSettings
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
@@ -662,6 +666,7 @@ public class FlowStep {
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
   public static var PLOTLINE_AUDIO_PREFIX: Swift.String
+  public static var PLOTLINE_VIDEO_PREFIX: Swift.String
   public static var TRANSITION_FADE: Swift.String
   public static var TRANSITION_SCALE: Swift.String
   public static var TRANSITION_NONE: Swift.String
