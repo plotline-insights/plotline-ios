@@ -14,5 +14,5 @@ FOUNDATION_EXPORT double PlotlineVersionNumber;
 FOUNDATION_EXPORT const unsigned char PlotlineVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Plotline/PublicHeader.h>
-
+#import <Plotline/PlotlineExceptionCatcher.h>
 

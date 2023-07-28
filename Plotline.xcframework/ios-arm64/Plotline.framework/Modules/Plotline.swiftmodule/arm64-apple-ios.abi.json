@@ -40572,7 +40572,7 @@
       "kind": "StringLiteral",
       "offset": 324,
       "length": 7,
-      "value": "\"3.0.4\""
+      "value": "\"3.0.5\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -41690,245 +41690,245 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 1559,
+      "offset": 1621,
       "length": 15,
       "value": "\"PlotlineEvent\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 1632,
+      "offset": 1698,
       "length": 16,
       "value": "\"eventName = %@\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 2064,
+      "offset": 2169,
       "length": 40,
       "value": "\"Plotline: CoreData container not ready\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 2322,
+      "offset": 2489,
       "length": 15,
       "value": "\"PlotlineEvent\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 2495,
+      "offset": 2670,
       "length": 11,
       "value": "\"eventName\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2545,
+      "offset": 2724,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 2556,
+      "offset": 2735,
       "length": 7,
       "value": "\"count\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 2645,
+      "offset": 2828,
       "length": 11,
       "value": "\"firstUsed\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 2738,
+      "offset": 2925,
       "length": 10,
       "value": "\"lastUsed\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 3230,
       "length": 40,
       "value": "\"Plotline: CoreData container not ready\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 3272,
+      "offset": 3552,
       "length": 15,
       "value": "\"PlotlineEvent\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 3345,
+      "offset": 3629,
       "length": 16,
       "value": "\"eventName = %@\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3500,
+      "offset": 3792,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3505,
+      "offset": 3797,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3543,
+      "offset": 3839,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3547,
+      "offset": 3843,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3588,
+      "offset": 3888,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 3948,
+      "offset": 4283,
       "length": 40,
       "value": "\"Plotline: CoreData container not ready\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 4243,
+      "offset": 4640,
       "length": 11,
       "value": "\"Attribute\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 4312,
+      "offset": 4713,
       "length": 20,
       "value": "\"attributeName = %@\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 4807,
+      "offset": 5247,
       "length": 40,
       "value": "\"Plotline: CoreData container not ready\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 5571,
       "length": 11,
       "value": "\"Attribute\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 5254,
+      "offset": 5764,
       "length": 15,
       "value": "\"attributeName\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 5336,
+      "offset": 5850,
       "length": 16,
       "value": "\"attributeValue\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 5636,
+      "offset": 6181,
       "length": 40,
       "value": "\"Plotline: CoreData container not ready\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 5892,
+      "offset": 6499,
       "length": 11,
       "value": "\"Attribute\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 5961,
+      "offset": 6572,
       "length": 20,
       "value": "\"attributeName = %@\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "Array",
-      "offset": 6446,
+      "offset": 7100,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 6531,
+      "offset": 7185,
       "length": 40,
       "value": "\"Plotline: CoreData container not ready\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 6807,
+      "offset": 7523,
       "length": 11,
       "value": "\"Attribute\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 6876,
+      "offset": 7596,
       "length": 21,
       "value": "\"attributeName in %@\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "Array",
-      "offset": 7316,
+      "offset": 8075,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 7401,
+      "offset": 8160,
       "length": 40,
       "value": "\"Plotline: CoreData container not ready\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 7678,
+      "offset": 8499,
       "length": 15,
       "value": "\"PlotlineEvent\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 7751,
+      "offset": 8576,
       "length": 17,
       "value": "\"eventName in %@\""
     },
