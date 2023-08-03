@@ -147,6 +147,9 @@ public protocol PlotlineViewListener {
   func isShowing() -> Swift.Bool
   func onAction(stepId: Swift.String?, action: Swift.String?, effect: Swift.String?, target: Swift.String?, platform: Swift.String?, requireDismiss: Swift.Bool, isDismissed: Swift.Bool)
 }
+public protocol PlotlineScrollListener : AnyObject {
+  func onScroll()
+}
 public protocol ActionListener {
   func onAction(stepId: Swift.String?, action: Swift.String?, effect: Swift.String?, target: Swift.String?, platform: Swift.String?, requireDismiss: Swift.Bool, isDismissed: Swift.Bool)
 }
@@ -677,6 +680,7 @@ public class FlowStep {
   public static var TYPE_COACHMARK: Swift.String
   public static var TYPE_SPOTLIGHT: Swift.String
   public static var TYPE_BANNER: Swift.String
+  public static var TYPE_FLOATER: Swift.String
   public static var TYPES_ELEMENT: [Swift.String]
   public init(json: [Swift.String : Any])
   @objc deinit
@@ -729,6 +733,7 @@ public class ElementSearchObject {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @_Concurrency.MainActor(unsafe) public func notifyScroll()
   @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) public func setPlotlineScrollListener(listener: (any PlotlineScrollListener)?)
   @_Concurrency.MainActor(unsafe) public func getCurrentViewController() -> UIKit.UIViewController?
   @_Concurrency.MainActor(unsafe) public func cleanAssignScrollDelegates(currentVC: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) public func intervalFunction()
