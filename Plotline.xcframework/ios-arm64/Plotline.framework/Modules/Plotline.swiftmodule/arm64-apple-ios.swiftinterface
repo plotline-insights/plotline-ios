@@ -11,6 +11,7 @@ import Foundation
 import Swift
 import SwiftUI
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Prompt : UIKit.UIView {
@@ -344,6 +345,8 @@ public protocol InitCallback {
   @objc public static func trackPage(pageName: Swift.String)
   @objc public static func initAlong(_ url: Foundation.URL)
   @objc public static func debug(shouldDebug: Swift.Bool)
+  @objc public static func getPlotlineWebViewController() -> WebKit.WKUserContentController
+  @objc public static func setWebView(webView: WebKit.WKWebView)
   @objc public static func logout()
   @objc public static func notifyScroll()
   @objc public static func setPlotlineEventsListener(listener: @escaping (Swift.String, [Swift.String : Any]) -> ())
@@ -727,6 +730,7 @@ public class ElementSearchObject {
   public var marginFilter: [CoreFoundation.CGFloat]?
   public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String)
   public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String, marginFilter: [CoreFoundation.CGFloat]?)
+  public init?(json: [Swift.String : Any])
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ElementSearchTask : ObjectiveC.NSObject, UIKit.UIScrollViewDelegate {

@@ -368,6 +368,8 @@ SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 @end
 
 @class NSURL;
+@class WKUserContentController;
+@class WKWebView;
 
 SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
@@ -386,6 +388,8 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)trackPageWithPageName:(NSString * _Nonnull)pageName;
 + (void)initAlong:(NSURL * _Nonnull)url SWIFT_METHOD_FAMILY(none);
 + (void)debugWithShouldDebug:(BOOL)shouldDebug;
++ (WKUserContentController * _Nonnull)getPlotlineWebViewController SWIFT_WARN_UNUSED_RESULT;
++ (void)setWebViewWithWebView:(WKWebView * _Nonnull)webView;
 + (void)logout;
 + (void)notifyScroll;
 + (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
