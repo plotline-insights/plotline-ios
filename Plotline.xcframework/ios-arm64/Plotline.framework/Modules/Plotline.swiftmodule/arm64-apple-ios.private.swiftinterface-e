@@ -209,8 +209,6 @@ public struct MarkInfo {
 @_hasMissingDesignatedInitializers public class Attributes {
   public func getUserId() -> Swift.String
   public func setUserId(userId: Swift.String)
-  public func getDeviceId() -> Swift.String
-  public func setDeviceId(deviceId: Swift.String)
   public func getAppVersion() -> Swift.String
   public func setAppVersion(appVersion: Swift.String)
   public func getIOSVersion() -> Swift.String
@@ -332,7 +330,7 @@ public protocol InitCallback {
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
   public static func getInstance() -> Plotline.Plotline
   public func initKeys(apiKey: Swift.String, userId: Swift.String)
-  public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String, deviceId: Swift.String)
+  public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String)
   @objc public static func initialize(apiKey: Swift.String, userId: Swift.String)
   @objc public static func initialize(apiKey: Swift.String, userId: Swift.String, endpoint: Swift.String)
   @objc public static func track(eventName: Swift.String)
