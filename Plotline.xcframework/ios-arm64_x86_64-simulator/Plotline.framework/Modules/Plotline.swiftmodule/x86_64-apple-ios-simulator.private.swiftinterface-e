@@ -118,6 +118,7 @@ public class AttributeTask {
 }
 @_hasMissingDesignatedInitializers public class CompositeEventsTask {
   public static func getEligibleCompositeEvents(compositeEventsList: [[Swift.String : Any]], properties: [Swift.String : Any]) -> [Swift.String]
+  public static func convertToString(input: Any) -> Swift.String?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VideoSettings {
