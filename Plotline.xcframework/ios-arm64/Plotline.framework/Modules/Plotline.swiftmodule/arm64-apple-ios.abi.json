@@ -36678,189 +36678,182 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 2045,
-      "length": 48,
-      "value": "\"RootViewController View is nil in onScreenshot\""
+      "offset": 2071,
+      "length": 38,
+      "value": "\"Key window not found in onScreenshot\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 2252,
+      "offset": 2263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2400,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 2543,
+      "offset": 2534,
       "length": 34,
       "value": "\"Screenshot Ready in onScreenshot\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 3679,
+      "offset": 3670,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "Array",
-      "offset": 4531,
+      "offset": 4522,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 4959,
+      "offset": 4950,
       "length": 17,
       "value": "\"clientElementId\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5012,
+      "offset": 5003,
       "length": 18,
       "value": "\"clientFragmentId\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5033,
+      "offset": 5024,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5053,
+      "offset": 5044,
       "length": 10,
       "value": "\"position\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5088,
+      "offset": 5079,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5142,
+      "offset": 5133,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5196,
+      "offset": 5187,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5250,
+      "offset": 5241,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5353,
+      "offset": 5344,
       "length": 50,
       "value": "\"SwiftUI elements added: \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 5402,
+      "offset": 5393,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 6080,
+      "offset": 6071,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 6574,
+      "offset": 6565,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 6600,
+      "offset": 6591,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 6953,
+      "offset": 6944,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 7111,
+      "offset": 7102,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 7155,
+      "offset": 7146,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 7318,
+      "offset": 7309,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "Array",
-      "offset": 7567,
+      "offset": 7558,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "IntegerLiteral",
-      "offset": 7621,
+      "offset": 7612,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 8220,
+      "offset": 8211,
       "length": 52,
       "value": "\"Found elements in WebView \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineInternal.swift",
       "kind": "StringLiteral",
-      "offset": 8271,
+      "offset": 8262,
       "length": 2,
       "value": "\"\""
     },
@@ -41832,7 +41825,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 7,
-      "value": "\"3.1.2\""
+      "value": "\"3.1.4\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -54689,42 +54682,42 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "StringLiteral",
-      "offset": 5326,
+      "offset": 5361,
       "length": 24,
       "value": "\"Plotline.WeakUIScrollViewDelegate\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "StringLiteral",
-      "offset": 5971,
+      "offset": 6006,
       "length": 12,
       "value": "\"ScrollView\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 6733,
+      "offset": 6768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 6740,
+      "offset": 6775,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 7435,
+      "offset": 7470,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7832,
+      "offset": 7867,
       "length": 1,
       "value": "0"
     },
