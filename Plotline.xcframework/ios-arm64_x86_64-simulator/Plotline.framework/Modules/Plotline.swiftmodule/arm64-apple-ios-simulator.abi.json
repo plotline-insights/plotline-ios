@@ -43135,7 +43135,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 7,
-      "value": "\"3.1.5\""
+      "value": "\"3.1.6\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -54417,259 +54417,273 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "StringLiteral",
-      "offset": 5602,
+      "offset": 5600,
+      "length": 26,
+      "value": "\"Plotline Study Completed\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
+      "kind": "StringLiteral",
+      "offset": 5729,
+      "length": 9,
+      "value": "\"studyId\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
+      "kind": "StringLiteral",
+      "offset": 5956,
       "length": 10,
       "value": "\"REDIRECT\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "Dictionary",
-      "offset": 5963,
+      "offset": 6317,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 7050,
+      "offset": 7404,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 7859,
+      "offset": 8213,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 8225,
+      "offset": 8579,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 8231,
+      "offset": 8585,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 8241,
+      "offset": 8595,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 8251,
+      "offset": 8605,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 8265,
+      "offset": 8619,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 8438,
+      "offset": 8792,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 8859,
+      "offset": 9213,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 8888,
+      "offset": 9242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 9077,
+      "offset": 9431,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 9645,
+      "offset": 9999,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 10504,
+      "offset": 10858,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 10846,
+      "offset": 11200,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 10933,
+      "offset": 11287,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 11353,
+      "offset": 11707,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 11405,
+      "offset": 11759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 11495,
+      "offset": 11849,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 11558,
+      "offset": 11912,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 11682,
+      "offset": 12036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 11721,
+      "offset": 12075,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 12160,
+      "offset": 12514,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 12317,
+      "offset": 12671,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 12455,
+      "offset": 12809,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 12539,
+      "offset": 12893,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 12761,
+      "offset": 13115,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 12804,
+      "offset": 13158,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 12922,
+      "offset": 13276,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 13072,
+      "offset": 13426,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 14091,
+      "offset": 14445,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 14137,
+      "offset": 14491,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 14204,
+      "offset": 14558,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 14442,
+      "offset": 14796,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 14489,
+      "offset": 14843,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 14556,
+      "offset": 14910,
       "length": 1,
       "value": "0"
     },
