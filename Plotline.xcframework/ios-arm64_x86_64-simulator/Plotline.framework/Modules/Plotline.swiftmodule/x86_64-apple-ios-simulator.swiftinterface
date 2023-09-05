@@ -7,6 +7,7 @@ import CoreData
 import CoreGraphics
 import CoreText
 import Foundation
+import MediaPlayer
 @_exported import Plotline
 import Swift
 import SwiftUI
@@ -683,6 +684,7 @@ public class FlowStep {
   public static var TYPE_SPOTLIGHT: Swift.String
   public static var TYPE_BANNER: Swift.String
   public static var TYPE_FLOATER: Swift.String
+  public static var TYPE_PIPVIDEO: Swift.String
   public static var TYPES_ELEMENT: [Swift.String]
   public init(json: [Swift.String : Any])
   @objc deinit
