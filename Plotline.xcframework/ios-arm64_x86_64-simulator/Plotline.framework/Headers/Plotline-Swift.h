@@ -408,6 +408,7 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @property (nonatomic, copy) NSString * _Nullable eventName;
 @property (nonatomic) int64_t firstUsed;
 @property (nonatomic) int64_t lastUsed;
+@property (nonatomic, copy) NSString * _Nullable timestamps;
 @end
 
 
@@ -470,6 +471,18 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 
 
 
+SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
+@interface PlotlineWidget : UIStackView
+@property (nonatomic, copy) NSString * _Nonnull clientElementId;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline6Prompt")
 @interface Prompt : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -507,6 +520,19 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
+
+SWIFT_CLASS_NAMED("WidgetData")
+@interface WidgetData : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WidgetData (SWIFT_EXTENSION(Plotline))
+@property (nonatomic, copy) NSString * _Nullable clientElementId;
+@property (nonatomic) int64_t lastUpdated;
+@property (nonatomic, copy) NSString * _Nullable widgetData;
+@end
 
 #endif
 #if defined(__cplusplus)
@@ -926,6 +952,7 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @property (nonatomic, copy) NSString * _Nullable eventName;
 @property (nonatomic) int64_t firstUsed;
 @property (nonatomic) int64_t lastUsed;
+@property (nonatomic, copy) NSString * _Nullable timestamps;
 @end
 
 
@@ -988,6 +1015,18 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 
 
 
+SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
+@interface PlotlineWidget : UIStackView
+@property (nonatomic, copy) NSString * _Nonnull clientElementId;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline6Prompt")
 @interface Prompt : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -1025,6 +1064,19 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
+
+SWIFT_CLASS_NAMED("WidgetData")
+@interface WidgetData : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WidgetData (SWIFT_EXTENSION(Plotline))
+@property (nonatomic, copy) NSString * _Nullable clientElementId;
+@property (nonatomic) int64_t lastUpdated;
+@property (nonatomic, copy) NSString * _Nullable widgetData;
+@end
 
 #endif
 #if defined(__cplusplus)

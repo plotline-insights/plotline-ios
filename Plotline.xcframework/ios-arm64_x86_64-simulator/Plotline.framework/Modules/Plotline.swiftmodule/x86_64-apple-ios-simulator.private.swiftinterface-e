@@ -72,6 +72,23 @@ public protocol PlotlineViewPositionCallback {
   public static func evaluatePostfix(exp: [Plotline.Condition]) -> Swift.Bool
   @objc deinit
 }
+public protocol PlotlineWidgetListener {
+  func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIStackView {
+  @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
+  @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc deinit
+}
 public class CarouselSettings {
   public var activeSize: Swift.Int
   public var inactiveSize: Swift.Int
@@ -110,6 +127,21 @@ public class EventTask {
   public func execute()
   @objc deinit
 }
+public class UpdateWidgetTask {
+  public init(widgetsData: [[Swift.String : Any]])
+  @available(iOS 10.0, *)
+  public func execute()
+  @objc deinit
+}
+public class PWidget {
+  public var clientElementId: Swift.String
+  public var widgetData: Swift.String
+  public var lastUpdated: Swift.Int64
+  public init(clientElementId: Swift.String, widgetData: Swift.String, lastUpdated: Swift.Int64)
+  public init(widgetData: Plotline.WidgetData)
+  public init()
+  @objc deinit
+}
 public class AttributeTask {
   public init(attributes: [Swift.String : Any])
   public func convertToString(input: Any) -> Swift.String
@@ -130,6 +162,8 @@ public class AttributeTask {
   public static func getQueryParameter(url: Foundation.URL, paramName: Swift.String) -> Swift.String?
   public static func sendPlotlineEvent(eventName: Swift.String, properties: [Swift.String : Any])
   public static func parseJSONString(_ jsonString: Swift.String) -> [Swift.String : Any]?
+  public static func fetchLiquidAttributes(value: Swift.String) -> [Swift.String]
+  public static func replaceAttributes(value: Swift.String, replacements: [Swift.String : Swift.String]) -> Swift.String?
   @objc deinit
 }
 public struct CoachRing {
@@ -202,6 +236,7 @@ public class Campaign {
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
+  public static var CAMPAIGN_WIDGET: Swift.String
   public init(json: [Swift.String : Any], id: Swift.String, campaignType: Swift.String)
   public static func checkEligibility(campaigns: [Plotline.Campaign], eligibilityCallback: @escaping ([Plotline.Campaign], [Plotline.Campaign]) -> ())
   @objc deinit
@@ -237,6 +272,7 @@ public class InitTask {
 @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 public class CoreDataManager {
   public static let shared: Plotline.CoreDataManager
+  public func loadContainer(completion: @escaping (Swift.Bool) -> ())
   public func getEvent(eventName: Swift.String) -> Plotline.PEvent?
   public func insertEvent(eventName: Swift.String)
   public func updateEvent(eventName: Swift.String)
@@ -245,6 +281,9 @@ public class CoreDataManager {
   public func updateAttribute(attributeName: Swift.String, attributeValue: Swift.String?)
   public func getAttributesWithNames(attributeNameValues: [Swift.String]) -> [Plotline.PAttribute]
   public func getEventsWithName(eventNameValues: [Swift.String]) -> [Plotline.PEvent]
+  public func removeAllWidgets()
+  public func insertWidgetDataList(widgetDataList: [Plotline.PWidget])
+  public func getWidgetData(clientElementId: Swift.String) -> Plotline.PWidget?
   @objc deinit
 }
 public class PEvent {
@@ -252,13 +291,28 @@ public class PEvent {
   public var count: Swift.Int16
   public var lastUsed: Swift.Int64
   public var firstUsed: Swift.Int64
-  public init(eventName: Swift.String, count: Swift.Int16, lastUsed: Swift.Int64, firstUsed: Swift.Int64)
+  public var timestamps: Swift.String?
+  public init(eventName: Swift.String, count: Swift.Int16, lastUsed: Swift.Int64, firstUsed: Swift.Int64, timestamps: Swift.String)
   public init(event: Plotline.PlotlineEvent)
+  public init()
+  @objc deinit
+}
+public class GridSettings {
+  public var numRows: Swift.Int
+  public var numCols: Swift.Int
+  public var hSpacing: Swift.Int
+  public var vSpacing: Swift.Int
+  public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
 }
 public class Journey : Plotline.Campaign {
   public init(json: [Swift.String : Any])
+  @objc deinit
+}
+public class FetchWidgetTask {
+  public init(clientElementId: Swift.String, widgetDataListener: @escaping ((Plotline.Widget?) -> ()))
+  public func execute()
   @objc deinit
 }
 public protocol InitCallback {
@@ -308,6 +362,8 @@ public protocol InitCallback {
   public func getTestUserToken() -> Swift.String
   public func getAttributes() -> Swift.Set<Swift.String>
   public func setAttributes(sAttributes: Swift.Set<Swift.String>)
+  public func getAttributeMonitors() -> [Plotline.AttributeMonitor]
+  public func addAttributeMonitor(_ monitor: Plotline.AttributeMonitor)
   public func getCompositeCodeEventsMap() -> [Swift.String : [[Swift.String : Any]]]
   public func setCompositeCodeEventsMap(sCompositeCodeEventsMap: [Swift.String : [[Swift.String : Any]]])
   public func getStudyStore() -> Plotline.StudyStore
@@ -370,7 +426,7 @@ public class EligibilityTask {
   public static func compareString(str1: Swift.String, str2: Swift.String) -> Swift.Int
   public static func compareLong(value1: Swift.Int64, value2: Swift.Int64) -> Swift.Int
   public static func compareStrings(s1: Swift.String, s2: Swift.String) -> Swift.Int
-  public func checkEligibilityForCampaign(userFilter: [Plotline.Condition]) -> Swift.Bool
+  public static func checkEligibilityForCampaign(userFilter: [Plotline.Condition]) -> Swift.Bool
   @objc deinit
 }
 public class StepLayout {
@@ -392,6 +448,7 @@ public class StepLayout {
   public var onAction: Plotline.StepAction
   public var carouselSettings: Plotline.CarouselSettings
   public var videoSettings: Plotline.VideoSettings
+  public var gridSettings: Plotline.GridSettings
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
@@ -456,6 +513,8 @@ public class Condition {
   public var relation: Swift.String?
   public var value: Swift.String?
   public var pOperator: Swift.String?
+  public var timerange: Swift.Int64?
+  public var refevent: Swift.String?
   public static let VAL_ATTRIBUTE: Swift.String
   public static let VAL_EVENT: Swift.String
   public static let VAL_OPERATOR: Swift.String
@@ -542,6 +601,9 @@ public class StepAction {
 public class QuestionModal {
   public func getQuestionLayout() -> UIKit.UIView?
   public init(questionIndex: Swift.Int, questions: [Plotline.Question], answerListener: any Plotline.AnswerListener, hidePlotline: Swift.Bool)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AttributeMonitor {
   @objc deinit
 }
 public enum PopoverOption {
@@ -671,6 +733,7 @@ public class FlowStep {
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
+  public var ttl: Swift.Int64
   public static var PLOTLINE_AUDIO_PREFIX: Swift.String
   public static var PLOTLINE_VIDEO_PREFIX: Swift.String
   public static var TRANSITION_FADE: Swift.String
@@ -685,6 +748,7 @@ public class FlowStep {
   public static var TYPE_BANNER: Swift.String
   public static var TYPE_FLOATER: Swift.String
   public static var TYPE_PIPVIDEO: Swift.String
+  public static var TYPE_WIDGET: Swift.String
   public static var TYPES_ELEMENT: [Swift.String]
   public init(json: [Swift.String : Any])
   @objc deinit
@@ -692,6 +756,7 @@ public class FlowStep {
 public class Question {
   public var questionId: Swift.String?
   public var questionType: Swift.String?
+  public var image: [Swift.String : Any]?
   public var options: [[Swift.String : Any]]?
   public var question: Swift.String?
   public var description: Swift.String?
@@ -720,6 +785,13 @@ public class Question {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ThankYouView : UIKit.UIView {
+  @objc deinit
+}
+public class Widget : Plotline.Campaign {
+  public var clientElementId: Swift.String
+  public var stepData: Plotline.FlowStep
+  public var widgetData: [Swift.String : Any]
+  public init(json: [Swift.String : Any])
   @objc deinit
 }
 public class ElementSearchObject {
@@ -779,6 +851,29 @@ extension Plotline.PlotlineEvent {
     @objc set
   }
   @objc @NSManaged dynamic public var lastUsed: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamps: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(WidgetData) public class WidgetData : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension Plotline.WidgetData {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Plotline.WidgetData>
+  @objc @NSManaged dynamic public var clientElementId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastUpdated: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var widgetData: Swift.String? {
     @objc get
     @objc set
   }
