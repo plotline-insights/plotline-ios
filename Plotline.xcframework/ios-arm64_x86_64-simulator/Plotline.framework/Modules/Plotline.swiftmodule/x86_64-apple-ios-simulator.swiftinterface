@@ -203,6 +203,7 @@ public protocol PageListener {
   public var yPos: Swift.Double
   public var button: PlotlineFloatingButton?
   public var player: AVFAudio.AVAudioPlayer?
+  weak public var videoPlayer: AVFoundation.AVPlayer?
   public func setPosition(newX: Swift.Double, newY: Swift.Double)
   public static func getInstance() -> Flows
   public static func getActiveStepId() -> Swift.String
