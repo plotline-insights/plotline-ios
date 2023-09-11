@@ -75,7 +75,7 @@ public protocol PlotlineViewPositionCallback {
 public protocol PlotlineWidgetListener {
   func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIStackView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
@@ -83,6 +83,7 @@ public protocol PlotlineWidgetListener {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
