@@ -84,7 +84,7 @@ public protocol PlotlineViewPositionCallback {
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
+  @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()

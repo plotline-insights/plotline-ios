@@ -470,6 +470,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @end
 
 
+@protocol PlotlineWidgetListener;
 
 SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 @interface PlotlineWidget : UIView
@@ -479,6 +480,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)awakeFromNib;
 @end
@@ -1021,6 +1023,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @end
 
 
+@protocol PlotlineWidgetListener;
 
 SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 @interface PlotlineWidget : UIView
@@ -1030,6 +1033,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)awakeFromNib;
 @end
