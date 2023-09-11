@@ -484,6 +484,12 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 @end
 
 
+SWIFT_PROTOCOL("_TtP8Plotline22PlotlineWidgetListener_")
+@protocol PlotlineWidgetListener
+- (void)onWidgetReadyWithWidth:(CGFloat)width height:(CGFloat)height;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline6Prompt")
 @interface Prompt : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;

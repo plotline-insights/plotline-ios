@@ -72,10 +72,10 @@ public protocol PlotlineViewPositionCallback {
   public static func evaluatePostfix(exp: [Plotline.Condition]) -> Swift.Bool
   @objc deinit
 }
-public protocol PlotlineWidgetListener {
-  func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
+@objc public protocol PlotlineWidgetListener {
+  @objc func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
