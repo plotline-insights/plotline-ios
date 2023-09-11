@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		TqEcCSBBqVmIYsfx/9jTWy/eLo0=
+		8NXlYHgebWcK3d3SoPKH3WIaIuI=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4oi9CHeEpRahaN015AgmZJVrVoU=
+		5EQJ7wWtMjzrpeKtBdt/bhWGNhY=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		TqEcCSBBqVmIYsfx/9jTWy/eLo0=
+		8NXlYHgebWcK3d3SoPKH3WIaIuI=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PHhWOkT5DnEMUfBk6TpuOlgEfAA=
+		9rT9jDwJPIoOQ1UuWuiDt3FVswg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -192,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TqEcCSBBqVmIYsfx/9jTWy/eLo0=
+			8NXlYHgebWcK3d3SoPKH3WIaIuI=
 			</data>
 			<key>hash2</key>
 			<data>
-			maEvEozolh9vbyTVsCFbqzAGXBMN0vWNmQUBCtCGUeI=
+			cutIYumSWjusR/z+iUiF13NkTARFzGRZRfGMiN3flvU=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -236,22 +236,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4oi9CHeEpRahaN015AgmZJVrVoU=
+			5EQJ7wWtMjzrpeKtBdt/bhWGNhY=
 			</data>
 			<key>hash2</key>
 			<data>
-			v6VwfEDeUfV/RjdDUfL8cwjiSAzfuKzpCKW2Ujt2Qhs=
+			xX/AHkH5BQfqXk9/Ur0fM1SdI5vPNjaqYVqYe4zO6Ss=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TqEcCSBBqVmIYsfx/9jTWy/eLo0=
+			8NXlYHgebWcK3d3SoPKH3WIaIuI=
 			</data>
 			<key>hash2</key>
 			<data>
-			maEvEozolh9vbyTVsCFbqzAGXBMN0vWNmQUBCtCGUeI=
+			cutIYumSWjusR/z+iUiF13NkTARFzGRZRfGMiN3flvU=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -291,11 +291,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PHhWOkT5DnEMUfBk6TpuOlgEfAA=
+			9rT9jDwJPIoOQ1UuWuiDt3FVswg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZML6AzlKNjdmgZdWKl5a/I2/ggpWUwGNV7CO0+sMAiQ=
+			ymbWd5VyU4oS0/9Rnz9duIPA8NpFYYLfHdHYYs8vC5w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
