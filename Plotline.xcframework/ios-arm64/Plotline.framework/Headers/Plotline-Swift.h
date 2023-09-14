@@ -394,6 +394,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)notifyScroll;
 + (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
 + (void)setPlotlineRedirectListenerWithListener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
++ (void)setPlotlineRedirectUrlListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull))listener;
 @end
 
 

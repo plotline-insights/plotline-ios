@@ -389,6 +389,7 @@ public protocol InitCallback {
   public func setDecisionTask(decisionTask: Plotline.DecisionTask)
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
+  public func getPlotlineRedirectUrlListener() -> ((Swift.String) -> ())?
   public static func getInstance() -> Plotline.Plotline
   public func initKeys(apiKey: Swift.String, userId: Swift.String)
   public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String)
@@ -410,6 +411,7 @@ public protocol InitCallback {
   @objc public static func notifyScroll()
   @objc public static func setPlotlineEventsListener(listener: @escaping (Swift.String, [Swift.String : Any]) -> ())
   @objc public static func setPlotlineRedirectListener(listener: @escaping ([Swift.String : Swift.String]) -> ())
+  @objc public static func setPlotlineRedirectUrlListener(listener: @escaping (Swift.String) -> ())
   @objc deinit
 }
 @available(iOS 13.0, *)
