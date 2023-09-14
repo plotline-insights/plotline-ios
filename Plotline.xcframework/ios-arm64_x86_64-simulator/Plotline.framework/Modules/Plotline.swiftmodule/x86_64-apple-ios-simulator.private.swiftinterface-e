@@ -161,7 +161,7 @@ public class AttributeTask {
 @_hasMissingDesignatedInitializers public class Utils {
   public static func currentTimeInMilliSeconds() -> Swift.Int64
   public static func getQueryParameter(url: Foundation.URL, paramName: Swift.String) -> Swift.String?
-  public static func sendPlotlineEvent(eventName: Swift.String, properties: [Swift.String : Any])
+  public static func sendPlotlineEvent(eventName: Swift.String, properties: [Swift.String : Any], labels: [Swift.String : Any]?)
   public static func parseJSONString(_ jsonString: Swift.String) -> [Swift.String : Any]?
   public static func fetchLiquidAttributes(value: Swift.String) -> [Swift.String]
   public static func replaceAttributes(value: Swift.String, replacements: [Swift.String : Swift.String]) -> Swift.String?
@@ -235,6 +235,7 @@ public class Campaign {
   public var userFilter: [Plotline.Condition]
   public var userAttributes: [Swift.String]
   public var campaignType: Swift.String
+  public var labels: [Swift.String : Any]?
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
