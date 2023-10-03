@@ -77,6 +77,7 @@ public protocol PlotlineViewPositionCallback {
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
+  @_Concurrency.MainActor(unsafe) public var widgetId: Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
