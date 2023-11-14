@@ -375,6 +375,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
 - (void)registerInitCallbackWithCallback:(void (^ _Nonnull)(void))callback;
+- (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId;
@@ -511,6 +512,15 @@ SWIFT_CLASS("_TtC8Plotline12SmileyRating")
 @interface SmileyRating : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+@class UIWindow;
+
+SWIFT_CLASS("_TtC8Plotline11StudyDialog")
+@interface StudyDialog : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 
@@ -929,6 +939,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
 - (void)registerInitCallbackWithCallback:(void (^ _Nonnull)(void))callback;
+- (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId;
@@ -1065,6 +1076,15 @@ SWIFT_CLASS("_TtC8Plotline12SmileyRating")
 @interface SmileyRating : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+@class UIWindow;
+
+SWIFT_CLASS("_TtC8Plotline11StudyDialog")
+@interface StudyDialog : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 

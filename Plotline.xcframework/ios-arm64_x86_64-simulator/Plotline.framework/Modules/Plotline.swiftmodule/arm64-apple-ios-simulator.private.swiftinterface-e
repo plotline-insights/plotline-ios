@@ -388,9 +388,15 @@ public protocol InitCallback {
   public func setEventsBatchUploader(eventsBatchUploader: Plotline.EventsBatchUploader)
   public func getDecisionTask() -> Plotline.DecisionTask?
   public func setDecisionTask(decisionTask: Plotline.DecisionTask)
+  public func setupBackgroundListener()
+  @objc public func appMovedToBackground()
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
   public func getPlotlineRedirectUrlListener() -> ((Swift.String) -> ())?
+  public func setActiveStudy(activeStudy: Plotline.StudyDialog?)
+  public func getActiveStudy() -> Plotline.StudyDialog?
+  public func setAppInBackground(isAppInBackground: Swift.Bool)
+  public func getIsAppInBackground() -> Swift.Bool
   public static func getInstance() -> Plotline.Plotline
   public func initKeys(apiKey: Swift.String, userId: Swift.String)
   public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String)
@@ -704,6 +710,13 @@ public enum PopoverOption {
 }
 public protocol AnswerListener {
   func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StudyDialog : UIKit.UIView, Plotline.AnswerListener {
+  @_Concurrency.MainActor(unsafe) public func setQuestions(studyId: Swift.String, questionList: [Plotline.Question], showThankYouScreen: Swift.Bool, thankYouScreenText: Swift.String, hidePlotline: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor(unsafe) public static func fetchImageResourcesList(_ questions: [Plotline.Question]) -> [Swift.String]
+  @objc deinit
 }
 public class ScreenshotTask {
   public init(listener: @escaping () -> (), screenImage: UIKit.UIImage, elements: [[Swift.String : Any]])
