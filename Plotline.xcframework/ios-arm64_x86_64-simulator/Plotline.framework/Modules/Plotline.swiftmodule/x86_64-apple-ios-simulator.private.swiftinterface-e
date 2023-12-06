@@ -116,6 +116,16 @@ public class CarouselSettings {
 @_hasMissingDesignatedInitializers public class EventsBatchUploader {
   @objc deinit
 }
+public class FloaterSettings {
+  public var isFixed: Swift.Bool
+  public var showCloseButton: Swift.Bool
+  public var closeButtonUrl: Swift.String
+  public var closeButtonHeight: Swift.Int
+  public var closeButtonWidth: Swift.Int
+  public init(_ json: [Swift.String : Any])
+  public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class DebugHelper {
   public static func log(_ message: Swift.String)
   @objc deinit
@@ -375,6 +385,8 @@ public protocol InitCallback {
   public func setInitialized(initialized: Swift.Bool)
   public func getStudyShown() -> Swift.Bool
   public func setStudyShown(studyShown: Swift.Bool)
+  public func setStudyLandscapeWidth(studyLandscapeWidth: Swift.Int)
+  public func getStudyLandscapeWidth() -> Swift.Int
   public func isShouldRegisterAttributesEvents() -> Swift.Bool
   public func setShouldRegisterAttributesEvents(registerAttributesEvents: Swift.Bool)
   @objc public func registerInitCallback(callback: @escaping () -> ())
@@ -448,6 +460,7 @@ public class StepLayout {
   public var margin: [Swift.Int]
   public var padding: [Swift.Int]
   public var width: Swift.Int
+  public var landscapeWidth: Swift.Int
   public var height: Swift.Int
   public var alignX: Swift.String
   public var alignY: Swift.String
@@ -461,6 +474,7 @@ public class StepLayout {
   public var carouselSettings: Plotline.CarouselSettings
   public var videoSettings: Plotline.VideoSettings
   public var gridSettings: Plotline.GridSettings
+  public var floaterSettings: Plotline.FloaterSettings
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
