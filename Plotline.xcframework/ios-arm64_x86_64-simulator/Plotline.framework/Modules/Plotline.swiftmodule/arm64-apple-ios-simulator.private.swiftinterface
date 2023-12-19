@@ -72,6 +72,15 @@ public protocol PlotlineViewPositionCallback {
   public static func evaluatePostfix(exp: [Condition]) -> Swift.Bool
   @objc deinit
 }
+public class PStoryView {
+  public var storyId: Swift.String
+  public var lastViewedSlideIndex: Swift.Int32
+  public var lastUpdated: Swift.Int64
+  public init(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32, lastUpdated: Swift.Int64)
+  public init(storyView: StoryView)
+  public init()
+  @objc deinit
+}
 @objc public protocol PlotlineWidgetListener {
   @objc func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
 }
@@ -154,6 +163,12 @@ public class PWidget {
   public init()
   @objc deinit
 }
+public class StoryViewUpdateTask {
+  public init(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32)
+  @available(iOS 10.0, *)
+  public func execute()
+  @objc deinit
+}
 public class AttributeTask {
   public init(attributes: [Swift.String : Any])
   public func convertToString(input: Any) -> Swift.String
@@ -176,6 +191,7 @@ public class AttributeTask {
   public static func parseJSONString(_ jsonString: Swift.String) -> [Swift.String : Any]?
   public static func fetchLiquidAttributes(value: Swift.String) -> [Swift.String]
   public static func replaceAttributes(value: Swift.String, replacements: [Swift.String : Swift.String]) -> Swift.String?
+  public static func findButtonAction(overlayLayout: StepLayout) -> StepAction?
   @objc deinit
 }
 public struct CoachRing {
@@ -184,6 +200,24 @@ public struct CoachRing {
   public let controlCenter: CoreFoundation.CGPoint
   public let controlRadius: CoreFoundation.CGFloat
   public init?(controlCenter c: CoreFoundation.CGPoint, controlRadius cr: CoreFoundation.CGFloat, innerRect ir: CoreFoundation.CGRect, outerRect or: CoreFoundation.CGRect, overlappingAllowed: Swift.Bool = true, excenterShift: CoreFoundation.CGPoint? = nil, excenterRadius: CoreFoundation.CGFloat? = nil)
+}
+public class StorySettings {
+  public static let THUMBNAIL_TYPE_CIRCLE: Swift.String
+  public static let THUMBNAIL_TYPE_RECT: Swift.String
+  public var unseenBorderUrl: Swift.String
+  public var seenBorderUrl: Swift.String
+  public var thumbnailType: Swift.String
+  public var loadingUrl: Swift.String
+  public var closeButtonUrl: Swift.String
+  public var padding: [Swift.Int]
+  public var storyTitleStyle: StepStyles
+  public var slideTitleStyle: StepStyles
+  public var thumbnailSize: Swift.Int
+  public var borderSize: Swift.Int
+  public var interStorySpacing: Swift.Int
+  public init(_ json: [Swift.String : Any])
+  public init()
+  @objc deinit
 }
 public protocol FlowStepListener {
   func onShow(currentStepId: Swift.String)
@@ -298,6 +332,20 @@ public class CoreDataManager {
   public func removeAllWidgets()
   public func insertWidgetDataList(widgetDataList: [PWidget])
   public func getWidgetData(clientElementId: Swift.String) -> PWidget?
+  public func getStoryView(storyId: Swift.String) -> PStoryView?
+  public func insertStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32)
+  public func updateStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32?)
+  public func getStoryViewsWithIds(storyIds: [Swift.String]) -> [PStoryView]
+  @objc deinit
+}
+public class Story {
+  public var storyId: Swift.String
+  public var thumbnailImg: Swift.String
+  public var storyTitle: Swift.String
+  public var userFilters: [Condition]
+  public var slidesData: [Slide]
+  public init(json: [Swift.String : Any])
+  public static func convertStoryJSONArray(array: [[Swift.String : Any]]) -> [Story]
   @objc deinit
 }
 public class PEvent {
@@ -322,6 +370,16 @@ public class GridSettings {
 }
 public class Journey : Campaign {
   public init(json: [Swift.String : Any])
+  @objc deinit
+}
+public class Slide {
+  public var slideId: Swift.String
+  public var duration: Swift.Int
+  public var slideType: Swift.String
+  public var backgroundUrl: Swift.String
+  public var overlayLayout: StepLayout
+  public init(json: [Swift.String : Any])
+  public static func convertSlideJSONArray(array: [[Swift.String : Any]]) -> [Slide]
   @objc deinit
 }
 public class FetchWidgetTask {
@@ -443,6 +501,13 @@ public struct PLabelInternal : SwiftUI.ViewModifier {
 extension SwiftUI.View {
   public func PLabel(_ label: Swift.String) -> some SwiftUI.View
   
+}
+public class WidgetContent {
+  public var storiesData: [Story]
+  public var storySettings: StorySettings
+  public var isInitialized: Swift.Bool
+  public init(contentObject: [Swift.String : Any])
+  @objc deinit
 }
 public class EligibilityTask {
   public init(campaigns: [Campaign], eligibilityCallback: @escaping ([Campaign], [Campaign]) -> ())
@@ -612,6 +677,7 @@ public class Study : Campaign {
   public static func uploadScreenshotImage(clientPageId: Swift.String, imgFile: Swift.String, callback: @escaping (Swift.String) -> ())
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
   public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
+  public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]])
   @objc deinit
 }
@@ -622,6 +688,11 @@ public class StepAction {
   public var platform: Swift.String
   convenience public init()
   public init(_ json: [Swift.String : Any])
+  @objc deinit
+}
+public class StoryViewFetchTask {
+  public init(stories: [Story], storyViewedDataListener: @escaping (([Swift.String : Swift.Int32]?) -> ()))
+  public func execute()
   @objc deinit
 }
 public class QuestionModal {
@@ -821,9 +892,14 @@ public class Question {
   @objc deinit
 }
 public class Widget : Campaign {
+  public static let WIDGET_TYPE_DEFAULT: Swift.String
+  public static let WIDGET_TYPE_STORIES: Swift.String
   public var clientElementId: Swift.String
   public var stepData: FlowStep
   public var widgetData: [Swift.String : Any]
+  public var widgetType: Swift.String
+  public var ttl: (Swift.Int64)
+  public var content: WidgetContent
   public init(json: [Swift.String : Any])
   @objc deinit
 }
@@ -887,7 +963,30 @@ extension PlotlineEvent {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var properties: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var timestamps: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(StoryView) public class StoryView : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension StoryView {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<StoryView>
+  @objc @NSManaged dynamic public var lastUpdated: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastViewedSlideIndex: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var storyId: Swift.String? {
     @objc get
     @objc set
   }

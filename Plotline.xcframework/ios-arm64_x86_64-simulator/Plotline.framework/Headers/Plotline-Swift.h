@@ -410,6 +410,7 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @property (nonatomic, copy) NSString * _Nullable eventName;
 @property (nonatomic) int64_t firstUsed;
 @property (nonatomic) int64_t lastUsed;
+@property (nonatomic, copy) NSString * _Nullable properties;
 @property (nonatomic, copy) NSString * _Nullable timestamps;
 @end
 
@@ -512,6 +513,19 @@ SWIFT_CLASS("_TtC8Plotline12SmileyRating")
 @interface SmileyRating : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS_NAMED("StoryView")
+@interface StoryView : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface StoryView (SWIFT_EXTENSION(Plotline))
+@property (nonatomic) int64_t lastUpdated;
+@property (nonatomic) int32_t lastViewedSlideIndex;
+@property (nonatomic, copy) NSString * _Nullable storyId;
 @end
 
 @class UIWindow;
@@ -974,6 +988,7 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @property (nonatomic, copy) NSString * _Nullable eventName;
 @property (nonatomic) int64_t firstUsed;
 @property (nonatomic) int64_t lastUsed;
+@property (nonatomic, copy) NSString * _Nullable properties;
 @property (nonatomic, copy) NSString * _Nullable timestamps;
 @end
 
@@ -1076,6 +1091,19 @@ SWIFT_CLASS("_TtC8Plotline12SmileyRating")
 @interface SmileyRating : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS_NAMED("StoryView")
+@interface StoryView : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface StoryView (SWIFT_EXTENSION(Plotline))
+@property (nonatomic) int64_t lastUpdated;
+@property (nonatomic) int32_t lastViewedSlideIndex;
+@property (nonatomic, copy) NSString * _Nullable storyId;
 @end
 
 @class UIWindow;
