@@ -169,6 +169,12 @@ public class StoryViewUpdateTask {
   public func execute()
   @objc deinit
 }
+public class StorySearchTask {
+  public init(storyId: Swift.String, slideId: Swift.String?, widgetDataList: [PWidget], storySearchListener: ((Widget?, Swift.Int, Swift.Int) -> ())?)
+  @available(iOS 10.0, *)
+  public func execute()
+  @objc deinit
+}
 public class AttributeTask {
   public init(attributes: [Swift.String : Any])
   public func convertToString(input: Any) -> Swift.String
@@ -445,6 +451,10 @@ public protocol InitCallback {
   public func setStudyShown(studyShown: Swift.Bool)
   public func setStudyLandscapeWidth(studyLandscapeWidth: Swift.Int)
   public func getStudyLandscapeWidth() -> Swift.Int
+  public func getWidgetsData() -> [PWidget]
+  public func setWidgetsData(widgetsData: [PWidget])
+  public func getWidgetsDataListener() -> (([PWidget]) -> ())?
+  public func setWidgetsDataListener(widgetsDataListener: (([PWidget]) -> ())?)
   public func isShouldRegisterAttributesEvents() -> Swift.Bool
   public func setShouldRegisterAttributesEvents(registerAttributesEvents: Swift.Bool)
   @objc public func registerInitCallback(callback: @escaping () -> ())
@@ -489,6 +499,7 @@ public protocol InitCallback {
   @objc public static func setPlotlineEventsListener(listener: @escaping (Swift.String, [Swift.String : Any]) -> ())
   @objc public static func setPlotlineRedirectListener(listener: @escaping ([Swift.String : Swift.String]) -> ())
   @objc public static func setPlotlineRedirectUrlListener(listener: @escaping (Swift.String) -> ())
+  @objc public static func showStory(storyId: Swift.String, slideId: Swift.String?)
   @objc deinit
 }
 @available(iOS 13.0, *)
