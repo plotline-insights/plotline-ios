@@ -198,6 +198,7 @@ public class AttributeTask {
   public static func fetchLiquidAttributes(value: Swift.String) -> [Swift.String]
   public static func replaceAttributes(value: Swift.String, replacements: [Swift.String : Swift.String]) -> Swift.String?
   public static func findButtonAction(overlayLayout: Plotline.StepLayout) -> Plotline.StepAction?
+  public static func removeNonSerializableKeys(from dictionary: [Swift.String : Any]?) -> [Swift.String : Any]?
   @objc deinit
 }
 public struct CoachRing {
