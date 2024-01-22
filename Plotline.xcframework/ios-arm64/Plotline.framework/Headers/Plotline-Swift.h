@@ -529,11 +529,13 @@ SWIFT_CLASS_NAMED("StoryView")
 @property (nonatomic, copy) NSString * _Nullable storyId;
 @end
 
+@class UITouch;
 @class UIWindow;
 
 SWIFT_CLASS("_TtC8Plotline11StudyDialog")
 @interface StudyDialog : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
