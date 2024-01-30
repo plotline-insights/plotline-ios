@@ -1,7 +1,7 @@
 framework module Plotline {
   umbrella header "Plotline.h"
-
   export *
+
   module * { export * }
 }
 

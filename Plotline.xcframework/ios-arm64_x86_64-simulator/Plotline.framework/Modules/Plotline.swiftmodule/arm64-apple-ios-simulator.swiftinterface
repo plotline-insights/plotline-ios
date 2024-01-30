@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Plotline
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -12,10 +12,40 @@ import MediaPlayer
 import Swift
 import SwiftUI
 import UIKit
+import UserNotifications
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Prompt : UIKit.UIView {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PlotlinePush : ObjectiveC.NSObject {
+  public static let PRIORITY_ACTIVE: Swift.String
+  public static let PRIORITY_PASSIVE: Swift.String
+  public static let PRIORITY_TIME_SENSITIVE: Swift.String
+  @available(iOS 10.0, *)
+  public static func enablePush(_ self: any UserNotifications.UNUserNotificationCenterDelegate)
+  public static func requestPushPermission()
+  public static func incrementPushPermissionCount()
+  public static func setPushPermissionCount(count: Swift.Int)
+  public static func redirectToSettings()
+  public static func setPushToken(deviceToken: Foundation.Data)
+  public static func setPushPermissionGranted(granted: Swift.Bool)
+  @available(iOS 10.0, *)
+  public static func isPushPlotline(request: UserNotifications.UNNotificationRequest) -> Swift.Bool
+  public static func getPlotlinePushPermissionCount() -> Swift.Int
+  @available(iOS 10.0, *)
+  public static func onNotificationReceived(request: UserNotifications.UNNotificationRequest, contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
+  @available(iOS 10.0, *)
+  public static func onNotificationReceived(notification: UserNotifications.UNNotification, completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc public static func setPlotlinePushPermissionListener(listener: @escaping (Swift.Bool) -> ())
+  public func getPlotlinePushPermissionListener() -> ((Swift.Bool) -> ())?
+  @available(iOS 10.0, *)
+  public static func userNotificationCenter(center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
+  @available(iOS 10.0, *)
+  public static func getActionType(from response: UserNotifications.UNNotificationResponse) -> Swift.String
+  public static func getInstance() -> PlotlinePush
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Identify {
@@ -198,6 +228,8 @@ public class AttributeTask {
   public static func fetchLiquidAttributes(value: Swift.String) -> [Swift.String]
   public static func replaceAttributes(value: Swift.String, replacements: [Swift.String : Swift.String]) -> Swift.String?
   public static func findButtonAction(overlayLayout: StepLayout) -> StepAction?
+  public static func saveImageToTemporaryFile(_ image: UIKit.UIImage) -> Foundation.URL?
+  public static func cleanTemporaryDirectory()
   public static func removeNonSerializableKeys(from dictionary: [Swift.String : Any]?) -> [Swift.String : Any]?
   @objc deinit
 }
@@ -681,6 +713,7 @@ public class Study : Campaign {
 }
 @_hasMissingDesignatedInitializers public class PlotlineNetworkHelper {
   public static func getHeaders() -> [Swift.String : Any]
+  public static func getHeadersWhenInBackground() -> [Swift.String : Any]
   public static func initialize(callback: @escaping ([Swift.String : Any]) -> Swift.Void)
   public static func registerEvent(eventName: Swift.String, propertyKeys: [Swift.String]?)
   public static func registerAttributes(attributes: [Swift.String])
@@ -691,6 +724,9 @@ public class Study : Campaign {
   public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]])
+  public static func registerToken(token: Swift.String)
+  public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String)
+  public static func setPushPermissionGranted(granted: Swift.Bool)
   @objc deinit
 }
 public class StepAction {
