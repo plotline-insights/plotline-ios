@@ -414,6 +414,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setPlotlineRedirectListenerWithListener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
 + (void)setPlotlineRedirectUrlListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull))listener;
 + (void)showStoryWithStoryId:(NSString * _Nonnull)storyId slideId:(NSString * _Nullable)slideId;
++ (void)setShouldDisablePlotlineWithShouldDisablePlotline:(BOOL)shouldDisablePlotline;
 @end
 
 
@@ -439,6 +440,16 @@ SWIFT_CLASS("_TtC8Plotline22PlotlineFloatingButton")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC8Plotline20PlotlineGradientView")
+@interface PlotlineGradientView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Plotline
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
+import CommonCrypto
 import CoreData
 import CoreGraphics
 import CoreText
@@ -212,6 +213,12 @@ public class AttributeTask {
   public func execute()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PlotlineGradientView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class CompositeEventsTask {
   public static func getEligibleCompositeEvents(compositeEventsList: [[Swift.String : Any]], properties: [Swift.String : Any]) -> [Swift.String]
   public static func convertToString(input: Any) -> Swift.String?
@@ -254,6 +261,9 @@ public class StorySettings {
   public var thumbnailSize: Swift.Int
   public var borderSize: Swift.Int
   public var interStorySpacing: Swift.Int
+  public var backgroundImageHeight: Swift.Int
+  public var backgroundImageWidth: Swift.Int
+  public var backgroundImageBorderRadius: Swift.Int
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
@@ -383,6 +393,7 @@ public class Story {
   public var storyTitle: Swift.String
   public var userFilters: [Plotline.Condition]
   public var slidesData: [Plotline.Slide]
+  public var backgroundImg: Swift.String
   public init(json: [Swift.String : Any])
   public static func convertStoryJSONArray(array: [[Swift.String : Any]]) -> [Plotline.Story]
   @objc deinit
@@ -412,6 +423,8 @@ public class Journey : Plotline.Campaign {
   @objc deinit
 }
 public class Slide {
+  public static let SUB_STORY_IMG: Swift.String
+  public static let SUB_STORY_VIDEO: Swift.String
   public var slideId: Swift.String
   public var duration: Swift.Int
   public var slideType: Swift.String
@@ -448,6 +461,7 @@ public protocol InitCallback {
   public func getsLocale() -> Swift.String
   public func setsLocale(sLocale: Swift.String)
   public func getEvents() -> Swift.Set<Swift.String>
+  public func getShouldDisablePlotline() -> Swift.Bool
   public func setEvents(sEvents: Swift.Set<Swift.String>)
   public func getMetricEvents() -> Swift.Set<Swift.String>
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
@@ -533,6 +547,7 @@ public protocol InitCallback {
   @objc public static func setPlotlineRedirectListener(listener: @escaping ([Swift.String : Swift.String]) -> ())
   @objc public static func setPlotlineRedirectUrlListener(listener: @escaping (Swift.String) -> ())
   @objc public static func showStory(storyId: Swift.String, slideId: Swift.String?)
+  @objc public static func setShouldDisablePlotline(shouldDisablePlotline: Swift.Bool)
   @objc deinit
 }
 @available(iOS 13.0, *)
@@ -881,6 +896,7 @@ public class FlowStep {
   public var arrowHeight: Swift.Int
   public var layout: Plotline.StepLayout
   public var showAnimation: Swift.Bool
+  public var shouldDisableHighlightedButton: Swift.Bool
   public var spotlightRadius: Swift.Int
   public var spotlightPadding: Swift.Int
   public var audioUrl: Swift.String
