@@ -174,7 +174,7 @@ public class FloaterSettings {
   @objc deinit
 }
 public class EventTask {
-  public init(eventNames: Swift.Set<Swift.String>)
+  public init(eventNames: Swift.Set<Swift.String>, properties: [Swift.String : Any], codeEvent: Swift.String)
   @available(iOS 10.0, *)
   public func execute()
   @objc deinit
@@ -228,6 +228,7 @@ public class AttributeTask {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Utils {
+  public static var PROPERTY_VALUE_LENGTH_LIMIT: Swift.Int
   public static func currentTimeInMilliSeconds() -> Swift.Int64
   public static func getQueryParameter(url: Foundation.URL, paramName: Swift.String) -> Swift.String?
   public static func sendPlotlineEvent(eventName: Swift.String, properties: [Swift.String : Any], labels: [Swift.String : Any]?)
@@ -238,6 +239,9 @@ public class AttributeTask {
   public static func saveImageToTemporaryFile(_ image: UIKit.UIImage) -> Foundation.URL?
   public static func cleanTemporaryDirectory()
   public static func removeNonSerializableKeys(from dictionary: [Swift.String : Any]?) -> [Swift.String : Any]?
+  public static func mergeDictionaries(_ dict1: [Swift.String : Any], _ dict2: [Swift.String : Any]) -> [Swift.String : Any]
+  public static func getCleanedProperties(properties: [Swift.String : Any]?) -> [Swift.String : Any]?
+  public static func convertObjectToString(jsonObject: [Swift.String : Any]?) -> Swift.String
   @objc deinit
 }
 public struct CoachRing {
@@ -302,6 +306,7 @@ public protocol PageListener {
   public func setPosition(newX: Swift.Double, newY: Swift.Double)
   public static func getInstance() -> Flows
   public static func getActiveStepId() -> Swift.String
+  public static func showScreenshotDialog(userId: Swift.String)
   public static func showFloatingButton(view: UIKit.UIView)
   public static func getElementInView(view: UIKit.UIView, fragmentId: Swift.String, elementId: Swift.String) -> UIKit.UIView?
   public static func getPlotlineViewListener(view: UIKit.UIView, flowStep: FlowStep, stepListener: any FlowStepListener, plotlineViewListenerReady: @escaping ((any PlotlineViewListener)?) -> ())
@@ -330,6 +335,7 @@ public class Campaign {
   public var userAttributes: [Swift.String]
   public var campaignType: Swift.String
   public var labels: [Swift.String : Any]?
+  public var eventAttributes: [Swift.String : Any]
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
@@ -371,8 +377,8 @@ public class CoreDataManager {
   public static let shared: CoreDataManager
   public func loadContainer(completion: @escaping (Swift.Bool) -> ())
   public func getEvent(eventName: Swift.String) -> PEvent?
-  public func insertEvent(eventName: Swift.String)
-  public func updateEvent(eventName: Swift.String)
+  public func insertEvent(eventName: Swift.String, properties: [Swift.String : Any])
+  public func updateEvent(eventName: Swift.String, properties: [Swift.String : Any])
   public func getAttribute(attributeName: Swift.String) -> PAttribute?
   public func insertAttribute(attributeName: Swift.String, attributeValue: Swift.String)
   public func updateAttribute(attributeName: Swift.String, attributeValue: Swift.String?)
@@ -404,7 +410,8 @@ public class PEvent {
   public var lastUsed: Swift.Int64
   public var firstUsed: Swift.Int64
   public var timestamps: Swift.String?
-  public init(eventName: Swift.String, count: Swift.Int16, lastUsed: Swift.Int64, firstUsed: Swift.Int64, timestamps: Swift.String)
+  public var properties: Swift.String?
+  public init(eventName: Swift.String, count: Swift.Int16, lastUsed: Swift.Int64, firstUsed: Swift.Int64, timestamps: Swift.String, properties: Swift.String)
   public init(event: PlotlineEvent)
   public init()
   @objc deinit
@@ -464,6 +471,7 @@ public protocol InitCallback {
   public func getShouldDisablePlotline() -> Swift.Bool
   public func setEvents(sEvents: Swift.Set<Swift.String>)
   public func getMetricEvents() -> Swift.Set<Swift.String>
+  public func getShouldEnableScrollDelegates() -> Swift.Bool
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
   public func getMetricEventsType() -> Swift.String
   public func setsMetricEventsType(sMetricEventsType: Swift.String)
@@ -516,6 +524,8 @@ public protocol InitCallback {
   public func getDecisionTask() -> DecisionTask?
   public func setDecisionTask(decisionTask: DecisionTask)
   public func setupBackgroundListener()
+  public func getPageCaptureUsers() -> [Swift.String : Any]?
+  public func setPageCaptureUsers(pageCaptureUsersInput: [Swift.String : Any])
   @objc public func appMovedToBackground()
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
@@ -533,6 +543,7 @@ public protocol InitCallback {
   @objc public static func track(eventName: Swift.String, properties: [Swift.String : Any])
   @objc public static func identify(attributes: [Swift.String : Any])
   public static func getStudyWindow()
+  @objc public static func setShouldEnableScrollDelegates(shouldEnableScrollDelegates: Swift.Bool)
   @objc public static func showMockStudy()
   @objc public static func setLocale(locale: Swift.String)
   @objc public static func setColor(colors: [Swift.String : Swift.String])
