@@ -58886,7 +58886,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 7,
-      "value": "\"3.4.9\""
+      "value": "\"3.5.0\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -68796,56 +68796,56 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9808,
+      "offset": 9948,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10059,
+      "offset": 10199,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "StringLiteral",
-      "offset": 10527,
+      "offset": 10667,
       "length": 104,
       "value": "\"Launching Story with storyId \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "StringLiteral",
-      "offset": 10567,
+      "offset": 10707,
       "length": 1,
       "value": "\", slideId \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "StringLiteral",
-      "offset": 10587,
+      "offset": 10727,
       "length": 1,
       "value": "\", widgetsDataList: \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "StringLiteral",
-      "offset": 10630,
+      "offset": 10770,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11069,
+      "offset": 11209,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Stories\/StoriesStripView.swift",
       "kind": "FloatLiteral",
-      "offset": 11146,
+      "offset": 11286,
       "length": 3,
       "value": "0.1"
     },
