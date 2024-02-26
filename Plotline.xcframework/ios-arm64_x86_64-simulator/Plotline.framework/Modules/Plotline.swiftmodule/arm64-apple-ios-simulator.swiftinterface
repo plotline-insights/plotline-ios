@@ -213,6 +213,12 @@ public class AttributeTask {
   public func execute()
   @objc deinit
 }
+public class PreInitEvent {
+  public var eventName: Swift.String
+  public var properties: [Swift.String : Any]?
+  public init(eventName: Swift.String, properties: [Swift.String : Any]? = nil)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PlotlineGradientView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
     @objc get
@@ -239,7 +245,8 @@ public class AttributeTask {
   public static func saveImageToTemporaryFile(_ image: UIKit.UIImage) -> Foundation.URL?
   public static func cleanTemporaryDirectory()
   public static func removeNonSerializableKeys(from dictionary: [Swift.String : Any]?) -> [Swift.String : Any]?
-  public static func mergeDictionaries(_ dict1: [Swift.String : Any], _ dict2: [Swift.String : Any]) -> [Swift.String : Any]
+  public static func mergeDictionaries(_ originalDict: [Swift.String : Any], _ latestDict: [Swift.String : Any]) -> [Swift.String : Any]
+  public static func mergeDictionariesWithArrayValues(_ dict1: [Swift.String : Any], _ dict2: [Swift.String : Any]) -> [Swift.String : Any]
   public static func getCleanedProperties(properties: [Swift.String : Any]?) -> [Swift.String : Any]?
   public static func convertObjectToString(jsonObject: [Swift.String : Any]?) -> Swift.String
   @objc deinit
@@ -515,6 +522,12 @@ public protocol InitCallback {
   @objc public func registerInitCallback(callback: @escaping () -> ())
   public func getInitCallbacks() -> [() -> ()]
   public func clearCallBacks()
+  public func addPreInitEvent(eventName: Swift.String, properties: [Swift.String : Any]?)
+  public func getPreInitEvents() -> [PreInitEvent]
+  public func clearPreInitEvents()
+  public func addPreInitAttributes(attributes: [Swift.String : Any])
+  public func getPreInitAttributes() -> [Swift.String : Any]
+  public func clearPreInitAttributes()
   public func getSwiftUICoordinates() -> [Swift.String : (CoreFoundation.CGRect, Swift.Int64, Swift.Bool)]
   public func addSwiftUICoordinates(label: Swift.String, rect: CoreFoundation.CGRect)
   public func onSwiftUIViewDisappear(label: Swift.String)
