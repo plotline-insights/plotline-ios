@@ -1006,6 +1006,7 @@ public class ElementSearchObject {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ElementSearchTask : ObjectiveC.NSObject, UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) public func clearElementsCompleted()
   @_Concurrency.MainActor(unsafe) public func notifyScroll()
   @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor(unsafe) public func setPlotlineScrollListener(listener: (any Plotline.PlotlineScrollListener)?)
