@@ -125,6 +125,7 @@ public class PStoryView {
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc @_Concurrency.MainActor(unsafe) public func setPlotlineWidgetListener(plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
@@ -595,8 +596,7 @@ public class WidgetContent {
 public class EligibilityTask {
   public init(campaigns: [Plotline.Campaign], eligibilityCallback: @escaping ([Plotline.Campaign], [Plotline.Campaign]) -> ())
   public func execute()
-  public static func compareString(str1: Swift.String, str2: Swift.String) -> Swift.Int
-  public static func compareLong(value1: Swift.Int64, value2: Swift.Int64) -> Swift.Int
+  public static func compareValues<T>(value1: T, value2: T) -> Swift.Int where T : Swift.Comparable
   public static func compareStrings(s1: Swift.String, s2: Swift.String) -> Swift.Int
   public static func checkEligibilityForCampaign(userFilter: [Plotline.Condition]) -> Swift.Bool
   @objc deinit
