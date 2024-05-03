@@ -71,7 +71,7 @@ public class StepStyles {
   public var borderSize: Swift.Int
   public var borderColor: Swift.String
   public var borderRadius: Swift.Int
-  public var fontSize: Swift.Int
+  public var fontSize: Swift.Double
   public var fontColor: Swift.String
   public var fontSpacing: Swift.Float
   public var fontWeight: Swift.Int
@@ -244,6 +244,8 @@ public class PreInitEvent {
   public static func replaceAttributes(value: Swift.String, replacements: [Swift.String : Swift.String]) -> Swift.String?
   public static func findButtonAction(overlayLayout: Plotline.StepLayout) -> Plotline.StepAction?
   public static func saveImageToTemporaryFile(_ image: UIKit.UIImage) -> Foundation.URL?
+  public static func getScreenOrientation() -> Swift.String
+  public static func isIpad() -> Swift.Bool
   public static func cleanTemporaryDirectory()
   public static func removeNonSerializableKeys(from dictionary: [Swift.String : Any]?) -> [Swift.String : Any]?
   public static func mergeDictionaries(_ originalDict: [Swift.String : Any], _ latestDict: [Swift.String : Any]) -> [Swift.String : Any]
@@ -267,15 +269,15 @@ public class StorySettings {
   public var thumbnailType: Swift.String
   public var loadingUrl: Swift.String
   public var closeButtonUrl: Swift.String
-  public var padding: [Swift.Int]
+  public var padding: [Swift.Double]
   public var storyTitleStyle: Plotline.StepStyles
   public var slideTitleStyle: Plotline.StepStyles
-  public var thumbnailSize: Swift.Int
-  public var borderSize: Swift.Int
-  public var interStorySpacing: Swift.Int
-  public var backgroundImageHeight: Swift.Int
-  public var backgroundImageWidth: Swift.Int
-  public var backgroundImageBorderRadius: Swift.Int
+  public var thumbnailSize: Swift.Double
+  public var borderSize: Swift.Double
+  public var interStorySpacing: Swift.Double
+  public var backgroundImageHeight: Swift.Double
+  public var backgroundImageWidth: Swift.Double
+  public var backgroundImageBorderRadius: Swift.Double
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
@@ -602,20 +604,23 @@ public class EligibilityTask {
   @objc deinit
 }
 public class StepLayout {
+  public static var DISTRIBUTION_TYPE_EQUAL: Swift.String
+  public static var DISTRIBUTION_TYPE_UNEQUAL: Swift.String
   public var isInitialized: Swift.Bool
   public var offsetX: Swift.Int
   public var offsetY: Swift.Int
-  public var margin: [Swift.Int]
-  public var padding: [Swift.Int]
-  public var width: Swift.Int
+  public var margin: [Swift.Double]
+  public var padding: [Swift.Double]
+  public var width: Swift.Double
   public var landscapeWidth: Swift.Int
-  public var height: Swift.Int
+  public var height: Swift.Double
   public var alignX: Swift.String
   public var alignY: Swift.String
   public var layoutDirection: Swift.String
   public var value: Swift.String
   public var layoutType: Swift.String
   public var styles: Plotline.StepStyles
+  public var distribution: Swift.String
   public var layoutWeight: Swift.Int
   public var layouts: [Plotline.StepLayout]
   public var onAction: Plotline.StepAction
@@ -942,6 +947,8 @@ public class FlowStep {
   public static var TYPE_FLOATER: Swift.String
   public static var TYPE_PIPVIDEO: Swift.String
   public static var TYPE_WIDGET: Swift.String
+  public static var TYPE_FULLPAGEMODAL: Swift.String
+  public static var TYPE_FULLPAGECONTENT: Swift.String
   public static var TYPES_ELEMENT: [Swift.String]
   public init(json: [Swift.String : Any])
   @objc deinit
