@@ -378,7 +378,7 @@ public class InitTask {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineFloatingButton : UIKit.UIStackView {
-  @_Concurrency.MainActor(unsafe) public var tvViewController: UIKit.UITextView?
+  @_Concurrency.MainActor(unsafe) public var tvViewController: UIKit.UILabel?
   @_Concurrency.MainActor(unsafe) public func setClickListener(listener: @escaping () -> ())
   @objc deinit
 }
@@ -771,6 +771,7 @@ public class Study : Campaign {
   public static func registerToken(token: Swift.String)
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String)
   public static func setPushPermissionGranted(granted: Swift.Bool)
+  public static func removePageCaptureUser()
   @objc deinit
 }
 public class StepAction {

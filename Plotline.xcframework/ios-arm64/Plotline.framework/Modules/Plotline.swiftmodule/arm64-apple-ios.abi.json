@@ -15109,21 +15109,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "UIKit.UITextView?",
+                "printedName": "UIKit.UILabel?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UITextView",
-                    "printedName": "UIKit.UITextView",
-                    "usr": "c:objc(cs)UITextView"
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvp",
-            "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvp",
+            "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvp",
+            "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvp",
             "moduleName": "Plotline",
             "declAttributes": [
               "HasInitialValue",
@@ -15141,21 +15141,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "UIKit.UITextView?",
+                    "printedName": "UIKit.UILabel?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UITextView",
-                        "printedName": "UIKit.UITextView",
-                        "usr": "c:objc(cs)UITextView"
+                        "name": "UILabel",
+                        "printedName": "UIKit.UILabel",
+                        "usr": "c:objc(cs)UILabel"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvg",
-                "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvg",
+                "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvg",
+                "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvg",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15173,21 +15173,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "UIKit.UITextView?",
+                    "printedName": "UIKit.UILabel?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UITextView",
-                        "printedName": "UIKit.UITextView",
-                        "usr": "c:objc(cs)UITextView"
+                        "name": "UILabel",
+                        "printedName": "UIKit.UILabel",
+                        "usr": "c:objc(cs)UILabel"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvs",
-                "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvs",
+                "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvs",
+                "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvs",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "set"
@@ -15204,8 +15204,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvM",
-                "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo06UITextE0CSgvM",
+                "usr": "s:8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvM",
+                "mangledName": "$s8Plotline0A14FloatingButtonC16tvViewControllerSo7UILabelCSgvM",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -32329,6 +32329,28 @@
             "declKind": "Func",
             "usr": "s:8Plotline0A13NetworkHelperC24setPushPermissionGranted7grantedySb_tFZ",
             "mangledName": "$s8Plotline0A13NetworkHelperC24setPushPermissionGranted7grantedySb_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removePageCaptureUser",
+            "printedName": "removePageCaptureUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline0A13NetworkHelperC21removePageCaptureUseryyFZ",
+            "mangledName": "$s8Plotline0A13NetworkHelperC21removePageCaptureUseryyFZ",
             "moduleName": "Plotline",
             "static": true,
             "declAttributes": [
@@ -60103,7 +60125,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 7,
-      "value": "\"3.6.0\""
+      "value": "\"3.6.1\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -60934,79 +60956,93 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "StringLiteral",
-      "offset": 328,
+      "offset": 325,
       "length": 16,
-      "value": "\"Capture Screen\""
+      "value": "\"Capture screen\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 414,
+      "offset": 411,
       "length": 2,
-      "value": "12"
+      "value": "14"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "StringLiteral",
-      "offset": 481,
+      "offset": 533,
       "length": 9,
-      "value": "\"#5d5bfd\""
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "StringLiteral",
-      "offset": 559,
-      "length": 9,
-      "value": "\"#eef0ff\""
+      "value": "\"#6C2EEE\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 623,
+      "offset": 597,
       "length": 2,
-      "value": "12"
+      "value": "10"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 633,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 644,
+      "offset": 607,
       "length": 2,
-      "value": "12"
+      "value": "24"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 655,
-      "length": 1,
-      "value": "4"
+      "offset": 619,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 630,
+      "length": 2,
+      "value": "24"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "FloatLiteral",
-      "offset": 694,
+      "offset": 670,
       "length": 3,
-      "value": "3.0"
+      "value": "4.0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "FloatLiteral",
-      "offset": 887,
-      "length": 5,
-      "value": "180.0"
+      "kind": "StringLiteral",
+      "offset": 724,
+      "length": 17,
+      "value": "\"plotline_camera\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 944,
+      "offset": 942,
       "length": 1,
-      "value": "2"
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 951,
+      "length": 3,
+      "value": "-10"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 964,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 974,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
@@ -61017,234 +61053,290 @@
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1073,
-      "length": 3,
-      "value": "100"
+      "kind": "BooleanLiteral",
+      "offset": 1140,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1319,
+      "length": 16,
+      "value": "\"Stop capturing\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1412,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "StringLiteral",
+      "offset": 1487,
       "length": 9,
-      "value": "\"#f5f5f5\""
+      "value": "\"#FF3B30\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 1410,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1447,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1496,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1505,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1517,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1527,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1581,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "StringLiteral",
-      "offset": 1723,
-      "length": 14,
-      "value": "\"PlotlineLogo\""
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "StringLiteral",
-      "offset": 1923,
-      "length": 14,
-      "value": "\"PlotlineLogo\""
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2040,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2055,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2122,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2137,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "StringLiteral",
-      "offset": 2245,
-      "length": 9,
-      "value": "\"#6839b7\""
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2491,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2556,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2566,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2577,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2588,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2656,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "StringLiteral",
-      "offset": 2813,
-      "length": 65,
-      "value": "\"Current Screen Name: \""
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "StringLiteral",
-      "offset": 2877,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "StringLiteral",
-      "offset": 2992,
-      "length": 6,
-      "value": "\"#aaa\""
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3056,
+      "offset": 1743,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 3179,
+      "offset": 1752,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 3250,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3266,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3341,
+      "offset": 1763,
       "length": 2,
-      "value": "40"
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1774,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 3356,
+      "offset": 1874,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 2265,
+      "length": 5,
+      "value": "220.0"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2322,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2374,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2464,
+      "length": 3,
+      "value": "140"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "StringLiteral",
+      "offset": 2732,
+      "length": 9,
+      "value": "\"#F9F7FC\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2799,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2835,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2885,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2894,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2905,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2915,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2968,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "StringLiteral",
+      "offset": 3103,
+      "length": 21,
+      "value": "\"plotline_logo_small\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3338,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3353,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 3509,
-      "length": 3,
-      "value": "120"
+      "offset": 3541,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 3525,
+      "offset": 3609,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3677,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3693,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3846,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4094,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4193,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4294,
+      "length": 2,
+      "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4392,
+      "length": 2,
+      "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "StringLiteral",
+      "offset": 4479,
+      "length": 44,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "StringLiteral",
+      "offset": 4522,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "StringLiteral",
+      "offset": 4619,
+      "length": 9,
+      "value": "\"#333333\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4677,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4777,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4968,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/PlotlineFloatingButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5146,
+      "length": 2,
+      "value": "12"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/CoreData\/CoreDataManager.swift",
@@ -72641,6 +72733,27 @@
       "offset": 20325,
       "length": 3,
       "value": "200"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Utilities\/PlotlineNetworkHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 20535,
+      "length": 75,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Utilities\/PlotlineNetworkHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 20575,
+      "length": 1,
+      "value": "\"\/sdk\/page\/remove-page-capture-user\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Utilities\/PlotlineNetworkHelper.swift",
+      "kind": "Dictionary",
+      "offset": 20701,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Carousel\/PlotlineCarousel.swift",
