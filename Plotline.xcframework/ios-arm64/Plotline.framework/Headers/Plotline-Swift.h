@@ -371,6 +371,7 @@ SWIFT_CLASS("_TtC8Plotline24MultiChoiceSingleCorrect")
 SWIFT_CLASS("_TtC8Plotline8OpenText")
 @interface OpenText : UIView <UITextViewDelegate>
 - (void)textViewDidBeginEditing:(UITextView * _Nonnull)textbox;
+- (void)textViewDidChange:(UITextView * _Nonnull)textView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
@@ -403,7 +404,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
-+ (void)setColorWithColors:(NSDictionary<NSString *, NSString *> * _Nonnull)colors;
++ (void)setColorWithColors:(NSDictionary<NSString *, id> * _Nonnull)colors;
 + (void)trackPageWithPageName:(NSString * _Nonnull)pageName;
 + (void)initAlong:(NSURL * _Nonnull)url SWIFT_METHOD_FAMILY(none);
 + (void)debugWithShouldDebug:(BOOL)shouldDebug;

@@ -252,6 +252,7 @@ public class PreInitEvent {
   public static func mergeDictionariesWithArrayValues(_ dict1: [Swift.String : Any], _ dict2: [Swift.String : Any]) -> [Swift.String : Any]
   public static func getCleanedProperties(properties: [Swift.String : Any]?) -> [Swift.String : Any]?
   public static func convertObjectToString(jsonObject: [Swift.String : Any]?) -> Swift.String
+  public static func isFontValid(fontStyle: StepStyles?) -> Swift.Bool
   @objc deinit
 }
 public struct CoachRing {
@@ -323,7 +324,7 @@ public protocol PageListener {
   public static func showFlow(view: UIKit.UIView, flowStep: FlowStep, stepListener: any FlowStepListener)
   @objc deinit
 }
-public class Color {
+public class SurveySettings {
   public var background: Swift.String
   public var description: Swift.String
   public var title: Swift.String
@@ -334,8 +335,12 @@ public class Color {
   public var buttonText: Swift.String
   public var progressValue: Swift.String
   public var progressBackground: Swift.String
+  public var studyTitleStyle: StepStyles
+  public var studyDescriptionStyle: StepStyles
+  public var studyOptionStyle: StepStyles
+  public var studyButtonStyle: StepStyles
   public init()
-  public func setColor(colors: [Swift.String : Swift.String])
+  public func setSurveySettings(surveySettings: [Swift.String : Any])
   @objc deinit
 }
 public class Campaign {
@@ -473,8 +478,8 @@ public protocol InitCallback {
   public func getEndpoint() -> Swift.String
   public func setEndpoint(sEndpoint: Swift.String)
   public func getDefaultAttributes() -> Attributes
-  public func getsColors() -> Color
-  public func setsColors(sColors: [Swift.String : Swift.String])
+  public func getsColors() -> SurveySettings
+  public func setsColors(sColors: [Swift.String : Any])
   public func getsLocale() -> Swift.String
   public func setsLocale(sLocale: Swift.String)
   public func getEvents() -> Swift.Set<Swift.String>
@@ -562,7 +567,7 @@ public protocol InitCallback {
   @objc public static func setShouldEnableScrollDelegates(shouldEnableScrollDelegates: Swift.Bool)
   @objc public static func showMockStudy()
   @objc public static func setLocale(locale: Swift.String)
-  @objc public static func setColor(colors: [Swift.String : Swift.String])
+  @objc public static func setColor(colors: [Swift.String : Any])
   @objc public static func trackPage(pageName: Swift.String)
   @objc public static func initAlong(_ url: Foundation.URL)
   @objc public static func debug(shouldDebug: Swift.Bool)
@@ -736,6 +741,7 @@ public class FlowStore {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OpenText : UIKit.UIView, UIKit.UITextViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc public func textViewDidBeginEditing(_ textbox: UIKit.UITextView)
+  @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DecisionTask {
@@ -895,6 +901,7 @@ public protocol AnswerListener {
   @_Concurrency.MainActor(unsafe) public func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) public static func fetchImageResourcesList(_ questions: [Question]) -> [Swift.String]
+  @_Concurrency.MainActor(unsafe) public static func fetchFontResourcesList() -> [Swift.String]
   @objc deinit
 }
 public class ScreenshotTask {
@@ -974,6 +981,11 @@ public class Question {
   public var promoterColor: Swift.String
   public var passiveColor: Swift.String
   public var detractorColor: Swift.String
+  public var content: StepLayout?
+  public static let TEXT_TYPE_TITLE: Swift.String
+  public static let TEXT_TYPE_DESCRIPTION: Swift.String
+  public static let TEXT_TYPE_OPTION_TEXT: Swift.String
+  public static let TEXT_TYPE_BUTTON_TEXT: Swift.String
   public static let TYPE_MCQ_SINGLE: Swift.String
   public static let TYPE_MCQ_MULTIPLE: Swift.String
   public static let TYPE_OPEN_TEXT: Swift.String
