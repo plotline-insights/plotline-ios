@@ -633,6 +633,7 @@ public class StepLayout {
   public var videoSettings: Plotline.VideoSettings
   public var gridSettings: Plotline.GridSettings
   public var floaterSettings: Plotline.FloaterSettings
+  weak public var webview: WebKit.WKWebView?
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
