@@ -902,6 +902,7 @@ public protocol AnswerListener {
   @_Concurrency.MainActor(unsafe) public func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) public static func fetchImageResourcesList(_ questions: [Plotline.Question]) -> [Swift.String]
+  @_Concurrency.MainActor(unsafe) public static func fetchWebviewsList(_ questions: [Plotline.Question]) -> [Plotline.StepLayout]
   @_Concurrency.MainActor(unsafe) public static func fetchFontResourcesList() -> [Swift.String]
   @objc deinit
 }

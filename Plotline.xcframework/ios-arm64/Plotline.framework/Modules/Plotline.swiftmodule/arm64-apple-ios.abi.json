@@ -39252,6 +39252,52 @@
           },
           {
             "kind": "Function",
+            "name": "fetchWebviewsList",
+            "printedName": "fetchWebviewsList(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Plotline.StepLayout]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepLayout",
+                    "printedName": "Plotline.StepLayout",
+                    "usr": "s:8Plotline10StepLayoutC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Plotline.Question]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Question",
+                    "printedName": "Plotline.Question",
+                    "usr": "s:8Plotline8QuestionC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline11StudyDialogC17fetchWebviewsListySayAA10StepLayoutCGSayAA8QuestionCGFZ",
+            "mangledName": "$s8Plotline11StudyDialogC17fetchWebviewsListySayAA10StepLayoutCGSayAA8QuestionCGFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fetchFontResourcesList",
             "printedName": "fetchFontResourcesList()",
             "children": [
@@ -61082,7 +61128,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 7,
-      "value": "\"3.6.3\""
+      "value": "\"3.6.4\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -77348,14 +77394,28 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "Array",
-      "offset": 17233,
+      "offset": 17259,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "StringLiteral",
-      "offset": 17583,
+      "offset": 17367,
+      "length": 9,
+      "value": "\"WEBVIEW\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
+      "kind": "Array",
+      "offset": 17577,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
+      "kind": "StringLiteral",
+      "offset": 17927,
       "length": 2,
       "value": "\"\""
     },
@@ -78174,70 +78234,70 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 6889,
+      "offset": 7280,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 7177,
+      "offset": 7568,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 9543,
+      "offset": 9934,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 9736,
+      "offset": 10127,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "StringLiteral",
-      "offset": 9759,
+      "offset": 10150,
       "length": 16,
       "value": "\"Download Error\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 9783,
+      "offset": 10174,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 9960,
+      "offset": 10351,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 10416,
+      "offset": 10807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 10686,
+      "offset": 11077,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 10832,
+      "offset": 11223,
       "length": 5,
       "value": "false"
     },
