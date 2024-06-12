@@ -279,6 +279,8 @@ public class StorySettings {
   public var backgroundImageHeight: Swift.Double
   public var backgroundImageWidth: Swift.Double
   public var backgroundImageBorderRadius: Swift.Double
+  public var favouriteIcon: Swift.String
+  public var favouriteIconSize: Swift.Int
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
@@ -415,6 +417,7 @@ public class Story {
   public var userFilters: [Condition]
   public var slidesData: [Slide]
   public var backgroundImg: Swift.String
+  public var isFavourite: Swift.Bool
   public init(json: [Swift.String : Any])
   public static func convertStoryJSONArray(array: [[Swift.String : Any]]) -> [Story]
   @objc deinit
