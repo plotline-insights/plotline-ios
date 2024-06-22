@@ -776,6 +776,7 @@ public class Study : Campaign {
   public static func uploadScreenshotImage(clientPageId: Swift.String, imgFile: Swift.String, callback: @escaping (Swift.String) -> ())
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
   public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil)
+  public static func saveWidgetControlGroup(widgetId: Swift.String)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]])
   public static func registerToken(token: Swift.String)
@@ -1014,6 +1015,7 @@ public class Widget : Campaign {
   public var widgetType: Swift.String
   public var ttl: (Swift.Int64)
   public var content: WidgetContent
+  public var inTargetGroup: Swift.Bool
   public init(json: [Swift.String : Any])
   @objc deinit
 }
