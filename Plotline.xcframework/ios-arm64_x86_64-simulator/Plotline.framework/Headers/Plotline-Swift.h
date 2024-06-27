@@ -598,6 +598,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
 SWIFT_CLASS_NAMED("WidgetData")
 @interface WidgetData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -1205,6 +1206,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end
+
 
 
 

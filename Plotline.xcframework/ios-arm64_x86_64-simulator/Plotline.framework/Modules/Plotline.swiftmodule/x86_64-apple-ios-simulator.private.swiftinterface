@@ -79,6 +79,7 @@ public class StepStyles {
   public var textDecoration: [Swift.String]
   public var fontFamily: Swift.String
   public var fontURL: Swift.String
+  public var shouldAnimate: Swift.Bool
   public init(_ json: [Swift.String : Any])
   @objc deinit
 }
@@ -253,6 +254,11 @@ public class PreInitEvent {
   public static func getCleanedProperties(properties: [Swift.String : Any]?) -> [Swift.String : Any]?
   public static func convertObjectToString(jsonObject: [Swift.String : Any]?) -> Swift.String
   public static func isFontValid(fontStyle: StepStyles?) -> Swift.Bool
+  public static func startBounceAnimation(view: UIKit.UIView)
+  public static func applyInitialState(buttonView: UIKit.UIButton, styles: StepStyles)
+  public static func getChangedAttributedTitleColor(buttonView: UIKit.UIButton, color: Swift.String?) -> Foundation.NSAttributedString?
+  public static func animateButtonTitleColor(buttonView: UIKit.UIButton, fromTextColor: UIKit.UIColor, toTextColor: UIKit.UIColor, duration: Swift.Double)
+  public static func animateButton(buttonView: UIKit.UIButton, styles: StepStyles, stepLayout: StepLayout)
   @objc deinit
 }
 public struct CoachRing {
@@ -455,6 +461,7 @@ public class Slide {
   public var slideType: Swift.String
   public var backgroundUrl: Swift.String
   public var overlayLayout: StepLayout
+  public var slideBackgroundColor: Swift.String
   public init(json: [Swift.String : Any])
   public static func convertSlideJSONArray(array: [[Swift.String : Any]]) -> [Slide]
   @objc deinit
@@ -550,6 +557,8 @@ public protocol InitCallback {
   public func setupBackgroundListener()
   public func getPageCaptureUsers() -> [Swift.String : Any]?
   public func setPageCaptureUsers(pageCaptureUsersInput: [Swift.String : Any])
+  public func setMinVideoAnalyticsDuration(minVideoAnalyticsDuration: Swift.Int)
+  public func getMinVideoAnalyticsDuration() -> Swift.Int
   @objc public func appMovedToBackground()
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
