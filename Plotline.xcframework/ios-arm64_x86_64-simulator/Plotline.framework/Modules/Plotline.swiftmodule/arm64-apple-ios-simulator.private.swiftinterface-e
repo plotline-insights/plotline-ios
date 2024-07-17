@@ -584,7 +584,7 @@ public protocol InitCallback {
   @objc public static func initAlong(_ url: Foundation.URL)
   @objc public static func debug(shouldDebug: Swift.Bool)
   @objc public static func getPlotlineWebViewController() -> WebKit.WKUserContentController
-  @objc public static func setWebView(webView: WebKit.WKWebView)
+  @objc public static func setWebView(webView: WebKit.WKWebView?)
   @objc public static func logout()
   @objc public static func notifyScroll()
   @objc public static func setPlotlineEventsListener(listener: @escaping (Swift.String, [Swift.String : Any]) -> ())

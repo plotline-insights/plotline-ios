@@ -23181,14 +23181,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "WKWebView",
-                "printedName": "WebKit.WKWebView",
-                "usr": "c:objc(cs)WKWebView"
+                "name": "Optional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@Plotline@objc(cs)Plotline(cm)setWebViewWithWebView:",
-            "mangledName": "$s8PlotlineAAC10setWebView03webD0ySo05WKWebD0C_tFZ",
+            "mangledName": "$s8PlotlineAAC10setWebView03webD0ySo05WKWebD0CSg_tFZ",
             "moduleName": "Plotline",
             "static": true,
             "objc_name": "setWebViewWithWebView:",
@@ -62354,7 +62362,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 7,
-      "value": "\"3.7.0\""
+      "value": "\"3.7.1\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -65257,28 +65265,28 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 20322,
+      "offset": 20323,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 20341,
+      "offset": 20342,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 20459,
+      "offset": 20460,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 20661,
+      "offset": 20662,
       "length": 2,
       "value": "[]"
     },
@@ -76520,443 +76528,499 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 902,
+      "offset": 903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 906,
+      "offset": 907,
       "length": 8,
       "value": "10000000"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1154,
+      "offset": 1155,
       "length": 10,
       "value": "\"Plotline\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1425,
+      "offset": 1426,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1589,
+      "offset": 1590,
       "length": 1222,
       "value": "\"    javascript:(function() {\n        var url = new URL(window.location.href);\n        var hostname = url.hostname;\n        var elements = document.getElementsByTagName('*');\n        \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1831,
       "length": 3,
       "value": "\"\n        var elementsArray = [];\n        for (var i = 0; i < elements.length; i++) {\n            var element = elements[i];\n            var rect = element.getBoundingClientRect();\n            var elementObject = {\n                'clientFragmentId':  hostname,\n                'clientElementId': element.id,\n                'position': {\n                    'x': Math.round(rect.left),\n                    'y': Math.round(rect.top),\n                    'width': Math.round(rect.width),\n                    'height': Math.round(rect.height),\n                 }\n            };\n            if (!isHidden(element)) elementsArray.push(elementObject);\n        }\n        window.webkit.messageHandlers.Plotline.postMessage({type: 'getAllElements', listenerId: '\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2732,
+      "offset": 2733,
       "length": 50,
       "value": "\"', elementsArray: JSON.stringify(elementsArray)});\n    })()\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3216,
+      "offset": 3217,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "Array",
-      "offset": 3561,
+      "offset": 3562,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3668,
+      "offset": 3669,
       "length": 38,
       "value": "\"JSON Array String \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3705,
+      "offset": 3706,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3756,
+      "offset": 3757,
       "length": 1115,
       "value": "\"    javascript:(function() {\n        var url = new URL(window.location.href);\n        var hostname = url.hostname;\n        \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3946,
+      "offset": 3947,
       "length": 3,
       "value": "\"\n        var elementSearchObjects = \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4012,
+      "offset": 4013,
       "length": 1,
       "value": "\";\n        var elementSearchObjectsPresent = [];\n        for (let i = 0; i < elementSearchObjects.length; i++) {\n            var searchObj = elementSearchObjects[i];\n            if (searchObj.clientFragmentId !== hostname) continue;\n            var element = document.getElementById(searchObj.clientElementId);\n            if (!element || isHidden(element)) continue;\n            elementSearchObjectsPresent.push(searchObj);\n        }\n        window.webkit.messageHandlers.Plotline.postMessage({\n            type: 'viewsPresent',\n            listenerId: '\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4711,
+      "offset": 4712,
       "length": 2,
       "value": "\"',\n            elementSearchObjectsPresent: JSON.stringify(elementSearchObjectsPresent)\n        });\n    })()\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5302,
+      "offset": 5303,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5456,
+      "offset": 5457,
       "length": 1207,
       "value": "\"    javascript:(function() {\n        var url = new URL(window.location.href);\n        var hostname = url.hostname;\n        \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5630,
+      "offset": 5631,
       "length": 2,
       "value": "\"\n        if (hostname !== '\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5684,
+      "offset": 5685,
       "length": 4,
       "value": "\"') {\n            window.webkit.messageHandlers.Plotline.postMessage({type: 'viewPosition', listenerId: '', position: ''});\n            return;\n        }\n        var element = document.getElementById('\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5934,
+      "offset": 5935,
       "length": 3,
       "value": "\"');\n        if (!element || isHidden(element)) {\n            window.webkit.messageHandlers.Plotline.postMessage({type: 'viewPosition', listenerId: '', position: ''});\n            return;\n        }\n        var rect = element.getBoundingClientRect();\n        var position = {\n            'x': Math.round(rect.left),\n            'y': Math.round(rect.top),\n            'width': Math.round(rect.width),\n            'height': Math.round(rect.height),\n        };\n        window.webkit.messageHandlers.Plotline.postMessage({type: 'viewPosition', listenerId: '\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6594,
+      "offset": 6595,
       "length": 40,
       "value": "\"', position: JSON.stringify(position)});\n    })()\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6803,
+      "offset": 6804,
       "length": 422,
       "value": "\"function isHidden(el) {\n    var rect = el.getBoundingClientRect();\n    return (el.offsetParent === null\n        || rect.width == 0\n        || rect.height == 0\n        || !el.id\n        || rect.top < 0\n        || rect.left < 0\n        || rect.bottom > (window.innerHeight || document.documentElement.clientHeight) + 1\n        || rect.right > (window.innerWidth || document.documentElement.clientWidth) + 1\n    );\n};\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7441,
+      "offset": 7442,
       "length": 10,
       "value": "\"Plotline\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7522,
+      "offset": 7523,
       "length": 34,
       "value": "\"Received message: \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7555,
+      "offset": 7556,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7628,
+      "offset": 7629,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7693,
+      "offset": 7758,
       "length": 12,
       "value": "\"listenerId\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7832,
+      "offset": 7786,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 7847,
       "length": 16,
       "value": "\"getAllElements\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8175,
+      "offset": 8190,
       "length": 15,
       "value": "\"elementsArray\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "Array",
-      "offset": 8414,
+      "offset": 8429,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "Array",
-      "offset": 8767,
+      "offset": 8782,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 8952,
+      "offset": 8967,
       "length": 10,
       "value": "\"position\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9043,
+      "offset": 9058,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9117,
+      "offset": 9132,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "Dictionary",
-      "offset": 9402,
+      "offset": 9417,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9454,
+      "offset": 9469,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9629,
+      "offset": 9644,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 9758,
+      "offset": 9773,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9859,
+      "offset": 9874,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10003,
+      "offset": 10018,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10023,
+      "offset": 10038,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10080,
+      "offset": 10095,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10101,
+      "offset": 10116,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10165,
+      "offset": 10180,
       "length": 10,
       "value": "\"position\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10512,
+      "offset": 10527,
       "length": 47,
       "value": "\"Failed to deserialize elementsArray: \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10558,
+      "offset": 10573,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 10661,
+      "offset": 10676,
       "length": 14,
       "value": "\"viewsPresent\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 11001,
+      "offset": 11016,
       "length": 29,
       "value": "\"elementSearchObjectsPresent\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "Array",
-      "offset": 11250,
+      "offset": 11265,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 11565,
+      "offset": 11580,
       "length": 47,
       "value": "\"Failed to deserialize elementsArray: \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 11611,
+      "offset": 11626,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 11714,
+      "offset": 11729,
       "length": 14,
       "value": "\"viewPosition\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12060,
+      "offset": 12075,
       "length": 10,
       "value": "\"position\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "Array",
-      "offset": 12288,
+      "offset": 12303,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12611,
+      "offset": 12626,
       "length": 37,
       "value": "\"Element Position JSON \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12647,
+      "offset": 12662,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12704,
+      "offset": 12719,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12772,
+      "offset": 12787,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12844,
+      "offset": 12859,
       "length": 7,
       "value": "\"width\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12921,
+      "offset": 12936,
       "length": 8,
       "value": "\"height\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 13237,
+      "offset": 13252,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13516,
+      "offset": 13531,
       "length": 47,
       "value": "\"Failed to deserialize elementsArray: \""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13562,
+      "offset": 13577,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 13710,
+      "length": 7,
+      "value": "\"track\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 13766,
+      "length": 11,
+      "value": "\"eventName\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 13855,
+      "length": 12,
+      "value": "\"properties\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "Array",
+      "offset": 14102,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 14558,
+      "length": 10,
+      "value": "\"identify\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 14624,
+      "length": 12,
+      "value": "\"attributes\""
+    },
+    {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/WebViewHelper.swift",
+      "kind": "Array",
+      "offset": 14854,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",

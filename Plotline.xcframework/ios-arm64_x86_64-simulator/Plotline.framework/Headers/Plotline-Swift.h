@@ -409,7 +409,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)initAlong:(NSURL * _Nonnull)url SWIFT_METHOD_FAMILY(none);
 + (void)debugWithShouldDebug:(BOOL)shouldDebug;
 + (WKUserContentController * _Nonnull)getPlotlineWebViewController SWIFT_WARN_UNUSED_RESULT;
-+ (void)setWebViewWithWebView:(WKWebView * _Nonnull)webView;
++ (void)setWebViewWithWebView:(WKWebView * _Nullable)webView;
 + (void)logout;
 + (void)notifyScroll;
 + (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
@@ -1030,7 +1030,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)initAlong:(NSURL * _Nonnull)url SWIFT_METHOD_FAMILY(none);
 + (void)debugWithShouldDebug:(BOOL)shouldDebug;
 + (WKUserContentController * _Nonnull)getPlotlineWebViewController SWIFT_WARN_UNUSED_RESULT;
-+ (void)setWebViewWithWebView:(WKWebView * _Nonnull)webView;
++ (void)setWebViewWithWebView:(WKWebView * _Nullable)webView;
 + (void)logout;
 + (void)notifyScroll;
 + (void)setPlotlineEventsListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull, NSDictionary<NSString *, id> * _Nonnull))listener;
