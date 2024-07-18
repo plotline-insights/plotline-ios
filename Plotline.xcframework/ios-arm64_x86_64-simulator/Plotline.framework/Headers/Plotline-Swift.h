@@ -396,6 +396,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)initializeWithApiKey:(NSString * _Nonnull)apiKey;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId endpoint:(NSString * _Nonnull)endpoint;
 + (void)trackWithEventName:(NSString * _Nonnull)eventName;
@@ -553,6 +554,20 @@ SWIFT_CLASS("_TtC8Plotline12SmileyRating")
 @interface SmileyRating : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS_NAMED("StoredEvent")
+@interface StoredEvent : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface StoredEvent (SWIFT_EXTENSION(Plotline))
+@property (nonatomic, copy) NSString * _Nullable eventId;
+@property (nonatomic, copy) NSString * _Nullable eventName;
+@property (nonatomic, copy) NSString * _Nullable eventProperties;
+@property (nonatomic) int64_t timestamp;
 @end
 
 
@@ -1017,6 +1032,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)initializeWithApiKey:(NSString * _Nonnull)apiKey;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId endpoint:(NSString * _Nonnull)endpoint;
 + (void)trackWithEventName:(NSString * _Nonnull)eventName;
@@ -1174,6 +1190,20 @@ SWIFT_CLASS("_TtC8Plotline12SmileyRating")
 @interface SmileyRating : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS_NAMED("StoredEvent")
+@interface StoredEvent : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface StoredEvent (SWIFT_EXTENSION(Plotline))
+@property (nonatomic, copy) NSString * _Nullable eventId;
+@property (nonatomic, copy) NSString * _Nullable eventName;
+@property (nonatomic, copy) NSString * _Nullable eventProperties;
+@property (nonatomic) int64_t timestamp;
 @end
 
 

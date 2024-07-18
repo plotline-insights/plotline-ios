@@ -156,6 +156,7 @@ public class CarouselSettings {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class EventsBatchUploader {
+  public func flushEvents()
   @objc deinit
 }
 public class FloaterSettings {
@@ -221,6 +222,20 @@ public class PreInitEvent {
   public init(eventName: Swift.String, properties: [Swift.String : Any]? = nil)
   @objc deinit
 }
+public class IdentityManager {
+  public init()
+  public func resetDeviceId()
+  public func initialize(userId: Swift.String)
+  public func initialize()
+  public func setApnToken(apnToken: Swift.String)
+  public func validateAndPushToken()
+  public func getIdentity() -> Swift.String
+  public func getUserId() -> Swift.String
+  public func getDeviceId() -> Swift.String
+  public func equals(identity: Swift.String) -> Swift.Bool
+  public func logout()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PlotlineGradientView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
     @objc get
@@ -237,6 +252,8 @@ public class PreInitEvent {
 }
 @_hasMissingDesignatedInitializers public class Utils {
   public static var PROPERTY_VALUE_LENGTH_LIMIT: Swift.Int
+  public static var METRIC_EVENTS_TYPE_ALL: Swift.String
+  public static var METRIC_EVENTS_TYPE_SELECTED: Swift.String
   public static func currentTimeInMilliSeconds() -> Swift.Int64
   public static func getQueryParameter(url: Foundation.URL, paramName: Swift.String) -> Swift.String?
   public static func sendPlotlineEvent(eventName: Swift.String, properties: [Swift.String : Any], labels: [Swift.String : Any]?)
@@ -259,6 +276,7 @@ public class PreInitEvent {
   public static func getChangedAttributedTitleColor(buttonView: UIKit.UIButton, color: Swift.String?) -> Foundation.NSAttributedString?
   public static func animateButtonTitleColor(buttonView: UIKit.UIButton, fromTextColor: UIKit.UIColor, toTextColor: UIKit.UIColor, duration: Swift.Double)
   public static func animateButton(buttonView: UIKit.UIButton, styles: StepStyles, stepLayout: StepLayout)
+  public static func generateRandomId(idLength: Swift.Int) -> Swift.String
   @objc deinit
 }
 public struct CoachRing {
@@ -370,8 +388,6 @@ public class Campaign {
 public struct MarkInfo {
 }
 @_hasMissingDesignatedInitializers public class Attributes {
-  public func getUserId() -> Swift.String
-  public func setUserId(userId: Swift.String)
   public func getAppVersion() -> Swift.String
   public func setAppVersion(appVersion: Swift.String)
   public func getIOSVersion() -> Swift.String
@@ -379,7 +395,11 @@ public struct MarkInfo {
   public func getSDKVersion() -> Swift.String
   public func setSDKVersion(sdkVersion: Swift.String)
   public func getOs() -> Swift.String
-  public func setOs(os: Swift.String)
+  public func setDeviceModel(deviceModel: Swift.String)
+  public func getDeviceModel() -> Swift.String
+  public func getDeviceManufacturer() -> Swift.String
+  public func getAppVersionCode() -> Swift.String
+  public func setAppVersionCode(appVersionCode: Swift.String)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SmileyRating : UIKit.UIView {
@@ -414,6 +434,19 @@ public class CoreDataManager {
   public func insertStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32)
   public func updateStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32?)
   public func getStoryViewsWithIds(storyIds: [Swift.String]) -> [PStoryView]
+  public func getStoredEvents(batchSize: Swift.Int) -> [PStoredEvent]
+  public func insertStoredEvent(storedEvent: PStoredEvent)
+  public func deleteStoredEvents(eventIds: [Swift.String])
+  @objc deinit
+}
+public class PStoredEvent {
+  public var eventId: Swift.String
+  public var eventName: Swift.String
+  public var eventProperties: Swift.String
+  public var timestamp: Swift.Int64
+  public init(eventId: Swift.String, eventName: Swift.String, eventProperties: Swift.String, timestamp: Swift.Int64)
+  public init(storedEvent: StoredEvent)
+  public init()
   @objc deinit
 }
 public class Story {
@@ -500,6 +533,13 @@ public protocol InitCallback {
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
   public func getMetricEventsType() -> Swift.String
   public func setsMetricEventsType(sMetricEventsType: Swift.String)
+  public func setSessionFlowsLimit(sessionFlowsLimit: Swift.Int)
+  public func addFlowShownId(flowId: Swift.String)
+  public func hasExceededSessionFlowsLimit() -> Swift.Bool
+  public func getStoredEvents() -> Swift.Set<Swift.String>
+  public func setStoredEvents(storedEvents: Swift.Set<Swift.String>)
+  public func getStoredAttributes() -> Swift.Set<Swift.String>
+  public func setStoredAttributes(storedAttributes: Swift.Set<Swift.String>)
   public func setShouldEnableDebug(shouldEnableDebug: Swift.Bool)
   public func getShouldEnableDebug() -> Swift.Bool
   public func getFlowStore() -> FlowStore
@@ -550,6 +590,7 @@ public protocol InitCallback {
   public func addSwiftUICoordinates(label: Swift.String, rect: CoreFoundation.CGRect)
   public func onSwiftUIViewDisappear(label: Swift.String)
   public func onSwiftUIViewAppear(label: Swift.String)
+  public func getIdentityManager() -> IdentityManager
   public func getEventsBatchUploader() -> EventsBatchUploader?
   public func setEventsBatchUploader(eventsBatchUploader: EventsBatchUploader)
   public func getDecisionTask() -> DecisionTask?
@@ -568,8 +609,8 @@ public protocol InitCallback {
   public func setAppInBackground(isAppInBackground: Swift.Bool)
   public func getIsAppInBackground() -> Swift.Bool
   public static func getInstance() -> Plotline
-  public func initKeys(apiKey: Swift.String, userId: Swift.String)
-  public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String)
+  public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String, appVersionCode: Swift.String, deviceModel: Swift.String)
+  @objc public static func initialize(apiKey: Swift.String)
   @objc public static func initialize(apiKey: Swift.String, userId: Swift.String)
   @objc public static func initialize(apiKey: Swift.String, userId: Swift.String, endpoint: Swift.String)
   @objc public static func track(eventName: Swift.String)
@@ -787,7 +828,7 @@ public class Study : Campaign {
   public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil)
   public static func saveWidgetControlGroup(widgetId: Swift.String)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
-  public static func trackEvent(eventsDataList: [[Swift.String : Any]])
+  public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: ((Swift.Bool) -> Swift.Void)?)
   public static func registerToken(token: Swift.String)
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String)
   public static func setPushPermissionGranted(granted: Swift.Bool)
@@ -1094,6 +1135,29 @@ extension PlotlineEvent {
     @objc set
   }
   @objc @NSManaged dynamic public var timestamps: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(StoredEvent) public class StoredEvent : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension StoredEvent {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<StoredEvent>
+  @objc @NSManaged dynamic public var eventId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var eventName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var eventProperties: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Swift.Int64 {
     @objc get
     @objc set
   }
