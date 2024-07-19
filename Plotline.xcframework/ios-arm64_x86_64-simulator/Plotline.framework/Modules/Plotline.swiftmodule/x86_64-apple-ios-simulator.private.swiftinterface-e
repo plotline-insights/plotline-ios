@@ -377,6 +377,7 @@ public class Campaign {
   public var campaignType: Swift.String
   public var labels: [Swift.String : Any]?
   public var eventAttributes: [Swift.String : Any]
+  public var shouldIgnoreFreqCap: Swift.Bool
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
@@ -533,8 +534,9 @@ public protocol InitCallback {
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
   public func getMetricEventsType() -> Swift.String
   public func setsMetricEventsType(sMetricEventsType: Swift.String)
-  public func setSessionFlowsLimit(sessionFlowsLimit: Swift.Int)
-  public func addFlowShownId(flowId: Swift.String)
+  public func setSessionLimit(sessionLimit: Swift.Int)
+  public func incrementSessionCount()
+  public func resetSessionCount()
   public func hasExceededSessionFlowsLimit() -> Swift.Bool
   public func getStoredEvents() -> Swift.Set<Swift.String>
   public func setStoredEvents(storedEvents: Swift.Set<Swift.String>)
@@ -777,6 +779,7 @@ public class FlowStore {
   public func peekActiveFlowStep() -> Plotline.FlowStep?
   public func popActiveFlowStep() -> Plotline.FlowStep?
   public func clearActiveFlowArray()
+  public func isFirstStep(stepId: Swift.String) -> Swift.Bool
   public func removeFlow(flowId: Swift.String)
   public func addData(flowData: [[Swift.String : Any]])
   public func addQueue(flowId: Swift.String, journeyId: Swift.String?, flowStepsData: [Any])
