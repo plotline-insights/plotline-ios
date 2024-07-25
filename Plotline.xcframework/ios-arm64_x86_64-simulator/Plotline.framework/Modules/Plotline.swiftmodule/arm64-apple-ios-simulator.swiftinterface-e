@@ -550,6 +550,8 @@ public protocol InitCallback {
   public func setShouldEnableFlows(shouldEnableFlows: Swift.Bool)
   public func getSearchIntervalMillis() -> Swift.Int64
   public func setSearchIntervalMillis(searchIntervalMillis: Swift.Int64)
+  public func getScrollIntervalMillis() -> Swift.Int64
+  public func setScrollIntervalMillis(scrollIntervalMillis: Swift.Int64)
   public func getCurrentPage() -> Swift.String
   public func setCurrentPage(currentPage: Swift.String)
   public func setCurrentPageListener(pageListener: @escaping (Swift.String) -> ())
