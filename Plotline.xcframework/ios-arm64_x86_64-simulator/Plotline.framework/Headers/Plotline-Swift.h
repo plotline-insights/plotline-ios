@@ -320,6 +320,7 @@ SWIFT_CLASS_NAMED("Attribute")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSString;
 
 @interface Attribute (SWIFT_EXTENSION(Plotline))
@@ -425,6 +426,7 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @interface PlotlineEvent : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface PlotlineEvent (SWIFT_EXTENSION(Plotline))
@@ -563,6 +565,7 @@ SWIFT_CLASS_NAMED("StoredEvent")
 @end
 
 
+
 @interface StoredEvent (SWIFT_EXTENSION(Plotline))
 @property (nonatomic, copy) NSString * _Nullable eventId;
 @property (nonatomic, copy) NSString * _Nullable eventName;
@@ -575,6 +578,7 @@ SWIFT_CLASS_NAMED("StoryView")
 @interface StoryView : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface StoryView (SWIFT_EXTENSION(Plotline))
@@ -618,6 +622,7 @@ SWIFT_CLASS_NAMED("WidgetData")
 @interface WidgetData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface WidgetData (SWIFT_EXTENSION(Plotline))
@@ -956,6 +961,7 @@ SWIFT_CLASS_NAMED("Attribute")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSString;
 
 @interface Attribute (SWIFT_EXTENSION(Plotline))
@@ -1061,6 +1067,7 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @interface PlotlineEvent : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface PlotlineEvent (SWIFT_EXTENSION(Plotline))
@@ -1199,6 +1206,7 @@ SWIFT_CLASS_NAMED("StoredEvent")
 @end
 
 
+
 @interface StoredEvent (SWIFT_EXTENSION(Plotline))
 @property (nonatomic, copy) NSString * _Nullable eventId;
 @property (nonatomic, copy) NSString * _Nullable eventName;
@@ -1211,6 +1219,7 @@ SWIFT_CLASS_NAMED("StoryView")
 @interface StoryView : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface StoryView (SWIFT_EXTENSION(Plotline))
@@ -1254,6 +1263,7 @@ SWIFT_CLASS_NAMED("WidgetData")
 @interface WidgetData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface WidgetData (SWIFT_EXTENSION(Plotline))

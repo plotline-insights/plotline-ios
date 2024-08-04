@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Plotline
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Plotline
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CommonCrypto
 import CoreData
 import CoreGraphics
+import CoreHaptics
 import CoreText
 import Foundation
 import MediaPlayer
@@ -58,6 +59,15 @@ import _SwiftConcurrencyShims
   public func pop() -> T?
   public func peek() -> T?
   public func empty() -> Swift.Bool
+  @objc deinit
+}
+public class HapticSettings {
+  public var pattern: [Swift.Double]
+  public var amplitude: [Swift.Float]
+  public var loop: Swift.Bool
+  public init(_ json: [Swift.String : Any])
+  public func isValid() -> Swift.Bool
+  public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PassthroughView : UIKit.UIView {
@@ -203,6 +213,10 @@ public class StoryViewUpdateTask {
   public func execute()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class PlotlineHaptics {
+  @objc deinit
+}
 public class StorySearchTask {
   public init(storyId: Swift.String, slideId: Swift.String?, widgetDataList: [PWidget], storySearchListener: ((Widget?, Swift.Int, Swift.Int) -> ())?)
   @available(iOS 10.0, *)
@@ -340,6 +354,7 @@ public protocol PageListener {
   public var button: PlotlineFloatingButton?
   public var player: AVFAudio.AVAudioPlayer?
   weak public var videoPlayer: AVFoundation.AVPlayer?
+  public var plotlineHaptics: PlotlineHaptics?
   public func setPosition(newX: Swift.Double, newY: Swift.Double)
   public static func getInstance() -> Flows
   public static func getActiveStepId() -> Swift.String
@@ -1000,6 +1015,7 @@ public class FlowStep {
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
+  public var hapticSettings: HapticSettings
   public var ttl: Swift.Int64
   public static var PLOTLINE_AUDIO_PREFIX: Swift.String
   public static var PLOTLINE_VIDEO_PREFIX: Swift.String
@@ -1113,6 +1129,9 @@ extension Attribute {
     @objc set
   }
 }
+extension Attribute : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @_inheritsConvenienceInitializers @objc(PlotlineEvent) public class PlotlineEvent : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1144,6 +1163,9 @@ extension PlotlineEvent {
     @objc set
   }
 }
+extension PlotlineEvent : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @_inheritsConvenienceInitializers @objc(StoredEvent) public class StoredEvent : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1167,6 +1189,9 @@ extension StoredEvent {
     @objc set
   }
 }
+extension StoredEvent : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @_inheritsConvenienceInitializers @objc(StoryView) public class StoryView : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1186,6 +1211,9 @@ extension StoryView {
     @objc set
   }
 }
+extension StoryView : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @_inheritsConvenienceInitializers @objc(WidgetData) public class WidgetData : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1204,6 +1232,9 @@ extension WidgetData {
     @objc get
     @objc set
   }
+}
+extension WidgetData : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 extension ArrowDirection : Swift.Equatable {}
 extension ArrowDirection : Swift.Hashable {}
