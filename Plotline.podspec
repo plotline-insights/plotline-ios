@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 	Permission is granted to...
 	LICENSE
 	}
-    s.ios.deployment_target  = '9.0'
+    s.ios.deployment_target  = '13.0'
     s.source       = {
                         :git => "https://github.com/plotline-insights/plotline-ios.git",
 			:tag => "#{s.version}"
