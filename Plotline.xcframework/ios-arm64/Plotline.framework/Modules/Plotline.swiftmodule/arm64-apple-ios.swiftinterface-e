@@ -140,6 +140,7 @@ public class PStoryView {
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) public func reload()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
   @objc deinit
 }

@@ -528,6 +528,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)reload;
 - (void)awakeFromNib;
 @end
 
@@ -1169,6 +1170,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)reload;
 - (void)awakeFromNib;
 @end
 
