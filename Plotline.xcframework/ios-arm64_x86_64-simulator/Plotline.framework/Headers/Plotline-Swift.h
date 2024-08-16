@@ -404,6 +404,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties;
 + (void)identifyWithAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
++ (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
 + (void)setColorWithColors:(NSDictionary<NSString *, id> * _Nonnull)colors;
@@ -1046,6 +1047,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties;
 + (void)identifyWithAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
++ (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
 + (void)setColorWithColors:(NSDictionary<NSString *, id> * _Nonnull)colors;
