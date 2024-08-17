@@ -88,6 +88,7 @@ public class StepStyles {
   public var lineHeight: Swift.Int
   public var textDecoration: [Swift.String]
   public var fontFamily: Swift.String
+  public var numberOfLines: Swift.Int
   public var fontURL: Swift.String
   public var shouldAnimate: Swift.Bool
   public init(_ json: [Swift.String : Any])
@@ -428,7 +429,7 @@ public class InitTask {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineFloatingButton : UIKit.UIStackView {
-  @_Concurrency.MainActor(unsafe) public var tvViewController: UIKit.UILabel?
+  @_Concurrency.MainActor(unsafe) public var screenLabel: UIKit.UILabel?
   @_Concurrency.MainActor(unsafe) public func setClickListener(listener: @escaping () -> ())
   @objc deinit
 }
@@ -526,6 +527,13 @@ public protocol InitCallback {
 }
 @_hasMissingDesignatedInitializers public class Init {
   public static func initialize(apiKey: Swift.String, userId: Swift.String)
+  @objc deinit
+}
+public class RewardSettings {
+  public var userRewardId: Swift.String
+  public var revealed: Swift.Bool
+  public init(_ json: [Swift.String : Any])
+  public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Plotline : ObjectiveC.NSObject {
@@ -708,6 +716,7 @@ public class StepLayout {
   public var videoSettings: VideoSettings
   public var gridSettings: GridSettings
   public var floaterSettings: FloaterSettings
+  public var rewardSettings: RewardSettings
   weak public var webview: WebKit.WKWebView?
   convenience public init()
   public init(_ json: [Swift.String : Any])
@@ -742,7 +751,7 @@ public class PAttribute {
   public static func track(eventName: Swift.String)
   public static func track(eventName: Swift.String, properties: [Swift.String : Any])
   public static func checkEligibilityAndTriggerCampaign(campaigns: [Campaign], eventName: Swift.String?, eligibleEvents: Swift.Set<Swift.String>, properties: [Swift.String : Any]?)
-  public static func triggerCampaign(eligibleCampaigns: [Campaign], eventName: Swift.String?, compositeEvents: Swift.Set<Swift.String>?, properties: [Swift.String : Any]?)
+  public static func triggerCampaign(eligibleCampaigns: [Campaign], eventName: Swift.String?, compositeEvents: Swift.Set<Swift.String>?, properties: [Swift.String : Any]?, shouldLaunchManually: Swift.Bool = false)
   @objc deinit
 }
 public protocol CoachMarkInfoView : UIKit.UIView {
@@ -803,7 +812,8 @@ public class FlowStore {
   public func removeFlow(flowId: Swift.String)
   public func addData(flowData: [[Swift.String : Any]])
   public func addQueue(flowId: Swift.String, journeyId: Swift.String?, flowStepsData: [Any])
-  public func actOnQueue(compositeTriggerEvents: Swift.Set<Swift.String>?)
+  public func getFlow(flowId: Swift.String) -> Flow?
+  public func actOnQueue(compositeTriggerEvents: Swift.Set<Swift.String>?, shouldLaunchManually: Swift.Bool = false)
   public func showFlowStep(view: UIKit.UIView)
   @_hasMissingDesignatedInitializers public class FlowStepListenerImpl : FlowStepListener {
     public func onShow(currentStepId: Swift.String)
@@ -848,7 +858,7 @@ public class Study : Campaign {
   public static func sendResponse(studyId: Swift.String, questionId: Swift.String, answer: [Swift.String], isCompleted: Swift.Bool)
   public static func uploadScreenshotImage(clientPageId: Swift.String, imgFile: Swift.String, callback: @escaping (Swift.String) -> ())
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
-  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil)
+  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil)
   public static func saveWidgetControlGroup(widgetId: Swift.String)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: ((Swift.Bool) -> Swift.Void)?)
@@ -1015,6 +1025,8 @@ public class FlowStep {
   public var shouldDisableHighlightedButton: Swift.Bool
   public var spotlightRadius: Swift.Int
   public var spotlightPadding: Swift.Int
+  public var isClaimsPageStep: Swift.Bool
+  public var userRewardId: Swift.String?
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
@@ -1037,6 +1049,7 @@ public class FlowStep {
   public static var TYPE_WIDGET: Swift.String
   public static var TYPE_FULLPAGEMODAL: Swift.String
   public static var TYPE_FULLPAGECONTENT: Swift.String
+  public static var TYPE_ACTIVITY: Swift.String
   public static var TYPES_ELEMENT: [Swift.String]
   public init(json: [Swift.String : Any])
   @objc deinit
@@ -1115,6 +1128,12 @@ public class ElementSearchObject {
   @_Concurrency.MainActor(unsafe) public func cleanAssignScrollDelegates(currentVC: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) public func intervalFunction()
   @_Concurrency.MainActor(unsafe) public func runNextLoop()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RewardsListener {
+  public static var shared: RewardsListener
+  public func registerRewardsCallback(for userRewardId: Swift.String, target: Swift.AnyObject, callback: @escaping (Swift.Bool) -> Swift.Void)
+  public func revealReward(with userRewardId: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(Attribute) public class Attribute : CoreData.NSManagedObject {
