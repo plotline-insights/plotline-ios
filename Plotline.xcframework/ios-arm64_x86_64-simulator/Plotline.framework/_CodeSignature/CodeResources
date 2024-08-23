@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		sboDy7eRKE0ymCEq1kdq4NStCOQ=
+		hHU4upGq4XyDjQ0iqJD2P4JFKJ8=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DRYCQV8GD45bpYPdO0vkN9JF9KM=
+		WPXxKTJyZx9kvzUsPEHq5lQV7Ug=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sboDy7eRKE0ymCEq1kdq4NStCOQ=
+		hHU4upGq4XyDjQ0iqJD2P4JFKJ8=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qyb5aN1QDJ5aPlLUyH8NUJUCj3E=
+		PsniqKv+n4fTHuKrLK4TFUYhrzU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -186,7 +186,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IZoTR//iMKVHLeYAzpLMrnnxj2EveMDDRPCCutwoO1A=
+			FFR1/pW4YV9FLXJQ6YE/2OCPu6lJVIlq9hdesOUAJAE=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -214,14 +214,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJF2bOJ5gVpwPBEp/RD8ZH/0RzEvb31ksrzOrullKQs=
+			IWJ6Pv6RdOHLEciDopmmEXCm66VzeJ6W75e5QTI7W2E=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IZoTR//iMKVHLeYAzpLMrnnxj2EveMDDRPCCutwoO1A=
+			FFR1/pW4YV9FLXJQ6YE/2OCPu6lJVIlq9hdesOUAJAE=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -249,7 +249,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ai4YKKJLa0X+KVKa+GwB4e6+4gaOf6d2Q1M6nmpSUIg=
+			N7ox+3nOUT7ti2eeVQ8M3faxZN2sRKX1ydUiH66X7R8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
