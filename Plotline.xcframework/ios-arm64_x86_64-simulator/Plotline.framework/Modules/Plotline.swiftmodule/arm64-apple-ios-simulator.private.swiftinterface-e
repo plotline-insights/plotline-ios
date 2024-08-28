@@ -143,6 +143,7 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
   @objc @_Concurrency.MainActor(unsafe) public func reload()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
 public class CarouselSettings {
@@ -287,6 +288,7 @@ public class IdentityManager {
   public static func getCleanedProperties(properties: [Swift.String : Any]?) -> [Swift.String : Any]?
   public static func convertObjectToString(jsonObject: [Swift.String : Any]?) -> Swift.String
   public static func isFontValid(fontStyle: Plotline.StepStyles?) -> Swift.Bool
+  public static func getStoryIdsArray(storiesData: [Plotline.Story]) -> Swift.Set<Swift.String>
   public static func startBounceAnimation(view: UIKit.UIView)
   public static func applyInitialState(buttonView: UIKit.UIButton, styles: Plotline.StepStyles)
   public static func getChangedAttributedTitleColor(buttonView: UIKit.UIButton, color: Swift.String?) -> Foundation.NSAttributedString?

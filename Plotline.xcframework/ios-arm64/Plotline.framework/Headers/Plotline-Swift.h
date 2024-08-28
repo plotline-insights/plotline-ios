@@ -531,6 +531,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)reload;
 - (void)awakeFromNib;
+- (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
 @end
 
 
