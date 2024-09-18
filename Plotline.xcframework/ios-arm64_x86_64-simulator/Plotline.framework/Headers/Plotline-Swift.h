@@ -393,7 +393,7 @@ SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
-- (void)registerInitCallbackWithCallback:(void (^ _Nonnull)(void))callback;
+- (void)registerInitCallbackOnInitialized:(void (^ _Nonnull)(void))onInitialized onFailure:(void (^ _Nonnull)(NSString * _Nonnull))onFailure;
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1037,7 +1037,7 @@ SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
-- (void)registerInitCallbackWithCallback:(void (^ _Nonnull)(void))callback;
+- (void)registerInitCallbackOnInitialized:(void (^ _Nonnull)(void))onInitialized onFailure:(void (^ _Nonnull)(NSString * _Nonnull))onFailure;
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

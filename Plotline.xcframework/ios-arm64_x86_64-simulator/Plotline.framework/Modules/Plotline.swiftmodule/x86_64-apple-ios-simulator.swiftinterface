@@ -294,6 +294,8 @@ public class IdentityManager {
   public static func getChangedAttributedTitleColor(buttonView: UIKit.UIButton, color: Swift.String?) -> Foundation.NSAttributedString?
   public static func animateButtonTitleColor(buttonView: UIKit.UIButton, fromTextColor: UIKit.UIColor, toTextColor: UIKit.UIColor, duration: Swift.Double)
   public static func animateButton(buttonView: UIKit.UIButton, styles: StepStyles, stepLayout: StepLayout)
+  public static func callInitFailureCallbacks(message: Swift.String)
+  public static func convertToJSONString(_ dict: [Swift.String : Any]?) -> Swift.String
   public static func generateRandomId(idLength: Swift.Int) -> Swift.String
   @objc deinit
 }
@@ -611,8 +613,8 @@ public class RewardSettings {
   public func setWidgetsDataListener(widgetsDataListener: (([PWidget]) -> ())?)
   public func isShouldRegisterAttributesEvents() -> Swift.Bool
   public func setShouldRegisterAttributesEvents(registerAttributesEvents: Swift.Bool)
-  @objc public func registerInitCallback(callback: @escaping () -> ())
-  public func getInitCallbacks() -> [() -> ()]
+  @objc public func registerInitCallback(onInitialized: @escaping () -> (), onFailure: @escaping (Swift.String) -> ())
+  public func getInitCallbacks() -> [(onInitialized: () -> (), onFailure: (Swift.String) -> ())]
   public func clearCallBacks()
   public func addPreInitEvent(eventName: Swift.String, properties: [Swift.String : Any]?)
   public func getPreInitEvents() -> [PreInitEvent]
@@ -732,6 +734,7 @@ public class JourneyStore {
   public var triggerEvents: [Swift.String : Swift.Set<Swift.String>]
   public init()
   public func removeJourney(journeyId: Swift.String)
+  public func clearJourneys()
   public func addData(journeyData: [[Swift.String : Any]])
   @objc deinit
 }
@@ -740,6 +743,7 @@ public class JourneyStore {
 }
 public class StudyStore {
   public init()
+  public func clearStudies()
   public func addData(surveyRawData: [[Swift.String : Any]])
   @objc deinit
 }
@@ -813,6 +817,7 @@ public class FlowStore {
   public func peekActiveFlowStep() -> FlowStep?
   public func popActiveFlowStep() -> FlowStep?
   public func clearActiveFlowArray()
+  public func clearFlows()
   public func isFirstStep(stepId: Swift.String) -> Swift.Bool
   public func removeFlow(flowId: Swift.String)
   public func addData(flowData: [[Swift.String : Any]])
