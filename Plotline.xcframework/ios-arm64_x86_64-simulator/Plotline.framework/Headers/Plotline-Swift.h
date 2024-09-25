@@ -467,9 +467,11 @@ SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 @end
 
 @class UIBlurEffect;
+@class ViewPositionObserver;
 
 SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @interface PlotlineTooltipView : PassthroughView
+- (void)moveToPositionWithAnchorRect:(CGRect)anchorRect;
 - (void)show;
 - (BOOL)isShowing SWIFT_WARN_UNUSED_RESULT;
 - (void)onActionWithStepId:(NSString * _Nullable)stepId action:(NSString * _Nullable)action effect:(NSString * _Nullable)effect target:(NSString * _Nullable)target platform:(NSString * _Nullable)platform requireDismiss:(BOOL)requireDismiss isDismissed:(BOOL)isDismissed;
@@ -492,6 +494,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @property (nonatomic, strong) UIColor * _Nullable borderColor;
 @property (nonatomic) BOOL mDismissOnOutsideTouch;
 @property (nonatomic) BOOL mDismissOnInsideTouch;
+@property (nonatomic, strong) ViewPositionObserver * _Nullable viewPositionObserver;
 @property (nonatomic, copy) void (^ _Nullable willShowHandler)(void);
 @property (nonatomic, copy) void (^ _Nullable willDismissHandler)(void);
 @property (nonatomic, copy) void (^ _Nullable didShowHandler)(void);
@@ -619,6 +622,13 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
+
+SWIFT_CLASS("_TtC8Plotline20ViewPositionObserver")
+@interface ViewPositionObserver : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS_NAMED("WidgetData")
@@ -1111,9 +1121,11 @@ SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 @end
 
 @class UIBlurEffect;
+@class ViewPositionObserver;
 
 SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @interface PlotlineTooltipView : PassthroughView
+- (void)moveToPositionWithAnchorRect:(CGRect)anchorRect;
 - (void)show;
 - (BOOL)isShowing SWIFT_WARN_UNUSED_RESULT;
 - (void)onActionWithStepId:(NSString * _Nullable)stepId action:(NSString * _Nullable)action effect:(NSString * _Nullable)effect target:(NSString * _Nullable)target platform:(NSString * _Nullable)platform requireDismiss:(BOOL)requireDismiss isDismissed:(BOOL)isDismissed;
@@ -1136,6 +1148,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @property (nonatomic, strong) UIColor * _Nullable borderColor;
 @property (nonatomic) BOOL mDismissOnOutsideTouch;
 @property (nonatomic) BOOL mDismissOnInsideTouch;
+@property (nonatomic, strong) ViewPositionObserver * _Nullable viewPositionObserver;
 @property (nonatomic, copy) void (^ _Nullable willShowHandler)(void);
 @property (nonatomic, copy) void (^ _Nullable willDismissHandler)(void);
 @property (nonatomic, copy) void (^ _Nullable didShowHandler)(void);
@@ -1263,6 +1276,13 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
+
+SWIFT_CLASS("_TtC8Plotline20ViewPositionObserver")
+@interface ViewPositionObserver : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS_NAMED("WidgetData")

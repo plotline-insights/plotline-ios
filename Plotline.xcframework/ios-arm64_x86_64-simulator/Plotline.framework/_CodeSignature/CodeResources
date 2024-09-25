@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/Plotline-Swift.h</key>
 		<data>
-		3MPukqQOTYvEMVShEjJJZ/dr93s=
+		m+Wwi4E1aFvD9ajZQBP4GVVEySk=
 		</data>
 		<key>Headers/Plotline.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		TBeMY2FeeCtCSSPm7CVv0WG/Yos=
+		ESJaWxoCryig77LBZlbIIFSvo70=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		PDZAxGq2fYL2A0A5AhOqNjOymrE=
+		T7eNEzClkNvZa4g2JoMoSFIXWx8=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,19 +58,19 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PDZAxGq2fYL2A0A5AhOqNjOymrE=
+		T7eNEzClkNvZa4g2JoMoSFIXWx8=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZjthdwoxI2VT9TbiAYequhXzPHU=
+		GS7hDhUP2Cy8DliQa/BEsFnSOv8=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		TBeMY2FeeCtCSSPm7CVv0WG/Yos=
+		ESJaWxoCryig77LBZlbIIFSvo70=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ikyZnmOlfr7IoKA3sccPLLmfWFQ=
+		0YCLFrKdu7drkchW7H4bLeC3mbA=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ikyZnmOlfr7IoKA3sccPLLmfWFQ=
+		0YCLFrKdu7drkchW7H4bLeC3mbA=
 		</data>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0ETgwQ8OkhpCXcISd0QpVJvTA/I=
+		46y+jdz37kcuPpIjKROAZLsFjgs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -165,7 +165,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tewwFa+wimqXiO9hcMvCKjSJ3qHbsIblEHJkCkU7FC0=
+			EhOWC6TQGFF6JOmw9DYxtENcfijoa1U9mAn/lW9bPq8=
 			</data>
 		</dict>
 		<key>Headers/Plotline.h</key>
@@ -186,14 +186,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aG275Q1fgh2GNzBw+cDADjrvNuxFRLi3Xgt4mia6v8k=
+			aS5T7xthZYBnl5zTASjOmYurwHZlIgHSTlHQxlMthe8=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3on3+ucV1cNN0RcpdhRPIsCnYDypsy8G72tOCOvbdyo=
+			d0e7DJJvs2bQAh4Ok+dO7joe9lfDi/SoAV6LUzg6jlo=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -207,28 +207,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3on3+ucV1cNN0RcpdhRPIsCnYDypsy8G72tOCOvbdyo=
+			d0e7DJJvs2bQAh4Ok+dO7joe9lfDi/SoAV6LUzg6jlo=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			89zZMrWBY7pp70tGIt0O0PEFHQObOw6wHkbnJSxIAxw=
+			FScrs/u9KGHTijCYcEEBYeuqFw6FE2zg1yGobht+3sA=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aG275Q1fgh2GNzBw+cDADjrvNuxFRLi3Xgt4mia6v8k=
+			aS5T7xthZYBnl5zTASjOmYurwHZlIgHSTlHQxlMthe8=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4VC3WD/QlIH95ljtwZvcYQUbxoPI8b4J5DRpAlusefM=
+			a3mNHlz7SmooUqXkmInTlR4qkZDU4br3tvgh5jgC0y0=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -242,14 +242,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4VC3WD/QlIH95ljtwZvcYQUbxoPI8b4J5DRpAlusefM=
+			a3mNHlz7SmooUqXkmInTlR4qkZDU4br3tvgh5jgC0y0=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UP+1ixwN7SVgY9rwA0rqes22x9JDysR4jNPEMDbMkNs=
+			XQFV8o8SX5Vi2vqnLe2iOxOQP900eUJgot7F8Z70kf0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

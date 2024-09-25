@@ -136,6 +136,7 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func registerCallback()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @objc @_Concurrency.MainActor(unsafe) public func setPlotlineWidgetListener(plotlineWidgetListener: any PlotlineWidgetListener)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any PlotlineWidgetListener)
@@ -196,7 +197,7 @@ public class EventTask {
   @objc deinit
 }
 public class UpdateWidgetTask {
-  public init(widgetsData: [[Swift.String : Any]])
+  public init(widgetsData: [[Swift.String : Any]], shouldReloadWidgets: Swift.Bool = false)
   @available(iOS 10.0, *)
   public func execute()
   @objc deinit
@@ -297,6 +298,9 @@ public class IdentityManager {
   public static func callInitFailureCallbacks(message: Swift.String)
   public static func convertToJSONString(_ dict: [Swift.String : Any]?) -> Swift.String
   public static func generateRandomId(idLength: Swift.Int) -> Swift.String
+  public static func logStart(campaigns: [Campaign])
+  public static func logTrigger(campaignId: Swift.String)
+  public static func endLoadTimeTracking(campaignId: Swift.String) -> (Swift.Int64?, Swift.Int64)?
   @objc deinit
 }
 public struct CoachRing {
@@ -361,6 +365,7 @@ public protocol PageListener {
   public var player: AVFAudio.AVAudioPlayer?
   weak public var videoPlayer: AVFoundation.AVPlayer?
   public var plotlineHaptics: PlotlineHaptics?
+  public var viewPositionObserver: ViewPositionObserver?
   public func setPosition(newX: Swift.Double, newY: Swift.Double)
   public static func getInstance() -> Flows
   public static func getActiveStepId() -> Swift.String
@@ -411,6 +416,11 @@ public class Campaign {
   @objc deinit
 }
 public struct MarkInfo {
+}
+@objc public class ViewPositionObserver : ObjectiveC.NSObject {
+  public init(view: UIKit.UIView, positionCallback: @escaping (CoreFoundation.CGRect) -> ())
+  public func stop()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Attributes {
   public func getAppVersion() -> Swift.String
@@ -614,8 +624,11 @@ public class RewardSettings {
   public func isShouldRegisterAttributesEvents() -> Swift.Bool
   public func setShouldRegisterAttributesEvents(registerAttributesEvents: Swift.Bool)
   @objc public func registerInitCallback(onInitialized: @escaping () -> (), onFailure: @escaping (Swift.String) -> ())
+  public func registerWidgetReadyCallback(onWidgetReady: @escaping () -> ())
   public func getInitCallbacks() -> [(onInitialized: () -> (), onFailure: (Swift.String) -> ())]
   public func clearCallBacks()
+  public func getWidgetReadyCallbacks() -> [() -> ()]
+  public func clearWidgetReadyCallbacks()
   public func addPreInitEvent(eventName: Swift.String, properties: [Swift.String : Any]?)
   public func getPreInitEvents() -> [PreInitEvent]
   public func clearPreInitEvents()
@@ -636,6 +649,7 @@ public class RewardSettings {
   public func setPageCaptureUsers(pageCaptureUsersInput: [Swift.String : Any])
   public func setMinVideoAnalyticsDuration(minVideoAnalyticsDuration: Swift.Int)
   public func getMinVideoAnalyticsDuration() -> Swift.Int
+  public func getLoadTimeMap() -> ConcurrentDictionary<Swift.String, (Swift.Int64, Swift.Int64?)>
   @objc public func appMovedToBackground()
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
@@ -778,6 +792,7 @@ public class Flow : Campaign {
   public var flowType: Swift.String
   public var marginFilter: [CoreFoundation.CGFloat]?
   public var shouldSendOnlyTrue: Swift.Bool
+  public var repeatTrigger: Swift.Bool
   public static var FLOW_TYPE_PAGE: Swift.String
   public static var FLOW_TYPE_ELEMENT: Swift.String
   public static var FLOW_TYPE_DECISION: Swift.String
@@ -893,6 +908,9 @@ public class StoryViewFetchTask {
   public func execute()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class ConcurrentDictionary<Key, Value> where Key : Swift.Hashable {
+  @objc deinit
+}
 public class QuestionModal {
   public func getQuestionLayout() -> UIKit.UIView?
   public init(questionIndex: Swift.Int, questions: [Question], answerListener: any AnswerListener, hidePlotline: Swift.Bool)
@@ -932,6 +950,7 @@ public enum PopoverOption {
   }
 }
 @objc @objcMembers @_Concurrency.MainActor(unsafe) open class PlotlineTooltipView : PassthroughView, PlotlineViewListener {
+  @objc @_Concurrency.MainActor(unsafe) public func moveToPosition(anchorRect: CoreFoundation.CGRect)
   @objc @_Concurrency.MainActor(unsafe) public func show()
   @objc @_Concurrency.MainActor(unsafe) public func isShowing() -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public func onAction(stepId: Swift.String?, action: Swift.String?, effect: Swift.String?, target: Swift.String?, platform: Swift.String?, requireDismiss: Swift.Bool, isDismissed: Swift.Bool)
@@ -958,6 +977,7 @@ public enum PopoverOption {
   @objc @_Concurrency.MainActor(unsafe) open var mDismissOnInsideTouch: Swift.Bool
   @_Concurrency.MainActor(unsafe) open var mActionListener: (any ActionListener)?
   @_Concurrency.MainActor(unsafe) open var mAnchorRect: CoreFoundation.CGRect?
+  @objc @_Concurrency.MainActor(unsafe) public var viewPositionObserver: ViewPositionObserver?
   @objc @_Concurrency.MainActor(unsafe) open var willShowHandler: (() -> ())?
   @objc @_Concurrency.MainActor(unsafe) open var willDismissHandler: (() -> ())?
   @objc @_Concurrency.MainActor(unsafe) open var didShowHandler: (() -> ())?
@@ -1038,6 +1058,7 @@ public class FlowStep {
   public var spotlightPadding: Swift.Int
   public var isClaimsPageStep: Swift.Bool
   public var userRewardId: Swift.String?
+  public var isSticky: Swift.Bool
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
@@ -1126,6 +1147,7 @@ public class ElementSearchObject {
   public var clientElementId: Swift.String
   public var isActiveFlow: Swift.Bool
   public var marginFilter: [CoreFoundation.CGFloat]?
+  public var repeatTrigger: Swift.Bool
   public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String)
   public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String, marginFilter: [CoreFoundation.CGFloat]?)
   public init?(json: [Swift.String : Any])
