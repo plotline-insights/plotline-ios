@@ -72,6 +72,7 @@ public class HapticSettings {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PassthroughView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func setInsideTouch(onTouch: @escaping () -> ())
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
