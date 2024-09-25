@@ -1001,6 +1001,7 @@ public enum PopoverOption {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func accessibilityPerformEscape() -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) open func onOutsideTouch()
   @objc @_Concurrency.MainActor(unsafe) open func onInsideTouch()
+  @_Concurrency.MainActor(unsafe) open func getActionForStickyStep(layout: StepLayout) -> StepAction?
   @objc @_Concurrency.MainActor(unsafe) open func dismiss()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
   public class Builder {
