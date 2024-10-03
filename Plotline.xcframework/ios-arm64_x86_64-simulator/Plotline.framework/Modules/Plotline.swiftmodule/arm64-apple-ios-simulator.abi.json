@@ -26813,6 +26813,41 @@
           },
           {
             "kind": "Function",
+            "name": "getPreloadedHeights",
+            "printedName": "getPreloadedHeights()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConcurrentDictionary",
+                "printedName": "Plotline.ConcurrentDictionary<Swift.String, Swift.Double>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:8Plotline20ConcurrentDictionaryC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC19getPreloadedHeightsAA20ConcurrentDictionaryCySSSdGyF",
+            "mangledName": "$s8PlotlineAAC19getPreloadedHeightsAA20ConcurrentDictionaryCySSSdGyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "appMovedToBackground",
             "printedName": "appMovedToBackground()",
             "children": [
@@ -39439,6 +39474,44 @@
         "kind": "TypeDecl",
         "name": "ConcurrentDictionary",
         "printedName": "ConcurrentDictionary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getValue",
+            "printedName": "getValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_1?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline20ConcurrentDictionaryC8getValue6forKeyq_Sgx_tF",
+            "mangledName": "$s8Plotline20ConcurrentDictionaryC8getValue6forKeyq_Sgx_tF",
+            "moduleName": "Plotline",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
         "declKind": "Class",
         "usr": "s:8Plotline20ConcurrentDictionaryC",
         "mangledName": "$s8Plotline20ConcurrentDictionaryC",
@@ -55116,6 +55189,92 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "preloadHeight",
+            "printedName": "preloadHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline6WidgetC13preloadHeightSdvp",
+            "mangledName": "$s8Plotline6WidgetC13preloadHeightSdvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline6WidgetC13preloadHeightSdvg",
+                "mangledName": "$s8Plotline6WidgetC13preloadHeightSdvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline6WidgetC13preloadHeightSdvs",
+                "mangledName": "$s8Plotline6WidgetC13preloadHeightSdvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline6WidgetC13preloadHeightSdvM",
+                "mangledName": "$s8Plotline6WidgetC13preloadHeightSdvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(json:)",
@@ -61472,7 +61631,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"3.9.2\""
+      "value": "\"3.9.3\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -63575,6 +63734,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Widget.swift",
+      "kind": "IntegerLiteral",
+      "offset": 595,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/ElementSearchObject.swift",
       "kind": "BooleanLiteral",
       "offset": 340,
@@ -63654,7 +63820,7 @@
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Tasks\/ElementSearchTask.swift",
       "kind": "FloatLiteral",
-      "offset": 14939,
+      "offset": 15086,
       "length": 6,
       "value": "1000.0"
     },

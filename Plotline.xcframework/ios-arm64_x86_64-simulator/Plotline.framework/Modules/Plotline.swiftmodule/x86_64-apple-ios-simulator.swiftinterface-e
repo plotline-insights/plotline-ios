@@ -651,6 +651,7 @@ public class RewardSettings {
   public func setMinVideoAnalyticsDuration(minVideoAnalyticsDuration: Swift.Int)
   public func getMinVideoAnalyticsDuration() -> Swift.Int
   public func getLoadTimeMap() -> Plotline.ConcurrentDictionary<Swift.String, (Swift.Int64, Swift.Int64?)>
+  public func getPreloadedHeights() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
   @objc public func appMovedToBackground()
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
@@ -911,6 +912,7 @@ public class StoryViewFetchTask {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ConcurrentDictionary<Key, Value> where Key : Swift.Hashable {
+  public func getValue(forKey key: Key) -> Value?
   @objc deinit
 }
 public class QuestionModal {
@@ -1140,6 +1142,7 @@ public class Widget : Plotline.Campaign {
   public var ttl: (Swift.Int64)
   public var content: Plotline.WidgetContent
   public var inTargetGroup: Swift.Bool
+  public var preloadHeight: Swift.Double
   public init(json: [Swift.String : Any])
   @objc deinit
 }
