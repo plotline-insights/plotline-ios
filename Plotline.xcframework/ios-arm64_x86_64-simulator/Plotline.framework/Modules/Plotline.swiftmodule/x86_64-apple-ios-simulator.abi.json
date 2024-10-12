@@ -323,7 +323,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline0A4PushC06enableB0yySo32UNUserNotificationCenterDelegate_pFZ",
+            "usr": "c:@M@Plotline@objc(cs)PlotlinePush(cm)enablePush:",
             "mangledName": "$s8Plotline0A4PushC06enableB0yySo32UNUserNotificationCenterDelegate_pFZ",
             "moduleName": "Plotline",
             "static": true,
@@ -331,6 +331,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "Available"
             ],
             "funcSelfKind": "NonMutating"
@@ -447,13 +448,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline0A4PushC03setB5Token06deviceD0y10Foundation4DataV_tFZ",
+            "usr": "c:@M@Plotline@objc(cs)PlotlinePush(cm)setPushTokenWithDeviceToken:",
             "mangledName": "$s8Plotline0A4PushC03setB5Token06deviceD0y10Foundation4DataV_tFZ",
             "moduleName": "Plotline",
             "static": true,
+            "objc_name": "setPushTokenWithDeviceToken:",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -504,14 +507,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline0A4PushC02isbA07requestSbSo21UNNotificationRequestC_tFZ",
+            "usr": "c:@M@Plotline@objc(cs)PlotlinePush(cm)isPushPlotlineWithRequest:",
             "mangledName": "$s8Plotline0A4PushC02isbA07requestSbSo21UNNotificationRequestC_tFZ",
             "moduleName": "Plotline",
             "static": true,
             "intro_iOS": "10.0",
+            "objc_name": "isPushPlotlineWithRequest:",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "Available"
             ],
             "funcSelfKind": "NonMutating"
@@ -575,14 +580,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline0A4PushC22onNotificationReceived7request14contentHandlerySo21UNNotificationRequestC_ySo0I7ContentCctFZ",
+            "usr": "c:@M@Plotline@objc(cs)PlotlinePush(cm)onNotificationReceivedWithRequest:contentHandler:",
             "mangledName": "$s8Plotline0A4PushC22onNotificationReceived7request14contentHandlerySo21UNNotificationRequestC_ySo0I7ContentCctFZ",
             "moduleName": "Plotline",
             "static": true,
             "intro_iOS": "10.0",
+            "objc_name": "onNotificationReceivedWithRequest:contentHandler:",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "Available"
             ],
             "funcSelfKind": "NonMutating"
@@ -61631,7 +61638,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"3.9.5\""
+      "value": "\"3.9.6\""
     },
     {
       "filePath": "\/Users\/adarsh\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",

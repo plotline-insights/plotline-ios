@@ -27,18 +27,18 @@ import _SwiftConcurrencyShims
   public static let PRIORITY_PASSIVE: Swift.String
   public static let PRIORITY_TIME_SENSITIVE: Swift.String
   @available(iOS 10.0, *)
-  public static func enablePush(_ self: any UserNotifications.UNUserNotificationCenterDelegate)
+  @objc public static func enablePush(_ self: any UserNotifications.UNUserNotificationCenterDelegate)
   public static func requestPushPermission()
   public static func incrementPushPermissionCount()
   public static func setPushPermissionCount(count: Swift.Int)
   public static func redirectToSettings()
-  public static func setPushToken(deviceToken: Foundation.Data)
+  @objc public static func setPushToken(deviceToken: Foundation.Data)
   public static func setPushPermissionGranted(granted: Swift.Bool)
   @available(iOS 10.0, *)
-  public static func isPushPlotline(request: UserNotifications.UNNotificationRequest) -> Swift.Bool
+  @objc public static func isPushPlotline(request: UserNotifications.UNNotificationRequest) -> Swift.Bool
   public static func getPlotlinePushPermissionCount() -> Swift.Int
   @available(iOS 10.0, *)
-  public static func onNotificationReceived(request: UserNotifications.UNNotificationRequest, contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
+  @objc public static func onNotificationReceived(request: UserNotifications.UNNotificationRequest, contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @available(iOS 10.0, *)
   public static func onNotificationReceived(notification: UserNotifications.UNNotification, completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @objc public static func setPlotlinePushPermissionListener(listener: @escaping (Swift.Bool) -> ())

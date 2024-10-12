@@ -462,11 +462,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@protocol UNUserNotificationCenterDelegate;
+@class NSData;
+@class UNNotificationRequest;
+@class UNNotificationContent;
 
 SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 @interface PlotlinePush : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)enablePush:(id <UNUserNotificationCenterDelegate> _Nonnull)self SWIFT_AVAILABILITY(ios,introduced=10.0);
++ (void)setPushTokenWithDeviceToken:(NSData * _Nonnull)deviceToken;
++ (BOOL)isPushPlotlineWithRequest:(UNNotificationRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=10.0);
++ (void)onNotificationReceivedWithRequest:(UNNotificationRequest * _Nonnull)request contentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)setPlotlinePushPermissionListenerWithListener:(void (^ _Nonnull)(BOOL))listener;
 @end
 
@@ -1120,11 +1128,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@protocol UNUserNotificationCenterDelegate;
+@class NSData;
+@class UNNotificationRequest;
+@class UNNotificationContent;
 
 SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 @interface PlotlinePush : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)enablePush:(id <UNUserNotificationCenterDelegate> _Nonnull)self SWIFT_AVAILABILITY(ios,introduced=10.0);
++ (void)setPushTokenWithDeviceToken:(NSData * _Nonnull)deviceToken;
++ (BOOL)isPushPlotlineWithRequest:(UNNotificationRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=10.0);
++ (void)onNotificationReceivedWithRequest:(UNNotificationRequest * _Nonnull)request contentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)setPlotlinePushPermissionListenerWithListener:(void (^ _Nonnull)(BOOL))listener;
 @end
 
