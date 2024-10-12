@@ -40,11 +40,11 @@ import _SwiftConcurrencyShims
   @available(iOS 10.0, *)
   @objc public static func onNotificationReceived(request: UserNotifications.UNNotificationRequest, contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @available(iOS 10.0, *)
-  public static func onNotificationReceived(notification: UserNotifications.UNNotification, completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc public static func onNotificationReceived(notification: UserNotifications.UNNotification, completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @objc public static func setPlotlinePushPermissionListener(listener: @escaping (Swift.Bool) -> ())
   public func getPlotlinePushPermissionListener() -> ((Swift.Bool) -> ())?
   @available(iOS 10.0, *)
-  public static func userNotificationCenter(center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
+  @objc public static func userNotificationCenter(center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
   @available(iOS 10.0, *)
   public static func getActionType(from response: UserNotifications.UNNotificationResponse) -> Swift.String
   public static func getInstance() -> Plotline.PlotlinePush

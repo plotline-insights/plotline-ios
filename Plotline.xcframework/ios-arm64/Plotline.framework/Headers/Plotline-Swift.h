@@ -286,6 +286,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
+@import UserNotifications;
 #endif
 
 #endif
@@ -466,6 +467,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 @class NSData;
 @class UNNotificationRequest;
 @class UNNotificationContent;
+@class UNNotification;
+@class UNUserNotificationCenter;
+@class UNNotificationResponse;
 
 SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 @interface PlotlinePush : NSObject
@@ -475,7 +479,9 @@ SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 + (void)setPushTokenWithDeviceToken:(NSData * _Nonnull)deviceToken;
 + (BOOL)isPushPlotlineWithRequest:(UNNotificationRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)onNotificationReceivedWithRequest:(UNNotificationRequest * _Nonnull)request contentHandler:(void (^ _Nonnull)(UNNotificationContent * _Nonnull))contentHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
++ (void)onNotificationReceivedWithNotification:(UNNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)setPlotlinePushPermissionListenerWithListener:(void (^ _Nonnull)(BOOL))listener;
++ (void)userNotificationCenterWithCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response SWIFT_AVAILABILITY(ios,introduced=10.0);
 @end
 
 @class UIBlurEffect;
