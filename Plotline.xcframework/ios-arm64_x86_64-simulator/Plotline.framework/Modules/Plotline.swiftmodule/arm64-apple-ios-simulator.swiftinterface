@@ -1029,6 +1029,14 @@ public protocol AnswerListener {
   @_Concurrency.MainActor @preconcurrency public static func fetchFontResourcesList() -> [Swift.String]
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class PlotlineTableViewCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency public var onHeightDetermined: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public static func getHeight(id: Swift.String) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public func setOnHeightDetermined(_ onHeightDetermined: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func setupWidget(id: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
+  @objc deinit
+}
 public class ScreenshotTask {
   public init(listener: @escaping () -> (), screenImage: UIKit.UIImage, elements: [[Swift.String : Any]])
   public func execute()
@@ -1127,6 +1135,14 @@ public class Question {
   public init(questionId: Swift.String, questionType: Swift.String, options: [[Swift.String : Any]], question: Swift.String, description: Swift.String, skipLogic: [[Swift.String : Any]], buttonText: Swift.String, textPlaceholder: Swift.String, scaleRangeStart: Swift.Int, scaleRangeEnd: Swift.Int, lowLabel: Swift.String, highLabel: Swift.String, requestPermission: Swift.Bool, maxRecordingTime: Swift.Int, isMandatory: Swift.Bool, disableDismiss: Swift.Bool)
   public static func getQuestions(questions: [[Swift.String : Any]]) -> [Question]
   public static func getMockQuestions() -> [Question]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class PlotlineCollectionViewCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor @preconcurrency public var onHeightDetermined: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public static func getHeight(id: Swift.String) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public func setOnHeightDetermined(_ onHeightDetermined: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func setupWidget(id: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ThankYouView : UIKit.UIView {

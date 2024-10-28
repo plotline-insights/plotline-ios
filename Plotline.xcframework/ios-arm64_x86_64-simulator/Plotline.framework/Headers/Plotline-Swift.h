@@ -428,6 +428,14 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 @end
 
 
+SWIFT_CLASS("_TtC8Plotline26PlotlineCollectionViewCell")
+@interface PlotlineCollectionViewCell : UICollectionViewCell
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)prepareForReuse;
+@end
+
+
 SWIFT_CLASS_NAMED("PlotlineEvent")
 @interface PlotlineEvent : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -482,6 +490,14 @@ SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 + (void)onNotificationReceivedWithNotification:(UNNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)setPlotlinePushPermissionListenerWithListener:(void (^ _Nonnull)(BOOL))listener;
 + (void)userNotificationCenterWithCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response SWIFT_AVAILABILITY(ios,introduced=10.0);
+@end
+
+
+SWIFT_CLASS("_TtC8Plotline21PlotlineTableViewCell")
+@interface PlotlineTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)prepareForReuse;
 @end
 
 @class UIBlurEffect;
@@ -1100,6 +1116,14 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 @end
 
 
+SWIFT_CLASS("_TtC8Plotline26PlotlineCollectionViewCell")
+@interface PlotlineCollectionViewCell : UICollectionViewCell
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)prepareForReuse;
+@end
+
+
 SWIFT_CLASS_NAMED("PlotlineEvent")
 @interface PlotlineEvent : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -1154,6 +1178,14 @@ SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 + (void)onNotificationReceivedWithNotification:(UNNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)setPlotlinePushPermissionListenerWithListener:(void (^ _Nonnull)(BOOL))listener;
 + (void)userNotificationCenterWithCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response SWIFT_AVAILABILITY(ios,introduced=10.0);
+@end
+
+
+SWIFT_CLASS("_TtC8Plotline21PlotlineTableViewCell")
+@interface PlotlineTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)prepareForReuse;
 @end
 
 @class UIBlurEffect;
