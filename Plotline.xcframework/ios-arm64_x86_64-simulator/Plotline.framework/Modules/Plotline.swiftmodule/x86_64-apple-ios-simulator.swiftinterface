@@ -100,9 +100,9 @@ public protocol PlotlineScreenshotCallback {
 }
 public protocol PlotlineViewPositionCallback {
   func getAllElements(for view: UIKit.UIView, plotlineScreenshotPositionsCompleteListener: @escaping ([[Swift.String : Any]]) -> ())
-  func getViewPosition(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String, plotlineViewPositionCompleteListener: @escaping (CoreFoundation.CGRect?) -> Swift.Void)
+  func getViewPosition(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String, clientElementSelector: ClientElementSelector?, plotlineViewPositionCompleteListener: @escaping (CoreFoundation.CGRect?) -> Swift.Void)
   func areViewsPresent(for view: UIKit.UIView, elementSearchObjects: [ElementSearchObject], plotlineViewsPresenceListener: @escaping ([ElementSearchObject]) -> ())
-  func getView(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String) -> UIKit.UIView?
+  func getView(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String, clientElementSelector: ClientElementSelector?) -> UIKit.UIView?
 }
 @_hasMissingDesignatedInitializers public class PlotlineInternal {
   public static let shared: PlotlineInternal
@@ -294,6 +294,8 @@ public class IdentityManager {
   public static func startBounceAnimation(view: UIKit.UIView)
   public static func applyInitialState(buttonView: UIKit.UIButton, styles: StepStyles)
   public static func getChangedAttributedTitleColor(buttonView: UIKit.UIButton, color: Swift.String?) -> Foundation.NSAttributedString?
+  public static func findPlotlineViewWithSelector(view: UIKit.UIView, fragmentId: Swift.String, clientElementSelector: ClientElementSelector) -> UIKit.UIView?
+  public static func getNthParent(view: UIKit.UIView?, n: Swift.Int) -> UIKit.UIView?
   public static func animateButtonTitleColor(buttonView: UIKit.UIButton, fromTextColor: UIKit.UIColor, toTextColor: UIKit.UIColor, duration: Swift.Double)
   public static func animateButton(buttonView: UIKit.UIButton, styles: StepStyles, stepLayout: StepLayout)
   public static func callInitFailureCallbacks(message: Swift.String)
@@ -372,6 +374,8 @@ public protocol PageListener {
   public static func getActiveStepId() -> Swift.String
   public static func showScreenshotDialog(userId: Swift.String)
   public static func showFloatingButton(view: UIKit.UIView)
+  public static func getElementInView(view: UIKit.UIView, fragmentId: Swift.String, elementId: Swift.String, clientElementSelector: ClientElementSelector?) -> UIKit.UIView?
+  public static func getElementInView(view: UIKit.UIView, fragmentId: Swift.String, clientElementSelector: ClientElementSelector) -> UIKit.UIView?
   public static func getElementInView(view: UIKit.UIView, fragmentId: Swift.String, elementId: Swift.String) -> UIKit.UIView?
   public static func getPlotlineViewListener(view: UIKit.UIView, flowStep: FlowStep, stepListener: any FlowStepListener, plotlineViewListenerReady: @escaping ((any PlotlineViewListener)?) -> ())
   public static func showFlow(view: UIKit.UIView, flowStep: FlowStep, stepListener: any FlowStepListener)
@@ -796,6 +800,7 @@ public class Flow : Campaign {
   public var marginFilter: [CoreFoundation.CGFloat]?
   public var shouldSendOnlyTrue: Swift.Bool
   public var repeatTrigger: Swift.Bool
+  public var clientElementSelector: ClientElementSelector
   public static var FLOW_TYPE_PAGE: Swift.String
   public static var FLOW_TYPE_ELEMENT: Swift.String
   public static var FLOW_TYPE_DECISION: Swift.String
@@ -849,6 +854,18 @@ public class FlowStore {
     public func goToStep(currentStepId: Swift.String, nextStepId: Swift.String)
     @objc deinit
   }
+  @objc deinit
+}
+@objc public class ClientElementSelector : ObjectiveC.NSObject {
+  public var query: Swift.String
+  public var text: Swift.String
+  public var type: Swift.String
+  public var nthParent: Swift.Int
+  public static var TYPE_MATCHES: Swift.String
+  public static var TYPE_CONTAINS: Swift.String
+  public static var TYPE_REGEX: Swift.String
+  public init(json: [Swift.String : Any])
+  public static func isValid(clientElementSelector: ClientElementSelector) -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class DummyClass {
@@ -1076,6 +1093,7 @@ public class FlowStep {
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
   public var hapticSettings: HapticSettings
+  public var clientElementSelector: ClientElementSelector
   public var ttl: Swift.Int64
   public static var PLOTLINE_AUDIO_PREFIX: Swift.String
   public static var PLOTLINE_VIDEO_PREFIX: Swift.String
@@ -1169,9 +1187,10 @@ public class ElementSearchObject {
   public var clientElementId: Swift.String
   public var isActiveFlow: Swift.Bool
   public var marginFilter: [CoreFoundation.CGFloat]?
+  public var clientElementSelector: ClientElementSelector
   public var repeatTrigger: Swift.Bool
-  public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String)
-  public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String, marginFilter: [CoreFoundation.CGFloat]?)
+  public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String, clientElementSelector: ClientElementSelector = ClientElementSelector(json: [:]))
+  public init(flowId: Swift.String, clientPageId: Swift.String, clientFragmentId: Swift.String, clientElementId: Swift.String, marginFilter: [CoreFoundation.CGFloat]?, clientElementSelector: ClientElementSelector = ClientElementSelector(json: [:]))
   public init?(json: [Swift.String : Any])
   @objc deinit
 }

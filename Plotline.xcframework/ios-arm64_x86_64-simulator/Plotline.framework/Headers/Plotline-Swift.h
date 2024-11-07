@@ -333,6 +333,13 @@ SWIFT_CLASS_NAMED("Attribute")
 @property (nonatomic, copy) NSString * _Nullable attributeValue;
 @end
 
+
+SWIFT_CLASS("_TtC8Plotline21ClientElementSelector")
+@interface ClientElementSelector : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIColor;
 
 SWIFT_CLASS("_TtC8Plotline17CoachRingRenderer")
@@ -1019,6 +1026,13 @@ SWIFT_CLASS_NAMED("Attribute")
 @interface Attribute (SWIFT_EXTENSION(Plotline))
 @property (nonatomic, copy) NSString * _Nullable attributeName;
 @property (nonatomic, copy) NSString * _Nullable attributeValue;
+@end
+
+
+SWIFT_CLASS("_TtC8Plotline21ClientElementSelector")
+@interface ClientElementSelector : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIColor;
