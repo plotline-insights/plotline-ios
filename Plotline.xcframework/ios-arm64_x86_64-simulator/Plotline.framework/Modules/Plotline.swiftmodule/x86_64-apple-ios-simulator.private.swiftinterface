@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Plotline
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Plotline
 import AVFoundation
 import CommonCrypto
 import CoreData
@@ -217,8 +217,7 @@ public class StoryViewUpdateTask {
   public func execute()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-public class PlotlineHaptics {
+@_hasMissingDesignatedInitializers public class PlotlineHaptics {
   @objc deinit
 }
 public class StorySearchTask {
@@ -303,6 +302,7 @@ public class IdentityManager {
   public static func logStart(campaigns: [Campaign])
   public static func logTrigger(campaignId: Swift.String)
   public static func endLoadTimeTracking(campaignId: Swift.String) -> (Swift.Int64?, Swift.Int64)?
+  public static func showLoader(eligibleCampaigns: [Campaign])
   @objc deinit
 }
 public struct CoachRing {
@@ -368,6 +368,10 @@ public protocol PageListener {
   weak public var videoPlayer: AVFoundation.AVPlayer?
   public var plotlineHaptics: PlotlineHaptics?
   public var viewPositionObserver: ViewPositionObserver?
+  public var activeLoader: PlotlineLoader?
+  public func setActiveLoader(plotlineLoader: PlotlineLoader)
+  public func getActiveLoader() -> PlotlineLoader?
+  public func resetActiveLoader()
   public func setPosition(newX: Swift.Double, newY: Swift.Double)
   public static func getInstance() -> Flows
   public static func getActiveStepId() -> Swift.String
@@ -411,6 +415,7 @@ public class Campaign {
   public var labels: [Swift.String : Any]?
   public var eventAttributes: [Swift.String : Any]
   public var shouldIgnoreFreqCap: Swift.Bool
+  public var loaderSettings: LoaderSettings
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
@@ -744,6 +749,7 @@ public class StepLayout {
   public var floaterSettings: FloaterSettings
   public var rewardSettings: RewardSettings
   weak public var webview: WebKit.WKWebView?
+  public var preloadWebview: Swift.Bool
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
@@ -755,6 +761,16 @@ public class JourneyStore {
   public func removeJourney(journeyId: Swift.String)
   public func clearJourneys()
   public func addData(journeyData: [[Swift.String : Any]])
+  @objc deinit
+}
+public class LoaderSettings {
+  public var bgColor: Swift.String
+  public var loaderUrl: Swift.String
+  public var maxDuration: Swift.Int
+  public var shouldShowLoader: Swift.Bool
+  public var loaderWidth: Swift.Float
+  public init(_ json: [Swift.String : Any])
+  public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MultiChoiceSingleCorrect : UIKit.UIView {
@@ -910,6 +926,11 @@ public class Study : Campaign {
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String)
   public static func setPushPermissionGranted(granted: Swift.Bool)
   public static func removePageCaptureUser()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineLoader : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func showLoader()
+  @_Concurrency.MainActor(unsafe) public func dismiss()
   @objc deinit
 }
 public class StepAction {
@@ -1224,9 +1245,6 @@ extension Attribute {
     @objc set
   }
 }
-extension Attribute : Swift.Identifiable {
-  public typealias ID = Swift.ObjectIdentifier
-}
 @_inheritsConvenienceInitializers @objc(PlotlineEvent) public class PlotlineEvent : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1258,9 +1276,6 @@ extension PlotlineEvent {
     @objc set
   }
 }
-extension PlotlineEvent : Swift.Identifiable {
-  public typealias ID = Swift.ObjectIdentifier
-}
 @_inheritsConvenienceInitializers @objc(StoredEvent) public class StoredEvent : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1284,9 +1299,6 @@ extension StoredEvent {
     @objc set
   }
 }
-extension StoredEvent : Swift.Identifiable {
-  public typealias ID = Swift.ObjectIdentifier
-}
 @_inheritsConvenienceInitializers @objc(StoryView) public class StoryView : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1306,9 +1318,6 @@ extension StoryView {
     @objc set
   }
 }
-extension StoryView : Swift.Identifiable {
-  public typealias ID = Swift.ObjectIdentifier
-}
 @_inheritsConvenienceInitializers @objc(WidgetData) public class WidgetData : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -1327,9 +1336,6 @@ extension WidgetData {
     @objc get
     @objc set
   }
-}
-extension WidgetData : Swift.Identifiable {
-  public typealias ID = Swift.ObjectIdentifier
 }
 extension ArrowDirection : Swift.Equatable {}
 extension ArrowDirection : Swift.Hashable {}

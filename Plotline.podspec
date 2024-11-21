@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'Plotline'
-    s.version      = '4.0.5'
+    s.version      = '4.0.6'
     s.summary      = "Plotline SDK can be used for capturing insights for the right user at the right time"
     s.description  = <<-DESC
                     Plotline SDK can be used for capturing insights for the right user at the right time
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 	Permission is granted to...
 	LICENSE
 	}
-    s.ios.deployment_target  = '13.0'
+    s.ios.deployment_target  = '11.0'
     s.source       = {
                         :git => "https://github.com/plotline-insights/plotline-ios.git",
 			:tag => "#{s.version}"

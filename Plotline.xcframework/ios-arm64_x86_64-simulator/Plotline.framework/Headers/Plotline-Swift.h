@@ -321,7 +321,6 @@ SWIFT_CLASS_NAMED("Attribute")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class NSString;
 
 @interface Attribute (SWIFT_EXTENSION(Plotline))
@@ -445,7 +444,6 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @end
 
 
-
 @interface PlotlineEvent (SWIFT_EXTENSION(Plotline))
 @property (nonatomic) int16_t count;
 @property (nonatomic, copy) NSString * _Nullable eventName;
@@ -472,6 +470,13 @@ SWIFT_CLASS("_TtC8Plotline20PlotlineGradientView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC8Plotline14PlotlineLoader")
+@interface PlotlineLoader : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @protocol UNUserNotificationCenterDelegate;
@@ -608,7 +613,6 @@ SWIFT_CLASS_NAMED("StoredEvent")
 @end
 
 
-
 @interface StoredEvent (SWIFT_EXTENSION(Plotline))
 @property (nonatomic, copy) NSString * _Nullable eventId;
 @property (nonatomic, copy) NSString * _Nullable eventName;
@@ -621,7 +625,6 @@ SWIFT_CLASS_NAMED("StoryView")
 @interface StoryView : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 @interface StoryView (SWIFT_EXTENSION(Plotline))
@@ -672,7 +675,6 @@ SWIFT_CLASS_NAMED("WidgetData")
 @interface WidgetData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 @interface WidgetData (SWIFT_EXTENSION(Plotline))
@@ -1012,7 +1014,6 @@ SWIFT_CLASS_NAMED("Attribute")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class NSString;
 
 @interface Attribute (SWIFT_EXTENSION(Plotline))
@@ -1136,7 +1137,6 @@ SWIFT_CLASS_NAMED("PlotlineEvent")
 @end
 
 
-
 @interface PlotlineEvent (SWIFT_EXTENSION(Plotline))
 @property (nonatomic) int16_t count;
 @property (nonatomic, copy) NSString * _Nullable eventName;
@@ -1163,6 +1163,13 @@ SWIFT_CLASS("_TtC8Plotline20PlotlineGradientView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
 + (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC8Plotline14PlotlineLoader")
+@interface PlotlineLoader : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @protocol UNUserNotificationCenterDelegate;
@@ -1299,7 +1306,6 @@ SWIFT_CLASS_NAMED("StoredEvent")
 @end
 
 
-
 @interface StoredEvent (SWIFT_EXTENSION(Plotline))
 @property (nonatomic, copy) NSString * _Nullable eventId;
 @property (nonatomic, copy) NSString * _Nullable eventName;
@@ -1312,7 +1318,6 @@ SWIFT_CLASS_NAMED("StoryView")
 @interface StoryView : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 @interface StoryView (SWIFT_EXTENSION(Plotline))
@@ -1363,7 +1368,6 @@ SWIFT_CLASS_NAMED("WidgetData")
 @interface WidgetData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 @interface WidgetData (SWIFT_EXTENSION(Plotline))
