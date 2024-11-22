@@ -24101,6 +24101,53 @@
           },
           {
             "kind": "Function",
+            "name": "getShouldAllowConcurrentTriggers",
+            "printedName": "getShouldAllowConcurrentTriggers()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC32getShouldAllowConcurrentTriggersSbyF",
+            "mangledName": "$s8PlotlineAAC32getShouldAllowConcurrentTriggersSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldAllowConcurrentTriggers",
+            "printedName": "setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC32setShouldAllowConcurrentTriggers06shoulddeF0ySb_tF",
+            "mangledName": "$s8PlotlineAAC32setShouldAllowConcurrentTriggers06shoulddeF0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setsMetricEvents",
             "printedName": "setsMetricEvents(sMetricEvents:)",
             "children": [
@@ -62710,7 +62757,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.0.6\""
+      "value": "\"4.0.7\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -63225,29 +63272,29 @@
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 916,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 1048,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 1263,
+      "offset": 1317,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 1323,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
-      "kind": "Array",
-      "offset": 1580,
+      "offset": 1377,
       "length": 2,
       "value": "[]"
     },
@@ -63261,119 +63308,126 @@
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 1685,
+      "offset": 1688,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "Array",
+      "offset": 1739,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 1739,
+      "offset": 1793,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 1778,
+      "offset": 1832,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 1849,
+      "offset": 1903,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 1897,
+      "offset": 1951,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 1949,
+      "offset": 2003,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2001,
+      "offset": 2055,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 2203,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2251,
+      "offset": 2305,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2294,
+      "offset": 2348,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 2684,
+      "offset": 2738,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 2731,
+      "offset": 2785,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 2805,
+      "offset": 2859,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 3011,
+      "offset": 3065,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 3104,
+      "offset": 3158,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 3692,
+      "offset": 3746,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 3798,
+      "offset": 3852,
       "length": 1,
       "value": "0"
     },

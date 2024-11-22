@@ -582,6 +582,8 @@ public class RewardSettings {
   public func getMetricEvents() -> Swift.Set<Swift.String>
   public func getShouldEnableScrollDelegates() -> Swift.Bool
   public func getShouldEnableNestedControllers() -> Swift.Bool
+  public func getShouldAllowConcurrentTriggers() -> Swift.Bool
+  public func setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers: Swift.Bool)
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
   public func getMetricEventsType() -> Swift.String
   public func setsMetricEventsType(sMetricEventsType: Swift.String)
