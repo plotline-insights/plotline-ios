@@ -147,6 +147,13 @@ public class PStoryView {
   @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
+public class UpdateFeatureFlagTask {
+  public init(featureFlagsData: [[Swift.String : Any]])
+  public func isEqual(featureFlagData: Plotline.PFeatureFlagData, featureFlag: Plotline.FeatureFlag) -> Swift.Bool
+  @available(iOS 10.0, *)
+  public func execute()
+  @objc deinit
+}
 public class CarouselSettings {
   public var activeSize: Swift.Int
   public var inactiveSize: Swift.Int
@@ -305,6 +312,19 @@ public class IdentityManager {
   public static func showLoader(eligibleCampaigns: [Plotline.Campaign])
   @objc deinit
 }
+public class FeatureFlag : Plotline.Campaign {
+  public var inTargetGroup: Swift.Bool
+  public var key: Swift.String
+  public var experimentType: Swift.String
+  public var variantId: Swift.String
+  public var payload: Swift.String
+  public var isTestUser: Swift.Bool
+  public static var EXPERIMENT_TYPE_BOOLEAN: Swift.String
+  public static var EXPERIMENT_TYPE_MULTIVARIANT: Swift.String
+  public init(json: [Swift.String : Any])
+  public func toJSON() -> [Swift.String : Any]
+  @objc deinit
+}
 public struct CoachRing {
   public var radius: CoreFoundation.CGFloat
   public var center: CoreFoundation.CGPoint
@@ -420,6 +440,7 @@ public class Campaign {
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
   public static var CAMPAIGN_WIDGET: Swift.String
+  public static var CAMPAIGN_FEATURE_FLAG: Swift.String
   public init(json: [Swift.String : Any], id: Swift.String, campaignType: Swift.String)
   public static func checkEligibility(campaigns: [Plotline.Campaign], eligibilityCallback: @escaping ([Plotline.Campaign], [Plotline.Campaign]) -> ())
   @objc deinit
@@ -481,6 +502,9 @@ public class CoreDataManager {
   public func getStoredEvents(batchSize: Swift.Int) -> [Plotline.PStoredEvent]
   public func insertStoredEvent(storedEvent: Plotline.PStoredEvent)
   public func deleteStoredEvents(eventIds: [Swift.String])
+  public func getFeatureFlag(featureFlagId: Swift.String) -> Plotline.PFeatureFlagData?
+  public func insertFeatureFlagData(featureFlagId: Swift.String, key: Swift.String, inTargetGroup: Swift.Bool, experimentType: Swift.String, variantId: Swift.String, payload: Swift.String)
+  public func updateFeatureFlagData(featureFlagId: Swift.String, key: Swift.String, inTargetGroup: Swift.Bool, experimentType: Swift.String, variantId: Swift.String, payload: Swift.String)
   @objc deinit
 }
 public class PStoredEvent {
@@ -541,6 +565,12 @@ public class Slide {
   public var slideBackgroundColor: Swift.String
   public init(json: [Swift.String : Any])
   public static func convertSlideJSONArray(array: [[Swift.String : Any]]) -> [Plotline.Slide]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FeatureFlagStore {
+  public static func isFeatureEnabledInternal(key: Swift.String) -> Swift.Bool
+  public static func getFeatureFlagInternal(key: Swift.String) -> Swift.String?
+  public static func getFeatureFlagPayloadInternal(key: Swift.String) -> Swift.String?
   @objc deinit
 }
 public class FetchWidgetTask {
@@ -624,6 +654,8 @@ public class RewardSettings {
   public func getStudyStore() -> Plotline.StudyStore
   public func getInitialized() -> Swift.Bool
   public func setInitialized(initialized: Swift.Bool)
+  public func getIsFeatureFlagsLoaded() -> Swift.Bool
+  @objc public func setIsFeatureFlagsLoaded(isFeatureFlagsLoaded: Swift.Bool)
   public func getStudyShown() -> Swift.Bool
   public func setStudyShown(studyShown: Swift.Bool)
   public func setStudyLandscapeWidth(studyLandscapeWidth: Swift.Int)
@@ -638,6 +670,8 @@ public class RewardSettings {
   public func registerWidgetReadyCallback(onWidgetReady: @escaping () -> ())
   public func getInitCallbacks() -> [(onInitialized: () -> (), onFailure: (Swift.String) -> ())]
   public func clearCallBacks()
+  public func getFeatureFlagsLoadedListeners() -> [() -> ()]
+  public func clearFeatureFlagsLoadedListeners()
   public func getWidgetReadyCallbacks() -> [() -> ()]
   public func clearWidgetReadyCallbacks()
   public func addPreInitEvent(eventName: Swift.String, properties: [Swift.String : Any]?)
@@ -696,6 +730,10 @@ public class RewardSettings {
   @objc public static func setPlotlineRedirectUrlListener(listener: @escaping (Swift.String) -> ())
   @objc public static func showStory(storyId: Swift.String, slideId: Swift.String?)
   @objc public static func setShouldDisablePlotline(shouldDisablePlotline: Swift.Bool)
+  @objc public static func isFeatureEnabled(key: Swift.String) -> Swift.Bool
+  @objc public static func getFeatureFlag(key: Swift.String) -> Swift.String?
+  @objc public static func getFeatureFlagPayload(key: Swift.String) -> Swift.String?
+  @objc public static func setOnFeatureFlagsLoadedListener(featureFlagsLoadedListener: @escaping () -> ())
   @objc deinit
 }
 @available(iOS 13.0, *)
@@ -928,6 +966,7 @@ public class Study : Plotline.Campaign {
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String)
   public static func setPushPermissionGranted(granted: Swift.Bool)
   public static func removePageCaptureUser()
+  public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineLoader : UIKit.UIView {
@@ -1201,6 +1240,18 @@ public class Widget : Plotline.Campaign {
   public init(json: [Swift.String : Any])
   @objc deinit
 }
+public class PFeatureFlagData {
+  public var featureFlagId: Swift.String
+  public var key: Swift.String
+  public var inTargetGroup: Swift.Bool
+  public var experimentType: Swift.String
+  public var variantId: Swift.String
+  public var payload: Swift.String
+  public init(featureFlagId: Swift.String, key: Swift.String, inTargetGroup: Swift.Bool, experimentType: Swift.String, variantId: Swift.String, payload: Swift.String)
+  public init(featureFlagData: Plotline.FeatureFlagData)
+  public init()
+  @objc deinit
+}
 public class ElementSearchObject {
   public var flowId: Swift.String
   public var clientPageId: Swift.String
@@ -1243,6 +1294,37 @@ extension Plotline.Attribute {
     @objc set
   }
   @objc @NSManaged dynamic public var attributeValue: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(FeatureFlagData) public class FeatureFlagData : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension Plotline.FeatureFlagData {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Plotline.FeatureFlagData>
+  @objc @NSManaged dynamic public var experimentType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var featureFlagId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var inTargetGroup: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var key: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var payload: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var variantId: Swift.String? {
     @objc get
     @objc set
   }

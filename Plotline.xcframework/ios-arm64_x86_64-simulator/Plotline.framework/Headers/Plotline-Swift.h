@@ -353,6 +353,22 @@ SWIFT_CLASS("_TtC8Plotline17ElementSearchTask")
 @end
 
 
+SWIFT_CLASS_NAMED("FeatureFlagData")
+@interface FeatureFlagData : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FeatureFlagData (SWIFT_EXTENSION(Plotline))
+@property (nonatomic, copy) NSString * _Nullable experimentType;
+@property (nonatomic, copy) NSString * _Nullable featureFlagId;
+@property (nonatomic) BOOL inTargetGroup;
+@property (nonatomic, copy) NSString * _Nullable key;
+@property (nonatomic, copy) NSString * _Nullable payload;
+@property (nonatomic, copy) NSString * _Nullable variantId;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline5Flows")
 @interface Flows : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -400,6 +416,7 @@ SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
+- (void)setIsFeatureFlagsLoadedWithIsFeatureFlagsLoaded:(BOOL)isFeatureFlagsLoaded;
 - (void)registerInitCallbackOnInitialized:(void (^ _Nonnull)(void))onInitialized onFailure:(void (^ _Nonnull)(NSString * _Nonnull))onFailure;
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -427,6 +444,10 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setPlotlineRedirectUrlListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull))listener;
 + (void)showStoryWithStoryId:(NSString * _Nonnull)storyId slideId:(NSString * _Nullable)slideId;
 + (void)setShouldDisablePlotlineWithShouldDisablePlotline:(BOOL)shouldDisablePlotline;
++ (BOOL)isFeatureEnabledWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)getFeatureFlagWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)getFeatureFlagPayloadWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnFeatureFlagsLoadedListenerWithFeatureFlagsLoadedListener:(void (^ _Nonnull)(void))featureFlagsLoadedListener;
 @end
 
 
@@ -1046,6 +1067,22 @@ SWIFT_CLASS("_TtC8Plotline17ElementSearchTask")
 @end
 
 
+SWIFT_CLASS_NAMED("FeatureFlagData")
+@interface FeatureFlagData : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FeatureFlagData (SWIFT_EXTENSION(Plotline))
+@property (nonatomic, copy) NSString * _Nullable experimentType;
+@property (nonatomic, copy) NSString * _Nullable featureFlagId;
+@property (nonatomic) BOOL inTargetGroup;
+@property (nonatomic, copy) NSString * _Nullable key;
+@property (nonatomic, copy) NSString * _Nullable payload;
+@property (nonatomic, copy) NSString * _Nullable variantId;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline5Flows")
 @interface Flows : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1093,6 +1130,7 @@ SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
+- (void)setIsFeatureFlagsLoadedWithIsFeatureFlagsLoaded:(BOOL)isFeatureFlagsLoaded;
 - (void)registerInitCallbackOnInitialized:(void (^ _Nonnull)(void))onInitialized onFailure:(void (^ _Nonnull)(NSString * _Nonnull))onFailure;
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1120,6 +1158,10 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setPlotlineRedirectUrlListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull))listener;
 + (void)showStoryWithStoryId:(NSString * _Nonnull)storyId slideId:(NSString * _Nullable)slideId;
 + (void)setShouldDisablePlotlineWithShouldDisablePlotline:(BOOL)shouldDisablePlotline;
++ (BOOL)isFeatureEnabledWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)getFeatureFlagWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)getFeatureFlagPayloadWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnFeatureFlagsLoadedListenerWithFeatureFlagsLoadedListener:(void (^ _Nonnull)(void))featureFlagsLoadedListener;
 @end
 
 

@@ -4842,6 +4842,140 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Plotline"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UpdateFeatureFlagTask",
+        "printedName": "UpdateFeatureFlagTask",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(featureFlagsData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UpdateFeatureFlagTask",
+                "printedName": "Plotline.UpdateFeatureFlagTask",
+                "usr": "s:8Plotline21UpdateFeatureFlagTaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.String : Any]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Plotline21UpdateFeatureFlagTaskC16featureFlagsDataACSaySDySSypGG_tcfc",
+            "mangledName": "$s8Plotline21UpdateFeatureFlagTaskC16featureFlagsDataACSaySDySSypGG_tcfc",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isEqual",
+            "printedName": "isEqual(featureFlagData:featureFlag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PFeatureFlagData",
+                "printedName": "Plotline.PFeatureFlagData",
+                "usr": "s:8Plotline16PFeatureFlagDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "Plotline.FeatureFlag",
+                "usr": "s:8Plotline11FeatureFlagC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline21UpdateFeatureFlagTaskC7isEqual07featureD4Data0hD0SbAA08PFeaturedI0C_AA0cD0CtF",
+            "mangledName": "$s8Plotline21UpdateFeatureFlagTaskC7isEqual07featureD4Data0hD0SbAA08PFeaturedI0C_AA0cD0CtF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "execute",
+            "printedName": "execute()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline21UpdateFeatureFlagTaskC7executeyyF",
+            "mangledName": "$s8Plotline21UpdateFeatureFlagTaskC7executeyyF",
+            "moduleName": "Plotline",
+            "intro_iOS": "10.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8Plotline21UpdateFeatureFlagTaskC",
+        "mangledName": "$s8Plotline21UpdateFeatureFlagTaskC",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CarouselSettings",
         "printedName": "CarouselSettings",
@@ -10556,6 +10690,878 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Plotline"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlag",
+        "printedName": "FeatureFlag",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "inTargetGroup",
+            "printedName": "inTargetGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC13inTargetGroupSbvp",
+            "mangledName": "$s8Plotline11FeatureFlagC13inTargetGroupSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC13inTargetGroupSbvg",
+                "mangledName": "$s8Plotline11FeatureFlagC13inTargetGroupSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC13inTargetGroupSbvs",
+                "mangledName": "$s8Plotline11FeatureFlagC13inTargetGroupSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC13inTargetGroupSbvM",
+                "mangledName": "$s8Plotline11FeatureFlagC13inTargetGroupSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC3keySSvp",
+            "mangledName": "$s8Plotline11FeatureFlagC3keySSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC3keySSvg",
+                "mangledName": "$s8Plotline11FeatureFlagC3keySSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC3keySSvs",
+                "mangledName": "$s8Plotline11FeatureFlagC3keySSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC3keySSvM",
+                "mangledName": "$s8Plotline11FeatureFlagC3keySSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "experimentType",
+            "printedName": "experimentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC14experimentTypeSSvp",
+            "mangledName": "$s8Plotline11FeatureFlagC14experimentTypeSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC14experimentTypeSSvg",
+                "mangledName": "$s8Plotline11FeatureFlagC14experimentTypeSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC14experimentTypeSSvs",
+                "mangledName": "$s8Plotline11FeatureFlagC14experimentTypeSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC14experimentTypeSSvM",
+                "mangledName": "$s8Plotline11FeatureFlagC14experimentTypeSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "variantId",
+            "printedName": "variantId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC9variantIdSSvp",
+            "mangledName": "$s8Plotline11FeatureFlagC9variantIdSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC9variantIdSSvg",
+                "mangledName": "$s8Plotline11FeatureFlagC9variantIdSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC9variantIdSSvs",
+                "mangledName": "$s8Plotline11FeatureFlagC9variantIdSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC9variantIdSSvM",
+                "mangledName": "$s8Plotline11FeatureFlagC9variantIdSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payload",
+            "printedName": "payload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC7payloadSSvp",
+            "mangledName": "$s8Plotline11FeatureFlagC7payloadSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC7payloadSSvg",
+                "mangledName": "$s8Plotline11FeatureFlagC7payloadSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC7payloadSSvs",
+                "mangledName": "$s8Plotline11FeatureFlagC7payloadSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC7payloadSSvM",
+                "mangledName": "$s8Plotline11FeatureFlagC7payloadSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isTestUser",
+            "printedName": "isTestUser",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC10isTestUserSbvp",
+            "mangledName": "$s8Plotline11FeatureFlagC10isTestUserSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC10isTestUserSbvg",
+                "mangledName": "$s8Plotline11FeatureFlagC10isTestUserSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC10isTestUserSbvs",
+                "mangledName": "$s8Plotline11FeatureFlagC10isTestUserSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC10isTestUserSbvM",
+                "mangledName": "$s8Plotline11FeatureFlagC10isTestUserSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "EXPERIMENT_TYPE_BOOLEAN",
+            "printedName": "EXPERIMENT_TYPE_BOOLEAN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvpZ",
+            "mangledName": "$s8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvpZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvgZ",
+                "mangledName": "$s8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvgZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvsZ",
+                "mangledName": "$s8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvsZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvMZ",
+                "mangledName": "$s8Plotline11FeatureFlagC23EXPERIMENT_TYPE_BOOLEANSSvMZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "EXPERIMENT_TYPE_MULTIVARIANT",
+            "printedName": "EXPERIMENT_TYPE_MULTIVARIANT",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvpZ",
+            "mangledName": "$s8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvpZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvgZ",
+                "mangledName": "$s8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvgZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvsZ",
+                "mangledName": "$s8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvsZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvMZ",
+                "mangledName": "$s8Plotline11FeatureFlagC28EXPERIMENT_TYPE_MULTIVARIANTSSvMZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(json:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "Plotline.FeatureFlag",
+                "usr": "s:8Plotline11FeatureFlagC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Plotline11FeatureFlagC4jsonACSDySSypG_tcfc",
+            "mangledName": "$s8Plotline11FeatureFlagC4jsonACSDySSypG_tcfc",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "toJSON",
+            "printedName": "toJSON()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline11FeatureFlagC6toJSONSDySSypGyF",
+            "mangledName": "$s8Plotline11FeatureFlagC6toJSONSDySSypGyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(json:id:campaignType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "Plotline.FeatureFlag",
+                "usr": "s:8Plotline11FeatureFlagC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Plotline11FeatureFlagC4json2id12campaignTypeACSDySSypG_S2Stcfc",
+            "mangledName": "$s8Plotline11FeatureFlagC4json2id12campaignTypeACSDySSypG_S2Stcfc",
+            "moduleName": "Plotline",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8Plotline11FeatureFlagC",
+        "mangledName": "$s8Plotline11FeatureFlagC",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:8Plotline8CampaignC",
+        "superclassNames": [
+          "Plotline.Campaign"
+        ]
       },
       {
         "kind": "Import",
@@ -17429,8 +18435,8 @@
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -17529,8 +18535,8 @@
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -17629,8 +18635,8 @@
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -17729,8 +18735,8 @@
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
+              "Final",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -17800,6 +18806,106 @@
                 "declKind": "Accessor",
                 "usr": "s:8Plotline8CampaignC15CAMPAIGN_WIDGETSSvMZ",
                 "mangledName": "$s8Plotline8CampaignC15CAMPAIGN_WIDGETSSvMZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CAMPAIGN_FEATURE_FLAG",
+            "printedName": "CAMPAIGN_FEATURE_FLAG",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvpZ",
+            "mangledName": "$s8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvpZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvgZ",
+                "mangledName": "$s8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvgZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvsZ",
+                "mangledName": "$s8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvsZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvMZ",
+                "mangledName": "$s8Plotline8CampaignC21CAMPAIGN_FEATURE_FLAGSSvMZ",
                 "moduleName": "Plotline",
                 "static": true,
                 "implicit": true,
@@ -19728,6 +20834,154 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlag",
+            "printedName": "getFeatureFlag(featureFlagId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Plotline.PFeatureFlagData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PFeatureFlagData",
+                    "printedName": "Plotline.PFeatureFlagData",
+                    "usr": "s:8Plotline16PFeatureFlagDataC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline15CoreDataManagerC14getFeatureFlag07featureG2IdAA08PFeaturegC0CSgSS_tF",
+            "mangledName": "$s8Plotline15CoreDataManagerC14getFeatureFlag07featureG2IdAA08PFeaturegC0CSgSS_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insertFeatureFlagData",
+            "printedName": "insertFeatureFlagData(featureFlagId:key:inTargetGroup:experimentType:variantId:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline15CoreDataManagerC017insertFeatureFlagC007featureG2Id3key13inTargetGroup14experimentType07variantI07payloadySS_SSSbS3StF",
+            "mangledName": "$s8Plotline15CoreDataManagerC017insertFeatureFlagC007featureG2Id3key13inTargetGroup14experimentType07variantI07payloadySS_SSSbS3StF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateFeatureFlagData",
+            "printedName": "updateFeatureFlagData(featureFlagId:key:inTargetGroup:experimentType:variantId:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline15CoreDataManagerC017updateFeatureFlagC007featureG2Id3key13inTargetGroup14experimentType07variantI07payloadySS_SSSbS3StF",
+            "mangledName": "$s8Plotline15CoreDataManagerC017updateFeatureFlagC007featureG2Id3key13inTargetGroup14experimentType07variantI07payloadySS_SSSbS3StF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -22967,6 +24221,134 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "FeatureFlagStore",
+        "printedName": "FeatureFlagStore",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isFeatureEnabledInternal",
+            "printedName": "isFeatureEnabledInternal(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline16FeatureFlagStoreC02isB15EnabledInternal3keySbSS_tFZ",
+            "mangledName": "$s8Plotline16FeatureFlagStoreC02isB15EnabledInternal3keySbSS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlagInternal",
+            "printedName": "getFeatureFlagInternal(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline16FeatureFlagStoreC03getbC8Internal3keySSSgSS_tFZ",
+            "mangledName": "$s8Plotline16FeatureFlagStoreC03getbC8Internal3keySSSgSS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlagPayloadInternal",
+            "printedName": "getFeatureFlagPayloadInternal(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline16FeatureFlagStoreC03getbC15PayloadInternal3keySSSgSS_tFZ",
+            "mangledName": "$s8Plotline16FeatureFlagStoreC03getbC15PayloadInternal3keySSSgSS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8Plotline16FeatureFlagStoreC",
+        "mangledName": "$s8Plotline16FeatureFlagStoreC",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "FetchWidgetTask",
         "printedName": "FetchWidgetTask",
         "children": [
@@ -25234,6 +26616,55 @@
           },
           {
             "kind": "Function",
+            "name": "getIsFeatureFlagsLoaded",
+            "printedName": "getIsFeatureFlagsLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC23getIsFeatureFlagsLoadedSbyF",
+            "mangledName": "$s8PlotlineAAC23getIsFeatureFlagsLoadedSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIsFeatureFlagsLoaded",
+            "printedName": "setIsFeatureFlagsLoaded(isFeatureFlagsLoaded:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(im)setIsFeatureFlagsLoadedWithIsFeatureFlagsLoaded:",
+            "mangledName": "$s8PlotlineAAC23setIsFeatureFlagsLoaded02isdeF0ySb_tF",
+            "moduleName": "Plotline",
+            "objc_name": "setIsFeatureFlagsLoadedWithIsFeatureFlagsLoaded:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getStudyShown",
             "printedName": "getStudyShown()",
             "children": [
@@ -25712,6 +27143,66 @@
             "declKind": "Func",
             "usr": "s:8PlotlineAAC14clearCallBacksyyF",
             "mangledName": "$s8PlotlineAAC14clearCallBacksyyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlagsLoadedListeners",
+            "printedName": "getFeatureFlagsLoadedListeners()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[() -> ()]",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC30getFeatureFlagsLoadedListenersSayyycGyF",
+            "mangledName": "$s8PlotlineAAC30getFeatureFlagsLoadedListenersSayyycGyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearFeatureFlagsLoadedListeners",
+            "printedName": "clearFeatureFlagsLoadedListeners()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC32clearFeatureFlagsLoadedListenersyyF",
+            "mangledName": "$s8PlotlineAAC32clearFeatureFlagsLoadedListenersyyF",
             "moduleName": "Plotline",
             "declAttributes": [
               "AccessControl"
@@ -27681,6 +29172,156 @@
             "moduleName": "Plotline",
             "static": true,
             "objc_name": "setShouldDisablePlotlineWithShouldDisablePlotline:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isFeatureEnabled",
+            "printedName": "isFeatureEnabled(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)isFeatureEnabledWithKey:",
+            "mangledName": "$s8PlotlineAAC16isFeatureEnabled3keySbSS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "isFeatureEnabledWithKey:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlag",
+            "printedName": "getFeatureFlag(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)getFeatureFlagWithKey:",
+            "mangledName": "$s8PlotlineAAC14getFeatureFlag3keySSSgSS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "getFeatureFlagWithKey:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFeatureFlagPayload",
+            "printedName": "getFeatureFlagPayload(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)getFeatureFlagPayloadWithKey:",
+            "mangledName": "$s8PlotlineAAC21getFeatureFlagPayload3keySSSgSS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "getFeatureFlagPayloadWithKey:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnFeatureFlagsLoadedListener",
+            "printedName": "setOnFeatureFlagsLoadedListener(featureFlagsLoadedListener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)setOnFeatureFlagsLoadedListenerWithFeatureFlagsLoadedListener:",
+            "mangledName": "$s8PlotlineAAC31setOnFeatureFlagsLoadedListener07featureefG0yyyc_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "setOnFeatureFlagsLoadedListenerWithFeatureFlagsLoadedListener:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -33086,6 +34727,16 @@
         "sugared_genericSig": "<Self : UIKit.UIView>",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -39567,6 +41218,74 @@
             "declKind": "Func",
             "usr": "s:8Plotline0A13NetworkHelperC21removePageCaptureUseryyFZ",
             "mangledName": "$s8Plotline0A13NetworkHelperC21removePageCaptureUseryyFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveFeatureFlagAction",
+            "printedName": "saveFeatureFlagAction(updatedFlags:eventProperties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.String : Any]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline0A13NetworkHelperC21saveFeatureFlagAction12updatedFlags15eventPropertiesySaySDySSypGG_AGtFZ",
+            "mangledName": "$s8Plotline0A13NetworkHelperC21saveFeatureFlagAction12updatedFlags15eventPropertiesySaySDySSypGG_AGtFZ",
             "moduleName": "Plotline",
             "static": true,
             "declAttributes": [
@@ -56905,6 +58624,651 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "PFeatureFlagData",
+        "printedName": "PFeatureFlagData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "featureFlagId",
+            "printedName": "featureFlagId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline16PFeatureFlagDataC07featureC2IdSSvp",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC07featureC2IdSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC07featureC2IdSSvg",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC07featureC2IdSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC07featureC2IdSSvs",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC07featureC2IdSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC07featureC2IdSSvM",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC07featureC2IdSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline16PFeatureFlagDataC3keySSvp",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC3keySSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC3keySSvg",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC3keySSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC3keySSvs",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC3keySSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC3keySSvM",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC3keySSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inTargetGroup",
+            "printedName": "inTargetGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline16PFeatureFlagDataC13inTargetGroupSbvp",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC13inTargetGroupSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC13inTargetGroupSbvg",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC13inTargetGroupSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC13inTargetGroupSbvs",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC13inTargetGroupSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC13inTargetGroupSbvM",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC13inTargetGroupSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "experimentType",
+            "printedName": "experimentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline16PFeatureFlagDataC14experimentTypeSSvp",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC14experimentTypeSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC14experimentTypeSSvg",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC14experimentTypeSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC14experimentTypeSSvs",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC14experimentTypeSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC14experimentTypeSSvM",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC14experimentTypeSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "variantId",
+            "printedName": "variantId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline16PFeatureFlagDataC9variantIdSSvp",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC9variantIdSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC9variantIdSSvg",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC9variantIdSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC9variantIdSSvs",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC9variantIdSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC9variantIdSSvM",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC9variantIdSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payload",
+            "printedName": "payload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline16PFeatureFlagDataC7payloadSSvp",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC7payloadSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC7payloadSSvg",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC7payloadSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC7payloadSSvs",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC7payloadSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline16PFeatureFlagDataC7payloadSSvM",
+                "mangledName": "$s8Plotline16PFeatureFlagDataC7payloadSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(featureFlagId:key:inTargetGroup:experimentType:variantId:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PFeatureFlagData",
+                "printedName": "Plotline.PFeatureFlagData",
+                "usr": "s:8Plotline16PFeatureFlagDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Plotline16PFeatureFlagDataC07featureC2Id3key13inTargetGroup14experimentType07variantF07payloadACSS_SSSbS3Stcfc",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC07featureC2Id3key13inTargetGroup14experimentType07variantF07payloadACSS_SSSbS3Stcfc",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(featureFlagData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PFeatureFlagData",
+                "printedName": "Plotline.PFeatureFlagData",
+                "usr": "s:8Plotline16PFeatureFlagDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagData",
+                "printedName": "Plotline.FeatureFlagData",
+                "usr": "c:@M@Plotline@objc(cs)FeatureFlagData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Plotline16PFeatureFlagDataC07featurecD0AcA07FeaturecD0C_tcfc",
+            "mangledName": "$s8Plotline16PFeatureFlagDataC07featurecD0AcA07FeaturecD0C_tcfc",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PFeatureFlagData",
+                "printedName": "Plotline.PFeatureFlagData",
+                "usr": "s:8Plotline16PFeatureFlagDataC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Plotline16PFeatureFlagDataCACycfc",
+            "mangledName": "$s8Plotline16PFeatureFlagDataCACycfc",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8Plotline16PFeatureFlagDataC",
+        "mangledName": "$s8Plotline16PFeatureFlagDataC",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ElementSearchObject",
         "printedName": "ElementSearchObject",
         "children": [
@@ -58678,6 +61042,807 @@
         "mangledName": "$s8Plotline9AttributeC",
         "moduleName": "Plotline",
         "objc_name": "Attribute",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSManagedObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreData.NSManagedObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Plotline"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "Plotline"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlagData",
+        "printedName": "FeatureFlagData",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entity:insertInto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagData",
+                "printedName": "Plotline.FeatureFlagData",
+                "usr": "c:@M@Plotline@objc(cs)FeatureFlagData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSEntityDescription",
+                "printedName": "CoreData.NSEntityDescription",
+                "usr": "c:objc(cs)NSEntityDescription"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreData.NSManagedObjectContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSManagedObjectContext",
+                    "printedName": "CoreData.NSManagedObjectContext",
+                    "usr": "c:objc(cs)NSManagedObjectContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Plotline@objc(cs)FeatureFlagData(im)initWithEntity:insertIntoManagedObjectContext:",
+            "mangledName": "$s8Plotline15FeatureFlagDataC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+            "moduleName": "Plotline",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRequest",
+            "printedName": "fetchRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSFetchRequest",
+                "printedName": "CoreData.NSFetchRequest<Plotline.FeatureFlagData>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlagData",
+                    "printedName": "Plotline.FeatureFlagData",
+                    "usr": "c:@M@Plotline@objc(cs)FeatureFlagData"
+                  }
+                ],
+                "usr": "c:objc(cs)NSFetchRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline15FeatureFlagDataC12fetchRequestSo07NSFetchF0CyACGyFZ",
+            "mangledName": "$s8Plotline15FeatureFlagDataC12fetchRequestSo07NSFetchF0CyACGyFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "experimentType",
+            "printedName": "experimentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(py)experimentType",
+            "mangledName": "$s8Plotline15FeatureFlagDataC14experimentTypeSSSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)experimentType",
+                "mangledName": "$s8Plotline15FeatureFlagDataC14experimentTypeSSSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)setExperimentType:",
+                "mangledName": "$s8Plotline15FeatureFlagDataC14experimentTypeSSSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureFlagId",
+            "printedName": "featureFlagId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(py)featureFlagId",
+            "mangledName": "$s8Plotline15FeatureFlagDataC07featureC2IdSSSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)featureFlagId",
+                "mangledName": "$s8Plotline15FeatureFlagDataC07featureC2IdSSSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)setFeatureFlagId:",
+                "mangledName": "$s8Plotline15FeatureFlagDataC07featureC2IdSSSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inTargetGroup",
+            "printedName": "inTargetGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(py)inTargetGroup",
+            "mangledName": "$s8Plotline15FeatureFlagDataC13inTargetGroupSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)inTargetGroup",
+                "mangledName": "$s8Plotline15FeatureFlagDataC13inTargetGroupSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)setInTargetGroup:",
+                "mangledName": "$s8Plotline15FeatureFlagDataC13inTargetGroupSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(py)key",
+            "mangledName": "$s8Plotline15FeatureFlagDataC3keySSSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)key",
+                "mangledName": "$s8Plotline15FeatureFlagDataC3keySSSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)setKey:",
+                "mangledName": "$s8Plotline15FeatureFlagDataC3keySSSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payload",
+            "printedName": "payload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(py)payload",
+            "mangledName": "$s8Plotline15FeatureFlagDataC7payloadSSSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)payload",
+                "mangledName": "$s8Plotline15FeatureFlagDataC7payloadSSSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)setPayload:",
+                "mangledName": "$s8Plotline15FeatureFlagDataC7payloadSSSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "variantId",
+            "printedName": "variantId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(py)variantId",
+            "mangledName": "$s8Plotline15FeatureFlagDataC9variantIdSSSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)variantId",
+                "mangledName": "$s8Plotline15FeatureFlagDataC9variantIdSSSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Plotline@objc(cs)FeatureFlagData(im)setVariantId:",
+                "mangledName": "$s8Plotline15FeatureFlagDataC9variantIdSSSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Plotline@objc(cs)FeatureFlagData",
+        "mangledName": "$s8Plotline15FeatureFlagDataC",
+        "moduleName": "Plotline",
+        "objc_name": "FeatureFlagData",
         "declAttributes": [
           "AccessControl",
           "ObjC"
@@ -62235,6 +65400,69 @@
       "value": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\""
     },
     {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "BooleanLiteral",
+      "offset": 166,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 318,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "BooleanLiteral",
+      "offset": 355,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 414,
+      "length": 9,
+      "value": "\"boolean\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 477,
+      "length": 15,
+      "value": "\"multi-variate\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 105,
+      "length": 11,
+      "value": "\"Plotline.FeatureFlag\""
+    },
+    {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/BottomSheet\/PlotlineBottomSheetView.swift",
       "kind": "FloatLiteral",
       "offset": 235,
@@ -62718,6 +65946,13 @@
       "value": "\"WIDGET\""
     },
     {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Campaign.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 14,
+      "value": "\"FEATURE_FLAG\""
+    },
+    {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/WebView\/PlotlineWebView.swift",
       "kind": "StringLiteral",
       "offset": 334,
@@ -62757,7 +65992,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.0.8\""
+      "value": "\"4.0.9\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -63231,203 +66466,217 @@
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 596,
+      "offset": 604,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 642,
+      "offset": 647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 700,
+      "offset": 693,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 761,
+      "offset": 751,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 812,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 808,
+      "offset": 859,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 862,
+      "offset": 913,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 916,
+      "offset": 967,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 1048,
+      "offset": 1099,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 1317,
+      "offset": 1368,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 1377,
+      "offset": 1428,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 1634,
+      "offset": 1685,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 1688,
+      "offset": 1746,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 1739,
+      "offset": 1800,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "Array",
+      "offset": 1851,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 1793,
+      "offset": 1905,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 1832,
+      "offset": 1944,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 1903,
+      "offset": 2015,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 1951,
+      "offset": 2063,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2003,
+      "offset": 2115,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2055,
+      "offset": 2167,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 2203,
+      "offset": 2315,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2305,
+      "offset": 2417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2348,
+      "offset": 2460,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 2738,
+      "offset": 2850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 2785,
+      "offset": 2897,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 2859,
+      "offset": 2971,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 3065,
+      "offset": 3177,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 3158,
+      "offset": 3270,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 3746,
+      "offset": 3858,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 3852,
+      "offset": 3964,
       "length": 1,
       "value": "0"
     },
@@ -63738,6 +66987,13 @@
       "offset": 836,
       "length": 16,
       "value": "\"plotlineLocale\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Utilities\/PlotlineFeatureFlagDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 25,
+      "value": "\"plotlineFeatureFlagData\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/SurveyUtils.swift",
@@ -64505,14 +67761,28 @@
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 29714,
+      "offset": 29644,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 29761,
+      "offset": 29691,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29855,
       "length": 4,
       "value": "true"
     },
@@ -64520,62 +67790,48 @@
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "BooleanLiteral",
       "offset": 29889,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 29925,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 29959,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30001,
+      "offset": 29931,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "FloatLiteral",
-      "offset": 30127,
+      "offset": 30057,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "FloatLiteral",
-      "offset": 30166,
+      "offset": 30096,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30203,
+      "offset": 30133,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30230,
+      "offset": 30160,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30258,
+      "offset": 30188,
       "length": 1,
       "value": "0"
     },
@@ -65131,6 +68387,48 @@
       "offset": 105,
       "length": 6,
       "value": "\"Plotline.Widget\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PFeatureFlagData.swift",
+      "kind": "StringLiteral",
+      "offset": 174,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PFeatureFlagData.swift",
+      "kind": "StringLiteral",
+      "offset": 206,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PFeatureFlagData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 246,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PFeatureFlagData.swift",
+      "kind": "StringLiteral",
+      "offset": 292,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PFeatureFlagData.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PFeatureFlagData.swift",
+      "kind": "StringLiteral",
+      "offset": 366,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/rajatm\/Plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/ElementSearchObject.swift",
