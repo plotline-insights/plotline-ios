@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Plotline
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Plotline
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import CommonCrypto
 import CoreData
@@ -18,7 +19,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Prompt : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Prompt : UIKit.UIView {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PlotlinePush : ObjectiveC.NSObject {
@@ -69,11 +70,11 @@ public class HapticSettings {
   public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PassthroughView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) open func setInsideTouch(onTouch: @escaping () -> ())
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PassthroughView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open func setInsideTouch(onTouch: @escaping () -> ())
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public class StepStyles {
@@ -127,24 +128,24 @@ public class PStoryView {
 @objc public protocol PlotlineWidgetListener {
   @objc func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
-  @_Concurrency.MainActor(unsafe) public var widgetId: Swift.String
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PlotlineWidget : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var clientElementId: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var widgetId: Swift.String
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func registerCallback()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @objc @_Concurrency.MainActor(unsafe) public func setPlotlineWidgetListener(plotlineWidgetListener: any PlotlineWidgetListener)
-  @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any PlotlineWidgetListener)
-  @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any PlotlineWidgetListener)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
-  @objc @_Concurrency.MainActor(unsafe) public func reload()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor @preconcurrency public init(clientElementId: Swift.String)
+  @objc @_Concurrency.MainActor @preconcurrency public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public func registerCallback()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @objc @_Concurrency.MainActor @preconcurrency public func setPlotlineWidgetListener(plotlineWidgetListener: any PlotlineWidgetListener)
+  @objc @_Concurrency.MainActor @preconcurrency public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any PlotlineWidgetListener)
+  @_Concurrency.MainActor @preconcurrency public init(clientElementId: Swift.String, plotlineWidgetListener: any PlotlineWidgetListener)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor @preconcurrency public func reload()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @objc @_Concurrency.MainActor @preconcurrency public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
 public class UpdateFeatureFlagTask {
@@ -194,7 +195,7 @@ public class FloaterSettings {
   public static func log(_ message: Swift.String)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MultiChoiceMultiCorrect : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MultiChoiceMultiCorrect : UIKit.UIView {
   @objc deinit
 }
 public class EventTask {
@@ -225,6 +226,13 @@ public class StoryViewUpdateTask {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PlotlineHaptics {
+  @objc deinit
+}
+public class LottieSettings {
+  public var loop: Swift.Bool
+  public var speed: Swift.Float
+  public init(_ json: [Swift.String : Any])
+  public init()
   @objc deinit
 }
 public class StorySearchTask {
@@ -260,8 +268,8 @@ public class IdentityManager {
   public func logout()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PlotlineGradientView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency public class PlotlineGradientView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public class var layerClass: Swift.AnyClass {
     @objc get
   }
   @objc deinit
@@ -467,7 +475,7 @@ public struct MarkInfo {
   public func setAppVersionCode(appVersionCode: Swift.String)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SmileyRating : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class SmileyRating : UIKit.UIView {
   @objc deinit
 }
 public class InitTask {
@@ -475,9 +483,9 @@ public class InitTask {
   public func execute()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineFloatingButton : UIKit.UIStackView {
-  @_Concurrency.MainActor(unsafe) public var screenLabel: UIKit.UILabel?
-  @_Concurrency.MainActor(unsafe) public func setClickListener(listener: @escaping () -> ())
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class PlotlineFloatingButton : UIKit.UIStackView {
+  @_Concurrency.MainActor @preconcurrency public var screenLabel: UIKit.UILabel?
+  @_Concurrency.MainActor @preconcurrency public func setClickListener(listener: @escaping () -> ())
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
@@ -737,14 +745,15 @@ public class RewardSettings {
   @objc deinit
 }
 @available(iOS 13.0, *)
-public struct PLabelInternal : SwiftUI.ViewModifier {
-  @_Concurrency.MainActor(unsafe) public func body(content: PLabelInternal.Content) -> some SwiftUI.View
+@_Concurrency.MainActor @preconcurrency public struct PLabelInternal : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: PLabelInternal.Content) -> some SwiftUICore.View
   
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s8Plotline14PLabelInternalV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
 }
 @available(iOS 13.0, *)
-extension SwiftUI.View {
-  public func PLabel(_ label: Swift.String) -> some SwiftUI.View
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func PLabel(_ label: Swift.String) -> some SwiftUICore.View
   
 }
 public class WidgetContent {
@@ -787,6 +796,7 @@ public class StepLayout {
   public var videoSettings: VideoSettings
   public var gridSettings: GridSettings
   public var floaterSettings: FloaterSettings
+  public var lottieSettings: LottieSettings
   public var rewardSettings: RewardSettings
   weak public var webview: WebKit.WKWebView?
   public var preloadWebview: Swift.Bool
@@ -813,7 +823,7 @@ public class LoaderSettings {
   public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MultiChoiceSingleCorrect : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MultiChoiceSingleCorrect : UIKit.UIView {
   @objc deinit
 }
 public class StudyStore {
@@ -925,16 +935,16 @@ public class FlowStore {
 @_hasMissingDesignatedInitializers final public class DummyClass {
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OpenText : UIKit.UIView, UIKit.UITextViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc public func textViewDidBeginEditing(_ textbox: UIKit.UITextView)
-  @_Concurrency.MainActor(unsafe) public func updateButtonState()
-  @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class OpenText : UIKit.UIView, UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc public func textViewDidBeginEditing(_ textbox: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency public func updateButtonState()
+  @_Concurrency.MainActor @preconcurrency @objc public func textViewDidChange(_ textView: UIKit.UITextView)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DecisionTask {
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Rating : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Rating : UIKit.UIView {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class FontHelper {
@@ -958,7 +968,7 @@ public class Study : Campaign {
   public static func sendResponse(studyId: Swift.String, questionId: Swift.String, answer: [Swift.String], isCompleted: Swift.Bool)
   public static func uploadScreenshotImage(clientPageId: Swift.String, imgFile: Swift.String, callback: @escaping (Swift.String) -> ())
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
-  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil)
+  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil, effect: Swift.String?, target: Swift.String?, overrideLabels: [Swift.String : Any]? = nil)
   public static func saveWidgetControlGroup(widgetId: Swift.String)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: ((Swift.Bool) -> Swift.Void)?)
@@ -969,9 +979,9 @@ public class Study : Campaign {
   public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineLoader : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func showLoader()
-  @_Concurrency.MainActor(unsafe) public func dismiss()
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class PlotlineLoader : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func showLoader()
+  @_Concurrency.MainActor @preconcurrency public func dismiss()
   @objc deinit
 }
 public class StepAction {
@@ -1030,60 +1040,60 @@ public enum PopoverOption {
     get
   }
 }
-@objc @objcMembers @_Concurrency.MainActor(unsafe) open class PlotlineTooltipView : PassthroughView, PlotlineViewListener {
-  @objc @_Concurrency.MainActor(unsafe) public func moveToPosition(anchorRect: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) public func show()
-  @objc @_Concurrency.MainActor(unsafe) public func isShowing() -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public func onAction(stepId: Swift.String?, action: Swift.String?, effect: Swift.String?, target: Swift.String?, platform: Swift.String?, requireDismiss: Swift.Bool, isDismissed: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) open var arrowSize: CoreFoundation.CGSize
-  @objc @_Concurrency.MainActor(unsafe) open var animationIn: Swift.Double
-  @objc @_Concurrency.MainActor(unsafe) open var animationOut: Swift.Double
-  @objc @_Concurrency.MainActor(unsafe) open var cornerRadius: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) open var sideEdge: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) open var popoverType: ArrowDirection
-  @objc @_Concurrency.MainActor(unsafe) open var blackOverlayColor: UIKit.UIColor
-  @objc @_Concurrency.MainActor(unsafe) open var overlayBlur: UIKit.UIBlurEffect?
-  @objc @_Concurrency.MainActor(unsafe) open var popoverColor: UIKit.UIColor
-  @objc @_Concurrency.MainActor(unsafe) open var dismissOnBlackOverlayTap: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) open var showBlackOverlay: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) open var highlightFromView: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) open var highlightCornerRadius: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) open var springDamping: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) open var initialSpringVelocity: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) open var sideOffset: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) open var borderColor: UIKit.UIColor?
-  @_Concurrency.MainActor(unsafe) open var arrowPoint: CoreFoundation.CGPoint?
-  @_Concurrency.MainActor(unsafe) open var mFlowStep: FlowStep?
-  @objc @_Concurrency.MainActor(unsafe) open var mDismissOnOutsideTouch: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) open var mDismissOnInsideTouch: Swift.Bool
-  @_Concurrency.MainActor(unsafe) open var mActionListener: (any ActionListener)?
-  @_Concurrency.MainActor(unsafe) open var mAnchorRect: CoreFoundation.CGRect?
-  @objc @_Concurrency.MainActor(unsafe) public var viewPositionObserver: ViewPositionObserver?
-  @objc @_Concurrency.MainActor(unsafe) open var willShowHandler: (() -> ())?
-  @objc @_Concurrency.MainActor(unsafe) open var willDismissHandler: (() -> ())?
-  @objc @_Concurrency.MainActor(unsafe) open var didShowHandler: (() -> ())?
-  @objc @_Concurrency.MainActor(unsafe) open var didDismissHandler: (() -> ())?
-  @objc @_Concurrency.MainActor(unsafe) public var blackOverlay: UIKit.UIView {
+@objc @objcMembers @_Concurrency.MainActor @preconcurrency open class PlotlineTooltipView : PassthroughView, PlotlineViewListener {
+  @objc @_Concurrency.MainActor @preconcurrency public func moveToPosition(anchorRect: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor @preconcurrency public func show()
+  @objc @_Concurrency.MainActor @preconcurrency public func isShowing() -> Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency public func onAction(stepId: Swift.String?, action: Swift.String?, effect: Swift.String?, target: Swift.String?, platform: Swift.String?, requireDismiss: Swift.Bool, isDismissed: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency open var arrowSize: CoreFoundation.CGSize
+  @objc @_Concurrency.MainActor @preconcurrency open var animationIn: Swift.Double
+  @objc @_Concurrency.MainActor @preconcurrency open var animationOut: Swift.Double
+  @objc @_Concurrency.MainActor @preconcurrency open var cornerRadius: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency open var sideEdge: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency open var popoverType: ArrowDirection
+  @objc @_Concurrency.MainActor @preconcurrency open var blackOverlayColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor @preconcurrency open var overlayBlur: UIKit.UIBlurEffect?
+  @objc @_Concurrency.MainActor @preconcurrency open var popoverColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor @preconcurrency open var dismissOnBlackOverlayTap: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency open var showBlackOverlay: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency open var highlightFromView: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency open var highlightCornerRadius: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency open var springDamping: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency open var initialSpringVelocity: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency open var sideOffset: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency open var borderColor: UIKit.UIColor?
+  @_Concurrency.MainActor @preconcurrency open var arrowPoint: CoreFoundation.CGPoint?
+  @_Concurrency.MainActor @preconcurrency open var mFlowStep: FlowStep?
+  @objc @_Concurrency.MainActor @preconcurrency open var mDismissOnOutsideTouch: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency open var mDismissOnInsideTouch: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open var mActionListener: (any ActionListener)?
+  @_Concurrency.MainActor @preconcurrency open var mAnchorRect: CoreFoundation.CGRect?
+  @objc @_Concurrency.MainActor @preconcurrency public var viewPositionObserver: ViewPositionObserver?
+  @objc @_Concurrency.MainActor @preconcurrency open var willShowHandler: (() -> ())?
+  @objc @_Concurrency.MainActor @preconcurrency open var willDismissHandler: (() -> ())?
+  @objc @_Concurrency.MainActor @preconcurrency open var didShowHandler: (() -> ())?
+  @objc @_Concurrency.MainActor @preconcurrency open var didDismissHandler: (() -> ())?
+  @objc @_Concurrency.MainActor @preconcurrency public var blackOverlay: UIKit.UIView {
     get
   }
-  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
-  @_Concurrency.MainActor(unsafe) public init(builder: PlotlineTooltipView.Builder)
-  @objc @_Concurrency.MainActor(unsafe) public init(showHandler: (() -> ())?, dismissHandler: (() -> ())?)
-  @_Concurrency.MainActor(unsafe) public init(options: [PopoverOption]?, showHandler: (() -> ())? = nil, dismissHandler: (() -> ())? = nil)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
-  @objc @_Concurrency.MainActor(unsafe) open func showAsDialog(_ contentView: UIKit.UIView)
-  @objc @_Concurrency.MainActor(unsafe) open func showAsDialog(_ contentView: UIKit.UIView, inView: UIKit.UIView)
-  @objc @_Concurrency.MainActor(unsafe) open func show(_ contentView: UIKit.UIView, fromView: UIKit.UIView)
-  @objc @_Concurrency.MainActor(unsafe) open func show(_ contentView: UIKit.UIView, fromView: UIKit.UIView, inView: UIKit.UIView)
-  @objc @_Concurrency.MainActor(unsafe) open func show(_ contentView: UIKit.UIView, point: CoreFoundation.CGPoint)
-  @objc @_Concurrency.MainActor(unsafe) open func show(_ contentView: UIKit.UIView, point: CoreFoundation.CGPoint, inView: UIKit.UIView)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func accessibilityPerformEscape() -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) open func onOutsideTouch()
-  @objc @_Concurrency.MainActor(unsafe) open func onInsideTouch()
-  @_Concurrency.MainActor(unsafe) open func getActionForStickyStep(layout: StepLayout) -> StepAction?
-  @objc @_Concurrency.MainActor(unsafe) open func dismiss()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  @_Concurrency.MainActor @preconcurrency public init(builder: PlotlineTooltipView.Builder)
+  @objc @_Concurrency.MainActor @preconcurrency public init(showHandler: (() -> ())?, dismissHandler: (() -> ())?)
+  @_Concurrency.MainActor @preconcurrency public init(options: [PopoverOption]?, showHandler: (() -> ())? = nil, dismissHandler: (() -> ())? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @objc @_Concurrency.MainActor @preconcurrency open func showAsDialog(_ contentView: UIKit.UIView)
+  @objc @_Concurrency.MainActor @preconcurrency open func showAsDialog(_ contentView: UIKit.UIView, inView: UIKit.UIView)
+  @objc @_Concurrency.MainActor @preconcurrency open func show(_ contentView: UIKit.UIView, fromView: UIKit.UIView)
+  @objc @_Concurrency.MainActor @preconcurrency open func show(_ contentView: UIKit.UIView, fromView: UIKit.UIView, inView: UIKit.UIView)
+  @objc @_Concurrency.MainActor @preconcurrency open func show(_ contentView: UIKit.UIView, point: CoreFoundation.CGPoint)
+  @objc @_Concurrency.MainActor @preconcurrency open func show(_ contentView: UIKit.UIView, point: CoreFoundation.CGPoint, inView: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func accessibilityPerformEscape() -> Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency open func onOutsideTouch()
+  @objc @_Concurrency.MainActor @preconcurrency open func onInsideTouch()
+  @_Concurrency.MainActor @preconcurrency open func getActionForStickyStep(layout: StepLayout) -> StepAction?
+  @objc @_Concurrency.MainActor @preconcurrency open func dismiss()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
   public class Builder {
     public init(rootView: UIKit.UIView, builtView: UIKit.UIView, anchorRect: CoreFoundation.CGRect)
     public func build() -> PlotlineTooltipView
@@ -1096,22 +1106,23 @@ public enum PopoverOption {
 public protocol AnswerListener {
   func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StudyDialog : UIKit.UIView, AnswerListener {
-  @_Concurrency.MainActor(unsafe) public func setQuestions(studyId: Swift.String, questionList: [Question], showThankYouScreen: Swift.Bool, thankYouScreenText: Swift.String, hidePlotline: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) public func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
-  @_Concurrency.MainActor(unsafe) public static func fetchImageResourcesList(_ questions: [Question]) -> [Swift.String]
-  @_Concurrency.MainActor(unsafe) public static func fetchWebviewsList(_ questions: [Question]) -> [StepLayout]
-  @_Concurrency.MainActor(unsafe) public static func fetchFontResourcesList() -> [Swift.String]
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class StudyDialog : UIKit.UIView, AnswerListener {
+  @_Concurrency.MainActor @preconcurrency public func setQuestions(studyId: Swift.String, questionList: [Question], showThankYouScreen: Swift.Bool, thankYouScreenText: Swift.String, hidePlotline: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency public func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor @preconcurrency public static func fetchImageResourcesList(_ questions: [Question]) -> [Swift.String]
+  @_Concurrency.MainActor @preconcurrency public static func fetchWebviewsList(_ questions: [Question]) -> [StepLayout]
+  @_Concurrency.MainActor @preconcurrency public static func fetchLottieResources(_ questions: [Question]) -> [Swift.String]
+  @_Concurrency.MainActor @preconcurrency public static func fetchFontResourcesList() -> [Swift.String]
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineTableViewCell : UIKit.UITableViewCell {
-  @_Concurrency.MainActor(unsafe) public var onHeightDetermined: ((CoreFoundation.CGFloat) -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) public static func getHeight(id: Swift.String) -> CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) public func setOnHeightDetermined(_ onHeightDetermined: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) public func setupWidget(id: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForReuse()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class PlotlineTableViewCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency public var onHeightDetermined: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public static func getHeight(id: Swift.String) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public func setOnHeightDetermined(_ onHeightDetermined: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func setupWidget(id: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
   @objc deinit
 }
 public class ScreenshotTask {
@@ -1215,15 +1226,15 @@ public class Question {
   public static func getMockQuestions() -> [Question]
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineCollectionViewCell : UIKit.UICollectionViewCell {
-  @_Concurrency.MainActor(unsafe) public var onHeightDetermined: ((CoreFoundation.CGFloat) -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) public static func getHeight(id: Swift.String) -> CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) public func setOnHeightDetermined(_ onHeightDetermined: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) public func setupWidget(id: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForReuse()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class PlotlineCollectionViewCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor @preconcurrency public var onHeightDetermined: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public static func getHeight(id: Swift.String) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public func setOnHeightDetermined(_ onHeightDetermined: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func setupWidget(id: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ThankYouView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ThankYouView : UIKit.UIView {
   @objc deinit
 }
 public class Widget : Campaign {
@@ -1266,15 +1277,15 @@ public class ElementSearchObject {
   public init?(json: [Swift.String : Any])
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ElementSearchTask : ObjectiveC.NSObject, UIKit.UIScrollViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
-  @_Concurrency.MainActor(unsafe) public func clearElementsCompleted()
-  @_Concurrency.MainActor(unsafe) public func notifyScroll()
-  @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor(unsafe) public func setPlotlineScrollListener(listener: (any PlotlineScrollListener)?)
-  @_Concurrency.MainActor(unsafe) public func cleanAssignScrollDelegates(currentVC: UIKit.UIViewController)
-  @_Concurrency.MainActor(unsafe) public func intervalFunction()
-  @_Concurrency.MainActor(unsafe) public func runNextLoop()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ElementSearchTask : ObjectiveC.NSObject, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  @_Concurrency.MainActor @preconcurrency public func clearElementsCompleted()
+  @_Concurrency.MainActor @preconcurrency public func notifyScroll()
+  @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency public func setPlotlineScrollListener(listener: (any PlotlineScrollListener)?)
+  @_Concurrency.MainActor @preconcurrency public func cleanAssignScrollDelegates(currentVC: UIKit.UIViewController)
+  @_Concurrency.MainActor @preconcurrency public func intervalFunction()
+  @_Concurrency.MainActor @preconcurrency public func runNextLoop()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class RewardsListener {
@@ -1421,6 +1432,9 @@ extension WidgetData {
     @objc set
   }
 }
+@available(iOS 13.0, *)
+extension PLabelInternal : Swift.Sendable {}
 extension ArrowDirection : Swift.Equatable {}
 extension ArrowDirection : Swift.Hashable {}
 extension ArrowDirection : Swift.RawRepresentable {}
+extension ElementSearchTask : Swift.Sendable {}
