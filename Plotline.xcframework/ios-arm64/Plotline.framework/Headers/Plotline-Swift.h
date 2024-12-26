@@ -685,6 +685,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
 SWIFT_CLASS("_TtC8Plotline20ViewPositionObserver")
 @interface ViewPositionObserver : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

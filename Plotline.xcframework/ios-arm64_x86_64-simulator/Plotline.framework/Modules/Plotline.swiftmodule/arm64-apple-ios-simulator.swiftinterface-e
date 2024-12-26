@@ -279,6 +279,8 @@ public class IdentityManager {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VideoSettings {
+  public static func isStreamingVideo(videoUrl: Swift.String) -> Swift.Bool
+  public static func getVideoUrl(stepLayout: Plotline.StepLayout) -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Utils {
@@ -345,7 +347,6 @@ public class StorySettings {
   public var unseenBorderUrl: Swift.String
   public var seenBorderUrl: Swift.String
   public var thumbnailType: Swift.String
-  public var loadingUrl: Swift.String
   public var closeButtonUrl: Swift.String
   public var padding: [Swift.Double]
   public var storyTitleStyle: Plotline.StepStyles
@@ -358,6 +359,8 @@ public class StorySettings {
   public var backgroundImageBorderRadius: Swift.Double
   public var favouriteIcon: Swift.String
   public var favouriteIconSize: Swift.Int
+  public var loaderSize: Swift.Int
+  public var loadingLottie: Swift.String
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
@@ -570,7 +573,9 @@ public class Slide {
   public var backgroundUrl: Swift.String
   public var overlayLayout: Plotline.StepLayout
   public var slideBackgroundColor: Swift.String
+  public var hlsUrl: Swift.String
   public init(json: [Swift.String : Any])
+  public func getBackgroundUrl() -> Swift.String
   public static func convertSlideJSONArray(array: [[Swift.String : Any]]) -> [Plotline.Slide]
   @objc deinit
 }
