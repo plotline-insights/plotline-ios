@@ -62,7 +62,7 @@ import _SwiftConcurrencyShims
 }
 public class HapticSettings {
   public var pattern: [Swift.Double]
-  public var amplitude: [Swift.Float]
+  public var amplitude: [Swift.Double]
   public var loop: Swift.Bool
   public init(_ json: [Swift.String : Any])
   public func isValid() -> Swift.Bool

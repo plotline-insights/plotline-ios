@@ -1217,21 +1217,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Swift.Float]",
+                "printedName": "[Swift.Double]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySfGvp",
-            "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySfGvp",
+            "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySdGvp",
+            "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySdGvp",
             "moduleName": "Plotline",
             "declAttributes": [
               "HasInitialValue",
@@ -1248,21 +1248,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[Swift.Float]",
+                    "printedName": "[Swift.Double]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySfGvg",
-                "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySfGvg",
+                "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySdGvg",
+                "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySdGvg",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1280,21 +1280,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[Swift.Float]",
+                    "printedName": "[Swift.Double]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySfGvs",
-                "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySfGvs",
+                "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySdGvs",
+                "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySdGvs",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1311,8 +1311,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySfGvM",
-                "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySfGvM",
+                "usr": "s:8Plotline14HapticSettingsC9amplitudeSaySdGvM",
+                "mangledName": "$s8Plotline14HapticSettingsC9amplitudeSaySdGvM",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -65253,14 +65253,14 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/HapticSettings.swift",
       "kind": "Array",
-      "offset": 211,
+      "offset": 212,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/HapticSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 242,
+      "offset": 243,
       "length": 5,
       "value": "false"
     },
@@ -66774,7 +66774,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.1.5\""
+      "value": "\"4.1.6\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
