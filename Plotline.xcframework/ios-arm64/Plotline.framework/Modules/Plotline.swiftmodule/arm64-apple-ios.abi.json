@@ -12297,8 +12297,8 @@
       },
       {
         "kind": "Import",
-        "name": "Lottie",
-        "printedName": "Lottie",
+        "name": "PlotlineLottie",
+        "printedName": "PlotlineLottie",
         "declKind": "Import",
         "moduleName": "Plotline",
         "declAttributes": [
@@ -33655,8 +33655,8 @@
       },
       {
         "kind": "Import",
-        "name": "Lottie",
-        "printedName": "Lottie",
+        "name": "PlotlineLottie",
+        "printedName": "PlotlineLottie",
         "declKind": "Import",
         "moduleName": "Plotline",
         "declAttributes": [
@@ -66774,7 +66774,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.1.6\""
+      "value": "\"4.1.7\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -67500,77 +67500,77 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 337,
+      "offset": 345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1710,
+      "offset": 1718,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1733,
+      "offset": 1741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 60088,
+      "offset": 60096,
       "length": 16,
       "value": "\"Helvetica Neue\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60126,
+      "offset": 60134,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 60167,
+      "offset": 60175,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 67197,
+      "offset": 67205,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 70827,
+      "offset": 70835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 70871,
+      "offset": 70879,
       "length": 9,
       "value": "\"PLAYING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 70921,
+      "offset": 70929,
       "length": 11,
       "value": "\"BUFFERING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 70633,
+      "offset": 70641,
       "length": 14,
       "value": "\"Plotline.PlayerObserver\""
     },
