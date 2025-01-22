@@ -345,6 +345,9 @@ public class StorySettings {
   public static let THUMBNAIL_TYPE_CIRCLE: Swift.String
   public static let THUMBNAIL_TYPE_RECT: Swift.String
   public var unseenBorderUrl: Swift.String
+  public var unseenBorderColor: Swift.String
+  public var unseenBorderThroughImageUrl: Swift.Bool
+  public var seenBorderColor: Swift.String
   public var seenBorderUrl: Swift.String
   public var thumbnailType: Swift.String
   public var closeButtonUrl: Swift.String
@@ -353,6 +356,7 @@ public class StorySettings {
   public var slideTitleStyle: StepStyles
   public var thumbnailSize: Swift.Double
   public var borderSize: Swift.Double
+  public var borderThickness: Swift.Double
   public var interStorySpacing: Swift.Double
   public var backgroundImageHeight: Swift.Double
   public var backgroundImageWidth: Swift.Double

@@ -12510,6 +12510,264 @@
           },
           {
             "kind": "Var",
+            "name": "unseenBorderColor",
+            "printedName": "unseenBorderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline13StorySettingsC17unseenBorderColorSSvp",
+            "mangledName": "$s8Plotline13StorySettingsC17unseenBorderColorSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC17unseenBorderColorSSvg",
+                "mangledName": "$s8Plotline13StorySettingsC17unseenBorderColorSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC17unseenBorderColorSSvs",
+                "mangledName": "$s8Plotline13StorySettingsC17unseenBorderColorSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC17unseenBorderColorSSvM",
+                "mangledName": "$s8Plotline13StorySettingsC17unseenBorderColorSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unseenBorderThroughImageUrl",
+            "printedName": "unseenBorderThroughImageUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvp",
+            "mangledName": "$s8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvg",
+                "mangledName": "$s8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvs",
+                "mangledName": "$s8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvM",
+                "mangledName": "$s8Plotline13StorySettingsC27unseenBorderThroughImageUrlSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "seenBorderColor",
+            "printedName": "seenBorderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline13StorySettingsC15seenBorderColorSSvp",
+            "mangledName": "$s8Plotline13StorySettingsC15seenBorderColorSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC15seenBorderColorSSvg",
+                "mangledName": "$s8Plotline13StorySettingsC15seenBorderColorSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC15seenBorderColorSSvs",
+                "mangledName": "$s8Plotline13StorySettingsC15seenBorderColorSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC15seenBorderColorSSvM",
+                "mangledName": "$s8Plotline13StorySettingsC15seenBorderColorSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "seenBorderUrl",
             "printedName": "seenBorderUrl",
             "children": [
@@ -13214,6 +13472,92 @@
                 "declKind": "Accessor",
                 "usr": "s:8Plotline13StorySettingsC10borderSizeSdvM",
                 "mangledName": "$s8Plotline13StorySettingsC10borderSizeSdvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "borderThickness",
+            "printedName": "borderThickness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline13StorySettingsC15borderThicknessSdvp",
+            "mangledName": "$s8Plotline13StorySettingsC15borderThicknessSdvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC15borderThicknessSdvg",
+                "mangledName": "$s8Plotline13StorySettingsC15borderThicknessSdvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC15borderThicknessSdvs",
+                "mangledName": "$s8Plotline13StorySettingsC15borderThicknessSdvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC15borderThicknessSdvM",
+                "mangledName": "$s8Plotline13StorySettingsC15borderThicknessSdvM",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -66324,9 +66668,16 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 385,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 439,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
@@ -66337,92 +66688,113 @@
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
+      "kind": "StringLiteral",
+      "offset": 527,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
+      "kind": "StringLiteral",
+      "offset": 631,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "Array",
-      "offset": 523,
+      "offset": 669,
       "length": 12,
       "value": "[0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "Dictionary",
-      "offset": 592,
+      "offset": 738,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "Dictionary",
-      "offset": 653,
+      "offset": 799,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 697,
+      "offset": 843,
       "length": 2,
       "value": "54"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 736,
+      "offset": 882,
       "length": 2,
       "value": "61"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 782,
+      "offset": 926,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 971,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 832,
+      "offset": 1021,
       "length": 3,
       "value": "240"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 882,
+      "offset": 1071,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 939,
+      "offset": 1128,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 1170,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1024,
+      "offset": 1213,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1060,
+      "offset": 1249,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StorySettings.swift",
       "kind": "StringLiteral",
-      "offset": 1103,
+      "offset": 1292,
       "length": 2,
       "value": "\"\""
     },
@@ -66774,7 +67146,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.1.7\""
+      "value": "\"4.1.8\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
