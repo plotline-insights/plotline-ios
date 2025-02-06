@@ -78,6 +78,9 @@ public class HapticSettings {
 }
 public class StepStyles {
   public var bgColor: Swift.String
+  public var bgImage: Swift.String
+  public var bgImageFit: Swift.String
+  public var bgImageType: Swift.String
   public var borderSize: Swift.Int
   public var borderColor: Swift.String
   public var borderRadius: Swift.Int
@@ -91,6 +94,15 @@ public class StepStyles {
   public var numberOfLines: Swift.Int
   public var fontURL: Swift.String
   public var shouldAnimate: Swift.Bool
+  public static var BG_TYPE_IMAGE: Swift.String
+  public static var BG_TYPE_LOTTIE: Swift.String
+  public static var BG_FIT_CENTER_CROP: Swift.String
+  public static var BG_FIT_XY: Swift.String
+  public static var BG_FIT_CENTER_INSIDE: Swift.String
+  public static var BG_FIT_CENTER: Swift.String
+  public static var BG_FIT_FIT_CENTER: Swift.String
+  public static var BG_FIT_FIT_END: Swift.String
+  public static var BG_FIT_FIT_START: Swift.String
   public init(_ json: [Swift.String : Any])
   @objc deinit
 }
@@ -436,6 +448,18 @@ public class SurveySettings {
   public var studyDescriptionStyle: StepStyles
   public var studyOptionStyle: StepStyles
   public var studyButtonStyle: StepStyles
+  public var backgroundRadius: Swift.Int
+  public var buttonWidth: Swift.Int
+  public var buttonMargin: [Swift.Double]
+  public var buttonPadding: [Swift.Double]
+  public var optionMargin: [Swift.Double]
+  public var optionPadding: [Swift.Double]
+  public var descriptionMargin: [Swift.Double]
+  public var titleMargin: [Swift.Double]
+  public var progressMargin: [Swift.Double]
+  public var backgroundPadding: [Swift.Double]
+  public var contentMargin: [Swift.Double]
+  public var closeButtonMargin: [Swift.Double]
   public init()
   public func setSurveySettings(surveySettings: [Swift.String : Any])
   @objc deinit
@@ -627,6 +651,8 @@ public class RewardSettings {
   public func setEvents(sEvents: Swift.Set<Swift.String>)
   public func getMetricEvents() -> Swift.Set<Swift.String>
   public func getShouldEnableScrollDelegates() -> Swift.Bool
+  public func getShouldClearViewListener() -> Swift.Bool
+  public func setShouldClearViewListener(shouldClearViewListener: Swift.Bool)
   public func getShouldEnableNestedControllers() -> Swift.Bool
   public func getShouldAllowConcurrentTriggers() -> Swift.Bool
   public func setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers: Swift.Bool)
@@ -1172,6 +1198,7 @@ public class FlowStep {
   public var isAudioCorrupted: Swift.Bool
   public var hapticSettings: HapticSettings
   public var clientElementSelector: ClientElementSelector
+  public var dismissAction: StepAction
   public var ttl: Swift.Int64
   public static var PLOTLINE_AUDIO_PREFIX: Swift.String
   public static var PLOTLINE_VIDEO_PREFIX: Swift.String
