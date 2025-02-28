@@ -424,6 +424,8 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId endpoint:(NSString * _Nonnull)endpoint;
++ (void)initializeAnonymousUserWithApiKey:(NSString * _Nonnull)apiKey deviceId:(NSString * _Nonnull)deviceId;
++ (void)initializeAnonymousUserWithApiKey:(NSString * _Nonnull)apiKey;
 + (void)trackWithEventName:(NSString * _Nonnull)eventName;
 + (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties;
 + (void)identifyWithAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;

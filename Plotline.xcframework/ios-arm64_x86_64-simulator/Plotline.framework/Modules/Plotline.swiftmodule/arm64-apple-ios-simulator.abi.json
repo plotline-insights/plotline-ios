@@ -31798,6 +31798,72 @@
           },
           {
             "kind": "Function",
+            "name": "initializeAnonymousUser",
+            "printedName": "initializeAnonymousUser(apiKey:deviceId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)initializeAnonymousUserWithApiKey:deviceId:",
+            "mangledName": "$s8PlotlineAAC23initializeAnonymousUser6apiKey8deviceIdySS_SStFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "initializeAnonymousUserWithApiKey:deviceId:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeAnonymousUser",
+            "printedName": "initializeAnonymousUser(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)initializeAnonymousUserWithApiKey:",
+            "mangledName": "$s8PlotlineAAC23initializeAnonymousUser6apiKeyySS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "initializeAnonymousUserWithApiKey:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "track",
             "printedName": "track(eventName:)",
             "children": [
@@ -69016,99 +69082,106 @@
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 489,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "StringLiteral",
-      "offset": 515,
+      "offset": 546,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 569,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "StringLiteral",
-      "offset": 566,
+      "offset": 597,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 588,
+      "offset": 619,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 617,
+      "offset": 648,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 645,
+      "offset": 676,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 672,
+      "offset": 703,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 728,
+      "offset": 759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 754,
+      "offset": 785,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 778,
+      "offset": 809,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "Array",
-      "offset": 812,
+      "offset": 843,
       "length": 12,
       "value": "[0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "StringLiteral",
-      "offset": 844,
+      "offset": 875,
       "length": 5,
       "value": "\"END\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 897,
+      "offset": 928,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/VideoSettings.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 955,
       "length": 2,
       "value": "\"\""
     },
@@ -69859,7 +69932,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.2.4\""
+      "value": "\"4.2.5\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -70613,56 +70686,56 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 60610,
+      "offset": 60735,
       "length": 16,
       "value": "\"Helvetica Neue\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60648,
+      "offset": 60773,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 60689,
+      "offset": 60814,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 68414,
+      "offset": 68539,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 72694,
+      "offset": 76389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 72738,
+      "offset": 76433,
       "length": 9,
       "value": "\"PLAYING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 72788,
+      "offset": 76483,
       "length": 11,
       "value": "\"BUFFERING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 72500,
+      "offset": 76195,
       "length": 14,
       "value": "\"Plotline.PlayerObserver\""
     },
