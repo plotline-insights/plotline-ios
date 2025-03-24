@@ -142,6 +142,7 @@ public class PStoryView {
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
   @_Concurrency.MainActor(unsafe) public var widgetId: Swift.String
+  @_Concurrency.MainActor(unsafe) public var stepId: Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
@@ -156,6 +157,12 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
   @objc @_Concurrency.MainActor(unsafe) public func reload()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) public func intervalFunction(refreshInterval: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func runRefreshLoop(refreshInterval: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func setPreloadedHeight(loaderUrl: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func removeWidgetLoader()
+  @_Concurrency.MainActor(unsafe) public func resetPreloadHeightConstraint()
+  @_Concurrency.MainActor(unsafe) public func removeAllViews()
   @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
@@ -216,7 +223,7 @@ public class EventTask {
   @objc deinit
 }
 public class UpdateWidgetTask {
-  public init(widgetsData: [[Swift.String : Any]], shouldReloadWidgets: Swift.Bool = false)
+  public init(widgetsData: [[Swift.String : Any]], shouldReloadWidgets: Swift.Bool = false, shouldAppendWidgets: Swift.Bool = false)
   @available(iOS 10.0, *)
   public func execute()
   @objc deinit
@@ -532,6 +539,7 @@ public class CoreDataManager {
   public func getEventsWithName(eventNameValues: [Swift.String]) -> [Plotline.PEvent]
   public func removeAllWidgets()
   public func insertWidgetDataList(widgetDataList: [Plotline.PWidget])
+  public func getAllWidgetData() -> [Plotline.PWidget]?
   public func getWidgetData(clientElementId: Swift.String) -> Plotline.PWidget?
   public func getStoryView(storyId: Swift.String) -> Plotline.PStoryView?
   public func insertStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32)
@@ -658,6 +666,8 @@ public class RewardSettings {
   public func setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers: Swift.Bool)
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
   public func getMetricEventsType() -> Swift.String
+  public func setsRealtimeAttributes(sRealtimeAttributes: Swift.Set<Swift.String>)
+  public func getRealtimeAttributes() -> Swift.Set<Swift.String>
   public func setsMetricEventsType(sMetricEventsType: Swift.String)
   public func setSessionLimit(sessionLimit: Swift.Int)
   public func incrementSessionCount()
@@ -1006,7 +1016,7 @@ public class Study : Plotline.Campaign {
   public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil, effect: Swift.String?, target: Swift.String?, overrideLabels: [Swift.String : Any]? = nil)
   public static func saveWidgetControlGroup(widgetId: Swift.String)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
-  public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: ((Swift.Bool) -> Swift.Void)?)
+  public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: @escaping ([Swift.String : Any]?) -> ())
   public static func registerToken(token: Swift.String)
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String)
   public static func setPushPermissionGranted(granted: Swift.Bool)
@@ -1284,6 +1294,9 @@ public class Widget : Plotline.Campaign {
   public var content: Plotline.WidgetContent
   public var inTargetGroup: Swift.Bool
   public var preloadHeight: Swift.Double
+  public var shouldRefreshWidget: Swift.Bool
+  public var widgetLoaderUrl: Swift.String
+  public var refreshIntervalInMilliseconds: Swift.Int
   public init(json: [Swift.String : Any])
   @objc deinit
 }
