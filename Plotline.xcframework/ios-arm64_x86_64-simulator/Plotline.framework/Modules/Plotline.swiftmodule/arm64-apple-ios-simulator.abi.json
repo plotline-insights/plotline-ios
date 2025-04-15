@@ -2319,14 +2319,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8Plotline10StepStylesC12borderRadiusSivp",
-            "mangledName": "$s8Plotline10StepStylesC12borderRadiusSivp",
+            "usr": "s:8Plotline10StepStylesC12borderRadiusSdvp",
+            "mangledName": "$s8Plotline10StepStylesC12borderRadiusSdvp",
             "moduleName": "Plotline",
             "declAttributes": [
               "HasStorage",
@@ -2341,14 +2341,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline10StepStylesC12borderRadiusSivg",
-                "mangledName": "$s8Plotline10StepStylesC12borderRadiusSivg",
+                "usr": "s:8Plotline10StepStylesC12borderRadiusSdvg",
+                "mangledName": "$s8Plotline10StepStylesC12borderRadiusSdvg",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2365,14 +2365,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline10StepStylesC12borderRadiusSivs",
-                "mangledName": "$s8Plotline10StepStylesC12borderRadiusSivs",
+                "usr": "s:8Plotline10StepStylesC12borderRadiusSdvs",
+                "mangledName": "$s8Plotline10StepStylesC12borderRadiusSdvs",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "set"
@@ -2389,8 +2389,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Plotline10StepStylesC12borderRadiusSivM",
-                "mangledName": "$s8Plotline10StepStylesC12borderRadiusSivM",
+                "usr": "s:8Plotline10StepStylesC12borderRadiusSdvM",
+                "mangledName": "$s8Plotline10StepStylesC12borderRadiusSdvM",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15646,6 +15646,116 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "widgetHeader",
+            "printedName": "widgetHeader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Plotline.StepLayout?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepLayout",
+                    "printedName": "Plotline.StepLayout",
+                    "usr": "s:8Plotline10StepLayoutC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvp",
+            "mangledName": "$s8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Plotline.StepLayout?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StepLayout",
+                        "printedName": "Plotline.StepLayout",
+                        "usr": "s:8Plotline10StepLayoutC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvg",
+                "mangledName": "$s8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Plotline.StepLayout?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StepLayout",
+                        "printedName": "Plotline.StepLayout",
+                        "usr": "s:8Plotline10StepLayoutC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvs",
+                "mangledName": "$s8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvM",
+                "mangledName": "$s8Plotline13StorySettingsC12widgetHeaderAA10StepLayoutCSgvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(_:)",
@@ -21849,6 +21959,91 @@
                 "declKind": "Accessor",
                 "usr": "s:8Plotline8CampaignC14loaderSettingsAA06LoaderD0CvM",
                 "mangledName": "$s8Plotline8CampaignC14loaderSettingsAA06LoaderD0CvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dismissOnTrigger",
+            "printedName": "dismissOnTrigger",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline8CampaignC16dismissOnTriggerSbvp",
+            "mangledName": "$s8Plotline8CampaignC16dismissOnTriggerSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8CampaignC16dismissOnTriggerSbvg",
+                "mangledName": "$s8Plotline8CampaignC16dismissOnTriggerSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8CampaignC16dismissOnTriggerSbvs",
+                "mangledName": "$s8Plotline8CampaignC16dismissOnTriggerSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8CampaignC16dismissOnTriggerSbvM",
+                "mangledName": "$s8Plotline8CampaignC16dismissOnTriggerSbvM",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -36358,6 +36553,92 @@
                 "declKind": "Accessor",
                 "usr": "s:8Plotline10StepLayoutC14preloadWebviewSbvM",
                 "mangledName": "$s8Plotline10StepLayoutC14preloadWebviewSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resizableButton",
+            "printedName": "resizableButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline10StepLayoutC15resizableButtonSbvp",
+            "mangledName": "$s8Plotline10StepLayoutC15resizableButtonSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC15resizableButtonSbvg",
+                "mangledName": "$s8Plotline10StepLayoutC15resizableButtonSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC15resizableButtonSbvs",
+                "mangledName": "$s8Plotline10StepLayoutC15resizableButtonSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC15resizableButtonSbvM",
+                "mangledName": "$s8Plotline10StepLayoutC15resizableButtonSbvM",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -68866,70 +69147,70 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "BooleanLiteral",
-      "offset": 691,
+      "offset": 694,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 735,
+      "offset": 738,
       "length": 7,
       "value": "\"IMAGE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 782,
+      "offset": 785,
       "length": 8,
       "value": "\"LOTTIE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 834,
+      "offset": 837,
       "length": 13,
       "value": "\"CENTER_CROP\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 882,
+      "offset": 885,
       "length": 8,
       "value": "\"FIT_XY\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 936,
+      "offset": 939,
       "length": 15,
       "value": "\"CENTER_INSIDE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 990,
+      "offset": 993,
       "length": 8,
       "value": "\"CENTER\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 1044,
       "length": 12,
       "value": "\"FIT_CENTER\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 1093,
+      "offset": 1096,
       "length": 9,
       "value": "\"FIT_END\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepStyles.swift",
       "kind": "StringLiteral",
-      "offset": 1144,
+      "offset": 1147,
       "length": 11,
       "value": "\"FIT_START\""
     },
@@ -69111,7 +69392,7 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "StringLiteral",
-      "offset": 23017,
+      "offset": 25749,
       "length": 24,
       "value": "\"didChangeTestUserState\""
     },
@@ -70490,35 +70771,35 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 515,
+      "offset": 553,
       "length": 7,
       "value": "\"STUDY\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 561,
+      "offset": 599,
       "length": 6,
       "value": "\"FLOW\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 609,
+      "offset": 647,
       "length": 9,
       "value": "\"JOURNEY\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 659,
+      "offset": 697,
       "length": 8,
       "value": "\"WIDGET\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 714,
+      "offset": 752,
       "length": 14,
       "value": "\"FEATURE_FLAG\""
     },
@@ -70562,7 +70843,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.2.6\""
+      "value": "\"4.2.7\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -71293,6 +71574,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/StepLayout.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1285,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
       "offset": 345,
@@ -71316,58 +71604,72 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 60735,
+      "offset": 60915,
       "length": 16,
       "value": "\"Helvetica Neue\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60773,
+      "offset": 60953,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 60814,
+      "offset": 60994,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 68539,
+      "offset": 68719,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 76389,
+      "offset": 76569,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 76433,
+      "offset": 76613,
       "length": 9,
       "value": "\"PLAYING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 76483,
+      "offset": 76663,
       "length": 11,
       "value": "\"BUFFERING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 76195,
+      "offset": 76375,
       "length": 14,
       "value": "\"Plotline.PlayerObserver\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
+      "kind": "Array",
+      "offset": 78848,
+      "length": 12,
+      "value": "[0, 0, 0, 0]"
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
+      "kind": "StringLiteral",
+      "offset": 78792,
+      "length": 15,
+      "value": "\"Plotline.ResizableButton\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/LoaderSettings.swift",
@@ -72429,21 +72731,21 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30133,
+      "offset": 30136,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30160,
+      "offset": 30163,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/Tooltip\/PlotlineTooltipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30188,
+      "offset": 30191,
       "length": 1,
       "value": "0"
     },

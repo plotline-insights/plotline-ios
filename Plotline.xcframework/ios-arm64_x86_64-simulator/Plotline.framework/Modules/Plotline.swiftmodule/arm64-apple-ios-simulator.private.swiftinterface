@@ -83,7 +83,7 @@ public class StepStyles {
   public var bgImageType: Swift.String
   public var borderSize: Swift.Int
   public var borderColor: Swift.String
-  public var borderRadius: Swift.Int
+  public var borderRadius: Swift.Double
   public var fontSize: Swift.Double
   public var fontColor: Swift.String
   public var fontSpacing: Swift.Float
@@ -384,6 +384,7 @@ public class StorySettings {
   public var favouriteIconSize: Swift.Int
   public var loaderSize: Swift.Int
   public var loadingLottie: Swift.String
+  public var widgetHeader: StepLayout?
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
@@ -481,6 +482,7 @@ public class Campaign {
   public var eventAttributes: [Swift.String : Any]
   public var shouldIgnoreFreqCap: Swift.Bool
   public var loaderSettings: LoaderSettings
+  public var dismissOnTrigger: Swift.Bool
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
@@ -845,6 +847,7 @@ public class StepLayout {
   public var rewardSettings: RewardSettings
   weak public var webview: WebKit.WKWebView?
   public var preloadWebview: Swift.Bool
+  public var resizableButton: Swift.Bool
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit

@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8EXriD2Dk7A1cAFbu7hB2DfP6gk=
+		X18cQrZhkF015GduRJKJkc2MD6w=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		9Azf7GtTRN7ctucJEgEPMwL03NM=
+		CifMoY3HRDYui1qQ7gPpg8EdRPs=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		9Azf7GtTRN7ctucJEgEPMwL03NM=
+		CifMoY3HRDYui1qQ7gPpg8EdRPs=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		fECQkbHldobs7uMJw5ZSumx6ZOQ=
+		XIrBeIuFPDnDqMtoLeswwfnQUzI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		Qe8SZHCCsi9TXyif17FvQdpJ0Zk=
+		AuFE2H+essJDPqbUYIfum3IH2cs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S7wBmbp1X0Kz5MH151dtCLIRbNzjmQQJz6HXgf0nTmg=
+			9hk5/RmFy8u9dbg3eKsWzxrbWnYisG1jaygidt6B27o=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uLoIfplRp+VXo3rqTZbWmrDoG9n7mGjeH6ohrBKH8NU=
+			187TqMHpZp3AWG1FeOOQDm8HCDg8BFQ8zmcmx6UI4Gw=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -198,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uLoIfplRp+VXo3rqTZbWmrDoG9n7mGjeH6ohrBKH8NU=
+			187TqMHpZp3AWG1FeOOQDm8HCDg8BFQ8zmcmx6UI4Gw=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iIi4G809pm/PP05pme7Cp6EjauFMRRf49/M3B8tDZQE=
+			OdKjc8DhEI9CsC8AyoarqawM4iXzC8+FUp4a8kzgbv0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OBaUPcVJ5Km/2TXwBWoCwYSiCJjfOGWO75U8EC1Fnzs=
+			LQJvk8h7MjHuTF+mhQ6eGV5eQ1hRHHKbO4dBb0ewV6c=
 			</data>
 		</dict>
 	</dict>
