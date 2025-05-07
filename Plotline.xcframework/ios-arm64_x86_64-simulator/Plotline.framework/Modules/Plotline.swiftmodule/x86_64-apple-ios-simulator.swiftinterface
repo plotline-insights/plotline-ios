@@ -482,7 +482,7 @@ public class Campaign {
   public var eventAttributes: [Swift.String : Any]
   public var shouldIgnoreFreqCap: Swift.Bool
   public var loaderSettings: LoaderSettings
-  public var dismissOnTrigger: Swift.Bool
+  public var dismissEvents: [Swift.String]
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
@@ -893,6 +893,7 @@ public class PAttribute {
   public static func track(eventName: Swift.String)
   public static func track(eventName: Swift.String, properties: [Swift.String : Any])
   public static func checkEligibilityAndTriggerCampaign(campaigns: [Campaign], eventName: Swift.String?, eligibleEvents: Swift.Set<Swift.String>, properties: [Swift.String : Any]?)
+  public static func checkEligibilityAndTriggerCampaignProcess(campaigns: [Campaign], eventName: Swift.String?, eligibleEvents: Swift.Set<Swift.String>, properties: [Swift.String : Any]?)
   public static func triggerCampaign(eligibleCampaigns: [Campaign], eventName: Swift.String?, compositeEvents: Swift.Set<Swift.String>?, properties: [Swift.String : Any]?, shouldLaunchManually: Swift.Bool = false)
   @objc deinit
 }
