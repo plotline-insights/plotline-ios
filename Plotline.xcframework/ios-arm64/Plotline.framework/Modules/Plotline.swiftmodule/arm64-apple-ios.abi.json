@@ -31463,6 +31463,72 @@
           },
           {
             "kind": "Function",
+            "name": "removeSwiftUICoordinates",
+            "printedName": "removeSwiftUICoordinates(label:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)removeSwiftUICoordinatesWithLabel:",
+            "mangledName": "$s8PlotlineAAC24removeSwiftUICoordinates5labelySS_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "removeSwiftUICoordinatesWithLabel:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSwiftUICoordinatesInPx",
+            "printedName": "addSwiftUICoordinatesInPx(label:rect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)addSwiftUICoordinatesInPxWithLabel:rect:",
+            "mangledName": "$s8PlotlineAAC25addSwiftUICoordinatesInPx5label4rectySS_So6CGRectVtFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "addSwiftUICoordinatesInPxWithLabel:rect:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onSwiftUIViewDisappear",
             "printedName": "onSwiftUIViewDisappear(label:)",
             "children": [
@@ -71231,7 +71297,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.3.2\""
+      "value": "\"4.3.3\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -73623,21 +73689,21 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 10240,
+      "offset": 10345,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "StringLiteral",
-      "offset": 10911,
+      "offset": 11016,
       "length": 24,
       "value": "\"Plotline.WeakUIScrollViewDelegate\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 13949,
+      "offset": 14054,
       "length": 1,
       "value": "0"
     },

@@ -736,6 +736,8 @@ public class RewardSettings {
   public func clearPreInitAttributes()
   public func getSwiftUICoordinates() -> [Swift.String : (CoreFoundation.CGRect, Swift.Int64, Swift.Bool)]
   public func addSwiftUICoordinates(label: Swift.String, rect: CoreFoundation.CGRect)
+  @objc public static func removeSwiftUICoordinates(label: Swift.String)
+  @objc public static func addSwiftUICoordinatesInPx(label: Swift.String, rect: CoreFoundation.CGRect)
   public func onSwiftUIViewDisappear(label: Swift.String)
   public func onSwiftUIViewAppear(label: Swift.String)
   public func getIdentityManager() -> Plotline.IdentityManager

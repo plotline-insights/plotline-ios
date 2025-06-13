@@ -418,6 +418,8 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
 - (void)setIsFeatureFlagsLoadedWithIsFeatureFlagsLoaded:(BOOL)isFeatureFlagsLoaded;
 - (void)registerInitCallbackOnInitialized:(void (^ _Nonnull)(void))onInitialized onFailure:(void (^ _Nonnull)(NSString * _Nonnull))onFailure;
++ (void)removeSwiftUICoordinatesWithLabel:(NSString * _Nonnull)label;
++ (void)addSwiftUICoordinatesInPxWithLabel:(NSString * _Nonnull)label rect:(CGRect)rect;
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
