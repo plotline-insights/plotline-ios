@@ -760,7 +760,7 @@ public class RewardSettings {
   public func getActiveStudy() -> Plotline.StudyDialog?
   public func setAppInBackground(isAppInBackground: Swift.Bool)
   public func getIsAppInBackground() -> Swift.Bool
-  public static func getInstance() -> Plotline.Plotline
+  @objc public static func getInstance() -> Plotline.Plotline
   public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String, appVersionCode: Swift.String, deviceModel: Swift.String)
   @objc public static func initialize(apiKey: Swift.String)
   @objc public static func initialize(apiKey: Swift.String, userId: Swift.String)

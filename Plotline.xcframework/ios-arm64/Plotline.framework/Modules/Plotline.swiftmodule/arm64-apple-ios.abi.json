@@ -32256,13 +32256,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8PlotlineAAC11getInstanceAByFZ",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)getInstance",
             "mangledName": "$s8PlotlineAAC11getInstanceAByFZ",
             "moduleName": "Plotline",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -71290,7 +71291,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.3.4\""
+      "value": "\"4.3.5\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",

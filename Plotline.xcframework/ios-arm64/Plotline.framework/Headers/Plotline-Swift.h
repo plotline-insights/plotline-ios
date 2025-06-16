@@ -423,6 +423,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (Plotline * _Nonnull)getInstance SWIFT_WARN_UNUSED_RESULT;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId;
 + (void)initializeWithApiKey:(NSString * _Nonnull)apiKey userId:(NSString * _Nonnull)userId endpoint:(NSString * _Nonnull)endpoint;
