@@ -530,6 +530,8 @@ public class InitTask {
 @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 public class CoreDataManager {
   public static let shared: Plotline.CoreDataManager
+  public func lockLoadContainer()
+  public func unlockLoadContainer()
   public func loadContainer(completion: @escaping (Swift.Bool) -> ())
   public func getEvent(eventName: Swift.String) -> Plotline.PEvent?
   public func insertEvent(eventName: Swift.String, properties: [Swift.String : Any])
@@ -770,6 +772,8 @@ public class RewardSettings {
   @objc public static func track(eventName: Swift.String)
   @objc public static func track(eventName: Swift.String, properties: [Swift.String : Any])
   @objc public static func identify(attributes: [Swift.String : Any])
+  @objc public static func setShouldEnableThreadSafeWidgets(shouldEnableThreadSafeWidgets: Swift.Bool)
+  @objc public static func getShouldEnableThreadSafeWidgets() -> Swift.Bool
   public static func getStudyWindow()
   @objc public static func setShouldEnableScrollDelegates(shouldEnableScrollDelegates: Swift.Bool)
   @objc public static func setShouldEnableNestedControllers(shouldEnableNestedControllers: Swift.Bool)

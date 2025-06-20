@@ -432,6 +432,8 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)trackWithEventName:(NSString * _Nonnull)eventName;
 + (void)trackWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties;
 + (void)identifyWithAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
++ (void)setShouldEnableThreadSafeWidgetsWithShouldEnableThreadSafeWidgets:(BOOL)shouldEnableThreadSafeWidgets;
++ (BOOL)getShouldEnableThreadSafeWidgets SWIFT_WARN_UNUSED_RESULT;
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)showMockStudy;
