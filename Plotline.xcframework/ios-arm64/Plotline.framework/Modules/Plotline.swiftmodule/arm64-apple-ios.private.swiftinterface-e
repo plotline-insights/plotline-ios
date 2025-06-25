@@ -648,6 +648,7 @@ public class RewardSettings {
   public static let FRAMEWORK_NATIVE: Swift.String
   public static let FRAMEWORK_REACT_NATIVE: Swift.String
   public static let FRAMEWORK_FLUTTER: Swift.String
+  public static let FRAMEWORK_KMP: Swift.String
   public var studyWindow: UIKit.UIWindow?
   public func getApiKey() -> Swift.String?
   public func setApiKey(sApiKey: Swift.String)

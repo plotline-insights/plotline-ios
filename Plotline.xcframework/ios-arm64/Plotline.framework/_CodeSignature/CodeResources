@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		nnAJrvt6eFLuWxtw+mlzUbbHL/M=
+		s4+EnQkOJrMDluoE5/tKkxPZU70=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		OdvBV3lQCWdHc6b2VrKbI6u9ZM4=
+		XlFeS6xEM60vuDCRzl5eNxL4bek=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		OdvBV3lQCWdHc6b2VrKbI6u9ZM4=
+		XlFeS6xEM60vuDCRzl5eNxL4bek=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sof1Nvr3tLXA6ph93QJy2354XQ0=
+		hAqZ5v92DBm/KcYkz7FYlMo0AGE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		r2TnBfrmmHhkq8sk2B4XXd7Hcz8=
+		cufQh2pAW8Buur73zqYzqqAJwdo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zrBLNDtmGmFoGaDO5t9WRJa/DwCSSxqMhhuh1Urp7HE=
+			jAWzi6RBW6dKrjh5ZnTbPpirxAZPnWwx826rVkvGubM=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			699cCLNdWdeAtL+w70Mc5fhF9/mce9HzcDEIzEtHPOA=
+			aX+i1i4edhKkJajaNZ6vPZ+6Je6YvG1kR9T4qtUehCg=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -198,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			699cCLNdWdeAtL+w70Mc5fhF9/mce9HzcDEIzEtHPOA=
+			aX+i1i4edhKkJajaNZ6vPZ+6Je6YvG1kR9T4qtUehCg=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tGly9rrtbU/B73AeZYeF6MG24+8Q0a+a7rA46zpbhzM=
+			4bRrs43eY5C9koiu+4q4pivIIJaAyxVevYfjN5leHxI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zN2id/tme3y7BpGwj0EjLG+z8wshjeKdr5iV1eJhD70=
+			jlJnnx3rXo578onk1YXNmH+aQ6atb5AH2jmIZwQ2iRQ=
 			</data>
 		</dict>
 	</dict>
