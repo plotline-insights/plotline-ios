@@ -369,6 +369,46 @@ SWIFT_CLASS_NAMED("FeatureFlagData")
 @end
 
 
+SWIFT_CLASS("_TtC8Plotline8FlowStep")
+@interface FlowStep : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_TOOLTIP;)
++ (NSString * _Nonnull)TYPE_TOOLTIP SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_TOOLTIP:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_MODAL;)
++ (NSString * _Nonnull)TYPE_MODAL SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_MODAL:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_BADGE;)
++ (NSString * _Nonnull)TYPE_BADGE SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_BADGE:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_BOTTOMSHEET;)
++ (NSString * _Nonnull)TYPE_BOTTOMSHEET SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_BOTTOMSHEET:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_COACHMARK;)
++ (NSString * _Nonnull)TYPE_COACHMARK SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_COACHMARK:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_SPOTLIGHT;)
++ (NSString * _Nonnull)TYPE_SPOTLIGHT SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_SPOTLIGHT:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_BANNER;)
++ (NSString * _Nonnull)TYPE_BANNER SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_BANNER:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_FLOATER;)
++ (NSString * _Nonnull)TYPE_FLOATER SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_FLOATER:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_PIPVIDEO;)
++ (NSString * _Nonnull)TYPE_PIPVIDEO SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_PIPVIDEO:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_FULLPAGEMODAL;)
++ (NSString * _Nonnull)TYPE_FULLPAGEMODAL SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_FULLPAGEMODAL:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull TYPE_FULLPAGECONTENT;)
++ (NSString * _Nonnull)TYPE_FULLPAGECONTENT SWIFT_WARN_UNUSED_RESULT;
++ (void)setTYPE_FULLPAGECONTENT:(NSString * _Nonnull)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline5Flows")
 @interface Flows : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -451,6 +491,9 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setPlotlineRedirectUrlListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull))listener;
 + (void)showStoryWithStoryId:(NSString * _Nonnull)storyId slideId:(NSString * _Nullable)slideId;
 + (void)setShouldDisablePlotlineWithShouldDisablePlotline:(BOOL)shouldDisablePlotline;
++ (void)setDisabledStepTypesWithStepTypes:(NSArray<NSString *> * _Nonnull)stepTypes;
++ (NSSet<NSString *> * _Nonnull)getDisabledStepTypes SWIFT_WARN_UNUSED_RESULT;
++ (void)enableAllCampaignTypes;
 + (BOOL)isFeatureEnabledWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getFeatureFlagWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getFeatureFlagPayloadWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
@@ -562,6 +605,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @property (nonatomic) CGFloat initialSpringVelocity;
 @property (nonatomic) CGFloat sideOffset;
 @property (nonatomic, strong) UIColor * _Nullable borderColor;
+@property (nonatomic, strong) FlowStep * _Nullable mFlowStep;
 @property (nonatomic) BOOL mDismissOnOutsideTouch;
 @property (nonatomic) BOOL mDismissOnInsideTouch;
 @property (nonatomic, strong) ViewPositionObserver * _Nullable viewPositionObserver;
