@@ -468,6 +468,7 @@ public class SurveySettings {
   public var backgroundPadding: [Swift.Double]
   public var contentMargin: [Swift.Double]
   public var closeButtonMargin: [Swift.Double]
+  public var poweredFontSize: Swift.Double
   public init()
   public func setSurveySettings(surveySettings: [Swift.String : Any])
   @objc deinit
@@ -669,6 +670,8 @@ public class RewardSettings {
   public func getShouldEnableNestedControllers() -> Swift.Bool
   public func getShouldAllowConcurrentTriggers() -> Swift.Bool
   public func setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers: Swift.Bool)
+  public func getShouldAddSurveyBeforeRemoving() -> Swift.Bool
+  public func setShouldAddSurveyBeforeRemoving(shouldAddSurveyBeforeRemoving: Swift.Bool)
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
   public func getMetricEventsType() -> Swift.String
   public func setsRealtimeAttributes(sRealtimeAttributes: Swift.Set<Swift.String>)
@@ -755,6 +758,7 @@ public class RewardSettings {
   public func getMinVideoAnalyticsDuration() -> Swift.Int
   public func getLoadTimeMap() -> Plotline.ConcurrentDictionary<Swift.String, (Swift.Int64, Swift.Int64?)>
   public func getPreloadedHeights() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
+  @objc public static func getPreloadedHeight(elementId: Swift.String) -> Swift.Double
   @objc public func appMovedToBackground()
   public func getPlotlineEventListener() -> ((Swift.String, [Swift.String : Any]) -> ())?
   public func getPlotlineRedirectListener() -> (([Swift.String : Swift.String]) -> ())?
