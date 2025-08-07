@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		3ibHZe7OVEq4M4uePP2rNdB+3+k=
+		HqYkP/GJCSPUq7LgNMT/w7f7Ssc=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		uHthwGZeWXRxWvIZPCXz9h6ZknU=
+		oQfgCHnWsqICDAiEzrQmZXgQOqs=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		uHthwGZeWXRxWvIZPCXz9h6ZknU=
+		oQfgCHnWsqICDAiEzrQmZXgQOqs=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		htLY3qKJ01xIzSEYNdurR5KwRKw=
+		F6Ys4HjMJVkJH86vcXSqGWoDLAc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		sIUSmZ9x2RGuaT5zCGi5TcUZFuo=
+		ZKeD8SJdvlcOweWY5RZfLZucAJc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gmLR8y1CJv6XyZtjH3w/Eov/uupReP7jVEYVE1vIz4k=
+			m0vZFd/L7Z8z4VmlhrYTJ760uZ3JKsQjdJqPcwm1tuQ=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1WVcnXbRKZ01oiQuK7de28hmb19/jRuuenIzkXgYmug=
+			bCSOpZmMc/y/RoK1AuP0CBxSGER926zpMpbDlFpldsE=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -198,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1WVcnXbRKZ01oiQuK7de28hmb19/jRuuenIzkXgYmug=
+			bCSOpZmMc/y/RoK1AuP0CBxSGER926zpMpbDlFpldsE=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			72H9bmsN3TR35BbAuvU/tco4UILyr6qHyM1RRbkiFkA=
+			I/CirdFuY3ABG2yUb8RQ5AVsFAvaK4IzO1ZjwnikyH8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AmACemlTWkvIFN0RT6c6oQeSj3Av+mIE56fph6CAs2U=
+			LvcF0giyefjjRy23UwI4Asm/M3G55iJywQgLVzStCn0=
 			</data>
 		</dict>
 	</dict>

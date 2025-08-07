@@ -49,6 +49,12 @@ import _SwiftConcurrencyShims
   public static func getInstance() -> PlotlinePush
   @objc deinit
 }
+public class WebViewSettings {
+  public var baseUrl: Swift.String?
+  public init(_ json: [Swift.String : Any])
+  public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Identify {
   public static func identify(attributes: [Swift.String : Any])
   @objc deinit
@@ -855,6 +861,7 @@ public class StepLayout {
   public var onAction: StepAction
   public var carouselSettings: CarouselSettings
   public var videoSettings: VideoSettings
+  public var webViewSettings: WebViewSettings
   public var gridSettings: GridSettings
   public var floaterSettings: FloaterSettings
   public var lottieSettings: LottieSettings
