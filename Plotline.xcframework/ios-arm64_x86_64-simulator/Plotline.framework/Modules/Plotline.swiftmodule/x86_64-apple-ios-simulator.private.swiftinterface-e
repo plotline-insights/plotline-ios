@@ -191,6 +191,8 @@ public class CarouselSettings {
   public var autoScroll: Swift.Bool
   public var autoScrollDelay: Swift.Int
   public var showIndicators: Swift.Bool
+  public var overlayIndicators: Swift.Bool
+  public var circularScroll: Swift.Bool
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
