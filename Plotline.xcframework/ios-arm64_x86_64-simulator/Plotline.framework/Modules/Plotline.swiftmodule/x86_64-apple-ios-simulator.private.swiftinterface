@@ -193,6 +193,9 @@ public class CarouselSettings {
   public var showIndicators: Swift.Bool
   public var overlayIndicators: Swift.Bool
   public var circularScroll: Swift.Bool
+  public var showAdjacentCards: Swift.Bool
+  public var cardWidth: Swift.Double
+  public var cardPadding: Swift.Int
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
@@ -219,7 +222,32 @@ public class FloaterSettings {
 }
 @_hasMissingDesignatedInitializers public class DebugHelper {
   public static func log(_ message: Swift.String)
+  public static func sendDebugEvent(debugCode: DebugCode, properties: [Swift.String : Swift.String]?)
   @objc deinit
+}
+public enum DebugCode : Swift.String {
+  case PL_I_RESPONSE_RECEIVED
+  case PL_E_ACTIVE_CAMPAIGN_SHOWING
+  case PL_E_FLOW_ALREADY_ACTIVE
+  case PL_E_NULL_ACTIVITY_OR_ACTIVE_CAMPAIGN
+  case PL_E_EMPTY_STEP_OR_EMPTY_TRIGGERS
+  case PL_E_NON_ELEMENT_HAS_ELEMENT_IDS
+  case PL_E_TRIGGER_EVENT_MISMATCH
+  case PL_E_MISSING_ELEMENT_ID_OR_SELECTOR
+  case PL_E_PAGE_NOT_IN_STEP_TRIGGERS
+  case PL_E_ELEMENT_NOT_VISIBLE
+  case PL_E_ELEMENT_HIDDEN_BY_MARGIN_FILTER
+  case PL_E_NULL_ANCHOR_RECTS
+  case PL_E_VIEW_FACTORY_RETURNED_NULL
+  case PL_E_NO_ACTIVE_STEP
+  case PL_E_PLOTLINE_DISABLED_OR_STEP_TYPE_DISABLED
+  case PL_I_STEP_REJECTED_DETAIL
+  case PL_I_SHOWING_STEP
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MultiChoiceMultiCorrect : UIKit.UIView {
   @objc deinit
@@ -695,6 +723,8 @@ public class RewardSettings {
   public func setStoredAttributes(storedAttributes: Swift.Set<Swift.String>)
   public func setShouldEnableDebug(shouldEnableDebug: Swift.Bool)
   public func getShouldEnableDebug() -> Swift.Bool
+  public func setShouldEnableDebugEvents(shouldEnableDebugEvents: Swift.Bool)
+  public func getShouldEnableDebugEvents() -> Swift.Bool
   public func getFlowStore() -> FlowStore
   public func getJourneyStore() -> JourneyStore
   public func isShouldEnableFlows() -> Swift.Bool
@@ -1062,6 +1092,8 @@ public class StepAction {
   public var effect: Swift.String
   public var target: Swift.String
   public var platform: Swift.String
+  public var requireDismiss: Swift.Bool?
+  public var isDismiss: Swift.Bool?
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
@@ -1287,6 +1319,8 @@ public class Question {
   public var content: StepLayout?
   public var isMandatory: Swift.Bool?
   public var disableDismiss: Swift.Bool?
+  public var ratingValueArray: [Swift.String]?
+  public var colorArray: [Swift.String]?
   public static let TEXT_TYPE_TITLE: Swift.String
   public static let TEXT_TYPE_DESCRIPTION: Swift.String
   public static let TEXT_TYPE_OPTION_TEXT: Swift.String
@@ -1297,7 +1331,7 @@ public class Question {
   public static let TYPE_PROMPT: Swift.String
   public static let TYPE_RATING: Swift.String
   public static let TYPE_SMILEY_RATING: Swift.String
-  public init(questionId: Swift.String, questionType: Swift.String, options: [[Swift.String : Any]], question: Swift.String, description: Swift.String, skipLogic: [[Swift.String : Any]], buttonText: Swift.String, textPlaceholder: Swift.String, scaleRangeStart: Swift.Int, scaleRangeEnd: Swift.Int, lowLabel: Swift.String, highLabel: Swift.String, requestPermission: Swift.Bool, maxRecordingTime: Swift.Int, isMandatory: Swift.Bool, disableDismiss: Swift.Bool)
+  public init(questionId: Swift.String, questionType: Swift.String, options: [[Swift.String : Any]], question: Swift.String, description: Swift.String, skipLogic: [[Swift.String : Any]], buttonText: Swift.String, textPlaceholder: Swift.String, scaleRangeStart: Swift.Int, scaleRangeEnd: Swift.Int, lowLabel: Swift.String, highLabel: Swift.String, requestPermission: Swift.Bool, maxRecordingTime: Swift.Int, isMandatory: Swift.Bool, disableDismiss: Swift.Bool, ratingValueArray: [Swift.String]?, colorArray: [Swift.String]?)
   public static func getQuestions(questions: [[Swift.String : Any]]) -> [Question]
   public static func getMockQuestions() -> [Question]
   @objc deinit
@@ -1511,6 +1545,9 @@ extension WidgetData {
     @objc set
   }
 }
+extension DebugCode : Swift.Equatable {}
+extension DebugCode : Swift.Hashable {}
+extension DebugCode : Swift.RawRepresentable {}
 extension ArrowDirection : Swift.Equatable {}
 extension ArrowDirection : Swift.Hashable {}
 extension ArrowDirection : Swift.RawRepresentable {}
