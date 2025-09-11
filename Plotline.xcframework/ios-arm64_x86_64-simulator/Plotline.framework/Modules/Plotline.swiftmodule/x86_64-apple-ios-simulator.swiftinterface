@@ -243,6 +243,7 @@ public enum DebugCode : Swift.String {
   case PL_E_PLOTLINE_DISABLED_OR_STEP_TYPE_DISABLED
   case PL_I_STEP_REJECTED_DETAIL
   case PL_I_SHOWING_STEP
+  case PL_E_RESOURCE_LOADING_FAILED
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -725,6 +726,8 @@ public class RewardSettings {
   public func getShouldEnableDebug() -> Swift.Bool
   public func setShouldEnableDebugEvents(shouldEnableDebugEvents: Swift.Bool)
   public func getShouldEnableDebugEvents() -> Swift.Bool
+  public func setShouldEnableImageFail(shouldEnableImageFail: Swift.Bool)
+  public func getShouldEnableImageFail() -> Swift.Bool
   public func getFlowStore() -> FlowStore
   public func getJourneyStore() -> JourneyStore
   public func isShouldEnableFlows() -> Swift.Bool
