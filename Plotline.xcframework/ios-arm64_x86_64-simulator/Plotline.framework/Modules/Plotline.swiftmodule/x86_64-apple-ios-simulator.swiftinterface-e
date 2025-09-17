@@ -46,6 +46,7 @@ import _SwiftConcurrencyShims
   @objc public static func userNotificationCenter(center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
   @available(iOS 10.0, *)
   public static func getActionType(from response: UserNotifications.UNNotificationResponse) -> Swift.String
+  @objc public static func setPlotlinePushClickListener(listener: @escaping ([Swift.String : Swift.String]) -> ())
   public static func getInstance() -> Plotline.PlotlinePush
   @objc deinit
 }

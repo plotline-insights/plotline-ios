@@ -783,6 +783,62 @@
           },
           {
             "kind": "Function",
+            "name": "setPlotlinePushClickListener",
+            "printedName": "setPlotlinePushClickListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)PlotlinePush(cm)setPlotlinePushClickListenerWithListener:",
+            "mangledName": "$s8Plotline0A4PushC03setaB13ClickListener8listeneryySDyS2SGc_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "objc_name": "setPlotlinePushClickListenerWithListener:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getInstance",
             "printedName": "getInstance()",
             "children": [
@@ -72122,21 +72178,21 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 334,
+      "offset": 402,
       "length": 8,
       "value": "\"ACTIVE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 384,
+      "offset": 452,
       "length": 9,
       "value": "\"PASSIVE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 442,
+      "offset": 510,
       "length": 16,
       "value": "\"TIME_SENSITIVE\""
     },
@@ -74294,7 +74350,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.4.6\""
+      "value": "\"4.4.7\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",

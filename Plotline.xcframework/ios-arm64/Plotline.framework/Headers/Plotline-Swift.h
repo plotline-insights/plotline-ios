@@ -570,6 +570,7 @@ SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 + (void)onNotificationReceivedWithNotification:(UNNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)setPlotlinePushPermissionListenerWithListener:(void (^ _Nonnull)(BOOL))listener;
 + (void)userNotificationCenterWithCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response SWIFT_AVAILABILITY(ios,introduced=10.0);
++ (void)setPlotlinePushClickListenerWithListener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
 @end
 
 
