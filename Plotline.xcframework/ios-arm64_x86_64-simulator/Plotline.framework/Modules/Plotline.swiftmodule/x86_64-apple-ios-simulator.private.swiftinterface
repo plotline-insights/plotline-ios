@@ -423,6 +423,8 @@ public class StorySettings {
   public var loaderSize: Swift.Int
   public var loadingLottie: Swift.String
   public var widgetHeader: StepLayout?
+  public var minBufferMs: Swift.Int
+  public var bufferForPlaybackMs: Swift.Int
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
