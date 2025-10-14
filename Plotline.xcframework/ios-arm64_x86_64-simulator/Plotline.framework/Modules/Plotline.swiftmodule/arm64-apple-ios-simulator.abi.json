@@ -74551,7 +74551,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.4.8\""
+      "value": "\"4.4.9\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -75395,17 +75395,31 @@
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 77717,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 77721,
+      "offset": 77761,
       "length": 9,
       "value": "\"PLAYING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 77771,
+      "offset": 77811,
       "length": 11,
       "value": "\"BUFFERING\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
+      "kind": "StringLiteral",
+      "offset": 77859,
+      "length": 7,
+      "value": "\"READY\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
@@ -75417,28 +75431,28 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "Array",
-      "offset": 79962,
+      "offset": 80519,
       "length": 12,
       "value": "[0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 79900,
+      "offset": 80457,
       "length": 15,
       "value": "\"Plotline.ResizableButton\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 80876,
+      "offset": 81433,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 80810,
+      "offset": 81367,
       "length": 14,
       "value": "\"Plotline.PlotlineButton\""
     },
