@@ -731,6 +731,8 @@ public class RewardSettings {
   public func getShouldEnableDebugEvents() -> Swift.Bool
   public func setShouldEnableImageFail(shouldEnableImageFail: Swift.Bool)
   public func getShouldEnableImageFail() -> Swift.Bool
+  public func setShouldEnableWidgetLock(shouldEnableWidgetLock: Swift.Bool)
+  public func getShouldEnableWidgetLock() -> Swift.Bool
   public func getFlowStore() -> Plotline.FlowStore
   public func getJourneyStore() -> Plotline.JourneyStore
   public func isShouldEnableFlows() -> Swift.Bool
