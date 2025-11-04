@@ -524,11 +524,15 @@ public class Campaign {
   public var shouldIgnoreFreqCap: Swift.Bool
   public var loaderSettings: Plotline.LoaderSettings
   public var dismissEvents: [Swift.String]
+  public var triggerSource: Swift.String
   public static var CAMPAIGN_STUDY: Swift.String
   public static var CAMPAIGN_FLOW: Swift.String
   public static var CAMPAIGN_JOURNEY: Swift.String
+  public static var CAMPAIGN_NONE: Swift.String
   public static var CAMPAIGN_WIDGET: Swift.String
   public static var CAMPAIGN_FEATURE_FLAG: Swift.String
+  public static var TRIGGER_SOURCE_FRONTEND: Swift.String
+  public static var TRIGGER_SOURCE_BACKEND: Swift.String
   public init(json: [Swift.String : Any], id: Swift.String, campaignType: Swift.String)
   public static func checkEligibility(campaigns: [Plotline.Campaign], eligibilityCallback: @escaping ([Plotline.Campaign], [Plotline.Campaign]) -> ())
   @objc deinit
