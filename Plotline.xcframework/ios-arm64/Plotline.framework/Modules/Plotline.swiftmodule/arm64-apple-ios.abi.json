@@ -47977,7 +47977,7 @@
           {
             "kind": "Function",
             "name": "saveFlowAction",
-            "printedName": "saveFlowAction(flowId:stepId:journeyId:actionType:action:isCompleted:actionProperties:userRewardId:effect:target:overrideLabels:)",
+            "printedName": "saveFlowAction(flowId:stepId:journeyId:actionType:action:isCompleted:actionProperties:userRewardId:rewardId:effect:target:overrideLabels:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -48078,6 +48078,21 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "usr": "s:Sq"
               },
               {
@@ -48124,8 +48139,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline0A13NetworkHelperC14saveFlowAction6flowId04stepH007journeyH010actionType0K011isCompleted0K10Properties010userRewardH06effect6target14overrideLabelsySS_SSSgAPS2SSbA4PSDySSypGSgtFZ",
-            "mangledName": "$s8Plotline0A13NetworkHelperC14saveFlowAction6flowId04stepH007journeyH010actionType0K011isCompleted0K10Properties010userRewardH06effect6target14overrideLabelsySS_SSSgAPS2SSbA4PSDySSypGSgtFZ",
+            "usr": "s:8Plotline0A13NetworkHelperC14saveFlowAction6flowId04stepH007journeyH010actionType0K011isCompleted0K10Properties010userRewardH006rewardH06effect6target14overrideLabelsySS_SSSgAQS2SSbA5QSDySSypGSgtFZ",
+            "mangledName": "$s8Plotline0A13NetworkHelperC14saveFlowAction6flowId04stepH007journeyH010actionType0K011isCompleted0K10Properties010userRewardH006rewardH06effect6target14overrideLabelsySS_SSSgAQS2SSbA5QSDySSypGSgtFZ",
             "moduleName": "Plotline",
             "static": true,
             "declAttributes": [
@@ -58829,6 +58844,116 @@
                 "declKind": "Accessor",
                 "usr": "s:8Plotline8FlowStepC12userRewardIdSSSgvM",
                 "mangledName": "$s8Plotline8FlowStepC12userRewardIdSSSgvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rewardId",
+            "printedName": "rewardId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline8FlowStepC8rewardIdSSSgvp",
+            "mangledName": "$s8Plotline8FlowStepC8rewardIdSSSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC8rewardIdSSSgvg",
+                "mangledName": "$s8Plotline8FlowStepC8rewardIdSSSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC8rewardIdSSSgvs",
+                "mangledName": "$s8Plotline8FlowStepC8rewardIdSSSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC8rewardIdSSSgvM",
+                "mangledName": "$s8Plotline8FlowStepC8rewardIdSSSgvM",
                 "moduleName": "Plotline",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -75018,7 +75143,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.5.2\""
+      "value": "\"4.5.3\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -75863,70 +75988,70 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 77677,
+      "offset": 77807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 77717,
+      "offset": 77847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 77761,
+      "offset": 77891,
       "length": 9,
       "value": "\"PLAYING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 77811,
+      "offset": 77941,
       "length": 11,
       "value": "\"BUFFERING\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 77859,
+      "offset": 77989,
       "length": 7,
       "value": "\"READY\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 77483,
+      "offset": 77613,
       "length": 14,
       "value": "\"Plotline.PlayerObserver\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "Array",
-      "offset": 80519,
+      "offset": 80649,
       "length": 12,
       "value": "[0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 80457,
+      "offset": 80587,
       "length": 15,
       "value": "\"Plotline.ResizableButton\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 81433,
+      "offset": 81563,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 81367,
+      "offset": 81497,
       "length": 14,
       "value": "\"Plotline.PlotlineButton\""
     },
@@ -77172,175 +77297,175 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 1159,
+      "offset": 1192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1204,
+      "offset": 1237,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 1243,
+      "offset": 1276,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 1290,
+      "offset": 1323,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "Array",
-      "offset": 1485,
+      "offset": 1518,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "Dictionary",
-      "offset": 1538,
+      "offset": 1571,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1675,
+      "offset": 1708,
       "length": 11,
       "value": "\"FCD9AHG11\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1742,
+      "offset": 1775,
       "length": 11,
       "value": "\"DBC6AF5D1\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1804,
+      "offset": 1837,
       "length": 6,
       "value": "\"FADE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1860,
+      "offset": 1893,
       "length": 7,
       "value": "\"SCALE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1916,
+      "offset": 1949,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1975,
+      "offset": 2008,
       "length": 9,
       "value": "\"TOOLTIP\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2034,
+      "offset": 2067,
       "length": 7,
       "value": "\"MODAL\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2091,
+      "offset": 2124,
       "length": 7,
       "value": "\"BADGE\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2154,
+      "offset": 2187,
       "length": 13,
       "value": "\"BOTTOMSHEET\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2221,
+      "offset": 2254,
       "length": 11,
       "value": "\"COACHMARK\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2286,
+      "offset": 2319,
       "length": 11,
       "value": "\"SPOTLIGHT\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2348,
+      "offset": 2381,
       "length": 8,
       "value": "\"BANNER\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2408,
+      "offset": 2441,
       "length": 9,
       "value": "\"FLOATER\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2470,
+      "offset": 2503,
       "length": 10,
       "value": "\"PIPVIDEO\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2525,
+      "offset": 2558,
       "length": 8,
       "value": "\"WIDGET\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2583,
+      "offset": 2616,
       "length": 15,
       "value": "\"FULLPAGEMODAL\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2650,
+      "offset": 2683,
       "length": 17,
       "value": "\"FULLPAGECONTENT\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2706,
+      "offset": 2739,
       "length": 10,
       "value": "\"ACTIVITY\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-flutter-plugin\/builds\/t3_tsgCmA\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "IntegerLiteral",
-      "offset": 2758,
+      "offset": 2791,
       "length": 2,
       "value": "-1"
     },

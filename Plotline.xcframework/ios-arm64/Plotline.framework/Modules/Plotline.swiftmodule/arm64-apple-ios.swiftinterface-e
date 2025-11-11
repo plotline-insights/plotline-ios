@@ -1083,7 +1083,7 @@ public class Study : Plotline.Campaign {
   public static func sendResponse(studyId: Swift.String, questionId: Swift.String, answer: [Swift.String], isCompleted: Swift.Bool)
   public static func uploadScreenshotImage(clientPageId: Swift.String, imgFile: Swift.String, callback: @escaping (Swift.String) -> ())
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
-  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil, effect: Swift.String?, target: Swift.String?, overrideLabels: [Swift.String : Any]? = nil)
+  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil, rewardId: Swift.String? = nil, effect: Swift.String?, target: Swift.String?, overrideLabels: [Swift.String : Any]? = nil)
   public static func saveWidgetControlGroup(widgetId: Swift.String)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: @escaping ([Swift.String : Any]?) -> ())
@@ -1277,6 +1277,7 @@ public class ScreenshotTask {
   public var spotlightPadding: Swift.Int
   public var isClaimsPageStep: Swift.Bool
   public var userRewardId: Swift.String?
+  public var rewardId: Swift.String?
   public var isSticky: Swift.Bool
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
