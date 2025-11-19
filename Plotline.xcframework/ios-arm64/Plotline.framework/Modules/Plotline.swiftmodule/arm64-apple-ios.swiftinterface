@@ -658,6 +658,7 @@ public class Slide {
   public var backgroundUrl: Swift.String
   public var overlayLayout: StepLayout
   public var slideBackgroundColor: Swift.String
+  public var slideGradient: Swift.Bool
   public var hlsUrl: Swift.String
   public init(json: [Swift.String : Any])
   public func getBackgroundUrl() -> Swift.String
