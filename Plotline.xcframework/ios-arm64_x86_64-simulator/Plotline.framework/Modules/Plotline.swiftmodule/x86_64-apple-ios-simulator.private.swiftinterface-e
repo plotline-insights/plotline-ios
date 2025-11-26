@@ -14,6 +14,7 @@ import Swift
 import SwiftUI
 import UIKit
 import UserNotifications
+import UserNotificationsUI
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -22,6 +23,9 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PlotlinePush : ObjectiveC.NSObject {
+  public enum PlotlinePushCategory {
+    public static let rich: Swift.String
+  }
   public static let PRIORITY_ACTIVE: Swift.String
   public static let PRIORITY_PASSIVE: Swift.String
   public static let PRIORITY_TIME_SENSITIVE: Swift.String
@@ -44,6 +48,9 @@ import _SwiftConcurrencyShims
   public func getPlotlinePushPermissionListener() -> ((Swift.Bool) -> ())?
   @available(iOS 10.0, *)
   @objc public static func userNotificationCenter(center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
+  @objc public static func handleNotificationClicks() -> Swift.Bool
+  @objc public static func setAppGroupId(appGroupId: Swift.String)
+  @objc public static func handleNotificationContent(_ notification: UserNotifications.UNNotification, inViewController viewController: UIKit.UIViewController)
   @available(iOS 10.0, *)
   public static func getActionType(from response: UserNotifications.UNNotificationResponse) -> Swift.String
   @objc public static func setPlotlinePushClickListener(listener: @escaping ([Swift.String : Swift.String]) -> ())
@@ -132,6 +139,14 @@ public protocol PlotlineViewPositionCallback {
 }
 @_hasMissingDesignatedInitializers public class PostfixEvaluation {
   public static func evaluatePostfix(exp: [Plotline.Condition]) -> Swift.Bool
+  @objc deinit
+}
+public class TimerSettings {
+  public var duration: Swift.Int
+  public var timerType: Swift.String
+  public static var TIMER_TYPE_RELATIVE: Swift.String
+  public static var TIMER_TYPE_FIXED: Swift.String
+  public init(_ json: [Swift.String : Any])
   @objc deinit
 }
 public class PStoryView {
@@ -346,6 +361,7 @@ public class IdentityManager {
   public static var METRIC_EVENTS_TYPE_SELECTED: Swift.String
   public static func currentTimeInMilliSeconds() -> Swift.Int64
   public static func getQueryParameter(url: Foundation.URL, paramName: Swift.String) -> Swift.String?
+  public static func sendDataToAppGroup(_ data: [Swift.String : Any], type: Swift.String)
   public static func sendPlotlineEvent(eventName: Swift.String, properties: [Swift.String : Any], labels: [Swift.String : Any]?)
   public static func parseJSONString(_ jsonString: Swift.String) -> [Swift.String : Any]?
   public static func fetchLiquidAttributes(value: Swift.String) -> [Swift.String]
@@ -375,6 +391,7 @@ public class IdentityManager {
   public static func logStart(campaigns: [Plotline.Campaign])
   public static func logTrigger(campaignId: Swift.String)
   public static func endLoadTimeTracking(campaignId: Swift.String) -> (Swift.Int64?, Swift.Int64)?
+  public static func getTimerDuration(layout: Plotline.StepLayout) -> Swift.Double
   public static func showLoader(eligibleCampaigns: [Plotline.Campaign])
   @objc deinit
 }
@@ -911,6 +928,7 @@ public class StepLayout {
   public var floaterSettings: Plotline.FloaterSettings
   public var lottieSettings: Plotline.LottieSettings
   public var rewardSettings: Plotline.RewardSettings
+  public var timerSettings: Plotline.TimerSettings
   weak public var webview: WebKit.WKWebView?
   public var preloadWebview: Swift.Bool
   public var resizableButton: Swift.Bool
@@ -1089,7 +1107,7 @@ public class Study : Plotline.Campaign {
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: @escaping ([Swift.String : Any]?) -> ())
   public static func registerToken(token: Swift.String)
-  public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String)
+  public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String, action: Swift.String? = nil)
   public static func setPushPermissionGranted(granted: Swift.Bool)
   public static func removePageCaptureUser()
   public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])

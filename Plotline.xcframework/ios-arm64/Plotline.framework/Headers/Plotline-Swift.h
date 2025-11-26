@@ -558,6 +558,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineLoader")
 @class UNNotification;
 @class UNUserNotificationCenter;
 @class UNNotificationResponse;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 @interface PlotlinePush : NSObject
@@ -570,6 +571,9 @@ SWIFT_CLASS("_TtC8Plotline12PlotlinePush")
 + (void)onNotificationReceivedWithNotification:(UNNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler SWIFT_AVAILABILITY(ios,introduced=10.0);
 + (void)setPlotlinePushPermissionListenerWithListener:(void (^ _Nonnull)(BOOL))listener;
 + (void)userNotificationCenterWithCenter:(UNUserNotificationCenter * _Nonnull)center didReceive:(UNNotificationResponse * _Nonnull)response SWIFT_AVAILABILITY(ios,introduced=10.0);
++ (BOOL)handleNotificationClicks SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppGroupIdWithAppGroupId:(NSString * _Nonnull)appGroupId;
++ (void)handleNotificationContent:(UNNotification * _Nonnull)notification inViewController:(UIViewController * _Nonnull)viewController;
 + (void)setPlotlinePushClickListenerWithListener:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))listener;
 @end
 
