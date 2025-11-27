@@ -461,6 +461,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)removeSwiftUICoordinatesWithLabel:(NSString * _Nonnull)label;
 + (void)addSwiftUICoordinatesInPxWithLabel:(NSString * _Nonnull)label rect:(CGRect)rect;
 + (double)getPreloadedHeightWithElementId:(NSString * _Nonnull)elementId SWIFT_WARN_UNUSED_RESULT;
+- (void)appOrientationChanged;
 - (void)appMovedToBackground;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
