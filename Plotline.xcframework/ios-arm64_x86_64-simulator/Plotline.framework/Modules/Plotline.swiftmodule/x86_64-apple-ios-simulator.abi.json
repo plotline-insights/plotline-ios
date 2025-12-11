@@ -32018,6 +32018,53 @@
           },
           {
             "kind": "Function",
+            "name": "getShouldRegisterActivityEvents",
+            "printedName": "getShouldRegisterActivityEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC31getShouldRegisterActivityEventsSbyF",
+            "mangledName": "$s8PlotlineAAC31getShouldRegisterActivityEventsSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldRegisterActivityEvents",
+            "printedName": "setShouldRegisterActivityEvents(shouldRegisterActivityEvents:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC31setShouldRegisterActivityEvents06shoulddeF0ySb_tF",
+            "mangledName": "$s8PlotlineAAC31setShouldRegisterActivityEvents06shoulddeF0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getDefaultAttributes",
             "printedName": "getDefaultAttributes()",
             "children": [
@@ -35582,6 +35629,53 @@
             "declKind": "Func",
             "usr": "s:8PlotlineAAC20setDefaultAttributes10appVersion03iosF00eF4Code11deviceModelySS_S3StF",
             "mangledName": "$s8PlotlineAAC20setDefaultAttributes10appVersion03iosF00eF4Code11deviceModelySS_S3StF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLogoutStatus",
+            "printedName": "setLogoutStatus(didLogout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC15setLogoutStatus03didC0ySb_tF",
+            "mangledName": "$s8PlotlineAAC15setLogoutStatus03didC0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLogoutStatus",
+            "printedName": "getLogoutStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC15getLogoutStatusSbyF",
+            "mangledName": "$s8PlotlineAAC15getLogoutStatusSbyF",
             "moduleName": "Plotline",
             "declAttributes": [
               "AccessControl"
@@ -56302,7 +56396,7 @@
           {
             "kind": "Function",
             "name": "setQuestions",
-            "printedName": "setQuestions(studyId:questionList:showThankYouScreen:thankYouScreenText:hidePlotline:)",
+            "printedName": "setQuestions(studyId:questionList:showThankYouScreen:thankYouScreenText:hidePlotline:thankYouImageSettings:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -56346,11 +56440,38 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline11StudyDialogC12setQuestions7studyId12questionList18showThankYouScreen05thanklM4Text04hideA0ySS_SayAA8QuestionCGSbSSSbtF",
-            "mangledName": "$s8Plotline11StudyDialogC12setQuestions7studyId12questionList18showThankYouScreen05thanklM4Text04hideA0ySS_SayAA8QuestionCGSbSSSbtF",
+            "usr": "s:8Plotline11StudyDialogC12setQuestions7studyId12questionList18showThankYouScreen05thanklM4Text04hideA00nL13ImageSettingsySS_SayAA8QuestionCGSbSSSbSDySSypGSgtF",
+            "mangledName": "$s8Plotline11StudyDialogC12setQuestions7studyId12questionList18showThankYouScreen05thanklM4Text04hideA00nL13ImageSettingsySS_SayAA8QuestionCGSbSSSbSDySSypGSgtF",
             "moduleName": "Plotline",
             "declAttributes": [
               "Custom",
@@ -56508,7 +56629,7 @@
           {
             "kind": "Function",
             "name": "fetchImageResourcesList",
-            "printedName": "fetchImageResourcesList(_:)",
+            "printedName": "fetchImageResourcesList(_:thankYouImageSettings:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -56537,11 +56658,38 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline11StudyDialogC23fetchImageResourcesListySaySSGSayAA8QuestionCGFZ",
-            "mangledName": "$s8Plotline11StudyDialogC23fetchImageResourcesListySaySSGSayAA8QuestionCGFZ",
+            "usr": "s:8Plotline11StudyDialogC23fetchImageResourcesList_08thankYouE8SettingsSaySSGSayAA8QuestionCG_SDySSypGSgtFZ",
+            "mangledName": "$s8Plotline11StudyDialogC23fetchImageResourcesList_08thankYouE8SettingsSaySSGSayAA8QuestionCG_SDySSypGSgtFZ",
             "moduleName": "Plotline",
             "static": true,
             "declAttributes": [
@@ -73971,29 +74119,36 @@
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PushPayload.swift",
+      "kind": "BooleanLiteral",
+      "offset": 712,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "FloatLiteral",
-      "offset": 713,
+      "offset": 754,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "Dictionary",
-      "offset": 754,
+      "offset": 795,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "StringLiteral",
-      "offset": 851,
+      "offset": 892,
       "length": 14,
       "value": "\"notification\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "StringLiteral",
-      "offset": 913,
+      "offset": 954,
       "length": 10,
       "value": "\"campaign\""
     },
@@ -74216,22 +74371,29 @@
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PipVideo\/PlotlinePictureInPictureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 962,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PipVideo\/PlotlinePictureInPictureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 965,
+      "offset": 1006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PipVideo\/PlotlinePictureInPictureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1017,
+      "offset": 1058,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/FlowViews\/PipVideo\/PlotlinePictureInPictureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1155,
+      "offset": 1196,
       "length": 5,
       "value": "false"
     },
@@ -76102,7 +76264,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.5.6\""
+      "value": "\"4.5.7\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -76847,6 +77009,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4622,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/WidgetContent.swift",
       "kind": "Array",
       "offset": 177,
@@ -77136,7 +77305,7 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Track.swift",
       "kind": "BooleanLiteral",
-      "offset": 9031,
+      "offset": 9163,
       "length": 5,
       "value": "false"
     },
@@ -77230,6 +77399,13 @@
       "offset": 836,
       "length": 16,
       "value": "\"plotlineLocale\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 888,
+      "length": 11,
+      "value": "\"didLogout\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/M3U8Parser.swift",
@@ -78158,56 +78334,56 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 472,
+      "offset": 526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "StringLiteral",
-      "offset": 505,
+      "offset": 559,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "IntegerLiteral",
-      "offset": 541,
+      "offset": 595,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 610,
+      "offset": 664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 654,
+      "offset": 708,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 10767,
+      "offset": 11055,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 11188,
+      "offset": 11476,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 11217,
+      "offset": 11505,
       "length": 5,
       "value": "false"
     },
@@ -78480,7 +78656,7 @@
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "Array",
-      "offset": 13574,
+      "offset": 13659,
       "length": 2,
       "value": "[]"
     },

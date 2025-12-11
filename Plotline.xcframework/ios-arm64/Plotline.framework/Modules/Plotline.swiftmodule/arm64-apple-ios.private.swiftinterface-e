@@ -717,6 +717,8 @@ public class RewardSettings {
   public func setApiKey(sApiKey: Swift.String)
   public func getEndpoint() -> Swift.String
   public func setEndpoint(sEndpoint: Swift.String)
+  public func getShouldRegisterActivityEvents() -> Swift.Bool
+  public func setShouldRegisterActivityEvents(shouldRegisterActivityEvents: Swift.Bool)
   public func getDefaultAttributes() -> Plotline.Attributes
   public func getsColors() -> Plotline.SurveySettings
   public func setsColors(sColors: [Swift.String : Any])
@@ -839,6 +841,8 @@ public class RewardSettings {
   public func getIsAppInBackground() -> Swift.Bool
   @objc public static func getInstance() -> Plotline.Plotline
   public func setDefaultAttributes(appVersion: Swift.String, iosVersion: Swift.String, appVersionCode: Swift.String, deviceModel: Swift.String)
+  public func setLogoutStatus(didLogout: Swift.Bool)
+  public func getLogoutStatus() -> Swift.Bool
   @objc public static func initialize(apiKey: Swift.String)
   @objc public static func initialize(apiKey: Swift.String, userId: Swift.String)
   @objc public static func initialize(apiKey: Swift.String, userId: Swift.String, endpoint: Swift.String)
@@ -1246,11 +1250,11 @@ public protocol AnswerListener {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class StudyDialog : UIKit.UIView, Plotline.AnswerListener {
   @_Concurrency.MainActor(unsafe) public var disableDismiss: Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func setQuestions(studyId: Swift.String, questionList: [Plotline.Question], showThankYouScreen: Swift.Bool, thankYouScreenText: Swift.String, hidePlotline: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setQuestions(studyId: Swift.String, questionList: [Plotline.Question], showThankYouScreen: Swift.Bool, thankYouScreenText: Swift.String, hidePlotline: Swift.Bool, thankYouImageSettings: [Swift.String : Any]?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor(unsafe) public func onAnswer(questionType: Swift.String, questionIndex: Swift.Int, isDone: Swift.Bool, answer: [Swift.String])
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
-  @_Concurrency.MainActor(unsafe) public static func fetchImageResourcesList(_ questions: [Plotline.Question]) -> [Swift.String]
+  @_Concurrency.MainActor(unsafe) public static func fetchImageResourcesList(_ questions: [Plotline.Question], thankYouImageSettings: [Swift.String : Any]?) -> [Swift.String]
   @_Concurrency.MainActor(unsafe) public static func fetchWebviewsList(_ questions: [Plotline.Question]) -> [Plotline.StepLayout]
   @_Concurrency.MainActor(unsafe) public static func fetchLottieResources(_ questions: [Plotline.Question]) -> [Swift.String]
   @_Concurrency.MainActor(unsafe) public static func fetchFontResourcesList() -> [Swift.String]
