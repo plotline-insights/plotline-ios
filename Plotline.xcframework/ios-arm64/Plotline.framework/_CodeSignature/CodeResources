@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gxxzjIlQuwvUPgVQPhg+bAmb/qs=
+		vIbW4mZYh2RF+vj61AEDnArSCzY=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1K/Nc1MYV3rPr0GxUfy7QafXpnk=
+		ykt+P1ewTtBd6GWhoO0yGMl0AN8=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1K/Nc1MYV3rPr0GxUfy7QafXpnk=
+		ykt+P1ewTtBd6GWhoO0yGMl0AN8=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		J+rIIzxTFO6BSFevqy5tUu+brXg=
+		af+6wt2nhJM6jA7/BWp1GFFFdTE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		MamgdPxv2+TyjbMNEO/dIHPr4HA=
+		HXGi7zSh3bbZRvXAF4sd0vrNTJE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L4pckmPyT6XYDn6Kh4b/uNbrsaxmVUayp7lPd3ivR1k=
+			JEoADCJ7wS8MFdDBbKX/eTx2S6kGXccSHalyntDeJ/c=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1Sph9gYVY6P+bTjpXq0Iy1wep9mr4AWYfcoZx6lqQM=
+			UcFGtLqfZppjAUwhZV4J0tLrofa4WB2yDj5luChKvR4=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -198,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1Sph9gYVY6P+bTjpXq0Iy1wep9mr4AWYfcoZx6lqQM=
+			UcFGtLqfZppjAUwhZV4J0tLrofa4WB2yDj5luChKvR4=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			85g5CDuFpcimJO5eDO4uzvj1f1H9mArYoXhNVj0F9pE=
+			1VM0kwKbvkWOsCC2iFnnJ9OnkF3Lu2HccokKiRhd7cI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KZGhkxq/7VaD6p1h2bjqxJVT9ySUar7aZbocbfHf9UQ=
+			SR3fSOE4H3AdBweQo7Afo988WnnvqgBAFyfmbLopLx4=
 			</data>
 		</dict>
 	</dict>

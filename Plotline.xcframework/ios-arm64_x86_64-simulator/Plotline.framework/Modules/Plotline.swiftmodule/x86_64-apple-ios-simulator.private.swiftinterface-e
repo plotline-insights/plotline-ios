@@ -1077,6 +1077,7 @@ public class FlowStore {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OpenText : UIKit.UIView, UIKit.UITextViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc public func textViewDidBeginEditing(_ textbox: UIKit.UITextView)
+  @available(iOS 16.0, *)
   @_Concurrency.MainActor(unsafe) public func updateButtonState()
   @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
   @objc deinit
@@ -1108,7 +1109,7 @@ public class Study : Plotline.Campaign {
   public static func sendResponse(studyId: Swift.String, questionId: Swift.String, answer: [Swift.String], isCompleted: Swift.Bool)
   public static func uploadScreenshotImage(clientPageId: Swift.String, imgFile: Swift.String, callback: @escaping (Swift.String) -> ())
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
-  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil, rewardId: Swift.String? = nil, effect: Swift.String?, target: Swift.String?, overrideLabels: [Swift.String : Any]? = nil)
+  public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil, rewardId: Swift.String? = nil, effect: Swift.String?, target: Swift.String?, overrideLabels: [Swift.String : Any]? = nil, flowStep: Plotline.FlowStep? = nil)
   public static func saveWidgetControlGroup(widgetId: Swift.String)
   public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: @escaping ([Swift.String : Any]?) -> ())
@@ -1304,6 +1305,7 @@ public class ScreenshotTask {
   public var userRewardId: Swift.String?
   public var rewardId: Swift.String?
   public var isSticky: Swift.Bool
+  public var standardisedStepId: Swift.String?
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
@@ -1369,6 +1371,10 @@ public class Question {
   public static let TYPE_PROMPT: Swift.String
   public static let TYPE_RATING: Swift.String
   public static let TYPE_SMILEY_RATING: Swift.String
+  public var regexPattern: Swift.String
+  public var regexOptions: Swift.String
+  public var regexType: Swift.String
+  public var regexErrorMessage: Swift.String
   public init(questionId: Swift.String, questionType: Swift.String, options: [[Swift.String : Any]], question: Swift.String, description: Swift.String, skipLogic: [[Swift.String : Any]], buttonText: Swift.String, textPlaceholder: Swift.String, scaleRangeStart: Swift.Int, scaleRangeEnd: Swift.Int, lowLabel: Swift.String, highLabel: Swift.String, requestPermission: Swift.Bool, maxRecordingTime: Swift.Int, isMandatory: Swift.Bool, disableDismiss: Swift.Bool, ratingValueArray: [Swift.String]?, colorArray: [Swift.String]?)
   public static func getQuestions(questions: [[Swift.String : Any]]) -> [Plotline.Question]
   public static func getMockQuestions() -> [Plotline.Question]
