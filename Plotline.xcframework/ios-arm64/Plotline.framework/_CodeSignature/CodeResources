@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		vIbW4mZYh2RF+vj61AEDnArSCzY=
+		xUV6XTvd1P55gTYR3rIgIfKPIQk=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ykt+P1ewTtBd6GWhoO0yGMl0AN8=
+		nEA0xJ5uNV9LK4h30qcMTVByO/U=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ykt+P1ewTtBd6GWhoO0yGMl0AN8=
+		nEA0xJ5uNV9LK4h30qcMTVByO/U=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		af+6wt2nhJM6jA7/BWp1GFFFdTE=
+		BgtTf06gF6uXzAQnL2Wdpc+wF08=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		HXGi7zSh3bbZRvXAF4sd0vrNTJE=
+		LiMaLQ7LzdgdSASs8YrujbZWAJE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JEoADCJ7wS8MFdDBbKX/eTx2S6kGXccSHalyntDeJ/c=
+			34EiM6bvUUeTQA5TAg6C8m/n5jZh82YmQ96KV76aXmo=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UcFGtLqfZppjAUwhZV4J0tLrofa4WB2yDj5luChKvR4=
+			gcyKH53IfmE7mvCX8T7xXK7U7OX5n/BAYvo3OLrWFDw=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -198,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UcFGtLqfZppjAUwhZV4J0tLrofa4WB2yDj5luChKvR4=
+			gcyKH53IfmE7mvCX8T7xXK7U7OX5n/BAYvo3OLrWFDw=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1VM0kwKbvkWOsCC2iFnnJ9OnkF3Lu2HccokKiRhd7cI=
+			UzvSA0Anwrz+wxI2oxXyz3mA+cSlEhFhyxkTFS0pFs4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SR3fSOE4H3AdBweQo7Afo988WnnvqgBAFyfmbLopLx4=
+			O/kDL+tYBP3ak4ymH3O9wA8PiUbFws1nYfIaYP5gFEk=
 			</data>
 		</dict>
 	</dict>

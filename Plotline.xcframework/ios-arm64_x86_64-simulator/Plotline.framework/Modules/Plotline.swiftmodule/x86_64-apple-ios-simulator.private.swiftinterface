@@ -50,6 +50,7 @@ import _SwiftConcurrencyShims
   @objc public static func userNotificationCenter(center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse)
   @objc public static func handleNotificationClicks() -> Swift.Bool
   @objc public static func setAppGroupId(appGroupId: Swift.String)
+  public static func getAppGroupId() -> Swift.String?
   @objc public static func handleNotificationContent(_ notification: UserNotifications.UNNotification, inViewController viewController: UIKit.UIViewController)
   @available(iOS 10.0, *)
   public static func getActionType(from response: UserNotifications.UNNotificationResponse) -> Swift.String
@@ -804,6 +805,7 @@ public class RewardSettings {
   public func clearFeatureFlagsLoadedListeners()
   public func getWidgetReadyCallbacks() -> [() -> ()]
   public func clearWidgetReadyCallbacks()
+  public func sendEventData(eventName: Swift.String, properties: [Swift.String : Any]?)
   public func addPreInitEvent(eventName: Swift.String, properties: [Swift.String : Any]?)
   public func getPreInitEvents() -> [PreInitEvent]
   public func clearPreInitEvents()
