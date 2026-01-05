@@ -101,6 +101,7 @@ public class StepStyles {
   public var borderRadius: Swift.Double
   public var fontSize: Swift.Double
   public var fontColor: Swift.String
+  public var fontColorDark: Swift.String
   public var fontSpacing: Swift.Float
   public var fontWeight: Swift.Int
   public var lineHeight: Swift.Int
@@ -118,6 +119,8 @@ public class StepStyles {
   public static var BG_FIT_FIT_CENTER: Swift.String
   public static var BG_FIT_FIT_END: Swift.String
   public static var BG_FIT_FIT_START: Swift.String
+  public static var UI_MODE_DARK: Swift.String
+  public static var UI_MODE_ATTRIBUTE: Swift.String
   public init(_ json: [Swift.String : Any])
   @objc deinit
 }
@@ -420,7 +423,9 @@ public class StorySettings {
   public static let THUMBNAIL_TYPE_CIRCLE: Swift.String
   public static let THUMBNAIL_TYPE_RECT: Swift.String
   public var unseenBorderUrl: Swift.String
+  public var unseenBorderUrlDark: Swift.String
   public var unseenBorderColor: Swift.String
+  public var unseenBorderColorDark: Swift.String
   public var unseenBorderThroughImageUrl: Swift.Bool
   public var seenBorderColor: Swift.String
   public var seenBorderUrl: Swift.String
@@ -445,6 +450,7 @@ public class StorySettings {
   public var bufferForPlaybackMs: Swift.Int
   public init(_ json: [Swift.String : Any])
   public init()
+  public func hasDarkBorderStyle() -> Swift.Bool
   @objc deinit
 }
 public protocol FlowStepListener {
