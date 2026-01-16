@@ -8,11 +8,14 @@ import CoreGraphics
 import CoreHaptics
 import CoreText
 import Foundation
+import ImageIO
 import MediaPlayer
+import Network
 @_exported import Plotline
 import Swift
 import SwiftUI
 import UIKit
+import UniformTypeIdentifiers
 import UserNotifications
 import UserNotificationsUI
 import WebKit
@@ -165,10 +168,15 @@ public class PStoryView {
 @objc public protocol PlotlineWidgetListener {
   @objc func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
 }
+@objc public protocol WidgetReloadCallback {
+  @objc func onReload()
+}
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
-  @_Concurrency.MainActor(unsafe) public var widgetId: Swift.String
-  @_Concurrency.MainActor(unsafe) public var stepId: Swift.String
+  @_Concurrency.MainActor(unsafe) public var widgetIds: [Swift.String]
+  @_Concurrency.MainActor(unsafe) public var stepIds: Swift.Set<Swift.String>
+  @_Concurrency.MainActor(unsafe) public var preloadheight: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var journeyId: Swift.String?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
@@ -176,12 +184,14 @@ public class PStoryView {
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) public func registerCallback()
+  @objc @_Concurrency.MainActor(unsafe) public func setReloadCallback(reloadCallback: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @objc @_Concurrency.MainActor(unsafe) public func setPlotlineWidgetListener(plotlineWidgetListener: any PlotlineWidgetListener)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
   @objc @_Concurrency.MainActor(unsafe) public func reload()
+  @objc @_Concurrency.MainActor(unsafe) public func refreshWidget()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) public func intervalFunction(refreshInterval: Swift.Int)
   @_Concurrency.MainActor(unsafe) public func runRefreshLoop(refreshInterval: Swift.Int)
@@ -583,6 +593,110 @@ public struct MarkInfo {
   public func setAppVersionCode(appVersionCode: Swift.String)
   @objc deinit
 }
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var plotlineReplaySensitive: Swift.Bool? {
+    get
+    set
+  }
+}
+@available(iOS 13.0, *)
+extension SwiftUI.View {
+  public func plotlineReplaySensitive(_ sensitive: Swift.Bool) -> some SwiftUI.View
+  
+}
+public enum RREventType : Swift.Int {
+  case domContentLoaded
+  case load
+  case fullSnapshot
+  case incrementalSnapshot
+  case meta
+  case custom
+  case plugin
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum RRIncrementalSource : Swift.Int {
+  case mutation
+  case mouseMove
+  case mouseInteraction
+  case scroll
+  case viewportResize
+  case input
+  case touchMove
+  case mediaInteraction
+  case styleSheetRule
+  case canvasMutation
+  case font
+  case log
+  case drag
+  case styleDeclaration
+  case selection
+  case adoptedStyleSheet
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum RRMouseInteraction : Swift.Int {
+  case mouseUp
+  case mouseDown
+  case click
+  case contextMenu
+  case doubleClick
+  case focus
+  case blur
+  case touchStart
+  case touchMoveDeprecated
+  case touchEnd
+  case touchCancel
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct RREvent {
+  public let type: Swift.Int
+  public let timestamp: Swift.Int64
+  public let data: [Swift.String : Any]
+  public init(type: RREventType, timestamp: Swift.Int64, data: [Swift.String : Any] = [:])
+  public func toDictionary() -> [Swift.String : Any]
+  public static func createMetaEvent(href: Swift.String, width: Swift.Int, height: Swift.Int, timestamp: Swift.Int64) -> RREvent
+  public static func createScreenshotSnapshotEvent(s3Key: Swift.String, width: Swift.Int, height: Swift.Int, format: Swift.String, size: Swift.Int, timestamp: Swift.Int64) -> RREvent
+  public static func createMouseInteractionEvent(interactionType: RRMouseInteraction, x: Swift.Int, y: Swift.Int, pointerId: Swift.Int, timestamp: Swift.Int64) -> RREvent
+  public static func createCustomEvent(tag: Swift.String, payload: [Swift.String : Any], timestamp: Swift.Int64) -> RREvent
+}
+public enum AutoMaskedView : Swift.Hashable {
+  case input
+  case text
+  case image
+  case webView
+  public static func == (a: AutoMaskedView, b: AutoMaskedView) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct SessionRecordingConfig {
+  public init(enabled: Swift.Bool = false, sessionId: Swift.String = "", maxSessionDuration: Foundation.TimeInterval = 1800, excludedPages: [Swift.String]? = nil, screenshotInterval: Foundation.TimeInterval = 1.0, autoMaskedViews: Swift.Set<AutoMaskedView> = [.input], wifiOnly: Swift.Bool = true)
+}
+@_hasMissingDesignatedInitializers public class SessionRecordingTask {
+  public static func getInstance() -> SessionRecordingTask
+  public func start(config: SessionRecordingConfig)
+  public func stop(reason: Swift.String = "USER_END")
+  public func isActive() -> Swift.Bool
+  public func recordTouch(phase: UIKit.UITouch.Phase, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, pointerId: Swift.Int = 0)
+  public func recordScreenChange(pageName: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PlotlineSessionRecordingTouchHandler {
+  public static func handleTouch(event: UIKit.UIEvent?)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SmileyRating : UIKit.UIView {
   @objc deinit
 }
@@ -696,7 +810,7 @@ public class Slide {
   @objc deinit
 }
 public class FetchWidgetTask {
-  public init(clientElementId: Swift.String, widgetDataListener: @escaping ((Widget?) -> ()))
+  public init(clientElementId: Swift.String, widgetDataListener: @escaping (([Widget]) -> ()))
   public func execute()
   @objc deinit
 }
@@ -726,6 +840,10 @@ public class RewardSettings {
   public func setEndpoint(sEndpoint: Swift.String)
   public func getShouldRegisterActivityEvents() -> Swift.Bool
   public func setShouldRegisterActivityEvents(shouldRegisterActivityEvents: Swift.Bool)
+  public func getDynamicWidgetRefreshIntervalInMilliseconds() -> Swift.Int
+  public func setDynamicWidgetRefreshIntervalInMilliseconds(dynamicWidgetRefreshIntervalInMilliseconds: Swift.Int)
+  public func getShouldRefreshDynamicWidgets() -> Swift.Bool
+  public func setShouldRefreshDynamicWidgets(shouldRefreshDynamicWidgets: Swift.Bool)
   public func getDefaultAttributes() -> Attributes
   public func getsColors() -> SurveySettings
   public func setsColors(sColors: [Swift.String : Any])
@@ -1126,6 +1244,10 @@ public class Study : Campaign {
   public static func setPushPermissionGranted(granted: Swift.Bool)
   public static func removePageCaptureUser()
   public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])
+  public static func sessionChunk(sessionId: Swift.String, chunkIndex: Swift.Int, events: [[Swift.String : Any]], currentUrl: Swift.String, callback: @escaping ([Swift.String : Any]?) -> Swift.Void)
+  public static func getSessionUploadUrl(sessionId: Swift.String, chunkIndex: Swift.Int, callback: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  public static func uploadSessionChunkToS3(uploadUrl: Swift.String, data: Foundation.Data, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public static func uploadToS3(uploadUrl: Swift.String, data: Foundation.Data, contentType: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineLoader : UIKit.UIView {
@@ -1341,6 +1463,8 @@ public class ScreenshotTask {
   public static var TYPE_ACTIVITY: Swift.String
   public static var DISMISS_DISABLED: Swift.Int
   public static var TYPES_ELEMENT: [Swift.String]
+  public var allowGrouping: Swift.Bool
+  public var preloadAspectRatio: Swift.Double
   public init(json: [Swift.String : Any])
   @objc deinit
 }
@@ -1413,6 +1537,7 @@ public class Widget : Campaign {
   public var shouldRefreshWidget: Swift.Bool
   public var widgetLoaderUrl: Swift.String
   public var refreshIntervalInMilliseconds: Swift.Int
+  public var journeyId: Swift.String?
   public init(json: [Swift.String : Any])
   @objc deinit
 }
@@ -1600,6 +1725,15 @@ extension WidgetData {
 extension DebugCode : Swift.Equatable {}
 extension DebugCode : Swift.Hashable {}
 extension DebugCode : Swift.RawRepresentable {}
+extension RREventType : Swift.Equatable {}
+extension RREventType : Swift.Hashable {}
+extension RREventType : Swift.RawRepresentable {}
+extension RRIncrementalSource : Swift.Equatable {}
+extension RRIncrementalSource : Swift.Hashable {}
+extension RRIncrementalSource : Swift.RawRepresentable {}
+extension RRMouseInteraction : Swift.Equatable {}
+extension RRMouseInteraction : Swift.Hashable {}
+extension RRMouseInteraction : Swift.RawRepresentable {}
 extension ArrowDirection : Swift.Equatable {}
 extension ArrowDirection : Swift.Hashable {}
 extension ArrowDirection : Swift.RawRepresentable {}

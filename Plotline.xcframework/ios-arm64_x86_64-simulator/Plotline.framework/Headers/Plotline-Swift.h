@@ -649,11 +649,13 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)setReloadCallbackWithReloadCallback:(void (^ _Nonnull)(void))reloadCallback;
 - (void)layoutSubviews;
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)reload;
+- (void)refreshWidget;
 - (void)awakeFromNib;
 - (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
 @end
@@ -744,6 +746,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
 SWIFT_CLASS("_TtC8Plotline20ViewPositionObserver")
 @interface ViewPositionObserver : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -761,6 +764,12 @@ SWIFT_CLASS_NAMED("WidgetData")
 @property (nonatomic, copy) NSString * _Nullable clientElementId;
 @property (nonatomic) int64_t lastUpdated;
 @property (nonatomic, copy) NSString * _Nullable widgetData;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8Plotline20WidgetReloadCallback_")
+@protocol WidgetReloadCallback
+- (void)onReload;
 @end
 
 #endif
@@ -1422,11 +1431,13 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)setReloadCallbackWithReloadCallback:(void (^ _Nonnull)(void))reloadCallback;
 - (void)layoutSubviews;
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)reload;
+- (void)refreshWidget;
 - (void)awakeFromNib;
 - (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
 @end
@@ -1517,6 +1528,7 @@ SWIFT_CLASS("_TtC8Plotline12ThankYouView")
 
 
 
+
 SWIFT_CLASS("_TtC8Plotline20ViewPositionObserver")
 @interface ViewPositionObserver : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1534,6 +1546,12 @@ SWIFT_CLASS_NAMED("WidgetData")
 @property (nonatomic, copy) NSString * _Nullable clientElementId;
 @property (nonatomic) int64_t lastUpdated;
 @property (nonatomic, copy) NSString * _Nullable widgetData;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8Plotline20WidgetReloadCallback_")
+@protocol WidgetReloadCallback
+- (void)onReload;
 @end
 
 #endif
