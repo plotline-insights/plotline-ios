@@ -497,6 +497,11 @@ public protocol PageListener {
   public var plotlineHaptics: Plotline.PlotlineHaptics?
   public var viewPositionObserver: Plotline.ViewPositionObserver?
   public var activeLoader: Plotline.PlotlineLoader?
+  public static var pendingBackdrop: UIKit.UIView?
+  public static var pendingBackdropTimeout: Dispatch.DispatchWorkItem?
+  public static func setPendingBackdrop(_ backdrop: UIKit.UIView)
+  public static func removePendingBackdrop()
+  public static func clearPendingBackdrop()
   public func setActiveLoader(plotlineLoader: Plotline.PlotlineLoader)
   public func getActiveLoader() -> Plotline.PlotlineLoader?
   public func resetActiveLoader()
@@ -880,6 +885,8 @@ public class RewardSettings {
   public func getShouldEnableDebugEvents() -> Swift.Bool
   public func setShouldEnableImageFail(shouldEnableImageFail: Swift.Bool)
   public func getShouldEnableImageFail() -> Swift.Bool
+  public func setShouldEnableSmoothBackdropTransition(shouldEnableSmoothBackdropTransition: Swift.Bool)
+  public func getShouldEnableSmoothBackdropTransition() -> Swift.Bool
   public func setShouldEnableWidgetLock(shouldEnableWidgetLock: Swift.Bool)
   public func getShouldEnableWidgetLock() -> Swift.Bool
   public func getFlowStore() -> Plotline.FlowStore
@@ -955,6 +962,7 @@ public class RewardSettings {
   public func getMinVideoAnalyticsDuration() -> Swift.Int
   public func getLoadTimeMap() -> Plotline.ConcurrentDictionary<Swift.String, (Swift.Int64, Swift.Int64?)>
   public func getPreloadedHeights() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
+  public func getGroupedWidgetScaleFactors() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
   @objc public static func getPreloadedHeight(elementId: Swift.String) -> Swift.Double
   @objc public func appOrientationChanged()
   @objc public func appMovedToBackground()
@@ -1169,6 +1177,7 @@ public class FlowStore {
   public init()
   public func peekActiveFlowStep() -> Plotline.FlowStep?
   public func popActiveFlowStep() -> Plotline.FlowStep?
+  public func peekNextFlowStep() -> Plotline.FlowStep?
   public func clearActiveFlowArray()
   public func clearFlows()
   public func isFirstStep(stepId: Swift.String) -> Swift.Bool
