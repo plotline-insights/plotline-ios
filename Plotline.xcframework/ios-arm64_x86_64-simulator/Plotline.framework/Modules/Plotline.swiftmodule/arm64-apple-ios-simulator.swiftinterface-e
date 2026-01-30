@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Plotline
 import AVFoundation
 import CommonCrypto
+import Compression
 import CoreData
 import CoreGraphics
 import CoreHaptics
@@ -200,6 +201,15 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) public func resetPreloadHeightConstraint()
   @_Concurrency.MainActor(unsafe) public func removeAllViews()
   @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
+  @objc deinit
+}
+public class CardWithLabelSettings {
+  public var image: Swift.String
+  public var title: Swift.String
+  public var subtitle: Swift.String
+  public var badgeText: Swift.String
+  public init()
+  public init(_ json: [Swift.String : Any])
   @objc deinit
 }
 public class UpdateFeatureFlagTask {
@@ -1069,10 +1079,13 @@ public class StepLayout {
   public var lottieSettings: Plotline.LottieSettings
   public var rewardSettings: Plotline.RewardSettings
   public var timerSettings: Plotline.TimerSettings
+  public var cardWithLabelSettings: Plotline.CardWithLabelSettings
+  public var cardWithLabelContainerSettings: Plotline.CardWithLabelContainerSettings
   weak public var webview: WebKit.WKWebView?
   public var preloadWebview: Swift.Bool
   public var resizableButton: Swift.Bool
   public var plotlineRoundedButton: Swift.Bool
+  public var cropAspectRatio: Swift.Double
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
@@ -1120,6 +1133,10 @@ public class PAttribute {
   public static func checkEligibilityAndTriggerCampaign(campaigns: [Plotline.Campaign], eventName: Swift.String?, eligibleEvents: Swift.Set<Swift.String>, properties: [Swift.String : Any]?)
   public static func checkEligibilityAndTriggerCampaignProcess(campaigns: [Plotline.Campaign], eventName: Swift.String?, eligibleEvents: Swift.Set<Swift.String>, properties: [Swift.String : Any]?)
   public static func triggerCampaign(eligibleCampaigns: [Plotline.Campaign], eventName: Swift.String?, compositeEvents: Swift.Set<Swift.String>?, properties: [Swift.String : Any]?, shouldLaunchManually: Swift.Bool = false)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GzipHelper {
+  public static func decodeAndDecompress(_ encoded: Swift.String?) -> Swift.String?
   @objc deinit
 }
 public protocol CoachMarkInfoView : UIKit.UIView {
@@ -1272,6 +1289,19 @@ public class StepAction {
   public var requireDismiss: Swift.Bool?
   public var isDismiss: Swift.Bool?
   convenience public init()
+  public init(_ json: [Swift.String : Any])
+  @objc deinit
+}
+public class CardWithLabelContainerSettings {
+  public var containerColor: Swift.String
+  public var titleColor: Swift.String
+  public var subtitleColor: Swift.String
+  public var badgeTextColor: Swift.String
+  public var badgeBackgroundColor: Swift.String
+  public var titleFontSize: Swift.Float
+  public var subtitleFontSize: Swift.Float
+  public var badgeFontSize: Swift.Float
+  public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
 }

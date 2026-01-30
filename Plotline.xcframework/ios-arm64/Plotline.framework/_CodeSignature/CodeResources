@@ -50,23 +50,23 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		itr7E6rZdK1940wLiiJN7rxdGoY=
+		+dkj0SV5XMTBG8jQ3yWKP4CmUHc=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		j3MmCt7yjeT0e2s44jxn2azAG9E=
+		vwxUE/Edb32Iisvlo6etvOm1s2E=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		+fpAjV2FY3bsG4QAGHFtKvV4dXw=
+		DwD/M1P+ylwTZNAZKPJ+WYB6KiM=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		j3MmCt7yjeT0e2s44jxn2azAG9E=
+		vwxUE/Edb32Iisvlo6etvOm1s2E=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		pGcmGNYV9/oPGt0pgwe+jjJrRW4=
+		tg2wM1LgLP9oxCZ0YLwilh52Qq0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		4WzuNXBtlVTQlR1kRHmMcpF87EM=
+		J/0Bl6lh358oYJNA+J9Q3WpmYso=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,35 +177,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dnqaXZ3Hx9WR5BjEFRCy5JW75tFl8XpsCiDzIhYxjhM=
+			m9gOcJU5VMjN8zdtnZrqf16IUp44Jg2F5r80Ok5VQ5A=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hrR3E1G4AQ4yJ6IY+fJLsrOKOXBiXnJyxmbtiYg5Fjc=
+			uPEQFyujLY26UDgwVHf6OhMK0eq+WrT1Zfam6h2KxfQ=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h1vQpjzP6Ikpo4kxVG96dbuA93V87rgFRS0Eihkwczg=
+			MEl/vOFtikIB0uNcicK5m35jhP2ElCG2LPXXE0gk9lo=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hrR3E1G4AQ4yJ6IY+fJLsrOKOXBiXnJyxmbtiYg5Fjc=
+			uPEQFyujLY26UDgwVHf6OhMK0eq+WrT1Zfam6h2KxfQ=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M9ZdrzmeQKUydDWrqyLiSjhtMO8MVYanWvMyN06VBzg=
+			zDcK+mZXglZx18QT514XTPr95kLY9kZZYLLfsJt7ffQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pKCAsZPRChBOm95PAv9F74RPicpECJMmlPxqMoeyzFg=
+			EqyUt6RvjHHCxdNi+OE14ADnVqe1bpNk/JqlQM6+ro4=
 			</data>
 		</dict>
 	</dict>
