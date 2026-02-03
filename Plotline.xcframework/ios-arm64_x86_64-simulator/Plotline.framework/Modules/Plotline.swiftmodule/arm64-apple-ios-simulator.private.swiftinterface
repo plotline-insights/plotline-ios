@@ -1269,6 +1269,7 @@ public class Study : Campaign {
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String, action: Swift.String? = nil)
   public static func setPushPermissionGranted(granted: Swift.Bool)
   public static func removePageCaptureUser()
+  public static func resolveContent(templates: [Swift.String], flowId: Swift.String, completion: @escaping ([Swift.String]?, Swift.Bool) -> Swift.Void)
   public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])
   public static func sessionChunk(sessionId: Swift.String, chunkIndex: Swift.Int, events: [[Swift.String : Any]], currentUrl: Swift.String, callback: @escaping ([Swift.String : Any]?) -> Swift.Void)
   public static func getSessionUploadUrl(sessionId: Swift.String, chunkIndex: Swift.Int, callback: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
@@ -1475,6 +1476,7 @@ public class ScreenshotTask {
   public var rewardId: Swift.String?
   public var isSticky: Swift.Bool
   public var standardisedStepId: Swift.String?
+  public var hasExternalContent: Swift.Bool
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
@@ -1504,6 +1506,7 @@ public class ScreenshotTask {
   public static var TYPES_ELEMENT: [Swift.String]
   public var allowGrouping: Swift.Bool
   public var preloadAspectRatio: Swift.Double
+  public var parentCampaignID: Swift.String
   public init(json: [Swift.String : Any])
   @objc deinit
 }
