@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/plotline/Library/Developer/Xcode/DerivedData/Plotline-gsatejpxpefpboeqyfydkfsghkfc/Build/Intermediates.noindex/ArchiveIntermediates/Plotline/InstallationBuildProductsLocation/Library/Frameworks/Plotline.framework/Plotline'
+binary-path:     '/Users/plotline/Library/Developer/Xcode/DerivedData/Plotline-bfsrdqmwjfjysnaujwyxtvwttiqh/Build/Intermediates.noindex/ArchiveIntermediates/Plotline/InstallationBuildProductsLocation/Library/Frameworks/Plotline.framework/Plotline'
 relocations:
   - { offsetInCU: 0x34, offset: 0xF950E, size: 0x8, addend: 0x0, symName: _PlotlineVersionString, symObjAddr: 0x0, symBinAddr: 0x30C6D0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0xF9543, size: 0x8, addend: 0x0, symName: _PlotlineVersionNumber, symObjAddr: 0x30, symBinAddr: 0x30C700, symSize: 0x0 }
@@ -137,7 +137,7 @@ relocations:
   - { offsetInCU: 0x2E6D, offset: 0xFC51E, size: 0x8, addend: 0x0, symName: '_$sSo12CACornerMaskVSYSCSY8rawValue03RawD0QzvgTW', symObjAddr: 0x1EF4, symBinAddr: 0x9EA0, symSize: 0xC }
   - { offsetInCU: 0x2F75, offset: 0xFC626, size: 0x8, addend: 0x0, symName: '_$s8Plotline6PromptC11handleClose7gestureySo22UITapGestureRecognizerC_tFTf4dn_n', symObjAddr: 0x2548, symBinAddr: 0xA4F4, symSize: 0x144 }
   - { offsetInCU: 0x3013, offset: 0xFC6C4, size: 0x8, addend: 0x0, symName: '_$s8Plotline6PromptC5coderACSo7NSCoderC_tcfcTf4gn_n', symObjAddr: 0x268C, symBinAddr: 0xA638, symSize: 0x100 }
-  - { offsetInCU: 0x4F, offset: 0xFC847, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC08plotlineB0ACvpZ', symObjAddr: 0x34A40, symBinAddr: 0x4007B8, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0xFC847, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC08plotlineB0ACvpZ', symObjAddr: 0x34968, symBinAddr: 0x4007B8, symSize: 0x0 }
   - { offsetInCU: 0xFA, offset: 0xFC8F2, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushCACyc33_C417F21F133C1DB1944DAA896CC3EA1DLlfcTo', symObjAddr: 0xA0, symBinAddr: 0xB16C, symSize: 0x7C }
   - { offsetInCU: 0x162, offset: 0xFC95A, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC06enableB0yySo32UNUserNotificationCenterDelegate_pFZTo', symObjAddr: 0x2A8, symBinAddr: 0xB374, symSize: 0x34 }
   - { offsetInCU: 0x224, offset: 0xFCA1C, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC05checkB22NotificationPermission33_C417F21F133C1DB1944DAA896CC3EA1DLLyyFZySo22UNNotificationSettingsCcfU_', symObjAddr: 0xC30, symBinAddr: 0xBCFC, symSize: 0x124 }
@@ -166,7 +166,7 @@ relocations:
   - { offsetInCU: 0x22B3, offset: 0xFEAAB, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC5embed33_C417F21F133C1DB1944DAA896CC3EA1DLL_4viewySo6UIViewC_AHtFZTf4nnd_n', symObjAddr: 0xA590, symBinAddr: 0x1561C, symSize: 0x294 }
   - { offsetInCU: 0x234A, offset: 0xFEB42, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC21updatePreferredHeight33_C417F21F133C1DB1944DAA896CC3EA1DLL4view9builtView0N10ControllerySo6UIViewC_AJSo0rQ0CtFZTf4nnnd_n', symObjAddr: 0xA824, symBinAddr: 0x158B0, symSize: 0xB8 }
   - { offsetInCU: 0x243F, offset: 0xFEC37, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC03setaB13ClickListener8listeneryySDyS2SGc_tFZ39$sSo12NSDictionaryCIeyBy_SDyS2SGIegg_TRSo0I0CIeyBy_Tf1cn_nTf4dg_n', symObjAddr: 0xA8DC, symBinAddr: 0x15968, symSize: 0x178 }
-  - { offsetInCU: 0x264B, offset: 0xFEE43, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC10appGroupIdSSSgvpZ', symObjAddr: 0x34A48, symBinAddr: 0x4007C0, symSize: 0x0 }
+  - { offsetInCU: 0x264B, offset: 0xFEE43, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC10appGroupIdSSSgvpZ', symObjAddr: 0x34970, symBinAddr: 0x4007C0, symSize: 0x0 }
   - { offsetInCU: 0x2659, offset: 0xFEE51, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A4PushC08plotlineB0_WZ', symObjAddr: 0x24, symBinAddr: 0xB0F0, symSize: 0x2C }
   - { offsetInCU: 0x26BB, offset: 0xFEEB3, size: 0x8, addend: 0x0, symName: '_$sSbs5Error_pSgIegyg_SbSo7NSErrorCSgIeyByy_TR', symObjAddr: 0x6C0, symBinAddr: 0xB78C, symSize: 0x64 }
   - { offsetInCU: 0x26D3, offset: 0xFEECB, size: 0x8, addend: 0x0, symName: '_$sSo22UNNotificationSettingsCIegg_ABIeyBy_TR', symObjAddr: 0x724, symBinAddr: 0xB7F0, symSize: 0x4C }
@@ -350,7 +350,7 @@ relocations:
   - { offsetInCU: 0x618, offset: 0x108685, size: 0x8, addend: 0x0, symName: '_$s8Plotline15PassthroughViewCfD', symObjAddr: 0x32C, symBinAddr: 0x19314, symSize: 0x30 }
   - { offsetInCU: 0x66A, offset: 0x1086D7, size: 0x8, addend: 0x0, symName: '_$s8Plotline15PassthroughViewC5point6inside4withSbSo7CGPointV_So7UIEventCSgtFTf4ndn_n', symObjAddr: 0x370, symBinAddr: 0x19358, symSize: 0xBC }
   - { offsetInCU: 0x2B, offset: 0x1087D7, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A23ButtonTextColorAnimatorC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x1946C, symSize: 0x84 }
-  - { offsetInCU: 0x4F, offset: 0x1087FB, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A23ButtonTextColorAnimatorC6sharedACvpZ', symObjAddr: 0x55A8, symBinAddr: 0x4007D0, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x1087FB, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A23ButtonTextColorAnimatorC6sharedACvpZ', symObjAddr: 0x54D0, symBinAddr: 0x4007D0, symSize: 0x0 }
   - { offsetInCU: 0xFD, offset: 0x1088A9, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A23ButtonTextColorAnimatorC06updateD0yyFTo', symObjAddr: 0x258, symBinAddr: 0x196C4, symSize: 0x28 }
   - { offsetInCU: 0x145, offset: 0x1088F1, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A23ButtonTextColorAnimatorC011interpolateD033_72C1C0C317846EEE5518DEED8A725485LL4from2to10percentageSo7UIColorCAJ_AJ12CoreGraphics7CGFloatVtFTf4nnnd_n', symObjAddr: 0x2DC, symBinAddr: 0x19748, symSize: 0x124 }
   - { offsetInCU: 0x32C, offset: 0x108AD8, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A23ButtonTextColorAnimatorC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x1946C, symSize: 0x84 }
@@ -615,8 +615,8 @@ relocations:
   - { offsetInCU: 0x7484, offset: 0x118914, size: 0x8, addend: 0x0, symName: '_$s8Plotline0a9PictureInB4ViewCfD', symObjAddr: 0x5E90, symBinAddr: 0x2760C, symSize: 0x30 }
   - { offsetInCU: 0x7520, offset: 0x1189B0, size: 0x8, addend: 0x0, symName: '_$s8Plotline0a9PictureInB4ViewC5coderACSgSo7NSCoderC_tcfcTf4dn_n', symObjAddr: 0x6764, symBinAddr: 0x27E5C, symSize: 0x1B0 }
   - { offsetInCU: 0x7579, offset: 0x118A09, size: 0x8, addend: 0x0, symName: '_$s8Plotline0a9PictureInB4ViewC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeyf6ChangeH0aypGSgSvSgtFTf4nnddn_n', symObjAddr: 0x6914, symBinAddr: 0x2800C, symSize: 0x3D0 }
-  - { offsetInCU: 0x4F, offset: 0x118C61, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A6WidgetC12shownWidgetsShySSGvpZ', symObjAddr: 0x4CAD8, symBinAddr: 0x4007D8, symSize: 0x0 }
-  - { offsetInCU: 0x6A, offset: 0x118C7C, size: 0x8, addend: 0x0, symName: '_$sSo18NSNotificationNamea8PlotlineE22didChangeTestUserStateABvpZ', symObjAddr: 0x4CAE0, symBinAddr: 0x4007E0, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x118C61, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A6WidgetC12shownWidgetsShySSGvpZ', symObjAddr: 0x4CA10, symBinAddr: 0x4007D8, symSize: 0x0 }
+  - { offsetInCU: 0x6A, offset: 0x118C7C, size: 0x8, addend: 0x0, symName: '_$sSo18NSNotificationNamea8PlotlineE22didChangeTestUserStateABvpZ', symObjAddr: 0x4CA18, symBinAddr: 0x4007E0, symSize: 0x0 }
   - { offsetInCU: 0x78, offset: 0x118C8A, size: 0x8, addend: 0x0, symName: '_$s10ObjectiveC8ObjCBoolVIeyBy_SbIegy_TR', symObjAddr: 0x0, symBinAddr: 0x28520, symSize: 0x14 }
   - { offsetInCU: 0x8C, offset: 0x118C9E, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x14, symBinAddr: 0x28534, symSize: 0x2C }
   - { offsetInCU: 0xC6, offset: 0x118CD8, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A6WidgetC15clientElementIdSSvgTo', symObjAddr: 0x48, symBinAddr: 0x28568, symSize: 0x68 }
@@ -1507,7 +1507,7 @@ relocations:
   - { offsetInCU: 0x1F15, offset: 0x15E61B, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A15BottomSheetViewC5coderACSgSo7NSCoderC_tcfc', symObjAddr: 0x240C, symBinAddr: 0x6B9C0, symSize: 0xF0 }
   - { offsetInCU: 0x1F48, offset: 0x15E64E, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A15BottomSheetViewCfD', symObjAddr: 0x2524, symBinAddr: 0x6BAD8, symSize: 0x30 }
   - { offsetInCU: 0x2B, offset: 0x15E72D, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingV6radius12CoreGraphics7CGFloatVvg', symObjAddr: 0x0, symBinAddr: 0x6BF04, symSize: 0x8 }
-  - { offsetInCU: 0x4F, offset: 0x15E751, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingV12contentInset12CoreGraphics7CGFloatVvpZ', symObjAddr: 0x60D0, symBinAddr: 0x4007E8, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x15E751, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingV12contentInset12CoreGraphics7CGFloatVvpZ', symObjAddr: 0x6008, symBinAddr: 0x4007E8, symSize: 0x0 }
   - { offsetInCU: 0x1C9, offset: 0x15E8CB, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingV12contentInset_WZ', symObjAddr: 0x5C, symBinAddr: 0x6BF60, symSize: 0x10 }
   - { offsetInCU: 0x21F, offset: 0x15E921, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingVwCP', symObjAddr: 0x450, symBinAddr: 0x6C354, symSize: 0x30 }
   - { offsetInCU: 0x233, offset: 0x15E935, size: 0x8, addend: 0x0, symName: ___swift_memcpy48_8, symObjAddr: 0x484, symBinAddr: 0x6C384, symSize: 0x14 }
@@ -1527,7 +1527,7 @@ relocations:
   - { offsetInCU: 0x66A, offset: 0x15ED6C, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingV13controlCenter0D6Radius9innerRect05outerH018overlappingAllowed13excenterShift0lF0ACSgSo7CGPointV_12CoreGraphics7CGFloatVSo6CGRectVARSbAMSgAPSgtcfC', symObjAddr: 0x6C, symBinAddr: 0x6BF70, symSize: 0x124 }
   - { offsetInCU: 0x759, offset: 0x15EE5B, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingV12defineCenter33_A2DDC91F3E4033ADD546286ACA387321LLySo7CGPointVAGSg_12CoreGraphics7CGFloatVSgtF', symObjAddr: 0x190, symBinAddr: 0x6C094, symSize: 0x124 }
   - { offsetInCU: 0x932, offset: 0x15F034, size: 0x8, addend: 0x0, symName: '_$s8Plotline9CoachRingV12defineRadius33_A2DDC91F3E4033ADD546286ACA387321LLy12CoreGraphics7CGFloatVSo7CGPointV_So6CGRectVtF', symObjAddr: 0x2B4, symBinAddr: 0x6C1B8, symSize: 0x19C }
-  - { offsetInCU: 0x4F, offset: 0x15F252, size: 0x8, addend: 0x0, symName: '_$s8Plotline11LottieCacheC6sharedACvpZ', symObjAddr: 0x194D8, symBinAddr: 0x4007F0, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x15F252, size: 0x8, addend: 0x0, symName: '_$s8Plotline11LottieCacheC6sharedACvpZ', symObjAddr: 0x19410, symBinAddr: 0x4007F0, symSize: 0x0 }
   - { offsetInCU: 0x95, offset: 0x15F298, size: 0x8, addend: 0x0, symName: '_$s8Plotline11LottieCacheC20preloadAnimationView3url12isBackground10completionySS_Sby0aB00beF0CSgctFyAH0bE0CSgcfU_', symObjAddr: 0xD8, symBinAddr: 0x6C4D8, symSize: 0x2C0 }
   - { offsetInCU: 0x209, offset: 0x15F40C, size: 0x8, addend: 0x0, symName: '_$s8Plotline11LottieCacheC20preloadAnimationView3url12isBackground10completionySS_Sby0aB00beF0CSgctFyAH03DotB4FileCSgcfU0_', symObjAddr: 0x398, symBinAddr: 0x6C798, symSize: 0x25C }
   - { offsetInCU: 0x35A, offset: 0x15F55D, size: 0x8, addend: 0x0, symName: '_$s8Plotline11LottieCacheC14cacheAnimation3url10completionySS_yyctF034$s8Plotline14ResourceLoaderC19loadB57Resources7lotties08resourceC8ListenerySaySSG_yyctFZyycfU_SaySSGSSAA0jK0CXMTIeg_Tf1ncn_n', symObjAddr: 0x5F4, symBinAddr: 0x6C9F4, symSize: 0x50 }
@@ -1687,7 +1687,7 @@ relocations:
   - { offsetInCU: 0xA3, offset: 0x1643FF, size: 0x8, addend: 0x0, symName: '_$s8Plotline11EventObjectVwst', symObjAddr: 0x170, symBinAddr: 0x763F0, symSize: 0x40 }
   - { offsetInCU: 0xB7, offset: 0x164413, size: 0x8, addend: 0x0, symName: '_$s8Plotline11EventObjectVMa', symObjAddr: 0x1B0, symBinAddr: 0x76430, symSize: 0x10 }
   - { offsetInCU: 0xE7, offset: 0x164443, size: 0x8, addend: 0x0, symName: '_$s8Plotline11EventObjectV9eventJSONACSDySSypG_tcfCTf4nd_n', symObjAddr: 0x1C0, symBinAddr: 0x76440, symSize: 0x1CC }
-  - { offsetInCU: 0x4F, offset: 0x164781, size: 0x8, addend: 0x0, symName: '_$s8Plotline5FlowsC5flowsACSgvpZ', symObjAddr: 0x31B18, symBinAddr: 0x4007F8, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x164781, size: 0x8, addend: 0x0, symName: '_$s8Plotline5FlowsC5flowsACSgvpZ', symObjAddr: 0x31A48, symBinAddr: 0x4007F8, symSize: 0x0 }
   - { offsetInCU: 0x10B, offset: 0x16483D, size: 0x8, addend: 0x0, symName: '_$s8Plotline5FlowsCACycfcTo', symObjAddr: 0x2AC, symBinAddr: 0x768B8, symSize: 0x20 }
   - { offsetInCU: 0x613, offset: 0x164D45, size: 0x8, addend: 0x0, symName: '_$s8Plotline5FlowsC012showPageTypeB08flowStep4view14actionListener012plotlineViewJ5ReadyyAA04FlowG0C_So6UIViewCAA06ActionJ0_pyAA0alJ0_pSgctFZyyScMYccfU_', symObjAddr: 0x46B0, symBinAddr: 0x7ACBC, symSize: 0x14E8 }
   - { offsetInCU: 0x14AA, offset: 0x165BDC, size: 0x8, addend: 0x0, symName: '_$s8Plotline5FlowsC012showPageTypeB08flowStep4view14actionListener012plotlineViewJ5ReadyyAA04FlowG0C_So6UIViewCAA06ActionJ0_pyAA0alJ0_pSgctFZTf4nnenn_nAA0pJ4ImplC_Tgm5', symObjAddr: 0x72C8, symBinAddr: 0x7D8D4, symSize: 0x270 }
@@ -2710,8 +2710,8 @@ relocations:
   - { offsetInCU: 0x652, offset: 0x19AD1B, size: 0x8, addend: 0x0, symName: '_$s8Plotline16FeatureFlagStoreC03getbC15PayloadInternal3keySSSgSS_tFZ', symObjAddr: 0x110, symBinAddr: 0xB0CF8, symSize: 0x4 }
   - { offsetInCU: 0x66C, offset: 0x19AD35, size: 0x8, addend: 0x0, symName: '_$s8Plotline16FeatureFlagStoreCfd', symObjAddr: 0x114, symBinAddr: 0xB0CFC, symSize: 0x8 }
   - { offsetInCU: 0x697, offset: 0x19AD60, size: 0x8, addend: 0x0, symName: '_$s8Plotline16FeatureFlagStoreCfD', symObjAddr: 0x11C, symBinAddr: 0xB0D04, symSize: 0x10 }
-  - { offsetInCU: 0x4F, offset: 0x19AE27, size: 0x8, addend: 0x0, symName: '_$s8Plotline15FetchWidgetTaskC22reportedControlWidgetsShySSGvpZ', symObjAddr: 0xFBF0, symBinAddr: 0x400800, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x19AE41, size: 0x8, addend: 0x0, symName: '_$s8Plotline15FetchWidgetTaskC21reportedTargetWidgetsShySSGvpZ', symObjAddr: 0xFBF8, symBinAddr: 0x400808, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x19AE27, size: 0x8, addend: 0x0, symName: '_$s8Plotline15FetchWidgetTaskC22reportedControlWidgetsShySSGvpZ', symObjAddr: 0xFB28, symBinAddr: 0x400800, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x19AE41, size: 0x8, addend: 0x0, symName: '_$s8Plotline15FetchWidgetTaskC21reportedTargetWidgetsShySSGvpZ', symObjAddr: 0xFB30, symBinAddr: 0x400808, symSize: 0x0 }
   - { offsetInCU: 0x83, offset: 0x19AE5B, size: 0x8, addend: 0x0, symName: '_$s8Plotline15FetchWidgetTaskC13failedStepIds33_220A8C27C78899DFB1CD3E5FF0FD4D78LLShySSGvpZ', symObjAddr: 0x1E20, symBinAddr: 0x3D6798, symSize: 0x0 }
   - { offsetInCU: 0x9D, offset: 0x19AE75, size: 0x8, addend: 0x0, symName: '_$s8Plotline15FetchWidgetTaskC12reportedLock33_220A8C27C78899DFB1CD3E5FF0FD4D78LLSo6NSLockCvpZ', symObjAddr: 0x1E28, symBinAddr: 0x3D67A0, symSize: 0x0 }
   - { offsetInCU: 0x150, offset: 0x19AF28, size: 0x8, addend: 0x0, symName: '_$s8Plotline15FetchWidgetTaskC22reportedControlWidgets_WZ', symObjAddr: 0x50, symBinAddr: 0xB1090, symSize: 0x14 }
@@ -2776,7 +2776,7 @@ relocations:
   - { offsetInCU: 0xEC0, offset: 0x19ECA6, size: 0x8, addend: 0x0, symName: '_$s8Plotline11CMRingLayerC6action6forKeySo8CAAction_pSgSS_tF', symObjAddr: 0x141C, symBinAddr: 0xB4740, symSize: 0x32C }
   - { offsetInCU: 0xFF0, offset: 0x19EDD6, size: 0x8, addend: 0x0, symName: '_$s8Plotline11CMRingLayerC5layerACyp_tcfc', symObjAddr: 0x184C, symBinAddr: 0xB4B70, symSize: 0x14C }
   - { offsetInCU: 0x107B, offset: 0x19EE61, size: 0x8, addend: 0x0, symName: '_$s8Plotline13CoachRingViewC16animationDidStop_8finishedySo11CAAnimationC_SbtFTf4ndn_n', symObjAddr: 0x1BDC, symBinAddr: 0xB4DE0, symSize: 0x114 }
-  - { offsetInCU: 0x4F, offset: 0x19EF87, size: 0x8, addend: 0x0, symName: '_$s8PlotlineAAC8plotlineABvpZ', symObjAddr: 0x49278, symBinAddr: 0x400810, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x19EF87, size: 0x8, addend: 0x0, symName: '_$s8PlotlineAAC8plotlineABvpZ', symObjAddr: 0x491B0, symBinAddr: 0x400810, symSize: 0x0 }
   - { offsetInCU: 0xBE4, offset: 0x19FB1C, size: 0x8, addend: 0x0, symName: '_$s8PlotlineAAC03setA9Framework9frameworkySS_tFZTo', symObjAddr: 0xF8C, symBinAddr: 0xB5E80, symSize: 0x6C }
   - { offsetInCU: 0xE7E, offset: 0x19FDB6, size: 0x8, addend: 0x0, symName: '_$s8PlotlineAAC23setIsFeatureFlagsLoaded02isdeF0ySb_tFTo', symObjAddr: 0x1200, symBinAddr: 0xB60F4, symSize: 0x10 }
   - { offsetInCU: 0xE9E, offset: 0x19FDD6, size: 0x8, addend: 0x0, symName: '_$s8PlotlineAAC23setIsFeatureFlagsLoaded02isdeF0ySb_tFTo', symObjAddr: 0x1200, symBinAddr: 0xB60F4, symSize: 0x10 }
@@ -3773,7 +3773,7 @@ relocations:
   - { offsetInCU: 0x1C5B, offset: 0x1E55D7, size: 0x8, addend: 0x0, symName: '_$sSlsSQ7ElementRpzrlE10firstIndex2of0C0QzSgAB_tFSS_Tg5', symObjAddr: 0xC4, symBinAddr: 0xFDAEC, symSize: 0xE8 }
   - { offsetInCU: 0x1D15, offset: 0x1E5691, size: 0x8, addend: 0x0, symName: '_$s8Plotline10M3U8ParserCfD', symObjAddr: 0x1AC, symBinAddr: 0xFDBD4, symSize: 0x10 }
   - { offsetInCU: 0x27, offset: 0x1E58B2, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A19FeatureFlagDefaultsC04userD0_WZ', symObjAddr: 0x0, symBinAddr: 0xFF6A0, symSize: 0x70 }
-  - { offsetInCU: 0x4B, offset: 0x1E58D6, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A19FeatureFlagDefaultsC04userD0So06NSUserD0CSgvpZ', symObjAddr: 0x4990, symBinAddr: 0x400828, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x1E58D6, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A19FeatureFlagDefaultsC04userD0So06NSUserD0CSgvpZ', symObjAddr: 0x48C0, symBinAddr: 0x400828, symSize: 0x0 }
   - { offsetInCU: 0x59, offset: 0x1E58E4, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A19FeatureFlagDefaultsC04userD0_WZ', symObjAddr: 0x0, symBinAddr: 0xFF6A0, symSize: 0x70 }
   - { offsetInCU: 0x10B, offset: 0x1E5996, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A19FeatureFlagDefaultsC15updateAllValues03newG0ySDyS2SG_tFZyycfU_', symObjAddr: 0x70, symBinAddr: 0xFF710, symSize: 0x3BC }
   - { offsetInCU: 0x2D6, offset: 0x1E5B61, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A19FeatureFlagDefaultsCMa', symObjAddr: 0x43C, symBinAddr: 0xFFADC, symSize: 0x20 }
@@ -3942,7 +3942,7 @@ relocations:
   - { offsetInCU: 0x1E4A, offset: 0x1EFDCF, size: 0x8, addend: 0x0, symName: '_$s8Plotline9ConditionC4type3key9aggregate8relation5value9pOperatorACSS_S5Stcfc', symObjAddr: 0x1A8C, symBinAddr: 0x109840, symSize: 0x1BC }
   - { offsetInCU: 0x1ED5, offset: 0x1EFE5A, size: 0x8, addend: 0x0, symName: '_$s8Plotline9ConditionCfd', symObjAddr: 0x1C48, symBinAddr: 0x1099FC, symSize: 0x4C }
   - { offsetInCU: 0x1EF8, offset: 0x1EFE7D, size: 0x8, addend: 0x0, symName: '_$s8Plotline9ConditionCfD', symObjAddr: 0x1C94, symBinAddr: 0x109A48, symSize: 0x20 }
-  - { offsetInCU: 0x4F, offset: 0x1EFFE8, size: 0x8, addend: 0x0, symName: '_$s8Plotline10ImageCacheC6sharedACvpZ', symObjAddr: 0xAF60, symBinAddr: 0x400830, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x1EFFE8, size: 0x8, addend: 0x0, symName: '_$s8Plotline10ImageCacheC6sharedACvpZ', symObjAddr: 0xAE90, symBinAddr: 0x400830, symSize: 0x0 }
   - { offsetInCU: 0xB0, offset: 0x1F0049, size: 0x8, addend: 0x0, symName: '_$s8Plotline10ImageCacheC04loadB03url10completiony10Foundation3URLV_ySo7UIImageCSgctFyAG4DataVSg_So13NSURLResponseCSgs5Error_pSgtYbcfU_', symObjAddr: 0x490, symBinAddr: 0x10A308, symSize: 0x418 }
   - { offsetInCU: 0x226, offset: 0x1F01BF, size: 0x8, addend: 0x0, symName: '_$s8Plotline10ImageCacheC04loadB03url10completiony10Foundation3URLV_ySo7UIImageCSgctFyAG4DataVSg_So13NSURLResponseCSgs5Error_pSgtYbcfU_yyScMYccfU_', symObjAddr: 0x8A8, symBinAddr: 0x10A720, symSize: 0x1D4 }
   - { offsetInCU: 0x2CE, offset: 0x1F0267, size: 0x8, addend: 0x0, symName: '_$s8Plotline10ImageCacheC04saveB6ToDisk33_208FDA0465538A5360A8FE7C745C8278LL4data3urly10Foundation4DataV_AH3URLVtFyycfU_', symObjAddr: 0xA7C, symBinAddr: 0x10A8F4, symSize: 0x264 }
@@ -4206,7 +4206,7 @@ relocations:
   - { offsetInCU: 0x22B0, offset: 0x20736A, size: 0x8, addend: 0x0, symName: '_$s8Plotline6RatingCfD', symObjAddr: 0x1974, symBinAddr: 0x121908, symSize: 0x30 }
   - { offsetInCU: 0x2320, offset: 0x2073DA, size: 0x8, addend: 0x0, symName: '_$s8Plotline6RatingC11handleClose7gestureySo22UITapGestureRecognizerC_tFTf4dn_n', symObjAddr: 0x1DC4, symBinAddr: 0x121BCC, symSize: 0x144 }
   - { offsetInCU: 0x23BE, offset: 0x207478, size: 0x8, addend: 0x0, symName: '_$s8Plotline6RatingC5coderACSo7NSCoderC_tcfcTf4gn_n', symObjAddr: 0x1F08, symBinAddr: 0x121D10, symSize: 0x100 }
-  - { offsetInCU: 0x4F, offset: 0x2075B0, size: 0x8, addend: 0x0, symName: '_$s8Plotline10FontHelperC6sharedACvpZ', symObjAddr: 0x1E090, symBinAddr: 0x400838, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x2075B0, size: 0x8, addend: 0x0, symName: '_$s8Plotline10FontHelperC6sharedACvpZ', symObjAddr: 0x1DFC8, symBinAddr: 0x400838, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x2075CA, size: 0x8, addend: 0x0, symName: '_$s8Plotline10FontHelperC019downloadAndRegisterB04from10completionySS_ySo6UIFontCSg_s5Error_pSgtctFZ034$s8Plotline14ResourceLoaderC17loadb56Resources15resourceStrings0gC8ListenerySaySSG_yyctFZySo6i6CSg_s5J9_pSgtcfU_SaySSGSSAA0mN0CXMTIeg_Tf1ncn_n', symObjAddr: 0x0, symBinAddr: 0x121E10, symSize: 0x50 }
   - { offsetInCU: 0x177, offset: 0x2076D8, size: 0x8, addend: 0x0, symName: '_$s8Plotline10FontHelperC29cleanupFontsDirectoryIfNeeded017_D1A417FE4C8842D8I14FD419EC3CE9364LLyyFZSb10Foundation3URLV_AHtXEfU_', symObjAddr: 0xFCC, symBinAddr: 0x122D9C, symSize: 0x3F4 }
   - { offsetInCU: 0x3A1, offset: 0x207902, size: 0x8, addend: 0x0, symName: '_$s8Plotline10FontHelperC019downloadAndRegisterB04from10completionySS_ySo6UIFontCSg_s5Error_pSgtctFZ034$s8Plotline14ResourceLoaderC17loadb56Resources15resourceStrings0gC8ListenerySaySSG_yyctFZySo6i6CSg_s5J9_pSgtcfU_SaySSGSSAA0mN0CXMTIeg_Tf1ncn_nTf4nnggng_n', symObjAddr: 0x38DC, symBinAddr: 0x125668, symSize: 0xDE8 }
@@ -4630,7 +4630,7 @@ relocations:
   - { offsetInCU: 0x624, offset: 0x22BE19, size: 0x8, addend: 0x0, symName: '_$s8Plotline16AttributeMonitorCMa', symObjAddr: 0x50, symBinAddr: 0x14BA4C, symSize: 0x20 }
   - { offsetInCU: 0xC2F, offset: 0x22C424, size: 0x8, addend: 0x0, symName: '_$s8Plotline16AttributeMonitorCfd', symObjAddr: 0x0, symBinAddr: 0x14B9FC, symSize: 0x24 }
   - { offsetInCU: 0xC6B, offset: 0x22C460, size: 0x8, addend: 0x0, symName: '_$s8Plotline16AttributeMonitorCfD', symObjAddr: 0x24, symBinAddr: 0x14BA20, symSize: 0x2C }
-  - { offsetInCU: 0x4B, offset: 0x22C673, size: 0x8, addend: 0x0, symName: '_$s8Plotline13WebViewHelperC03webcD0ACvpZ', symObjAddr: 0x18410, symBinAddr: 0x400840, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x22C673, size: 0x8, addend: 0x0, symName: '_$s8Plotline13WebViewHelperC03webcD0ACvpZ', symObjAddr: 0x18340, symBinAddr: 0x400840, symSize: 0x0 }
   - { offsetInCU: 0x91, offset: 0x22C6B9, size: 0x8, addend: 0x0, symName: '_$s8Plotline13WebViewHelperC14getAllElementsyyySaySDySSypGGcFZyypSg_s5Error_pSgtcfU_', symObjAddr: 0xA4, symBinAddr: 0x14C264, symSize: 0x4 }
   - { offsetInCU: 0x121, offset: 0x22C749, size: 0x8, addend: 0x0, symName: '_$s8Plotline13WebViewHelperC18getElementPosition16clientFragmentId0hfJ0_ySS_SSySo6CGRectVSgctFZTf4nnnd_n', symObjAddr: 0x128C, symBinAddr: 0x14D44C, symSize: 0x37C }
   - { offsetInCU: 0x580, offset: 0x22CBA8, size: 0x8, addend: 0x0, symName: '_$s8Plotline13WebViewHelperC14getAllElementsyyySaySDySSypGGcFZTf4nd_n', symObjAddr: 0x1608, symBinAddr: 0x14D7C8, symSize: 0x2B0 }
@@ -4950,7 +4950,7 @@ relocations:
   - { offsetInCU: 0x511B, offset: 0x23DE4D, size: 0x8, addend: 0x0, symName: '_$s8Plotline11StudyDialogC8onAnswer12questionType0F5Index6isDone6answerySS_SiSbSaySSGtFTf4dnnnn_n', symObjAddr: 0x3B3C, symBinAddr: 0x161134, symSize: 0x2460 }
   - { offsetInCU: 0x699C, offset: 0x23F6CE, size: 0x8, addend: 0x0, symName: '_$s8Plotline11StudyDialogC5frame12questionList7studyId18showThankYouScreen05thankkL4Text04hideA00mK13ImageSettingsACSo6CGRectV_SayAA8QuestionCGSSSbSSSbSDySSypGSgtcfcTf4nggngngn_n', symObjAddr: 0x6B5C, symBinAddr: 0x163FF0, symSize: 0x1C4 }
   - { offsetInCU: 0x6A41, offset: 0x23F773, size: 0x8, addend: 0x0, symName: '_$s8Plotline11StudyDialogC5coderACSgSo7NSCoderC_tcfcTf4dn_n', symObjAddr: 0x6D20, symBinAddr: 0x1641B4, symSize: 0x130 }
-  - { offsetInCU: 0x4B, offset: 0x23F8B7, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A13TableViewCellC13storedHeightsSDySS12CoreGraphics7CGFloatVGvpZ', symObjAddr: 0xA1A8, symBinAddr: 0x400848, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x23F8B7, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A13TableViewCellC13storedHeightsSDySS12CoreGraphics7CGFloatVGvpZ', symObjAddr: 0xA0E0, symBinAddr: 0x400848, symSize: 0x0 }
   - { offsetInCU: 0xE2, offset: 0x23F94E, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A13TableViewCellC5style15reuseIdentifierACSo07UITablecD5StyleV_SSSgtcfcTo', symObjAddr: 0x354, symBinAddr: 0x1647A8, symSize: 0x48 }
   - { offsetInCU: 0x119, offset: 0x23F985, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A13TableViewCellC5coderACSgSo7NSCoderC_tcfcTo', symObjAddr: 0x39C, symBinAddr: 0x1647F0, symSize: 0x74 }
   - { offsetInCU: 0x1F5, offset: 0x23FA61, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A13TableViewCellC15prepareForReuseyyFTo', symObjAddr: 0xD50, symBinAddr: 0x165144, symSize: 0x90 }
@@ -5451,7 +5451,7 @@ relocations:
   - { offsetInCU: 0x309F, offset: 0x25D076, size: 0x8, addend: 0x0, symName: '_$s8Plotline24WeakUIScrollViewDelegateCfD', symObjAddr: 0x12AC, symBinAddr: 0x1862E0, symSize: 0x30 }
   - { offsetInCU: 0x3245, offset: 0x25D21C, size: 0x8, addend: 0x0, symName: '_$sSo6UIViewC8PlotlineE26plotlineFindAllScrollViewsSayAC4WeakCySo12UIScrollViewCGGyF', symObjAddr: 0x130C, symBinAddr: 0x186340, symSize: 0x580 }
   - { offsetInCU: 0x3A17, offset: 0x25D9EE, size: 0x8, addend: 0x0, symName: '_$sSo6UIViewC8PlotlineE17plotlineHandleTapyySo22UITapGestureRecognizerCFTf4dn_n', symObjAddr: 0x3438, symBinAddr: 0x18846C, symSize: 0xE8 }
-  - { offsetInCU: 0x4B, offset: 0x25DAD9, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A18CollectionViewCellC13storedHeightsSDySS12CoreGraphics7CGFloatVGvpZ', symObjAddr: 0xA3F0, symBinAddr: 0x400850, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x25DAD9, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A18CollectionViewCellC13storedHeightsSDySS12CoreGraphics7CGFloatVGvpZ', symObjAddr: 0xA320, symBinAddr: 0x400850, symSize: 0x0 }
   - { offsetInCU: 0x59, offset: 0x25DAE7, size: 0x8, addend: 0x0, symName: '_$s12CoreGraphics7CGFloatVIegy_ACytIegnr_TR', symObjAddr: 0x0, symBinAddr: 0x18870C, symSize: 0x24 }
   - { offsetInCU: 0x6D, offset: 0x25DAFB, size: 0x8, addend: 0x0, symName: '_$s12CoreGraphics7CGFloatVytIegnr_ACIegy_TR', symObjAddr: 0x24, symBinAddr: 0x188730, symSize: 0x34 }
   - { offsetInCU: 0x105, offset: 0x25DB93, size: 0x8, addend: 0x0, symName: '_$s8Plotline0A18CollectionViewCellC5frameACSo6CGRectV_tcfcTo', symObjAddr: 0x300, symBinAddr: 0x1889EC, symSize: 0x94 }
