@@ -1269,7 +1269,7 @@ public class Study : Plotline.Campaign {
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String, action: Swift.String? = nil)
   public static func setPushPermissionGranted(granted: Swift.Bool)
   public static func removePageCaptureUser()
-  public static func resolveContent(templates: [Swift.String], flowId: Swift.String, completion: @escaping ([Swift.String]?, Swift.Bool) -> Swift.Void)
+  public static func resolveWidgetContent(flowStep: Plotline.FlowStep?, flowId: Swift.String, completion: @escaping ([Swift.String : Any]?, Swift.Bool) -> Swift.Void)
   public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])
   public static func sessionChunk(sessionId: Swift.String, chunkIndex: Swift.Int, events: [[Swift.String : Any]], currentUrl: Swift.String, callback: @escaping ([Swift.String : Any]?) -> Swift.Void)
   public static func getSessionUploadUrl(sessionId: Swift.String, chunkIndex: Swift.Int, callback: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
@@ -1507,6 +1507,8 @@ public class ScreenshotTask {
   public var allowGrouping: Swift.Bool
   public var preloadAspectRatio: Swift.Double
   public var parentCampaignID: Swift.String
+  public var userAttributes: [Swift.String]
+  public var eventAttributes: [Swift.String : Any]
   public init(json: [Swift.String : Any])
   @objc deinit
 }
