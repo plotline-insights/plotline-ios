@@ -178,6 +178,7 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) public var stepIds: Swift.Set<Swift.String>
   @_Concurrency.MainActor(unsafe) public var preloadheight: Swift.Double
   @_Concurrency.MainActor(unsafe) public var journeyId: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var creationWidth: CoreFoundation.CGFloat
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
@@ -341,6 +342,17 @@ public class AttributeTask {
   public func convertToString(input: Any) -> Swift.String
   @available(iOS 10.0, *)
   public func execute()
+  @objc deinit
+}
+public class AnimationSettings {
+  public static let ANIMATION_TYPE_GLOW: Swift.String
+  public static let GLOW_MODE_BRIGHTEN: Swift.String
+  public static let GLOW_MODE_DARKEN: Swift.String
+  public var isAnimated: Swift.Bool
+  public var animationType: Swift.String
+  public var glowMode: Swift.String
+  public init()
+  public init(_ json: [Swift.String : Any])
   @objc deinit
 }
 public class PreInitEvent {
@@ -972,6 +984,7 @@ public class RewardSettings {
   public func getMinVideoAnalyticsDuration() -> Swift.Int
   public func getLoadTimeMap() -> ConcurrentDictionary<Swift.String, (Swift.Int64, Swift.Int64?)>
   public func getPreloadedHeights() -> ConcurrentDictionary<Swift.String, Swift.Double>
+  public func getShouldAnimateMap() -> ConcurrentDictionary<Swift.String, Swift.Bool>
   public func getGroupedWidgetScaleFactors() -> ConcurrentDictionary<Swift.String, Swift.Double>
   @objc public static func getPreloadedHeight(elementId: Swift.String) -> Swift.Double
   @objc public func appOrientationChanged()
@@ -1081,6 +1094,7 @@ public class StepLayout {
   public var timerSettings: TimerSettings
   public var cardWithLabelSettings: CardWithLabelSettings
   public var cardWithLabelContainerSettings: CardWithLabelContainerSettings
+  public var animationSettings: AnimationSettings
   weak public var webview: WebKit.WKWebView?
   public var preloadWebview: Swift.Bool
   public var resizableButton: Swift.Bool
@@ -1146,6 +1160,16 @@ public protocol CoachMarkInfoView : UIKit.UIView {
   func setInfo(info: Swift.String, fontFamily: Swift.String, fontSize: CoreFoundation.CGFloat, textDecoration: [Swift.String], fontURL: Swift.String)
   func setTitleColor(color: UIKit.UIColor)
   func setInfoColor(color: UIKit.UIColor)
+}
+public class WidgetTransitionSettings {
+  public static let TRANSITION_TYPE_EXPAND: Swift.String
+  public static let TRANSITION_TYPE_EXPAND_AND_FADE: Swift.String
+  public var isEnabled: Swift.Bool
+  public var transitionType: Swift.String
+  public init()
+  public init(_ json: [Swift.String : Any])
+  public func toDict() -> [Swift.String : Any]
+  @objc deinit
 }
 public class Flow : Campaign {
   public var journeyId: Swift.String?
@@ -1580,6 +1604,7 @@ public class Widget : Campaign {
   public var preloadHeight: Swift.Double
   public var shouldRefreshWidget: Swift.Bool
   public var widgetLoaderUrl: Swift.String
+  public var widgetTransitionSettings: WidgetTransitionSettings
   public var refreshIntervalInMilliseconds: Swift.Int
   public var journeyId: Swift.String?
   public init(json: [Swift.String : Any])
