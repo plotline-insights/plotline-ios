@@ -493,6 +493,9 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setPlotlineRedirectUrlListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull))listener;
 + (void)showStoryWithStoryId:(NSString * _Nonnull)storyId slideId:(NSString * _Nullable)slideId;
 + (void)setShouldDisablePlotlineWithShouldDisablePlotline:(BOOL)shouldDisablePlotline;
+/// Returns whether a Plotline campaign is currently visible to the user.
+/// Use this to check if Plotline is showing a campaign before displaying your own in-app messages.
++ (BOOL)isPlotlineVisible SWIFT_WARN_UNUSED_RESULT;
 + (void)setDisabledStepTypesWithStepTypes:(NSArray<NSString *> * _Nonnull)stepTypes;
 + (NSSet<NSString *> * _Nonnull)getDisabledStepTypes SWIFT_WARN_UNUSED_RESULT;
 + (void)enableAllCampaignTypes;
@@ -1275,6 +1278,9 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setPlotlineRedirectUrlListenerWithListener:(void (^ _Nonnull)(NSString * _Nonnull))listener;
 + (void)showStoryWithStoryId:(NSString * _Nonnull)storyId slideId:(NSString * _Nullable)slideId;
 + (void)setShouldDisablePlotlineWithShouldDisablePlotline:(BOOL)shouldDisablePlotline;
+/// Returns whether a Plotline campaign is currently visible to the user.
+/// Use this to check if Plotline is showing a campaign before displaying your own in-app messages.
++ (BOOL)isPlotlineVisible SWIFT_WARN_UNUSED_RESULT;
 + (void)setDisabledStepTypesWithStepTypes:(NSArray<NSString *> * _Nonnull)stepTypes;
 + (NSSet<NSString *> * _Nonnull)getDisabledStepTypes SWIFT_WARN_UNUSED_RESULT;
 + (void)enableAllCampaignTypes;

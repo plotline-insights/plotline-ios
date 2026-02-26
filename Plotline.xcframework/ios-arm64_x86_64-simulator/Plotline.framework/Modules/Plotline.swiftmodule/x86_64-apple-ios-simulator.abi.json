@@ -41982,6 +41982,31 @@
           },
           {
             "kind": "Function",
+            "name": "isPlotlineVisible",
+            "printedName": "isPlotlineVisible()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Plotline@objc(cs)Plotline(cm)isPlotlineVisible",
+            "mangledName": "$s8PlotlineAAC02isA7VisibleSbyFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setDisabledStepTypes",
             "printedName": "setDisabledStepTypes(stepTypes:)",
             "children": [
@@ -85184,7 +85209,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.6.9\""
+      "value": "\"4.7.0\""
     },
     {
       "filePath": "\/Users\/plotline\/Documents\/Projects\/plotline-ios-sdk\/builds\/tzMUB_CW\/0\/plotline\/plotline-ios-sdk\/Plotline\/Plotline\/Models\/Attributes.swift",

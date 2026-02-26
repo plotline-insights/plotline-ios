@@ -1030,6 +1030,7 @@ public class RewardSettings {
   @objc public static func setPlotlineRedirectUrlListener(listener: @escaping (Swift.String) -> ())
   @objc public static func showStory(storyId: Swift.String, slideId: Swift.String?)
   @objc public static func setShouldDisablePlotline(shouldDisablePlotline: Swift.Bool)
+  @objc public static func isPlotlineVisible() -> Swift.Bool
   @objc public static func setDisabledStepTypes(stepTypes: [Swift.String])
   @objc public static func getDisabledStepTypes() -> Swift.Set<Swift.String>
   @objc public static func enableAllCampaignTypes()
