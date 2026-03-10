@@ -82975,22 +82975,29 @@
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
+      "kind": "BooleanLiteral",
+      "offset": 725,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 717,
+      "offset": 772,
       "length": 8,
       "value": "\"ACTIVE\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 767,
+      "offset": 822,
       "length": 9,
       "value": "\"PASSIVE\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 825,
+      "offset": 880,
       "length": 16,
       "value": "\"TIME_SENSITIVE\""
     },
@@ -83501,7 +83508,7 @@
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "StringLiteral",
-      "offset": 50762,
+      "offset": 50807,
       "length": 24,
       "value": "\"didChangeTestUserState\""
     },
@@ -85393,7 +85400,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.7.4\""
+      "value": "\"4.7.5\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
