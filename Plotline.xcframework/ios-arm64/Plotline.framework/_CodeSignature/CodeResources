@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CWXf0Mjwb7SxzLZsX3WwG5aqj5s=
+		2xz90omkz+y9DBfmDJU9yV5lzno=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ouMwCQqMS1k9h93o9KYmBkkGx4g=
+		B7T2EZloCtQbtSiMso4LCk/OjD4=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ouMwCQqMS1k9h93o9KYmBkkGx4g=
+		B7T2EZloCtQbtSiMso4LCk/OjD4=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		JOhjd/gE3sqTJdjl0vlnDcrjtJ8=
+		SUZlhv4IsdzcvAvAOAR3XwFDpDw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		yZyWZkdiawf8iiz0Kvg/aO9Rgu0=
+		qrUABUxTvhlYfB/FSuIgYNkL3ZQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/8IZQ6ngtxmQgChvMhhYIAy3tlkzAQ2XrszLRI4FS2E=
+			0Z6chVvvoedpdu2XdnlfSD8oXBlFwAdp/2qfFcGE/vU=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s/yOu3BxSTelVQKAWDGoWYVItY6NZtoQfWZbsrmR5uI=
+			Cf4mcxBxmKDl/gs2HBdAPyI5llztim3C3L5fFNCMC/0=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -198,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s/yOu3BxSTelVQKAWDGoWYVItY6NZtoQfWZbsrmR5uI=
+			Cf4mcxBxmKDl/gs2HBdAPyI5llztim3C3L5fFNCMC/0=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bl+mD2TVUm4VEX7ygCeZnrXJ+0krkaDQ934ZsMmwgtk=
+			190+6lvY3xpWQGBtDUrNiYqu6GPMAEng6q9aRZImn+g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eoWpwyWBQEfvKeStB2QAGPCDaHbLM6KyXMuxzJ3s6nA=
+			mYM1fg7dmpY8SvcAOGFEblxnj5DQOZZ5FzluTxWKjS8=
 			</data>
 		</dict>
 	</dict>

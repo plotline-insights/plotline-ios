@@ -456,6 +456,46 @@
           },
           {
             "kind": "Function",
+            "name": "areNotificationsEnabled",
+            "printedName": "areNotificationsEnabled(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline0A4PushC23areNotificationsEnabled10completionyySbc_tFZ",
+            "mangledName": "$s8Plotline0A4PushC23areNotificationsEnabled10completionyySbc_tFZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "redirectToSettings",
             "printedName": "redirectToSettings()",
             "children": [
@@ -11427,6 +11467,43 @@
             "declKind": "EnumElement",
             "usr": "s:8Plotline9DebugCodeO28PL_E_RESOURCE_LOADING_FAILEDyA2CmF",
             "mangledName": "$s8Plotline9DebugCodeO28PL_E_RESOURCE_LOADING_FAILEDyA2CmF",
+            "moduleName": "Plotline"
+          },
+          {
+            "kind": "Var",
+            "name": "PL_I_PUSH_PERMISSION_ALREADY_ACTIVE",
+            "printedName": "PL_I_PUSH_PERMISSION_ALREADY_ACTIVE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Plotline.DebugCode.Type) -> Plotline.DebugCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DebugCode",
+                    "printedName": "Plotline.DebugCode",
+                    "usr": "s:8Plotline9DebugCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Plotline.DebugCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DebugCode",
+                        "printedName": "Plotline.DebugCode",
+                        "usr": "s:8Plotline9DebugCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8Plotline9DebugCodeO35PL_I_PUSH_PERMISSION_ALREADY_ACTIVEyA2CmF",
+            "mangledName": "$s8Plotline9DebugCodeO35PL_I_PUSH_PERMISSION_ALREADY_ACTIVEyA2CmF",
             "moduleName": "Plotline"
           },
           {
@@ -70794,6 +70871,92 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "hasRequestPushPermissionEffect",
+            "printedName": "hasRequestPushPermissionEffect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvp",
+            "mangledName": "$s8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvg",
+                "mangledName": "$s8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvs",
+                "mangledName": "$s8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvM",
+                "mangledName": "$s8Plotline8FlowStepC30hasRequestPushPermissionEffectSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(json:)",
@@ -82798,29 +82961,36 @@
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "Array",
-      "offset": 545,
+      "offset": 673,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 589,
+      "offset": 717,
       "length": 8,
       "value": "\"ACTIVE\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 639,
+      "offset": 767,
       "length": 9,
       "value": "\"PASSIVE\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/PlotlinePush.swift",
       "kind": "StringLiteral",
-      "offset": 697,
+      "offset": 825,
       "length": 16,
       "value": "\"TIME_SENSITIVE\""
     },
@@ -83786,6 +83956,13 @@
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
+      "offset": 2954,
+      "length": 37,
+      "value": "\"PL_I_PUSH_PERMISSION_ALREADY_ACTIVE\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
+      "kind": "StringLiteral",
       "offset": 1643,
       "length": 24,
       "value": "\"PL_I_RESPONSE_RECEIVED\""
@@ -83908,6 +84085,13 @@
       "offset": 2876,
       "length": 30,
       "value": "\"PL_E_RESOURCE_LOADING_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2954,
+      "length": 37,
+      "value": "\"PL_I_PUSH_PERMISSION_ALREADY_ACTIVE\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Modals\/MultiChoiceMultiCorrect.swift",
@@ -85209,7 +85393,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.7.3\""
+      "value": "\"4.7.4\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -88682,6 +88866,13 @@
       "offset": 3280,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3338,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",

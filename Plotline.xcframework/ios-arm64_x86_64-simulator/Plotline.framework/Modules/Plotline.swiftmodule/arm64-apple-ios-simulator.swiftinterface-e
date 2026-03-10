@@ -38,6 +38,7 @@ import _SwiftConcurrencyShims
   public static func requestPushPermission()
   public static func incrementPushPermissionCount()
   public static func setPushPermissionCount(count: Swift.Int)
+  public static func areNotificationsEnabled(completion: @escaping (Swift.Bool) -> Swift.Void)
   public static func redirectToSettings()
   @objc public static func setPushToken(deviceToken: Foundation.Data)
   public static func setPushPermissionGranted(granted: Swift.Bool)
@@ -285,6 +286,7 @@ public enum DebugCode : Swift.String {
   case PL_I_STEP_REJECTED_DETAIL
   case PL_I_SHOWING_STEP
   case PL_E_RESOURCE_LOADING_FAILED
+  case PL_I_PUSH_PERMISSION_ALREADY_ACTIVE
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1536,6 +1538,7 @@ public class ScreenshotTask {
   public var parentCampaignID: Swift.String
   public var userAttributes: [Swift.String]
   public var eventAttributes: [Swift.String : Any]
+  public var hasRequestPushPermissionEffect: Swift.Bool
   public init(json: [Swift.String : Any])
   @objc deinit
 }
