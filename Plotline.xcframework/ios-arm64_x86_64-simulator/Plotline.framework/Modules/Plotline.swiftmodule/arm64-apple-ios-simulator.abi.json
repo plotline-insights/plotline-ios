@@ -84602,7 +84602,7 @@
       "kind": "IntegerLiteral",
       "offset": 213,
       "length": 3,
-      "value": "200"
+      "value": "300"
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/Utils.swift",
@@ -85400,7 +85400,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.7.5\""
+      "value": "\"4.7.6\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
