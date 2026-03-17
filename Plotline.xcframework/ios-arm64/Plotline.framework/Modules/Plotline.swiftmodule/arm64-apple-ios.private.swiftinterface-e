@@ -80,6 +80,24 @@ public class WebViewSettings {
   public func empty() -> Swift.Bool
   @objc deinit
 }
+public protocol ElementCallback : AnyObject {
+  func onElementClick(element: Plotline.CanvasElement, index: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OverlayView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public static func wrap(view: UIKit.UIView) -> Plotline.OverlayView
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func addElement(element: Plotline.CanvasElement) -> Plotline.OverlayView
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setActionListener(listener: (any Plotline.ActionListener)?) -> Plotline.OverlayView
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setElementCallback(callback: (any Plotline.ElementCallback)?) -> Plotline.OverlayView
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setFlowStep(flowStep: Plotline.FlowStep?) -> Plotline.OverlayView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  @objc deinit
+}
 public class HapticSettings {
   public var pattern: [Swift.Double]
   public var amplitude: [Swift.Double]
@@ -819,6 +837,7 @@ public class Journey : Plotline.Campaign {
 public class Slide {
   public static let SUB_STORY_IMG: Swift.String
   public static let SUB_STORY_VIDEO: Swift.String
+  public static let SUB_STORY_LOTTIE: Swift.String
   public var slideId: Swift.String
   public var duration: Swift.Int
   public var slideType: Swift.String
@@ -827,7 +846,11 @@ public class Slide {
   public var slideBackgroundColor: Swift.String
   public var slideGradient: Swift.Bool
   public var hlsUrl: Swift.String
+  public var canvasElements: [Plotline.CanvasElement]
   public init(json: [Swift.String : Any])
+  public var isLottie: Swift.Bool {
+    get
+  }
   public func getBackgroundUrl() -> Swift.String
   public static func convertSlideJSONArray(array: [[Swift.String : Any]]) -> [Plotline.Slide]
   @objc deinit
@@ -1105,6 +1128,7 @@ public class StepLayout {
   public var resizableButton: Swift.Bool
   public var plotlineRoundedButton: Swift.Bool
   public var cropAspectRatio: Swift.Double
+  public var canvasElements: [Plotline.CanvasElement]
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
@@ -1592,6 +1616,18 @@ public class Question {
   @_Concurrency.MainActor(unsafe) public func setOnHeightDetermined(_ onHeightDetermined: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public func setupWidget(id: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForReuse()
+  @objc deinit
+}
+public class CanvasElement {
+  public var xPercent: Swift.Float
+  public var yPercent: Swift.Float
+  public var rotation: Swift.Float
+  public var anchorX: Swift.Float
+  public var anchorY: Swift.Float
+  public var layout: Plotline.StepLayout
+  public init()
+  public init(_ json: [Swift.String : Any])
+  public static func fromJsonArray(array: [[Swift.String : Any]]?) -> [Plotline.CanvasElement]
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ThankYouView : UIKit.UIView {

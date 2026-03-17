@@ -442,6 +442,15 @@ SWIFT_CLASS("_TtC8Plotline8OpenText")
 
 @class UIEvent;
 
+SWIFT_CLASS("_TtC8Plotline11OverlayView")
+@interface OverlayView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 @interface PassthroughView : UIView
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
@@ -1226,6 +1235,15 @@ SWIFT_CLASS("_TtC8Plotline8OpenText")
 @end
 
 @class UIEvent;
+
+SWIFT_CLASS("_TtC8Plotline11OverlayView")
+@interface OverlayView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 @interface PassthroughView : UIView
