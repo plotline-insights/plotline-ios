@@ -37814,6 +37814,53 @@
           },
           {
             "kind": "Function",
+            "name": "getShouldSortStories",
+            "printedName": "getShouldSortStories()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC20getShouldSortStoriesSbyF",
+            "mangledName": "$s8PlotlineAAC20getShouldSortStoriesSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldSortStories",
+            "printedName": "setShouldSortStories(shouldSortStories:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC20setShouldSortStories06shoulddE0ySb_tF",
+            "mangledName": "$s8PlotlineAAC20setShouldSortStories06shoulddE0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getShouldRegisterActivityEvents",
             "printedName": "getShouldRegisterActivityEvents()",
             "children": [
@@ -86859,7 +86906,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.7.8\""
+      "value": "\"4.7.9\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -89013,14 +89060,21 @@
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 986,
+      "length": 27,
+      "value": "\"plotlineShouldSortStories\""
+    },
+    {
+      "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 1053,
       "length": 25,
       "value": "\"plotlinePendingEventsV1\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "IntegerLiteral",
-      "offset": 1051,
+      "offset": 1123,
       "length": 3,
       "value": "100"
     },

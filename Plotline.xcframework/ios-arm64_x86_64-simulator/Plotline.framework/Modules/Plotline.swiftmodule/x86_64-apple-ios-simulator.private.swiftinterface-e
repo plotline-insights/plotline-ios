@@ -892,6 +892,8 @@ public class RewardSettings {
   public func setEndpoint(sEndpoint: Swift.String)
   public func getShouldPrepopulateStories() -> Swift.Bool
   public func setShouldPrepopulateStories(shouldPrepopulateStories: Swift.Bool)
+  public func getShouldSortStories() -> Swift.Bool
+  public func setShouldSortStories(shouldSortStories: Swift.Bool)
   public func getShouldRegisterActivityEvents() -> Swift.Bool
   public func setShouldRegisterActivityEvents(shouldRegisterActivityEvents: Swift.Bool)
   public func getDynamicWidgetRefreshIntervalInMilliseconds() -> Swift.Int
