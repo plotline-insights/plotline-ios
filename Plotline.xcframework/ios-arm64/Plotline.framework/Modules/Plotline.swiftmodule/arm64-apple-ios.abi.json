@@ -14834,13 +14834,21 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline19CompositeEventsTaskC15convertToString5inputSSSgyp_tFZ",
-            "mangledName": "$s8Plotline19CompositeEventsTaskC15convertToString5inputSSSgyp_tFZ",
+            "usr": "s:8Plotline19CompositeEventsTaskC15convertToString5inputSSSgypSg_tFZ",
+            "mangledName": "$s8Plotline19CompositeEventsTaskC15convertToString5inputSSSgypSg_tFZ",
             "moduleName": "Plotline",
             "static": true,
             "declAttributes": [
@@ -87039,7 +87047,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.8.1\""
+      "value": "\"4.8.2\""
     },
     {
       "filePath": "\/Users\/plotline\/actions-runner\/_work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",

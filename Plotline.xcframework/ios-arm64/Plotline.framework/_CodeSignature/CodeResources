@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		7+tHh/aXcN+kaZOcU2DazyjUQHI=
+		XXfeuIbzPEj92J/MFnx6HWla+HQ=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		6d8ox3B4+xXqwktho+EfXsdarcQ=
+		gro5byP4JIYdQcIodBPxUeydFJE=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		6d8ox3B4+xXqwktho+EfXsdarcQ=
+		gro5byP4JIYdQcIodBPxUeydFJE=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8OV2l8egIeiTGqFqbfaHS1FLV2c=
+		9MTPpmGcn2yQZtTRMi6tlMDwZwU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		tlhlISER+/7Jx84pKqUla0sJ1/o=
+		YAQK2MimzArqWkZDNQqb4O2bRwY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z3hW7X56ZxLMus4htkNItzRHpT95jYuWnIf1CCC8bB0=
+			y1em1bIyvOE2Kts2ytj+ZKySg34FXJEFtoLdkmZfo+Y=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AJtQpG0vM01P6csKpHAHcpcfqJiaPJ8TBYYpRCt1VAY=
+			vPFPodIv3LBKmSXlBbNaOj6anzj0CnOsBupOL3pEABk=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -198,14 +198,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AJtQpG0vM01P6csKpHAHcpcfqJiaPJ8TBYYpRCt1VAY=
+			vPFPodIv3LBKmSXlBbNaOj6anzj0CnOsBupOL3pEABk=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1PnGpD1/ndy3cPYXF65jpaGXPAUTHcIJZ1a1d3az8/g=
+			XQuyAsexKxsNa8340Sp7OSGZAsXz3928hp05WGoEEOw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2qH0Ebea/ObTd533oC/ImUVnqhAy3vjvfMO6eKK9oY=
+			kZ+tM5Vo8Kf/lfmsliJjcEf+Mwt9nEqyQH+TFGOyl1k=
 			</data>
 		</dict>
 	</dict>
