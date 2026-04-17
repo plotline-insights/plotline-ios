@@ -34,11 +34,15 @@
 		</data>
 		<key>Headers/Plotline-Swift.h</key>
 		<data>
-		qX7e/xcR8En1YrEMO/AvkdWhXLo=
+		ysEAk8YhB534S20Y8Npaub8g3Fk=
 		</data>
 		<key>Headers/Plotline.h</key>
 		<data>
-		BHudevwceg9Sxzxz1wnCQDLR00Y=
+		Dc03d3yfa3UucHMuoR3O0XTNIz4=
+		</data>
+		<key>Headers/PlotlineCrashLoader.h</key>
+		<data>
+		BxEgc2lHRIkTYcxATOprfpYGVRo=
 		</data>
 		<key>Headers/PlotlineExceptionCatcher.h</key>
 		<data>
@@ -50,23 +54,23 @@
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		XXfeuIbzPEj92J/MFnx6HWla+HQ=
+		GFOvoOcUORMW2rhnN7nhU7nMQLk=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		gro5byP4JIYdQcIodBPxUeydFJE=
+		jPVh2PGqVdkK0pQ/IQ3JfZFvszo=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		x1NkAVVmNqwSprZsVt+zxPnNoas=
+		0LdNIMrJkhsWhM4zwtYvPsFqJSM=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		gro5byP4JIYdQcIodBPxUeydFJE=
+		jPVh2PGqVdkK0pQ/IQ3JfZFvszo=
 		</data>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9MTPpmGcn2yQZtTRMi6tlMDwZwU=
+		Ck+2qhfFZGJpAHGAFuezkOheuM8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +102,7 @@
 		</data>
 		<key>PRes.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		YAQK2MimzArqWkZDNQqb4O2bRwY=
+		h0ivtk/XWl9cYcLGIFWyCLZIcn0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -156,14 +160,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5c4tXSkOg+3drPjQgdA4saCx7P/Ka/0Tq/YY/rDIxQY=
+			g0ZoFOEVWX4FKy0rQpaYw50BBVX7gy64u7qChGlR1+Q=
 			</data>
 		</dict>
 		<key>Headers/Plotline.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9+3OUnKhwSpokTbrAEphqR8wxEXlcXh5cGrz9Rdj7vs=
+			L2ppc6kyOWzC1MyzIh4KWNv+RbTm9AsxPscdwm3mFKk=
+			</data>
+		</dict>
+		<key>Headers/PlotlineCrashLoader.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mAYfQG7mvyfG3V2wVw3MDUgcfvZqOW22gOdNfo4nTWk=
 			</data>
 		</dict>
 		<key>Headers/PlotlineExceptionCatcher.h</key>
@@ -177,35 +188,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1em1bIyvOE2Kts2ytj+ZKySg34FXJEFtoLdkmZfo+Y=
+			IDjiZhveHPRJC78Xki0obDR08ptta0RfKplfkN7Nlzc=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vPFPodIv3LBKmSXlBbNaOj6anzj0CnOsBupOL3pEABk=
+			emBpRiG9SncPu79sRYV3uiNAVqlON4yL0v2GcfUp7H0=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+KIzSITTlY0YYmIRqpgXqGkCVJrPSuRbYsw3gj4dE8Q=
+			aX1NEQH2U4N0xnuE3E+AxlALDCFFNqGUFtxwQgemfrY=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vPFPodIv3LBKmSXlBbNaOj6anzj0CnOsBupOL3pEABk=
+			emBpRiG9SncPu79sRYV3uiNAVqlON4yL0v2GcfUp7H0=
 			</data>
 		</dict>
 		<key>Modules/Plotline.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XQuyAsexKxsNa8340Sp7OSGZAsXz3928hp05WGoEEOw=
+			dCClSaPoneRc5KLmgcwyQY4WQQgCPX6f3Bge19Ej/VA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +272,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kZ+tM5Vo8Kf/lfmsliJjcEf+Mwt9nEqyQH+TFGOyl1k=
+			b5TUj48v6/fwbJPv+/3wNmyO1OqCBUYh7Q2LLudmN7k=
 			</data>
 		</dict>
 	</dict>

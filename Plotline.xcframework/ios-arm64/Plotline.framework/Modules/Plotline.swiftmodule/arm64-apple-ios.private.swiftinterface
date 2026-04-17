@@ -8,6 +8,7 @@ import CoreData
 import CoreGraphics
 import CoreHaptics
 import CoreText
+import Darwin
 import Foundation
 import ImageIO
 import MediaPlayer
@@ -23,6 +24,8 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os.lock
+import os
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Prompt : UIKit.UIView {
   @objc deinit
 }
@@ -283,6 +286,8 @@ public class FloaterSettings {
 @_hasMissingDesignatedInitializers public class DebugHelper {
   public static func log(_ message: Swift.String)
   public static func sendDebugEvent(debugCode: DebugCode, properties: [Swift.String : Swift.String]?)
+  public static func isAnalyticsCodeEnabled(_ analyticsCode: AnalyticsCode) -> Swift.Bool
+  public static func sendAnalyticsEvent(analyticsCode: AnalyticsCode, properties: [Swift.String : Any]?)
   @objc deinit
 }
 public enum DebugCode : Swift.String {
@@ -305,6 +310,17 @@ public enum DebugCode : Swift.String {
   case PL_I_SHOWING_STEP
   case PL_E_RESOURCE_LOADING_FAILED
   case PL_I_PUSH_PERMISSION_ALREADY_ACTIVE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsCode : Swift.String {
+  case PL_E_RESOURCE_LOADING_FAILED
+  case PL_E_ELEMENT_NOT_VISIBLE
+  case PL_E_ELIGIBILITY_FAILED
+  case PL_I_VIDEO_LOADED
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -445,6 +461,7 @@ public class IdentityManager {
   public static func convertToJSONString(_ dict: [Swift.String : Any]?) -> Swift.String
   public static func generateRandomId(idLength: Swift.Int) -> Swift.String
   public static func logStart(campaigns: [Campaign])
+  public static func logStart(campaignId: Swift.String)
   public static func logTrigger(campaignId: Swift.String)
   public static func endLoadTimeTracking(campaignId: Swift.String) -> (Swift.Int64?, Swift.Int64)?
   public static func getTimerDuration(layout: StepLayout) -> Swift.Double
@@ -830,6 +847,24 @@ public class GridSettings {
   public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class BreadcrumbLogger : ObjectiveC.NSObject {
+  @objc public static func log(type: Swift.String, name: Swift.String)
+  @objc public static func logScreen(_ screenName: Swift.String)
+  @objc public static func logEvent(_ eventName: Swift.String)
+  @objc public static func logNetwork(_ endpoint: Swift.String)
+  @objc public static func logError(_ error: Swift.String)
+  @objc public static func clear()
+  @objc public static func count() -> Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CrashHandler : ObjectiveC.NSObject {
+  @objc public static func install()
+  @objc public static func isInstalled() -> Swift.Bool
+  @objc public static func uploadPendingCrashes()
+  @objc public static func didCrashOnPreviousExecution() -> Swift.Bool
+  @objc deinit
+}
 public class Journey : Campaign {
   public init(json: [Swift.String : Any])
   @objc deinit
@@ -936,6 +971,8 @@ public class RewardSettings {
   public func getShouldEnableDebug() -> Swift.Bool
   public func setShouldEnableDebugEvents(shouldEnableDebugEvents: Swift.Bool)
   public func getShouldEnableDebugEvents() -> Swift.Bool
+  public func setEnabledAnalyticsCodes(codes: Swift.Set<Swift.String>)
+  public func getEnabledAnalyticsCodes() -> Swift.Set<Swift.String>
   public func setShouldEnableImageFail(shouldEnableImageFail: Swift.Bool)
   public func getShouldEnableImageFail() -> Swift.Bool
   public func setShouldEnableSmoothBackdropTransition(shouldEnableSmoothBackdropTransition: Swift.Bool)
@@ -1092,7 +1129,7 @@ public class EligibilityTask {
   public func execute()
   public static func compareValues<T>(value1: T, value2: T) -> Swift.Int where T : Swift.Comparable
   public static func compareStrings(s1: Swift.String, s2: Swift.String) -> Swift.Int
-  public static func checkEligibilityForCampaign(userFilter: [Condition]) -> Swift.Bool
+  public static func checkEligibilityForCampaign(userFilter: [Condition], flowId: Swift.String?, stepId: Swift.String?, studyId: Swift.String?) -> Swift.Bool
   @objc deinit
 }
 public class StepLayout {
@@ -1237,6 +1274,7 @@ public class Condition {
   public init(condition: [Swift.String : Any])
   public init(type: Swift.String, key: Swift.String, aggregate: Swift.String, relation: Swift.String, value: Swift.String, pOperator: Swift.String)
   public static func convertConditionJSONArray(array: [[Swift.String : Any]]) -> [Condition]
+  public func toJSON() -> [Swift.String : Any]
   @objc deinit
 }
 public class FlowStore {
@@ -1331,6 +1369,8 @@ public class Study : Campaign {
   public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])
   public static func sessionChunk(sessionId: Swift.String, chunkIndex: Swift.Int, events: [[Swift.String : Any]], currentUrl: Swift.String, callback: @escaping ([Swift.String : Any]?) -> Swift.Void)
   public static func getSessionUploadUrl(sessionId: Swift.String, chunkIndex: Swift.Int, callback: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  public static func getCrashUploadUrl(crashId: Swift.String, callback: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+  public static func confirmCrashReport(payload: [Swift.String : Any], completion: @escaping (Swift.Bool) -> Swift.Void)
   public static func uploadSessionChunkToS3(uploadUrl: Swift.String, data: Foundation.Data, completion: @escaping (Swift.Bool) -> Swift.Void)
   public static func uploadToS3(uploadUrl: Swift.String, data: Foundation.Data, contentType: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
@@ -1841,6 +1881,9 @@ extension WidgetData {
 extension DebugCode : Swift.Equatable {}
 extension DebugCode : Swift.Hashable {}
 extension DebugCode : Swift.RawRepresentable {}
+extension AnalyticsCode : Swift.Equatable {}
+extension AnalyticsCode : Swift.Hashable {}
+extension AnalyticsCode : Swift.RawRepresentable {}
 extension RREventType : Swift.Equatable {}
 extension RREventType : Swift.Hashable {}
 extension RREventType : Swift.RawRepresentable {}

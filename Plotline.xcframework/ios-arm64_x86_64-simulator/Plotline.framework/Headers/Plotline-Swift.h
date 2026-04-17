@@ -329,6 +329,28 @@ SWIFT_CLASS_NAMED("Attribute")
 @end
 
 
+/// Tracks user actions leading up to a crash.
+/// Thread-safe implementation using a concurrent queue.
+SWIFT_CLASS("_TtC8Plotline16BreadcrumbLogger")
+@interface BreadcrumbLogger : NSObject
+/// Log a breadcrumb with a type and name.
++ (void)logWithType:(NSString * _Nonnull)type name:(NSString * _Nonnull)name;
+/// Log a screen view breadcrumb.
++ (void)logScreen:(NSString * _Nonnull)screenName;
+/// Log an event breadcrumb.
++ (void)logEvent:(NSString * _Nonnull)eventName;
+/// Log a network request breadcrumb.
++ (void)logNetwork:(NSString * _Nonnull)endpoint;
+/// Log an error breadcrumb (for non-fatal errors).
++ (void)logError:(NSString * _Nonnull)error;
+/// Clear all breadcrumbs.
++ (void)clear;
+/// Get the number of stored breadcrumbs.
++ (NSInteger)count SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline21ClientElementSelector")
 @interface ClientElementSelector : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -342,6 +364,51 @@ SWIFT_CLASS("_TtC8Plotline17CoachRingRenderer")
 + (void)drawCoachRingWithRingColor:(UIColor * _Nonnull)ringColor controlRadius:(CGFloat)controlRadius controlCenter:(CGPoint)controlCenter ringRadius:(CGFloat)ringRadius ringCenter:(CGPoint)ringCenter;
 + (void)drawCoachRingEchoWithRingEchoColor:(UIColor * _Nonnull)ringEchoColor controlRadius:(CGFloat)controlRadius ringRadius:(CGFloat)ringRadius ringCenter:(CGPoint)ringCenter echoOpacity:(CGFloat)echoOpacity;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// Global uncaught exception handler that captures crash data and persists it to disk.
+/// Features:
+/// <ul>
+///   <li>
+///     Handler chaining: Always calls the previous handler after recording the crash
+///   </li>
+///   <li>
+///     File-based persistence: Safer than DB during crash scenarios
+///   </li>
+///   <li>
+///     Atomic handling: Prevents recursive crash handling
+///   </li>
+///   <li>
+///     Pre-init support: Works before Plotline.init() is called
+///   </li>
+///   <li>
+///     Signal handling: Captures C-level crashes (SIGSEGV, SIGABRT, etc.) [iOS-specific]
+///   </li>
+/// </ul>
+/// Usage:
+/// <ul>
+///   <li>
+///     Call install() as early as possible (from +load method)
+///   </li>
+///   <li>
+///     Call onPlotlineInitialized() after Plotline.init() completes
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC8Plotline12CrashHandler")
+@interface CrashHandler : NSObject
+/// Install the crash handler. Should be called as early as possible.
+/// Safe to call multiple times - only installs once.
++ (void)install;
+/// Check if crash handler is installed
++ (BOOL)isInstalled SWIFT_WARN_UNUSED_RESULT;
+/// Upload pending crashes to backend.
+/// Call this after Plotline.init() completes.
++ (void)uploadPendingCrashes;
+/// Check if app crashed on previous execution
++ (BOOL)didCrashOnPreviousExecution SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIScrollView;
@@ -1123,6 +1190,28 @@ SWIFT_CLASS_NAMED("Attribute")
 @end
 
 
+/// Tracks user actions leading up to a crash.
+/// Thread-safe implementation using a concurrent queue.
+SWIFT_CLASS("_TtC8Plotline16BreadcrumbLogger")
+@interface BreadcrumbLogger : NSObject
+/// Log a breadcrumb with a type and name.
++ (void)logWithType:(NSString * _Nonnull)type name:(NSString * _Nonnull)name;
+/// Log a screen view breadcrumb.
++ (void)logScreen:(NSString * _Nonnull)screenName;
+/// Log an event breadcrumb.
++ (void)logEvent:(NSString * _Nonnull)eventName;
+/// Log a network request breadcrumb.
++ (void)logNetwork:(NSString * _Nonnull)endpoint;
+/// Log an error breadcrumb (for non-fatal errors).
++ (void)logError:(NSString * _Nonnull)error;
+/// Clear all breadcrumbs.
++ (void)clear;
+/// Get the number of stored breadcrumbs.
++ (NSInteger)count SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC8Plotline21ClientElementSelector")
 @interface ClientElementSelector : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1136,6 +1225,51 @@ SWIFT_CLASS("_TtC8Plotline17CoachRingRenderer")
 + (void)drawCoachRingWithRingColor:(UIColor * _Nonnull)ringColor controlRadius:(CGFloat)controlRadius controlCenter:(CGPoint)controlCenter ringRadius:(CGFloat)ringRadius ringCenter:(CGPoint)ringCenter;
 + (void)drawCoachRingEchoWithRingEchoColor:(UIColor * _Nonnull)ringEchoColor controlRadius:(CGFloat)controlRadius ringRadius:(CGFloat)ringRadius ringCenter:(CGPoint)ringCenter echoOpacity:(CGFloat)echoOpacity;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// Global uncaught exception handler that captures crash data and persists it to disk.
+/// Features:
+/// <ul>
+///   <li>
+///     Handler chaining: Always calls the previous handler after recording the crash
+///   </li>
+///   <li>
+///     File-based persistence: Safer than DB during crash scenarios
+///   </li>
+///   <li>
+///     Atomic handling: Prevents recursive crash handling
+///   </li>
+///   <li>
+///     Pre-init support: Works before Plotline.init() is called
+///   </li>
+///   <li>
+///     Signal handling: Captures C-level crashes (SIGSEGV, SIGABRT, etc.) [iOS-specific]
+///   </li>
+/// </ul>
+/// Usage:
+/// <ul>
+///   <li>
+///     Call install() as early as possible (from +load method)
+///   </li>
+///   <li>
+///     Call onPlotlineInitialized() after Plotline.init() completes
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC8Plotline12CrashHandler")
+@interface CrashHandler : NSObject
+/// Install the crash handler. Should be called as early as possible.
+/// Safe to call multiple times - only installs once.
++ (void)install;
+/// Check if crash handler is installed
++ (BOOL)isInstalled SWIFT_WARN_UNUSED_RESULT;
+/// Upload pending crashes to backend.
+/// Call this after Plotline.init() completes.
++ (void)uploadPendingCrashes;
+/// Check if app crashed on previous execution
++ (BOOL)didCrashOnPreviousExecution SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIScrollView;
