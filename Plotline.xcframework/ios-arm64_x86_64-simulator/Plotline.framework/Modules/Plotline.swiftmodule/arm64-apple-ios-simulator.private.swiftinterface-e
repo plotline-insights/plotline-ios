@@ -959,6 +959,8 @@ public class RewardSettings {
   public func setsRealtimeAttributes(sRealtimeAttributes: Swift.Set<Swift.String>)
   public func getRealtimeAttributes() -> Swift.Set<Swift.String>
   public func setsMetricEventsType(sMetricEventsType: Swift.String)
+  public func getEventTimestampsLimit() -> Swift.Int
+  public func setEventTimestampsLimit(eventTimestampsLimit: Swift.Int)
   public func setSessionLimit(sessionLimit: Swift.Int)
   public func incrementSessionCount()
   public func resetSessionCount()
