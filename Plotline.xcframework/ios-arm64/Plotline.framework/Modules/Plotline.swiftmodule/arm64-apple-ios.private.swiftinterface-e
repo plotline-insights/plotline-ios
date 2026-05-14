@@ -136,6 +136,7 @@ public class StepStyles {
   public var numberOfLines: Swift.Int
   public var fontURL: Swift.String
   public var shouldAnimate: Swift.Bool
+  public var textAlignment: Swift.String
   public static var BG_TYPE_IMAGE: Swift.String
   public static var BG_TYPE_LOTTIE: Swift.String
   public static var BG_FIT_CENTER_CROP: Swift.String
@@ -1171,6 +1172,7 @@ public class StepLayout {
   public var resizableButton: Swift.Bool
   public var plotlineRoundedButton: Swift.Bool
   public var cropAspectRatio: Swift.Double
+  public var shouldEnableHorizontalEnhancement: Swift.Bool
   public var canvasElements: [Plotline.CanvasElement]
   convenience public init()
   public init(_ json: [Swift.String : Any])

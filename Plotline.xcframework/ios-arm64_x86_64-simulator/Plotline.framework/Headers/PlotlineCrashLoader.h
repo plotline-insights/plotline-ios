@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PlotlineCrashLoader : NSObject
 
-/// Check if crash analytics is enabled (defaults to true)
+/// Check if crash analytics is enabled (defaults to NO until backend enables it)
 + (BOOL)isCrashAnalyticsEnabled;
 
 /// Set the crash analytics enabled flag (called after init)
