@@ -1173,6 +1173,7 @@ public class StepLayout {
   public var plotlineRoundedButton: Swift.Bool
   public var cropAspectRatio: Swift.Double
   public var shouldEnableHorizontalEnhancement: Swift.Bool
+  public var buttonIntrinsicContentSizeOverride: Swift.Bool
   public var canvasElements: [Plotline.CanvasElement]
   convenience public init()
   public init(_ json: [Swift.String : Any])
