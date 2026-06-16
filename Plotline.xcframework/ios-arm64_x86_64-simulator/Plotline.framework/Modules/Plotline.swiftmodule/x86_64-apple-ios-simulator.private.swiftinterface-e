@@ -68,6 +68,8 @@ import os
 }
 public class WebViewSettings {
   public var baseUrl: Swift.String?
+  public var isScrollable: Swift.Bool
+  public var isHtmlContent: Swift.Bool
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
