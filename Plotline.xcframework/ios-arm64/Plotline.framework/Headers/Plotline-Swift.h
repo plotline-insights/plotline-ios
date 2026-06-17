@@ -554,6 +554,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (BOOL)getShouldEnableThreadSafeWidgets SWIFT_WARN_UNUSED_RESULT;
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
++ (void)setShouldUseTopMostWindowWithShouldUseTopMostWindow:(BOOL)shouldUseTopMostWindow;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
 + (void)setColorWithColors:(NSDictionary<NSString *, id> * _Nonnull)colors;
