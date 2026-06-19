@@ -313,6 +313,7 @@ public enum DebugCode : Swift.String {
   case PL_I_SHOWING_STEP
   case PL_E_RESOURCE_LOADING_FAILED
   case PL_I_PUSH_PERMISSION_ALREADY_ACTIVE
+  case PL_E_USER_FILTER_REEVALUATION_FAILED
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -983,6 +984,8 @@ public class RewardSettings {
   public func getShouldEnableImageFail() -> Swift.Bool
   public func setShouldEnableSmoothBackdropTransition(shouldEnableSmoothBackdropTransition: Swift.Bool)
   public func getShouldEnableSmoothBackdropTransition() -> Swift.Bool
+  public func setShouldReevaluateUserFilterOnShow(shouldReevaluateUserFilterOnShow: Swift.Bool)
+  public func getShouldReevaluateUserFilterOnShow() -> Swift.Bool
   public func setShouldEnableWidgetLock(shouldEnableWidgetLock: Swift.Bool)
   public func getShouldEnableWidgetLock() -> Swift.Bool
   public func getFlowStore() -> FlowStore
@@ -1735,6 +1738,7 @@ public class ElementSearchObject {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ElementSearchTask : ObjectiveC.NSObject, UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @_Concurrency.MainActor(unsafe) public func clearElementsCompleted()
+  @_Concurrency.MainActor(unsafe) public func removeFlowFromCompletedSearch(flowId: Swift.String)
   @_Concurrency.MainActor(unsafe) public func notifyScroll()
   @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor(unsafe) public func setPlotlineScrollListener(listener: (any PlotlineScrollListener)?)

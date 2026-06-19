@@ -12298,6 +12298,43 @@
             "moduleName": "Plotline"
           },
           {
+            "kind": "Var",
+            "name": "PL_E_USER_FILTER_REEVALUATION_FAILED",
+            "printedName": "PL_E_USER_FILTER_REEVALUATION_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Plotline.DebugCode.Type) -> Plotline.DebugCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DebugCode",
+                    "printedName": "Plotline.DebugCode",
+                    "usr": "s:8Plotline9DebugCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Plotline.DebugCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DebugCode",
+                        "printedName": "Plotline.DebugCode",
+                        "usr": "s:8Plotline9DebugCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8Plotline9DebugCodeO36PL_E_USER_FILTER_REEVALUATION_FAILEDyA2CmF",
+            "mangledName": "$s8Plotline9DebugCodeO36PL_E_USER_FILTER_REEVALUATION_FAILEDyA2CmF",
+            "moduleName": "Plotline"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -40307,6 +40344,53 @@
             "declKind": "Func",
             "usr": "s:8PlotlineAAC39getShouldEnableSmoothBackdropTransitionSbyF",
             "mangledName": "$s8PlotlineAAC39getShouldEnableSmoothBackdropTransitionSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldReevaluateUserFilterOnShow",
+            "printedName": "setShouldReevaluateUserFilterOnShow(shouldReevaluateUserFilterOnShow:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC35setShouldReevaluateUserFilterOnShow06shoulddefgH0ySb_tF",
+            "mangledName": "$s8PlotlineAAC35setShouldReevaluateUserFilterOnShow06shoulddefgH0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getShouldReevaluateUserFilterOnShow",
+            "printedName": "getShouldReevaluateUserFilterOnShow()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC35getShouldReevaluateUserFilterOnShowSbyF",
+            "mangledName": "$s8PlotlineAAC35getShouldReevaluateUserFilterOnShowSbyF",
             "moduleName": "Plotline",
             "declAttributes": [
               "AccessControl"
@@ -81957,6 +82041,33 @@
           },
           {
             "kind": "Function",
+            "name": "removeFlowFromCompletedSearch",
+            "printedName": "removeFlowFromCompletedSearch(flowId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline17ElementSearchTaskC023removeFlowFromCompletedC06flowIdySS_tF",
+            "mangledName": "$s8Plotline17ElementSearchTaskC023removeFlowFromCompletedC06flowIdySS_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "notifyScroll",
             "printedName": "notifyScroll()",
             "children": [
@@ -87341,6 +87452,13 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
+      "offset": 5082,
+      "length": 38,
+      "value": "\"PL_E_USER_FILTER_REEVALUATION_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
+      "kind": "StringLiteral",
       "offset": 3685,
       "length": 24,
       "value": "\"PL_I_RESPONSE_RECEIVED\""
@@ -87474,56 +87592,63 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5113,
+      "offset": 5082,
+      "length": 38,
+      "value": "\"PL_E_USER_FILTER_REEVALUATION_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 5200,
       "length": 30,
       "value": "\"PL_E_RESOURCE_LOADING_FAILED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5180,
+      "offset": 5267,
       "length": 26,
       "value": "\"PL_E_ELEMENT_NOT_VISIBLE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5242,
+      "offset": 5329,
       "length": 25,
       "value": "\"PL_E_ELIGIBILITY_FAILED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5297,
+      "offset": 5384,
       "length": 19,
       "value": "\"PL_I_VIDEO_LOADED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5113,
+      "offset": 5200,
       "length": 30,
       "value": "\"PL_E_RESOURCE_LOADING_FAILED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5180,
+      "offset": 5267,
       "length": 26,
       "value": "\"PL_E_ELEMENT_NOT_VISIBLE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5242,
+      "offset": 5329,
       "length": 25,
       "value": "\"PL_E_ELIGIBILITY_FAILED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/DebugHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5297,
+      "offset": 5384,
       "length": 19,
       "value": "\"PL_I_VIDEO_LOADED\""
     },
@@ -88827,7 +88952,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"4.9.4\""
+      "value": "\"4.9.5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -90686,15 +90811,22 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5199,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 5214,
+      "offset": 5409,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5271,
+      "offset": 5466,
       "length": 4,
       "value": "true"
     },
