@@ -1087,6 +1087,8 @@ public class RewardSettings {
   @objc public static func identify(attributes: [Swift.String : Any])
   @objc public static func setShouldEnableThreadSafeWidgets(shouldEnableThreadSafeWidgets: Swift.Bool)
   @objc public static func getShouldEnableThreadSafeWidgets() -> Swift.Bool
+  @objc public static func setShouldUseRoundedSurveyButtons(shouldUseRoundedSurveyButtons: Swift.Bool)
+  @objc public static func getShouldUseRoundedSurveyButtons() -> Swift.Bool
   public static func getStudyWindow()
   @objc public static func setShouldEnableScrollDelegates(shouldEnableScrollDelegates: Swift.Bool)
   @objc public static func setShouldEnableNestedControllers(shouldEnableNestedControllers: Swift.Bool)
@@ -1514,6 +1516,7 @@ public enum PopoverOption {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func accessibilityPerformEscape() -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) open func onOutsideTouch()
   @objc @_Concurrency.MainActor(unsafe) open func onInsideTouch()
+  @objc @_Concurrency.MainActor(unsafe) open func onTargetTouch()
   @_Concurrency.MainActor(unsafe) open func getActionForStickyStep(layout: StepLayout) -> StepAction?
   @objc @_Concurrency.MainActor(unsafe) open func dismiss()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)

@@ -552,6 +552,8 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)identifyWithAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes;
 + (void)setShouldEnableThreadSafeWidgetsWithShouldEnableThreadSafeWidgets:(BOOL)shouldEnableThreadSafeWidgets;
 + (BOOL)getShouldEnableThreadSafeWidgets SWIFT_WARN_UNUSED_RESULT;
++ (void)setShouldUseRoundedSurveyButtonsWithShouldUseRoundedSurveyButtons:(BOOL)shouldUseRoundedSurveyButtons;
++ (BOOL)getShouldUseRoundedSurveyButtons SWIFT_WARN_UNUSED_RESULT;
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)setShouldUseTopMostWindowWithShouldUseTopMostWindow:(BOOL)shouldUseTopMostWindow;
@@ -714,6 +716,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 - (BOOL)accessibilityPerformEscape SWIFT_WARN_UNUSED_RESULT;
 - (void)onOutsideTouch;
 - (void)onInsideTouch;
+- (void)onTargetTouch;
 - (void)dismiss;
 - (void)drawRect:(CGRect)rect;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
