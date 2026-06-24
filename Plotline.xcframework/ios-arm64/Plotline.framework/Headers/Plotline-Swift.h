@@ -531,6 +531,7 @@ SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 
 SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
+- (BOOL)getShouldGateWidgetSaveOnVisibility SWIFT_WARN_UNUSED_RESULT;
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
 - (void)setIsFeatureFlagsLoadedWithIsFeatureFlagsLoaded:(BOOL)isFeatureFlagsLoaded;
 - (void)registerInitCallbackOnInitialized:(void (^ _Nonnull)(void))onInitialized onFailure:(void (^ _Nonnull)(NSString * _Nonnull))onFailure;
@@ -734,6 +735,8 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)setReloadCallbackWithReloadCallback:(void (^ _Nonnull)(void))reloadCallback;
 - (void)layoutSubviews;
+- (void)didMoveToWindow;
+- (void)setExternalVisibilityWithVisibleFraction:(double)visibleFraction isObscured:(BOOL)isObscured;
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

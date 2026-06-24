@@ -213,6 +213,8 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) public func registerCallback()
   @objc @_Concurrency.MainActor(unsafe) public func setReloadCallback(reloadCallback: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @objc @_Concurrency.MainActor(unsafe) public func setExternalVisibility(visibleFraction: Swift.Double, isObscured: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func setPlotlineWidgetListener(plotlineWidgetListener: any PlotlineWidgetListener)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any PlotlineWidgetListener)
@@ -941,6 +943,12 @@ public class RewardSettings {
   public func setShouldRefreshDynamicWidgets(shouldRefreshDynamicWidgets: Swift.Bool)
   public func getShouldPreserveWidgetHeightOnRebuild() -> Swift.Bool
   public func setShouldPreserveWidgetHeightOnRebuild(shouldPreserveWidgetHeightOnRebuild: Swift.Bool)
+  @objc public func getShouldGateWidgetSaveOnVisibility() -> Swift.Bool
+  public func setShouldGateWidgetSaveOnVisibility(shouldGateWidgetSaveOnVisibility: Swift.Bool)
+  public func getWidgetVisibilityThreshold() -> Swift.Double
+  public func setWidgetVisibilityThreshold(widgetVisibilityThreshold: Swift.Double)
+  public func getWidgetVisibilityDurationMs() -> Swift.Int
+  public func setWidgetVisibilityDurationMs(widgetVisibilityDurationMs: Swift.Int)
   public func getDefaultAttributes() -> Attributes
   public func getsColors() -> SurveySettings
   public func setsColors(sColors: [Swift.String : Any])
