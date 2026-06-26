@@ -6057,6 +6057,128 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTrackedElements",
+            "printedName": "setTrackedElements(elementSearchObjects:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Plotline.ElementSearchObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ElementSearchObject",
+                    "printedName": "Plotline.ElementSearchObject",
+                    "usr": "s:8Plotline19ElementSearchObjectC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline0A20ViewPositionCallbackP18setTrackedElements20elementSearchObjectsySayAA07ElementI6ObjectCG_tF",
+            "mangledName": "$s8Plotline0A20ViewPositionCallbackP18setTrackedElements20elementSearchObjectsySayAA07ElementI6ObjectCG_tF",
+            "moduleName": "Plotline",
+            "genericSig": "<τ_0_0 where τ_0_0 : Plotline.PlotlineViewPositionCallback>",
+            "sugared_genericSig": "<Self where Self : Plotline.PlotlineViewPositionCallback>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTrackAllElements",
+            "printedName": "setTrackAllElements(trackAll:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline0A20ViewPositionCallbackP19setTrackAllElements05trackG0ySb_tF",
+            "mangledName": "$s8Plotline0A20ViewPositionCallbackP19setTrackAllElements05trackG0ySb_tF",
+            "moduleName": "Plotline",
+            "genericSig": "<τ_0_0 where τ_0_0 : Plotline.PlotlineViewPositionCallback>",
+            "sugared_genericSig": "<Self where Self : Plotline.PlotlineViewPositionCallback>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTrackedElements",
+            "printedName": "setTrackedElements(elementSearchObjects:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Plotline.ElementSearchObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ElementSearchObject",
+                    "printedName": "Plotline.ElementSearchObject",
+                    "usr": "s:8Plotline19ElementSearchObjectC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline0A20ViewPositionCallbackPAAE18setTrackedElements20elementSearchObjectsySayAA07ElementI6ObjectCG_tF",
+            "mangledName": "$s8Plotline0A20ViewPositionCallbackPAAE18setTrackedElements20elementSearchObjectsySayAA07ElementI6ObjectCG_tF",
+            "moduleName": "Plotline",
+            "genericSig": "<τ_0_0 where τ_0_0 : Plotline.PlotlineViewPositionCallback>",
+            "sugared_genericSig": "<Self where Self : Plotline.PlotlineViewPositionCallback>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTrackAllElements",
+            "printedName": "setTrackAllElements(trackAll:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Plotline0A20ViewPositionCallbackPAAE19setTrackAllElements05trackG0ySb_tF",
+            "mangledName": "$s8Plotline0A20ViewPositionCallbackPAAE19setTrackAllElements05trackG0ySb_tF",
+            "moduleName": "Plotline",
+            "genericSig": "<τ_0_0 where τ_0_0 : Plotline.PlotlineViewPositionCallback>",
+            "sugared_genericSig": "<Self where Self : Plotline.PlotlineViewPositionCallback>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -40731,6 +40853,54 @@
             "declKind": "Func",
             "usr": "s:8PlotlineAAC20setShouldEnableFlows06shoulddE0ySb_tF",
             "mangledName": "$s8PlotlineAAC20setShouldEnableFlows06shoulddE0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFlutterSelectiveVisibility",
+            "printedName": "getFlutterSelectiveVisibility()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC29getFlutterSelectiveVisibilitySbyF",
+            "mangledName": "$s8PlotlineAAC29getFlutterSelectiveVisibilitySbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setFlutterSelectiveVisibility",
+            "printedName": "setFlutterSelectiveVisibility(flutterSelectiveVisibility:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC29setFlutterSelectiveVisibility07flutterdE0ySb_tF",
+            "mangledName": "$s8PlotlineAAC29setFlutterSelectiveVisibility07flutterdE0ySb_tF",
             "moduleName": "Plotline",
             "declAttributes": [
               "AccessControl"
@@ -89250,7 +89420,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.0.1\""
+      "value": "\"5.0.2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -90977,175 +91147,182 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 2462,
+      "offset": 2641,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2688,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2514,
+      "offset": 2740,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2566,
+      "offset": 2792,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 2714,
+      "offset": 2940,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2765,
+      "offset": 2991,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2928,
+      "offset": 3154,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2971,
+      "offset": 3197,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 3361,
+      "offset": 3587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 3408,
+      "offset": 3634,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 3482,
+      "offset": 3708,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 3598,
+      "offset": 3824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 3754,
+      "offset": 3980,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 3847,
+      "offset": 4073,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 4435,
+      "offset": 4661,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 4541,
+      "offset": 4767,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 4892,
+      "offset": 5118,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5015,
+      "offset": 5241,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5061,
+      "offset": 5287,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5113,
+      "offset": 5339,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5173,
+      "offset": 5399,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5248,
+      "offset": 5474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 5458,
+      "offset": 5684,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5515,
+      "offset": 5741,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "FloatLiteral",
-      "offset": 5572,
+      "offset": 5798,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 5626,
+      "offset": 5852,
       "length": 3,
       "value": "500"
     },
@@ -93539,14 +93716,14 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Tasks\/ElementSearchTask.swift",
       "kind": "Array",
-      "offset": 399,
+      "offset": 542,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Tasks\/ElementSearchTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 569,
+      "offset": 712,
       "length": 1,
       "value": "0"
     },

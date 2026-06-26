@@ -161,6 +161,12 @@ public protocol PlotlineViewPositionCallback {
   func getViewPosition(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String, clientElementSelector: Plotline.ClientElementSelector?, plotlineViewPositionCompleteListener: @escaping (CoreFoundation.CGRect?) -> Swift.Void)
   func areViewsPresent(for view: UIKit.UIView, elementSearchObjects: [Plotline.ElementSearchObject], plotlineViewsPresenceListener: @escaping ([Plotline.ElementSearchObject]) -> ())
   func getView(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String, clientElementSelector: Plotline.ClientElementSelector?) -> UIKit.UIView?
+  func setTrackedElements(elementSearchObjects: [Plotline.ElementSearchObject])
+  func setTrackAllElements(trackAll: Swift.Bool)
+}
+extension Plotline.PlotlineViewPositionCallback {
+  public func setTrackedElements(elementSearchObjects: [Plotline.ElementSearchObject])
+  public func setTrackAllElements(trackAll: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers public class PlotlineInternal {
   public static let shared: Plotline.PlotlineInternal
@@ -1000,6 +1006,8 @@ public class RewardSettings {
   public func getJourneyStore() -> Plotline.JourneyStore
   public func isShouldEnableFlows() -> Swift.Bool
   public func setShouldEnableFlows(shouldEnableFlows: Swift.Bool)
+  public func getFlutterSelectiveVisibility() -> Swift.Bool
+  public func setFlutterSelectiveVisibility(flutterSelectiveVisibility: Swift.Bool)
   public func getSearchIntervalMillis() -> Swift.Int64
   public func setSearchIntervalMillis(searchIntervalMillis: Swift.Int64)
   public func getScrollIntervalMillis() -> Swift.Int64
