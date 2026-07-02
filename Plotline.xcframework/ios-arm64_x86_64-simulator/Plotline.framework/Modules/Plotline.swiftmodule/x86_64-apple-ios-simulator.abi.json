@@ -39435,6 +39435,53 @@
           },
           {
             "kind": "Function",
+            "name": "getShouldSetVisibleOnSameDimensions",
+            "printedName": "getShouldSetVisibleOnSameDimensions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC35getShouldSetVisibleOnSameDimensionsSbyF",
+            "mangledName": "$s8PlotlineAAC35getShouldSetVisibleOnSameDimensionsSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldSetVisibleOnSameDimensions",
+            "printedName": "setShouldSetVisibleOnSameDimensions(shouldSetVisibleOnSameDimensions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC35setShouldSetVisibleOnSameDimensions06shoulddefgH0ySb_tF",
+            "mangledName": "$s8PlotlineAAC35setShouldSetVisibleOnSameDimensions06shoulddefgH0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getShouldGateWidgetSaveOnVisibility",
             "printedName": "getShouldGateWidgetSaveOnVisibility()",
             "children": [
@@ -89420,7 +89467,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.0.2\""
+      "value": "\"5.0.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -91325,6 +91372,13 @@
       "offset": 5852,
       "length": 3,
       "value": "500"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8634,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/WidgetContent.swift",

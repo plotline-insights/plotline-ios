@@ -949,6 +949,8 @@ public class RewardSettings {
   public func setShouldRefreshDynamicWidgets(shouldRefreshDynamicWidgets: Swift.Bool)
   public func getShouldPreserveWidgetHeightOnRebuild() -> Swift.Bool
   public func setShouldPreserveWidgetHeightOnRebuild(shouldPreserveWidgetHeightOnRebuild: Swift.Bool)
+  public func getShouldSetVisibleOnSameDimensions() -> Swift.Bool
+  public func setShouldSetVisibleOnSameDimensions(shouldSetVisibleOnSameDimensions: Swift.Bool)
   @objc public func getShouldGateWidgetSaveOnVisibility() -> Swift.Bool
   public func setShouldGateWidgetSaveOnVisibility(shouldGateWidgetSaveOnVisibility: Swift.Bool)
   public func getWidgetVisibilityThreshold() -> Swift.Double
