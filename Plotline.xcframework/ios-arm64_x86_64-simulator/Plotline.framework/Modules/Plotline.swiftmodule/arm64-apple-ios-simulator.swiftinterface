@@ -971,6 +971,7 @@ public class RewardSettings {
   public func setShouldClearViewListener(shouldClearViewListener: Swift.Bool)
   public func getShouldEnableNestedControllers() -> Swift.Bool
   public func getShouldUseTopMostWindow() -> Swift.Bool
+  public func getShouldUseTopMostPresentedController() -> Swift.Bool
   public func getShouldAllowConcurrentTriggers() -> Swift.Bool
   public func setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers: Swift.Bool)
   public func getShouldAddSurveyBeforeRemoving() -> Swift.Bool
@@ -1111,6 +1112,7 @@ public class RewardSettings {
   @objc public static func setShouldEnableScrollDelegates(shouldEnableScrollDelegates: Swift.Bool)
   @objc public static func setShouldEnableNestedControllers(shouldEnableNestedControllers: Swift.Bool)
   @objc public static func setShouldUseTopMostWindow(shouldUseTopMostWindow: Swift.Bool)
+  @objc public static func setShouldUseTopMostPresentedController(shouldUseTopMostPresentedController: Swift.Bool)
   @objc public static func showMockStudy()
   @objc public static func setLocale(locale: Swift.String)
   @objc public static func setColor(colors: [Swift.String : Any])

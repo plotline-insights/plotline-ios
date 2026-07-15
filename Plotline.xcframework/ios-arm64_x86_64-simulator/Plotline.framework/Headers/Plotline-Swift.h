@@ -558,6 +558,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)setShouldUseTopMostWindowWithShouldUseTopMostWindow:(BOOL)shouldUseTopMostWindow;
++ (void)setShouldUseTopMostPresentedControllerWithShouldUseTopMostPresentedController:(BOOL)shouldUseTopMostPresentedController;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
 + (void)setColorWithColors:(NSDictionary<NSString *, id> * _Nonnull)colors;
@@ -1426,6 +1427,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)setShouldUseTopMostWindowWithShouldUseTopMostWindow:(BOOL)shouldUseTopMostWindow;
++ (void)setShouldUseTopMostPresentedControllerWithShouldUseTopMostPresentedController:(BOOL)shouldUseTopMostPresentedController;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
 + (void)setColorWithColors:(NSDictionary<NSString *, id> * _Nonnull)colors;
