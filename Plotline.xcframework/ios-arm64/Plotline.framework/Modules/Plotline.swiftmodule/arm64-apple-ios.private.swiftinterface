@@ -1611,6 +1611,7 @@ public class ScreenshotTask {
   public var standardisedStepId: Swift.String?
   public var hasExternalContent: Swift.Bool
   public var shouldFitTooltipInsideScreen: Swift.Bool
+  public var shouldEnablePushTemplatesUIFixes: Swift.Bool
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool

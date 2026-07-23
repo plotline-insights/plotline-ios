@@ -71122,6 +71122,92 @@
           },
           {
             "kind": "Var",
+            "name": "shouldEnablePushTemplatesUIFixes",
+            "printedName": "shouldEnablePushTemplatesUIFixes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvp",
+            "mangledName": "$s8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvg",
+                "mangledName": "$s8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvs",
+                "mangledName": "$s8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvM",
+                "mangledName": "$s8Plotline8FlowStepC32shouldEnablePushTemplatesUIFixesSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "audioUrl",
             "printedName": "audioUrl",
             "children": [
@@ -87235,22 +87321,29 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/PushPayload.swift",
+      "kind": "BooleanLiteral",
+      "offset": 807,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "Dictionary",
-      "offset": 795,
+      "offset": 849,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "StringLiteral",
-      "offset": 892,
+      "offset": 946,
       "length": 14,
       "value": "\"notification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "StringLiteral",
-      "offset": 954,
+      "offset": 1008,
       "length": 10,
       "value": "\"campaign\""
     },
@@ -89604,7 +89697,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.0.5\""
+      "value": "\"5.0.6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -91625,140 +91718,140 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 73932,
+      "offset": 76410,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 80401,
+      "offset": 82879,
       "length": 16,
       "value": "\"Helvetica Neue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 80439,
+      "offset": 82917,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 80480,
+      "offset": 82958,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 90439,
+      "offset": 92917,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 90501,
+      "offset": 92979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "Array",
-      "offset": 90660,
+      "offset": 93138,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 90784,
+      "offset": 93262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 91131,
+      "offset": 93609,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 102599,
+      "offset": 105077,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 102639,
+      "offset": 105117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 102683,
+      "offset": 105161,
       "length": 9,
       "value": "\"PLAYING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 102733,
+      "offset": 105211,
       "length": 11,
       "value": "\"BUFFERING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 102781,
+      "offset": 105259,
       "length": 7,
       "value": "\"READY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 102405,
+      "offset": 104883,
       "length": 14,
       "value": "\"Plotline.PlayerObserver\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "Array",
-      "offset": 105364,
+      "offset": 107842,
       "length": 12,
       "value": "[0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 105302,
+      "offset": 107780,
       "length": 15,
       "value": "\"Plotline.ResizableButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 106392,
+      "offset": 108870,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 106439,
+      "offset": 108917,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 106326,
+      "offset": 108804,
       "length": 14,
       "value": "\"Plotline.PlotlineButton\""
     },
@@ -93137,21 +93230,21 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "FloatLiteral",
-      "offset": 11055,
+      "offset": 12602,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 11476,
+      "offset": 13023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Modals\/StudyDialog.swift",
       "kind": "BooleanLiteral",
-      "offset": 11505,
+      "offset": 13052,
       "length": 5,
       "value": "false"
     },
@@ -93234,211 +93327,218 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1402,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1381,
+      "offset": 1442,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 1420,
+      "offset": 1481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 1467,
+      "offset": 1528,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "Array",
-      "offset": 1662,
+      "offset": 1723,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "Dictionary",
-      "offset": 1715,
+      "offset": 1776,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1852,
+      "offset": 1913,
       "length": 11,
       "value": "\"FCD9AHG11\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1919,
+      "offset": 1980,
       "length": 11,
       "value": "\"DBC6AF5D1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 2042,
       "length": 6,
       "value": "\"FADE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2037,
+      "offset": 2098,
       "length": 7,
       "value": "\"SCALE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2093,
+      "offset": 2154,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2152,
+      "offset": 2213,
       "length": 9,
       "value": "\"TOOLTIP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2211,
+      "offset": 2272,
       "length": 7,
       "value": "\"MODAL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2268,
+      "offset": 2329,
       "length": 7,
       "value": "\"BADGE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2331,
+      "offset": 2392,
       "length": 13,
       "value": "\"BOTTOMSHEET\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2398,
+      "offset": 2459,
       "length": 11,
       "value": "\"COACHMARK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2463,
+      "offset": 2524,
       "length": 11,
       "value": "\"SPOTLIGHT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2525,
+      "offset": 2586,
       "length": 8,
       "value": "\"BANNER\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2585,
+      "offset": 2646,
       "length": 9,
       "value": "\"FLOATER\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2647,
+      "offset": 2708,
       "length": 10,
       "value": "\"PIPVIDEO\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2702,
+      "offset": 2763,
       "length": 8,
       "value": "\"WIDGET\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2760,
+      "offset": 2821,
       "length": 15,
       "value": "\"FULLPAGEMODAL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2827,
+      "offset": 2888,
       "length": 17,
       "value": "\"FULLPAGECONTENT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 2883,
+      "offset": 2944,
       "length": 10,
       "value": "\"ACTIVITY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "IntegerLiteral",
-      "offset": 2935,
+      "offset": 2996,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 3145,
+      "offset": 3206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "FloatLiteral",
-      "offset": 3195,
+      "offset": 3256,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "StringLiteral",
-      "offset": 3241,
+      "offset": 3302,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "Array",
-      "offset": 3286,
+      "offset": 3347,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "Dictionary",
-      "offset": 3337,
+      "offset": 3398,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 3395,
+      "offset": 3456,
       "length": 5,
       "value": "false"
     },
