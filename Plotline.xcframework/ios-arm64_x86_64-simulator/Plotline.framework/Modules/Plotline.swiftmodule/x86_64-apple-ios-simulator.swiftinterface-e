@@ -969,6 +969,8 @@ public class RewardSettings {
   public func getShouldEnableScrollDelegates() -> Swift.Bool
   public func getShouldClearViewListener() -> Swift.Bool
   public func setShouldClearViewListener(shouldClearViewListener: Swift.Bool)
+  public func getShouldSendStoredEventTimestamp() -> Swift.Bool
+  public func setShouldSendStoredEventTimestamp(shouldSendStoredEventTimestamp: Swift.Bool)
   public func getShouldEnableNestedControllers() -> Swift.Bool
   public func getShouldUseTopMostWindow() -> Swift.Bool
   public func getShouldUseTopMostPresentedController() -> Swift.Bool
@@ -1001,6 +1003,8 @@ public class RewardSettings {
   public func getShouldEnableImageFail() -> Swift.Bool
   public func setShouldEnableSmoothBackdropTransition(shouldEnableSmoothBackdropTransition: Swift.Bool)
   public func getShouldEnableSmoothBackdropTransition() -> Swift.Bool
+  public func setShouldSendStepTypeInEvents(shouldSendStepTypeInEvents: Swift.Bool)
+  public func getShouldSendStepTypeInEvents() -> Swift.Bool
   public func setShouldReevaluateUserFilterOnShow(shouldReevaluateUserFilterOnShow: Swift.Bool)
   public func getShouldReevaluateUserFilterOnShow() -> Swift.Bool
   public func setShouldEnableWidgetLock(shouldEnableWidgetLock: Swift.Bool)
