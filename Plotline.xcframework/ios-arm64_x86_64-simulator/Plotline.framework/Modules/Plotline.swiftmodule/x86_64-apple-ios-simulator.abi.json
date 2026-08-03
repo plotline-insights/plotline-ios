@@ -40719,7 +40719,8 @@
             "mangledName": "$s8PlotlineAAC24setShouldEnableImageFail06shoulddeF0ySb_tF",
             "moduleName": "Plotline",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -87822,7 +87823,7 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "StringLiteral",
-      "offset": 54319,
+      "offset": 55032,
       "length": 24,
       "value": "\"didChangeTestUserState\""
     },
@@ -89805,7 +89806,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.0.7\""
+      "value": "\"5.0.8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -91665,77 +91666,70 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5354,
+      "offset": 5355,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5400,
+      "offset": 5407,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5452,
+      "offset": 5467,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5512,
+      "offset": 5536,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5581,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5709,
+      "offset": 5664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 5919,
+      "offset": 5874,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 5976,
+      "offset": 5931,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "FloatLiteral",
-      "offset": 6033,
+      "offset": 5988,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 6087,
+      "offset": 6042,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 8869,
+      "offset": 8824,
       "length": 4,
       "value": "true"
     },
@@ -92225,14 +92219,21 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1158,
+      "offset": 1168,
+      "length": 31,
+      "value": "\"plotlineShouldEnableImageFail\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 1239,
       "length": 25,
       "value": "\"plotlinePendingEventsV1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "IntegerLiteral",
-      "offset": 1228,
+      "offset": 1309,
       "length": 3,
       "value": "100"
     },
