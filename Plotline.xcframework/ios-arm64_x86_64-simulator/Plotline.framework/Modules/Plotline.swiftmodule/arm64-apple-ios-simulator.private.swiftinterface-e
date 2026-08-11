@@ -274,6 +274,15 @@ public class CarouselSettings {
   public init()
   @objc deinit
 }
+public class GroupableWidgetConfig {
+  public var clientElementId: Swift.String
+  public var layoutType: Swift.String
+  public var bgColor: Swift.String
+  public var carouselSettings: Plotline.CarouselSettings
+  public init(_ json: [Swift.String : Any])
+  public func isCarousel() -> Swift.Bool
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class CoachRingRenderer : ObjectiveC.NSObject {
   @objc dynamic public class func drawCoachRing(ringColor: UIKit.UIColor = UIColor(red: 0.000, green: 0.387, blue: 0.742, alpha: 0.737), controlRadius: CoreFoundation.CGFloat = 20, controlCenter: CoreFoundation.CGPoint = CGPoint(x: 199, y: 137), ringRadius: CoreFoundation.CGFloat = 144, ringCenter: CoreFoundation.CGPoint = CGPoint(x: 179, y: 171))
   @objc dynamic public class func drawCoachRingEcho(ringEchoColor: UIKit.UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000), controlRadius: CoreFoundation.CGFloat = 20, ringRadius: CoreFoundation.CGFloat = 144, ringCenter: CoreFoundation.CGPoint = CGPoint(x: 179, y: 171), echoOpacity: CoreFoundation.CGFloat = 0.491)
@@ -461,7 +470,9 @@ public class IdentityManager {
   public static func getCleanedProperties(properties: [Swift.String : Any]?) -> [Swift.String : Any]?
   public static func convertObjectToString(jsonObject: [Swift.String : Any]?) -> Swift.String
   public static func isFontValid(fontStyle: Plotline.StepStyles?) -> Swift.Bool
+  public static func isValidHexColor(_ value: Swift.String) -> Swift.Bool
   public static func getStoryIdsArray(storiesData: [Plotline.Story]) -> Swift.Set<Swift.String>
+  public static let GROUPABLE_LAYOUT_TYPE_CAROUSEL: Swift.String
   public static func startBounceAnimation(view: UIKit.UIView)
   public static func applyInitialState(buttonView: UIKit.UIButton, styles: Plotline.StepStyles)
   public static func getChangedAttributedTitleColor(buttonView: UIKit.UIButton, color: Swift.String?) -> Foundation.NSAttributedString?
@@ -1086,6 +1097,7 @@ public class RewardSettings {
   public func getPreloadedHeights() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
   public func getShouldAnimateMap() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Bool>
   public func getGroupedWidgetScaleFactors() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
+  public func getGroupableWidgets() -> Plotline.ConcurrentDictionary<Swift.String, Plotline.GroupableWidgetConfig>
   @objc public static func getPreloadedHeight(elementId: Swift.String) -> Swift.Double
   @objc public func appOrientationChanged()
   @objc public func appMovedToBackground()
