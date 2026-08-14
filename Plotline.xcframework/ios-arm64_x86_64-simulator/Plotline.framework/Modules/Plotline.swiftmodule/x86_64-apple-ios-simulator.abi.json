@@ -41402,6 +41402,53 @@
           },
           {
             "kind": "Function",
+            "name": "setShouldFixExpandTransitionWidth",
+            "printedName": "setShouldFixExpandTransitionWidth(shouldFixExpandTransitionWidth:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC33setShouldFixExpandTransitionWidth06shoulddefG0ySb_tF",
+            "mangledName": "$s8PlotlineAAC33setShouldFixExpandTransitionWidth06shoulddefG0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getShouldFixExpandTransitionWidth",
+            "printedName": "getShouldFixExpandTransitionWidth()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC33getShouldFixExpandTransitionWidthSbyF",
+            "mangledName": "$s8PlotlineAAC33getShouldFixExpandTransitionWidthSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setShouldEnableWidgetLock",
             "printedName": "setShouldEnableWidgetLock(shouldEnableWidgetLock:)",
             "children": [
@@ -90397,7 +90444,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.1.1\""
+      "value": "\"5.1.2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -92291,36 +92338,43 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6378,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 6395,
+      "offset": 6608,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6452,
+      "offset": 6665,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "FloatLiteral",
-      "offset": 6509,
+      "offset": 6722,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 6563,
+      "offset": 6776,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 9345,
+      "offset": 9558,
       "length": 4,
       "value": "true"
     },

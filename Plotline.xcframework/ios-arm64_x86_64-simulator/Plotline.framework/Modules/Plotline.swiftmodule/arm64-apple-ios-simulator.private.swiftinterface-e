@@ -1021,6 +1021,8 @@ public class RewardSettings {
   public func getShouldSendStepTypeInEvents() -> Swift.Bool
   public func setShouldReevaluateUserFilterOnShow(shouldReevaluateUserFilterOnShow: Swift.Bool)
   public func getShouldReevaluateUserFilterOnShow() -> Swift.Bool
+  public func setShouldFixExpandTransitionWidth(shouldFixExpandTransitionWidth: Swift.Bool)
+  public func getShouldFixExpandTransitionWidth() -> Swift.Bool
   public func setShouldEnableWidgetLock(shouldEnableWidgetLock: Swift.Bool)
   public func getShouldEnableWidgetLock() -> Swift.Bool
   public func getFlowStore() -> Plotline.FlowStore
