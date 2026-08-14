@@ -204,7 +204,10 @@ public class PStoryView {
   @objc func onReload()
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PlotlineWidget : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public var clientElementId: Swift.String {
+    @objc get
+    @objc set
+  }
   @_Concurrency.MainActor(unsafe) public var widgetIds: [Swift.String]
   @_Concurrency.MainActor(unsafe) public var stepIds: Swift.Set<Swift.String>
   @_Concurrency.MainActor(unsafe) public var preloadheight: Swift.Double
