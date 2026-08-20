@@ -967,6 +967,8 @@ public class RewardSettings {
   public func setShouldSetVisibleOnSameDimensions(shouldSetVisibleOnSameDimensions: Swift.Bool)
   @objc public func getShouldGateWidgetSaveOnVisibility() -> Swift.Bool
   public func setShouldGateWidgetSaveOnVisibility(shouldGateWidgetSaveOnVisibility: Swift.Bool)
+  public func getShouldClipWidgetOverflow() -> Swift.Bool
+  public func setShouldClipWidgetOverflow(shouldClipWidgetOverflow: Swift.Bool)
   public func getWidgetVisibilityThreshold() -> Swift.Double
   public func setWidgetVisibilityThreshold(widgetVisibilityThreshold: Swift.Double)
   public func getWidgetVisibilityDurationMs() -> Swift.Int
