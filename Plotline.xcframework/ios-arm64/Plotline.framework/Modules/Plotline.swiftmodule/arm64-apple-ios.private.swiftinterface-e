@@ -1225,6 +1225,7 @@ public class StepLayout {
   public var plotlineRoundedButton: Swift.Bool
   public var cropAspectRatio: Swift.Double
   public var shouldEnableHorizontalEnhancement: Swift.Bool
+  public var shouldMirrorAlignmentInRTL: Swift.Bool
   public var buttonIntrinsicContentSizeOverride: Swift.Bool
   public var canvasElements: [Plotline.CanvasElement]
   convenience public init()
@@ -1696,6 +1697,8 @@ public class Question {
   public var disableDismiss: Swift.Bool?
   public var ratingValueArray: [Swift.String]?
   public var colorArray: [Swift.String]?
+  public var scaleCellHeight: Swift.Double?
+  public var scaleCellSpacing: Swift.Double?
   public static let TEXT_TYPE_TITLE: Swift.String
   public static let TEXT_TYPE_DESCRIPTION: Swift.String
   public static let TEXT_TYPE_OPTION_TEXT: Swift.String
