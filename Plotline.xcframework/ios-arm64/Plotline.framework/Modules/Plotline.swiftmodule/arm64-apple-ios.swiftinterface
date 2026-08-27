@@ -1208,6 +1208,7 @@ public class StepLayout {
   public var layoutWeight: Swift.Int
   public var layouts: [StepLayout]
   public var onAction: StepAction
+  public var onSwipe: StepAction?
   public var carouselSettings: CarouselSettings
   public var videoSettings: VideoSettings
   public var webViewSettings: WebViewSettings
@@ -1445,6 +1446,7 @@ public class StepAction {
   public var platform: Swift.String
   public var requireDismiss: Swift.Bool?
   public var isDismiss: Swift.Bool?
+  public var isSwipeDisabled: Swift.Bool
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
