@@ -1446,6 +1446,92 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "shouldDisableInsetAdjustment",
+            "printedName": "shouldDisableInsetAdjustment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvp",
+            "mangledName": "$s8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvg",
+                "mangledName": "$s8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvs",
+                "mangledName": "$s8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvM",
+                "mangledName": "$s8Plotline15WebViewSettingsC28shouldDisableInsetAdjustmentSbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(_:)",
@@ -40645,6 +40731,53 @@
             "declKind": "Func",
             "usr": "s:8PlotlineAAC32setShouldAllowConcurrentTriggers06shoulddeF0ySb_tF",
             "mangledName": "$s8PlotlineAAC32setShouldAllowConcurrentTriggers06shoulddeF0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getShouldUseTempFileForDownloads",
+            "printedName": "getShouldUseTempFileForDownloads()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC32getShouldUseTempFileForDownloadsSbyF",
+            "mangledName": "$s8PlotlineAAC32getShouldUseTempFileForDownloadsSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldUseTempFileForDownloads",
+            "printedName": "setShouldUseTempFileForDownloads(shouldUseTempFileForDownloads:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC32setShouldUseTempFileForDownloads06shoulddefgH0ySb_tF",
+            "mangledName": "$s8PlotlineAAC32setShouldUseTempFileForDownloads06shoulddefgH0ySb_tF",
             "moduleName": "Plotline",
             "declAttributes": [
               "AccessControl"
@@ -88465,6 +88598,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/WebViewSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 307,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/PushPayload.swift",
       "kind": "BooleanLiteral",
       "offset": 155,
@@ -91024,7 +91164,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.1.5\""
+      "value": "\"5.1.6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -92959,6 +93099,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14425,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/WidgetContent.swift",
       "kind": "Array",
       "offset": 177,
@@ -93979,6 +94126,20 @@
       "offset": 297,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/FontHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 711,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/FontHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 752,
+      "length": 7,
+      "value": "\"Fonts\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Study.swift",
@@ -95025,36 +95186,50 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5296,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5324,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5360,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "StringLiteral",
-      "offset": 5391,
+      "offset": 265,
       "length": 16,
       "value": "\"plotlineVideos\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 16,
+      "value": "\"plotlineAudios\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 494,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9879,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9907,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9943,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "Array",
-      "offset": 13730,
+      "offset": 18549,
       "length": 2,
       "value": "[]"
     },
@@ -95208,21 +95383,21 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 12505,
+      "offset": 13196,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "StringLiteral",
-      "offset": 13287,
+      "offset": 13978,
       "length": 24,
       "value": "\"Plotline.WeakUIScrollViewDelegate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineFlowUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 16325,
+      "offset": 17016,
       "length": 1,
       "value": "0"
     },

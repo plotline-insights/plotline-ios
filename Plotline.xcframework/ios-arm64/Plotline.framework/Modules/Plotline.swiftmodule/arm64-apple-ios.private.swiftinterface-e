@@ -70,6 +70,7 @@ public class WebViewSettings {
   public var baseUrl: Swift.String?
   public var isScrollable: Swift.Bool
   public var isHtmlContent: Swift.Bool
+  public var shouldDisableInsetAdjustment: Swift.Bool
   public init(_ json: [Swift.String : Any])
   public init()
   @objc deinit
@@ -992,6 +993,8 @@ public class RewardSettings {
   public func getShouldUseTopMostPresentedController() -> Swift.Bool
   public func getShouldAllowConcurrentTriggers() -> Swift.Bool
   public func setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers: Swift.Bool)
+  public func getShouldUseTempFileForDownloads() -> Swift.Bool
+  public func setShouldUseTempFileForDownloads(shouldUseTempFileForDownloads: Swift.Bool)
   public func getShouldAddSurveyBeforeRemoving() -> Swift.Bool
   public func setShouldAddSurveyBeforeRemoving(shouldAddSurveyBeforeRemoving: Swift.Bool)
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
