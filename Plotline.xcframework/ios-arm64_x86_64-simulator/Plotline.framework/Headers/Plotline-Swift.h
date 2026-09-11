@@ -725,6 +725,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @end
 
 
+@class UIWindow;
 @protocol PlotlineWidgetListener;
 
 SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
@@ -736,6 +737,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)setReloadCallbackWithReloadCallback:(void (^ _Nonnull)(void))reloadCallback;
 - (void)layoutSubviews;
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
 - (void)didMoveToWindow;
 - (void)setExternalVisibilityWithVisibleFraction:(double)visibleFraction isObscured:(BOOL)isObscured;
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
@@ -744,6 +746,14 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (void)reload;
 - (void)refreshWidget;
 - (void)awakeFromNib;
+/// Whether the Flutter side should keep this widget built when it scrolls out of a lazy list.
+- (BOOL)getShouldKeepAlive SWIFT_WARN_UNUSED_RESULT;
+/// Flutter could not draw the spec we sent (unsupported layout, unreadable
+/// resource). Draw it natively from here on.
+- (void)renderNatively;
+/// A tap Flutter reported on a Dart-rendered widget. Runs the same effects and the
+/// same click tracking a native tap would.
+- (void)handleFlutterActionWithAction:(NSString * _Nonnull)action effect:(NSString * _Nonnull)effect target:(NSString * _Nonnull)target platform:(NSString * _Nonnull)platform requireDismiss:(BOOL)requireDismiss isDismiss:(BOOL)isDismiss;
 - (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
 @end
 
@@ -751,6 +761,12 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 SWIFT_PROTOCOL("_TtP8Plotline22PlotlineWidgetListener_")
 @protocol PlotlineWidgetListener
 - (void)onWidgetReadyWithWidth:(CGFloat)width height:(CGFloat)height;
+@optional
+/// The widget resolved in FLUTTER render mode: every resource is cached and the
+/// layout spec is ready for the Flutter SDK to draw. Nothing was added to the
+/// native view, and <code>onWidgetReady</code> reports 0x0 for this widget.
+/// Optional so existing implementors (React Native, host apps) keep compiling.
+- (void)onWidgetSpecReadyWithSpec:(NSDictionary<NSString *, id> * _Nonnull)spec;
 @end
 
 
@@ -802,7 +818,6 @@ SWIFT_CLASS_NAMED("StoryView")
 @end
 
 @class UITouch;
-@class UIWindow;
 
 SWIFT_CLASS("_TtC8Plotline11StudyDialog")
 @interface StudyDialog : UIView
@@ -1594,6 +1609,7 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @end
 
 
+@class UIWindow;
 @protocol PlotlineWidgetListener;
 
 SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
@@ -1605,6 +1621,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)setReloadCallbackWithReloadCallback:(void (^ _Nonnull)(void))reloadCallback;
 - (void)layoutSubviews;
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
 - (void)didMoveToWindow;
 - (void)setExternalVisibilityWithVisibleFraction:(double)visibleFraction isObscured:(BOOL)isObscured;
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
@@ -1613,6 +1630,14 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (void)reload;
 - (void)refreshWidget;
 - (void)awakeFromNib;
+/// Whether the Flutter side should keep this widget built when it scrolls out of a lazy list.
+- (BOOL)getShouldKeepAlive SWIFT_WARN_UNUSED_RESULT;
+/// Flutter could not draw the spec we sent (unsupported layout, unreadable
+/// resource). Draw it natively from here on.
+- (void)renderNatively;
+/// A tap Flutter reported on a Dart-rendered widget. Runs the same effects and the
+/// same click tracking a native tap would.
+- (void)handleFlutterActionWithAction:(NSString * _Nonnull)action effect:(NSString * _Nonnull)effect target:(NSString * _Nonnull)target platform:(NSString * _Nonnull)platform requireDismiss:(BOOL)requireDismiss isDismiss:(BOOL)isDismiss;
 - (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
 @end
 
@@ -1620,6 +1645,12 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 SWIFT_PROTOCOL("_TtP8Plotline22PlotlineWidgetListener_")
 @protocol PlotlineWidgetListener
 - (void)onWidgetReadyWithWidth:(CGFloat)width height:(CGFloat)height;
+@optional
+/// The widget resolved in FLUTTER render mode: every resource is cached and the
+/// layout spec is ready for the Flutter SDK to draw. Nothing was added to the
+/// native view, and <code>onWidgetReady</code> reports 0x0 for this widget.
+/// Optional so existing implementors (React Native, host apps) keep compiling.
+- (void)onWidgetSpecReadyWithSpec:(NSDictionary<NSString *, id> * _Nonnull)spec;
 @end
 
 
@@ -1671,7 +1702,6 @@ SWIFT_CLASS_NAMED("StoryView")
 @end
 
 @class UITouch;
-@class UIWindow;
 
 SWIFT_CLASS("_TtC8Plotline11StudyDialog")
 @interface StudyDialog : UIView

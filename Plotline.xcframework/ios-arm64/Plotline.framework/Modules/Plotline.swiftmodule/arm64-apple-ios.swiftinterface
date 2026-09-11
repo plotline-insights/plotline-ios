@@ -200,6 +200,7 @@ public class PStoryView {
 }
 @objc public protocol PlotlineWidgetListener {
   @objc func onWidgetReady(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
+  @objc optional func onWidgetSpecReady(spec: [Swift.String : Any])
 }
 @objc public protocol WidgetReloadCallback {
   @objc func onReload()
@@ -223,6 +224,7 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) public func registerCallback()
   @objc @_Concurrency.MainActor(unsafe) public func setReloadCallback(reloadCallback: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
   @objc @_Concurrency.MainActor(unsafe) public func setExternalVisibility(visibleFraction: Swift.Double, isObscured: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func setPlotlineWidgetListener(plotlineWidgetListener: any PlotlineWidgetListener)
@@ -238,6 +240,9 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) public func removeWidgetLoader()
   @_Concurrency.MainActor(unsafe) public func resetPreloadHeightConstraint()
   @_Concurrency.MainActor(unsafe) public func removeAllViews()
+  @objc @_Concurrency.MainActor(unsafe) public func getShouldKeepAlive() -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public func renderNatively()
+  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterAction(action: Swift.String, effect: Swift.String, target: Swift.String, platform: Swift.String, requireDismiss: Swift.Bool, isDismiss: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
@@ -962,8 +967,14 @@ public class RewardSettings {
   public func setDynamicWidgetRefreshIntervalInMilliseconds(dynamicWidgetRefreshIntervalInMilliseconds: Swift.Int)
   public func getShouldRefreshDynamicWidgets() -> Swift.Bool
   public func setShouldRefreshDynamicWidgets(shouldRefreshDynamicWidgets: Swift.Bool)
+  public func getWidgetPollIntervalMs() -> Swift.Int
+  public func setWidgetPollIntervalMs(widgetPollIntervalMs: Swift.Int)
+  public func getShouldRefreshWidgetOnContentChange() -> Swift.Bool
+  public func setShouldRefreshWidgetOnContentChange(shouldRefreshWidgetOnContentChange: Swift.Bool)
   public func getShouldPreserveWidgetHeightOnRebuild() -> Swift.Bool
   public func setShouldPreserveWidgetHeightOnRebuild(shouldPreserveWidgetHeightOnRebuild: Swift.Bool)
+  public func getShouldAllowFlutterRendering() -> Swift.Bool
+  public func setShouldAllowFlutterRendering(shouldAllowFlutterRendering: Swift.Bool)
   public func getShouldSetVisibleOnSameDimensions() -> Swift.Bool
   public func setShouldSetVisibleOnSameDimensions(shouldSetVisibleOnSameDimensions: Swift.Bool)
   @objc public func getShouldGateWidgetSaveOnVisibility() -> Swift.Bool
@@ -995,6 +1006,8 @@ public class RewardSettings {
   public func setShouldAllowConcurrentTriggers(shouldAllowConcurrentTriggers: Swift.Bool)
   public func getShouldUseTempFileForDownloads() -> Swift.Bool
   public func setShouldUseTempFileForDownloads(shouldUseTempFileForDownloads: Swift.Bool)
+  public func getShouldDownloadResourcesConcurrently() -> Swift.Bool
+  public func setShouldDownloadResourcesConcurrently(shouldDownloadResourcesConcurrently: Swift.Bool)
   public func getShouldAddSurveyBeforeRemoving() -> Swift.Bool
   public func setShouldAddSurveyBeforeRemoving(shouldAddSurveyBeforeRemoving: Swift.Bool)
   public func setsMetricEvents(sMetricEvents: Swift.Set<Swift.String>)
@@ -1395,6 +1408,9 @@ public class FlowStore {
 @_hasMissingDesignatedInitializers public class DecisionTask {
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class WidgetPollTask {
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Rating : UIKit.UIView {
   @objc deinit
 }
@@ -1413,6 +1429,7 @@ public class Study : Campaign {
   public static func getHeaders() -> [Swift.String : Any]
   public static func getHeadersWhenInBackground() -> [Swift.String : Any]
   public static func initialize(callback: @escaping ([Swift.String : Any]) -> Swift.Void)
+  public static func pollInit(callback: @escaping ([Swift.String : Any]) -> Swift.Void)
   public static func registerEvent(eventName: Swift.String, propertyKeys: [Swift.String]?)
   public static func registerAttributes(attributes: [Swift.String])
   public static func triggerCampaign(eligibleCampaigns: [Campaign], triggerEvent: Swift.String?, properties: [Swift.String : Any]?, callback: @escaping ([Swift.String : Any]) -> ())
@@ -1749,9 +1766,12 @@ public class CanvasElement {
 public class Widget : Campaign {
   public static let WIDGET_TYPE_DEFAULT: Swift.String
   public static let WIDGET_TYPE_STORIES: Swift.String
+  public static let RENDER_MODE_NATIVE: Swift.String
+  public static let RENDER_MODE_FLUTTER: Swift.String
   public var clientElementId: Swift.String
   public var stepData: FlowStep
   public var widgetData: [Swift.String : Any]
+  public var contentHash: Swift.String?
   public var widgetType: Swift.String
   public var ttl: (Swift.Int64)
   public var content: WidgetContent
@@ -1762,6 +1782,8 @@ public class Widget : Campaign {
   public var widgetTransitionSettings: WidgetTransitionSettings
   public var refreshIntervalInMilliseconds: Swift.Int
   public var journeyId: Swift.String?
+  public var renderMode: Swift.String
+  public var keepAlive: Swift.Bool
   public init(json: [Swift.String : Any])
   @objc deinit
 }
