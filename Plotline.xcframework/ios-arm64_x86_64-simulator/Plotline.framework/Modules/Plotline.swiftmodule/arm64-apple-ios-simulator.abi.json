@@ -90028,7 +90028,7 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "StringLiteral",
-      "offset": 84114,
+      "offset": 84226,
       "length": 24,
       "value": "\"didChangeTestUserState\""
     },
@@ -92046,7 +92046,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.1.7\""
+      "value": "\"5.1.8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -94807,6 +94807,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/WidgetSpecBuilder.swift",
+      "kind": "Array",
+      "offset": 3904,
+      "length": 86,
+      "value": "[\"CONTAINER\", \"TEXT\", \"BUTTON\", \"IMAGE\", \"SHAPEABLEIMAGE\", \"GRID\", \"HORIZONTALSCROLL\"]"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStore.swift",
       "kind": "Dictionary",
       "offset": 176,
@@ -96160,28 +96167,28 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 11749,
+      "offset": 13793,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 11777,
+      "offset": 13821,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 11813,
+      "offset": 13857,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/ResourceLoader.swift",
       "kind": "Array",
-      "offset": 21587,
+      "offset": 23643,
       "length": 2,
       "value": "[]"
     },
