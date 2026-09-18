@@ -164,10 +164,12 @@ public protocol PlotlineViewPositionCallback {
   func getView(for view: UIKit.UIView, fragmentId: Swift.String, viewId: Swift.String, clientElementSelector: ClientElementSelector?) -> UIKit.UIView?
   func setTrackedElements(elementSearchObjects: [ElementSearchObject])
   func setTrackAllElements(trackAll: Swift.Bool)
+  func getReplayMaskRects(autoMaskedViews: [Swift.String], completion: @escaping ([CoreFoundation.CGRect]) -> Swift.Void)
 }
 extension PlotlineViewPositionCallback {
   public func setTrackedElements(elementSearchObjects: [ElementSearchObject])
   public func setTrackAllElements(trackAll: Swift.Bool)
+  public func getReplayMaskRects(autoMaskedViews: [Swift.String], completion: @escaping ([CoreFoundation.CGRect]) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class PlotlineInternal {
   public static let shared: PlotlineInternal
@@ -766,19 +768,19 @@ public struct RREvent {
   public static func createMouseInteractionEvent(interactionType: RRMouseInteraction, x: Swift.Int, y: Swift.Int, pointerId: Swift.Int, timestamp: Swift.Int64) -> RREvent
   public static func createCustomEvent(tag: Swift.String, payload: [Swift.String : Any], timestamp: Swift.Int64) -> RREvent
 }
-public enum AutoMaskedView : Swift.Hashable {
+public enum AutoMaskedView : Swift.String, Swift.Hashable {
   case input
   case text
   case image
   case webView
-  public static func == (a: AutoMaskedView, b: AutoMaskedView) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
 public struct SessionRecordingConfig {
-  public init(enabled: Swift.Bool = false, sessionId: Swift.String = "", maxSessionDuration: Foundation.TimeInterval = 1800, excludedPages: [Swift.String]? = nil, screenshotInterval: Foundation.TimeInterval = 1.0, autoMaskedViews: Swift.Set<AutoMaskedView> = [.input], wifiOnly: Swift.Bool = true)
+  public init(enabled: Swift.Bool = false, sessionId: Swift.String = "", maxSessionDuration: Foundation.TimeInterval = 1800, excludedPages: [Swift.String]? = nil, screenshotInterval: Foundation.TimeInterval = 1.0, autoMaskedViews: Swift.Set<AutoMaskedView> = [.input], wifiOnly: Swift.Bool = true, shouldMaskFrameworkViews: Swift.Bool = true, shouldRecordPageChanges: Swift.Bool = true)
 }
 @_hasMissingDesignatedInitializers public class SessionRecordingTask {
   public static func getInstance() -> SessionRecordingTask
@@ -786,6 +788,7 @@ public struct SessionRecordingConfig {
   public func stop(reason: Swift.String = "USER_END")
   public func isActive() -> Swift.Bool
   public func recordTouch(phase: UIKit.UITouch.Phase, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat, pointerId: Swift.Int = 0)
+  public func recordTrackedPage(pageName: Swift.String)
   public func recordScreenChange(pageName: Swift.String)
   @objc deinit
 }
@@ -991,6 +994,8 @@ public class RewardSettings {
   public func getsLocale() -> Swift.String
   public func setsLocale(sLocale: Swift.String)
   public func getEvents() -> Swift.Set<Swift.String>
+  public func getShouldSyncPushPermission() -> Swift.Bool
+  public func setShouldSyncPushPermission(shouldSyncPushPermission: Swift.Bool)
   public func getShouldDisablePlotline() -> Swift.Bool
   public func setEvents(sEvents: Swift.Set<Swift.String>)
   public func getMetricEvents() -> Swift.Set<Swift.String>
@@ -1984,6 +1989,7 @@ extension RRIncrementalSource : Swift.RawRepresentable {}
 extension RRMouseInteraction : Swift.Equatable {}
 extension RRMouseInteraction : Swift.Hashable {}
 extension RRMouseInteraction : Swift.RawRepresentable {}
+extension AutoMaskedView : Swift.RawRepresentable {}
 extension ArrowDirection : Swift.Equatable {}
 extension ArrowDirection : Swift.Hashable {}
 extension ArrowDirection : Swift.RawRepresentable {}
