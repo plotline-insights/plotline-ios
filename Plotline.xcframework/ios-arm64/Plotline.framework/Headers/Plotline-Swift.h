@@ -812,6 +812,7 @@ SWIFT_CLASS_NAMED("StoryView")
 
 
 @interface StoryView (SWIFT_EXTENSION(Plotline))
+@property (nonatomic, copy) NSString * _Nullable contentHash;
 @property (nonatomic) int64_t lastUpdated;
 @property (nonatomic) int32_t lastViewedSlideIndex;
 @property (nonatomic, copy) NSString * _Nullable storyId;

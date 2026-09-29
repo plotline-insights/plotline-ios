@@ -195,6 +195,7 @@ public class PStoryView {
   public var storyId: Swift.String
   public var lastViewedSlideIndex: Swift.Int32
   public var lastUpdated: Swift.Int64
+  public var contentHash: Swift.String?
   public init(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32, lastUpdated: Swift.Int64)
   public init(storyView: StoryView)
   public init()
@@ -384,7 +385,7 @@ public class PWidget {
   @objc deinit
 }
 public class StoryViewUpdateTask {
-  public init(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32)
+  public init(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32, contentHash: Swift.String? = nil)
   @available(iOS 10.0, *)
   public func execute()
   @objc deinit
@@ -828,8 +829,8 @@ public class CoreDataManager {
   public func getAllWidgetData() -> [PWidget]?
   public func getWidgetData(clientElementId: Swift.String) -> PWidget?
   public func getStoryView(storyId: Swift.String) -> PStoryView?
-  public func insertStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32)
-  public func updateStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32?)
+  public func insertStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32, contentHash: Swift.String? = nil)
+  public func updateStoryView(storyId: Swift.String, lastViewedSlideIndex: Swift.Int32?, contentHash: Swift.String? = nil)
   public func getStoryViewsWithIds(storyIds: [Swift.String]) -> [PStoryView]
   public func getStoredEvents(batchSize: Swift.Int) -> [PStoredEvent]
   public func insertStoredEvent(storedEvent: PStoredEvent)
@@ -857,6 +858,7 @@ public class Story {
   public var slidesData: [Slide]
   public var backgroundImg: Swift.String
   public var isFavourite: Swift.Bool
+  public var contentHash: Swift.String?
   public init(json: [Swift.String : Any])
   public static func convertStoryJSONArray(array: [[Swift.String : Any]]) -> [Story]
   @objc deinit
@@ -1249,6 +1251,7 @@ public class StepLayout {
   public var shouldEnableHorizontalEnhancement: Swift.Bool
   public var shouldMirrorAlignmentInRTL: Swift.Bool
   public var buttonIntrinsicContentSizeOverride: Swift.Bool
+  public var shouldMirrorSwipeStripStartInRTL: Swift.Bool
   public var canvasElements: [CanvasElement]
   convenience public init()
   public init(_ json: [Swift.String : Any])
@@ -1942,6 +1945,10 @@ extension StoredEvent {
 }
 extension StoryView {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<StoryView>
+  @objc @NSManaged dynamic public var contentHash: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var lastUpdated: Swift.Int64 {
     @objc get
     @objc set
