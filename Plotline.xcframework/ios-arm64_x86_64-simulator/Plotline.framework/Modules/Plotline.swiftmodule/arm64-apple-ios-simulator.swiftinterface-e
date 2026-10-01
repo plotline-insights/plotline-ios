@@ -986,6 +986,8 @@ public class RewardSettings {
   public func setShouldGateWidgetSaveOnVisibility(shouldGateWidgetSaveOnVisibility: Swift.Bool)
   public func getShouldClipWidgetOverflow() -> Swift.Bool
   public func setShouldClipWidgetOverflow(shouldClipWidgetOverflow: Swift.Bool)
+  public func getShouldSendStudyCompletedAfterDismiss() -> Swift.Bool
+  public func setShouldSendStudyCompletedAfterDismiss(shouldSendStudyCompletedAfterDismiss: Swift.Bool)
   public func getWidgetVisibilityThreshold() -> Swift.Double
   public func setWidgetVisibilityThreshold(widgetVisibilityThreshold: Swift.Double)
   public func getWidgetVisibilityDurationMs() -> Swift.Int
@@ -1228,6 +1230,7 @@ public class StepLayout {
   public var layoutType: Swift.String
   public var styles: Plotline.StepStyles
   public var distribution: Swift.String
+  public var fitWidthToImage: Swift.Bool
   public var layoutWeight: Swift.Int
   public var layouts: [Plotline.StepLayout]
   public var onAction: Plotline.StepAction
@@ -1454,7 +1457,7 @@ public class Study : Plotline.Campaign {
   public static func removePageCaptureUser()
   public static func resolveWidgetContent(flowStep: Plotline.FlowStep?, flowId: Swift.String, completion: @escaping ([Swift.String : Any]?, Swift.Bool) -> Swift.Void)
   public static func saveFeatureFlagAction(updatedFlags: [[Swift.String : Any]], eventProperties: [Swift.String : Any])
-  public static func sessionChunk(sessionId: Swift.String, chunkIndex: Swift.Int, events: [[Swift.String : Any]], currentUrl: Swift.String, callback: @escaping ([Swift.String : Any]?) -> Swift.Void)
+  public static func sessionChunk(sessionId: Swift.String, chunkIndex: Swift.Int, events: [[Swift.String : Any]], currentUrl: Swift.String, sessionStartTime: Swift.Int64, callback: @escaping ([Swift.String : Any]?) -> Swift.Void)
   public static func getSessionUploadUrl(sessionId: Swift.String, chunkIndex: Swift.Int, callback: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
   public static func getCrashUploadUrl(crashId: Swift.String, callback: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
   public static func confirmCrashReport(payload: [Swift.String : Any], completion: @escaping (Swift.Bool) -> Swift.Void)
@@ -1664,6 +1667,7 @@ public class ScreenshotTask {
   public var isSticky: Swift.Bool
   public var standardisedStepId: Swift.String?
   public var hasExternalContent: Swift.Bool
+  public var resolvedLayoutJson: [Swift.String : Any]?
   public var shouldFitTooltipInsideScreen: Swift.Bool
   public var shouldEnablePushTemplatesUIFixes: Swift.Bool
   public var audioUrl: Swift.String
