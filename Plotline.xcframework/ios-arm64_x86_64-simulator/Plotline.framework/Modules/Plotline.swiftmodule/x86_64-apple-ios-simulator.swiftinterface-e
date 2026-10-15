@@ -249,6 +249,9 @@ public class PStoryView {
   @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
+extension Plotline.PlotlineWidget {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setVerticalScrollListener(onScroll: @escaping (CoreFoundation.CGFloat) -> Swift.Void, onFling: @escaping (CoreFoundation.CGFloat) -> Swift.Void)
+}
 public class CardWithLabelSettings {
   public var image: Swift.String
   public var title: Swift.String
@@ -859,6 +862,7 @@ public class Story {
   public var backgroundImg: Swift.String
   public var isFavourite: Swift.Bool
   public var contentHash: Swift.String?
+  public var labels: [Swift.String : Any]?
   public init(json: [Swift.String : Any])
   public static func convertStoryJSONArray(array: [[Swift.String : Any]]) -> [Plotline.Story]
   @objc deinit
@@ -986,6 +990,8 @@ public class RewardSettings {
   public func setShouldGateWidgetSaveOnVisibility(shouldGateWidgetSaveOnVisibility: Swift.Bool)
   public func getShouldClipWidgetOverflow() -> Swift.Bool
   public func setShouldClipWidgetOverflow(shouldClipWidgetOverflow: Swift.Bool)
+  public func getShouldForwardWidgetVerticalScroll() -> Swift.Bool
+  public func setShouldForwardWidgetVerticalScroll(shouldForwardWidgetVerticalScroll: Swift.Bool)
   public func getShouldSendStudyCompletedAfterDismiss() -> Swift.Bool
   public func setShouldSendStudyCompletedAfterDismiss(shouldSendStudyCompletedAfterDismiss: Swift.Bool)
   public func getWidgetVisibilityThreshold() -> Swift.Double
@@ -1449,7 +1455,7 @@ public class Study : Plotline.Campaign {
   public static func registerPage(imgPath: Swift.String, clientPageId: Swift.String, pageHeight: Swift.Int, pageWidth: Swift.Int, pageElements: [[Swift.String : Any]], pageOrientation: Swift.String)
   public static func saveFlowAction(flowId: Swift.String, stepId: Swift.String?, journeyId: Swift.String?, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, actionProperties: Swift.String? = nil, userRewardId: Swift.String? = nil, rewardId: Swift.String? = nil, effect: Swift.String?, target: Swift.String?, overrideLabels: [Swift.String : Any]? = nil, flowStep: Plotline.FlowStep? = nil)
   public static func saveWidgetControlGroup(widgetId: Swift.String)
-  public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool)
+  public static func saveStoryAction(storyId: Swift.String, slideId: Swift.String, actionType: Swift.String, action: Swift.String, isCompleted: Swift.Bool, labels: [Swift.String : Any]? = nil)
   public static func trackEvent(eventsDataList: [[Swift.String : Any]], callback: @escaping ([Swift.String : Any]?) -> ())
   public static func registerToken(token: Swift.String)
   public static func savePushNotificationAction(campaignId: Swift.String, notificationId: Swift.String, actionType: Swift.String, action: Swift.String? = nil)

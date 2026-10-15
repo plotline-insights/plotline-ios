@@ -758,6 +758,11 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 @end
 
 
+@interface PlotlineWidget (SWIFT_EXTENSION(Plotline))
+- (void)setVerticalScrollListenerOnScroll:(void (^ _Nonnull)(CGFloat))onScroll onFling:(void (^ _Nonnull)(CGFloat))onFling;
+@end
+
+
 SWIFT_PROTOCOL("_TtP8Plotline22PlotlineWidgetListener_")
 @protocol PlotlineWidgetListener
 - (void)onWidgetReadyWithWidth:(CGFloat)width height:(CGFloat)height;
@@ -1640,6 +1645,11 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 /// same click tracking a native tap would.
 - (void)handleFlutterActionWithAction:(NSString * _Nonnull)action effect:(NSString * _Nonnull)effect target:(NSString * _Nonnull)target platform:(NSString * _Nonnull)platform requireDismiss:(BOOL)requireDismiss isDismiss:(BOOL)isDismiss;
 - (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
+@end
+
+
+@interface PlotlineWidget (SWIFT_EXTENSION(Plotline))
+- (void)setVerticalScrollListenerOnScroll:(void (^ _Nonnull)(CGFloat))onScroll onFling:(void (^ _Nonnull)(CGFloat))onFling;
 @end
 
 

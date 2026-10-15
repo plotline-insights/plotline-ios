@@ -758,6 +758,11 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 @end
 
 
+@interface PlotlineWidget (SWIFT_EXTENSION(Plotline))
+- (void)setVerticalScrollListenerOnScroll:(void (^ _Nonnull)(CGFloat))onScroll onFling:(void (^ _Nonnull)(CGFloat))onFling;
+@end
+
+
 SWIFT_PROTOCOL("_TtP8Plotline22PlotlineWidgetListener_")
 @protocol PlotlineWidgetListener
 - (void)onWidgetReadyWithWidth:(CGFloat)width height:(CGFloat)height;

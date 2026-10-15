@@ -9181,6 +9181,67 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVerticalScrollListener",
+            "printedName": "setVerticalScrollListener(onScroll:onFling:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreGraphics.CGFloat) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreGraphics.CGFloat) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Plotline@objc(cs)PlotlineWidget(im)setVerticalScrollListenerOnScroll:onFling:",
+            "mangledName": "$s8Plotline0A6WidgetC25setVerticalScrollListener02onE00G5Flingyy12CoreGraphics7CGFloatVc_yAIctF",
+            "moduleName": "Plotline",
+            "objc_name": "setVerticalScrollListenerOnScroll:onFling:",
+            "declAttributes": [
+              "Dynamic",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -36362,6 +36423,156 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "labels",
+            "printedName": "labels",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline5StoryC6labelsSDySSypGSgvp",
+            "mangledName": "$s8Plotline5StoryC6labelsSDySSypGSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline5StoryC6labelsSDySSypGSgvg",
+                "mangledName": "$s8Plotline5StoryC6labelsSDySSypGSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline5StoryC6labelsSDySSypGSgvs",
+                "mangledName": "$s8Plotline5StoryC6labelsSDySSypGSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline5StoryC6labelsSDySSypGSgvM",
+                "mangledName": "$s8Plotline5StoryC6labelsSDySSypGSgvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(json:)",
@@ -36397,8 +36608,7 @@
             "mangledName": "$s8Plotline5StoryC4jsonACSDySSypG_tcfc",
             "moduleName": "Plotline",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -40966,6 +41176,54 @@
             "declKind": "Func",
             "usr": "s:8PlotlineAAC27setShouldClipWidgetOverflow06shoulddeF0ySb_tF",
             "mangledName": "$s8PlotlineAAC27setShouldClipWidgetOverflow06shoulddeF0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getShouldForwardWidgetVerticalScroll",
+            "printedName": "getShouldForwardWidgetVerticalScroll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC36getShouldForwardWidgetVerticalScrollSbyF",
+            "mangledName": "$s8PlotlineAAC36getShouldForwardWidgetVerticalScrollSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldForwardWidgetVerticalScroll",
+            "printedName": "setShouldForwardWidgetVerticalScroll(shouldForwardWidgetVerticalScroll:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC36setShouldForwardWidgetVerticalScroll06shoulddefG0ySb_tF",
+            "mangledName": "$s8PlotlineAAC36setShouldForwardWidgetVerticalScroll06shoulddefG0ySb_tF",
             "moduleName": "Plotline",
             "declAttributes": [
               "AccessControl"
@@ -60864,7 +61122,7 @@
           {
             "kind": "Function",
             "name": "saveStoryAction",
-            "printedName": "saveStoryAction(storyId:slideId:actionType:action:isCompleted:)",
+            "printedName": "saveStoryAction(storyId:slideId:actionType:action:isCompleted:labels:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -60900,11 +61158,39 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Plotline0A13NetworkHelperC15saveStoryAction7storyId05slideH010actionType0J011isCompletedySS_S3SSbtFZ",
-            "mangledName": "$s8Plotline0A13NetworkHelperC15saveStoryAction7storyId05slideH010actionType0J011isCompletedySS_S3SSbtFZ",
+            "usr": "s:8Plotline0A13NetworkHelperC15saveStoryAction7storyId05slideH010actionType0J011isCompleted6labelsySS_S3SSbSDySSypGSgtFZ",
+            "mangledName": "$s8Plotline0A13NetworkHelperC15saveStoryAction7storyId05slideH010actionType0J011isCompleted6labelsySS_S3SSbSDySSypGSgtFZ",
             "moduleName": "Plotline",
             "static": true,
             "declAttributes": [
@@ -90925,100 +91211,107 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 1335,
+      "offset": 1401,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 1376,
+      "offset": 1442,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 1513,
+      "offset": 1579,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 1988,
+      "offset": 2054,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 2017,
+      "offset": 2083,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 2052,
+      "offset": 2118,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 2128,
+      "offset": 2194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 2264,
+      "offset": 2330,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 2661,
+      "offset": 2727,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 3016,
+      "offset": 3082,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 3552,
+      "offset": 3618,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 3720,
+      "offset": 3786,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 4451,
+      "offset": 4517,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "StringLiteral",
-      "offset": 84762,
+      "offset": 84828,
       "length": 24,
       "value": "\"didChangeTestUserState\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
+      "kind": "StringLiteral",
+      "offset": 85696,
+      "length": 23,
+      "value": "\"Plotline.VerticalScrollForwarder\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/CardWithLabelSettings.swift",
@@ -93048,7 +93341,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.2.3\""
+      "value": "\"5.2.4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -95083,21 +95376,21 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 13199,
+      "offset": 13915,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 16747,
+      "offset": 17463,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 17430,
+      "offset": 18146,
       "length": 4,
       "value": "true"
     },
@@ -95650,28 +95943,35 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1354,
+      "offset": 1367,
+      "length": 43,
+      "value": "\"plotlineShouldForwardWidgetVerticalScroll\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 1460,
       "length": 31,
       "value": "\"plotlineShouldEnableImageFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1628,
+      "offset": 1734,
       "length": 26,
       "value": "\"plotlineGroupableWidgets\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
+      "offset": 1800,
       "length": 25,
       "value": "\"plotlinePendingEventsV1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "IntegerLiteral",
-      "offset": 1764,
+      "offset": 1870,
       "length": 3,
       "value": "100"
     },
@@ -95931,8 +96231,8 @@
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/WidgetSpecBuilder.swift",
       "kind": "Array",
       "offset": 4594,
-      "length": 94,
-      "value": "[\"CONTAINER\", \"TEXT\", \"BUTTON\", \"IMAGE\", \"SHAPEABLEIMAGE\", \"GRID\", \"HORIZONTALSCROLL\", \"MENU\"]"
+      "length": 106,
+      "value": "[\"CONTAINER\", \"TEXT\", \"BUTTON\", \"IMAGE\", \"SHAPEABLEIMAGE\", \"GRID\", \"HORIZONTALSCROLL\", \"MENU\", \"CAROUSEL\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/FlowStore.swift",
