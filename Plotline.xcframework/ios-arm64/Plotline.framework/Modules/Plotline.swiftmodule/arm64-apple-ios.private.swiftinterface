@@ -667,6 +667,7 @@ public class Campaign {
   public static var CAMPAIGN_NONE: Swift.String
   public static var CAMPAIGN_WIDGET: Swift.String
   public static var CAMPAIGN_FEATURE_FLAG: Swift.String
+  public static var CAMPAIGN_STORY: Swift.String
   public static var TRIGGER_SOURCE_FRONTEND: Swift.String
   public static var TRIGGER_SOURCE_BACKEND: Swift.String
   public init(json: [Swift.String : Any], id: Swift.String, campaignType: Swift.String)
@@ -867,6 +868,19 @@ public class Story {
   public static func convertStoryJSONArray(array: [[Swift.String : Any]]) -> [Story]
   @objc deinit
 }
+public class EventStoryStore {
+  public var eventStories: [Swift.String : Campaign] {
+    get
+  }
+  public var triggerEvents: [Swift.String : Swift.Set<Swift.String>] {
+    get
+  }
+  public init()
+  public func setData(eventStoryData: Any?)
+  public func getStoryIds(eligibleEvents: Swift.Set<Swift.String>) -> Swift.Set<Swift.String>
+  public func getEventStories(eligibleEvents: Swift.Set<Swift.String>) -> [Campaign]
+  @objc deinit
+}
 public class PEvent {
   public var eventName: Swift.String
   public var count: Swift.Int16
@@ -1048,6 +1062,14 @@ public class RewardSettings {
   public func getEnabledAnalyticsCodes() -> Swift.Set<Swift.String>
   public func setShouldEnableImageFail(shouldEnableImageFail: Swift.Bool)
   public func getShouldEnableImageFail() -> Swift.Bool
+  public func setShouldDisableEventStories(shouldDisableEventStories: Swift.Bool)
+  public func getShouldDisableEventStories() -> Swift.Bool
+  public func setShouldDisableTriggerLoaderEarlyDismiss(shouldDisableTriggerLoaderEarlyDismiss: Swift.Bool)
+  public func getShouldDisableTriggerLoaderEarlyDismiss() -> Swift.Bool
+  public func setShouldDisableStoryOpenV2(shouldDisableStoryOpenV2: Swift.Bool)
+  public func getShouldDisableStoryOpenV2() -> Swift.Bool
+  public func setShouldDisableStoryStaleVideoGuard(shouldDisableStoryStaleVideoGuard: Swift.Bool)
+  public func getShouldDisableStoryStaleVideoGuard() -> Swift.Bool
   public func setShouldEnableSmoothBackdropTransition(shouldEnableSmoothBackdropTransition: Swift.Bool)
   public func getShouldEnableSmoothBackdropTransition() -> Swift.Bool
   public func setShouldSendStepTypeInEvents(shouldSendStepTypeInEvents: Swift.Bool)
@@ -1060,6 +1082,7 @@ public class RewardSettings {
   public func getShouldEnableWidgetLock() -> Swift.Bool
   public func getFlowStore() -> FlowStore
   public func getJourneyStore() -> JourneyStore
+  public func getEventStoryStore() -> EventStoryStore
   public func isShouldEnableFlows() -> Swift.Bool
   public func setShouldEnableFlows(shouldEnableFlows: Swift.Bool)
   public func getFlutterSelectiveVisibility() -> Swift.Bool
@@ -1477,6 +1500,7 @@ public class Study : Campaign {
   @objc deinit
 }
 public class StepAction {
+  public static let ACTION_DISMISS: Swift.String
   public var action: Swift.String
   public var effect: Swift.String
   public var target: Swift.String
@@ -1668,6 +1692,7 @@ public class ScreenshotTask {
   public var spotlightRadius: Swift.Int
   public var spotlightPadding: Swift.Int
   public var isClaimsPageStep: Swift.Bool
+  public var shouldTrackCloseButtonClicks: Swift.Bool
   public var userRewardId: Swift.String?
   public var rewardId: Swift.String?
   public var isSticky: Swift.Bool
@@ -1676,6 +1701,7 @@ public class ScreenshotTask {
   public var resolvedLayoutJson: [Swift.String : Any]?
   public var shouldFitTooltipInsideScreen: Swift.Bool
   public var shouldEnablePushTemplatesUIFixes: Swift.Bool
+  public var shouldEnableCardBasedTiles: Swift.Bool
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
@@ -1735,6 +1761,7 @@ public class Question {
   public var content: StepLayout?
   public var isMandatory: Swift.Bool?
   public var disableDismiss: Swift.Bool?
+  public var maxSelections: Swift.Int
   public var ratingValueArray: [Swift.String]?
   public var colorArray: [Swift.String]?
   public var scaleCellHeight: Swift.Double?
