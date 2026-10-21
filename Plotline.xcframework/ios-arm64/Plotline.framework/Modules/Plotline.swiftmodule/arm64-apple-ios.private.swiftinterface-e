@@ -246,6 +246,7 @@ public class PStoryView {
   @objc @_Concurrency.MainActor(unsafe) public func getShouldKeepAlive() -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public func renderNatively()
   @objc @_Concurrency.MainActor(unsafe) public func handleFlutterAction(action: Swift.String, effect: Swift.String, target: Swift.String, platform: Swift.String, requireDismiss: Swift.Bool, isDismiss: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterVideoWatched(percentage: Swift.String, durationMs: Swift.Int)
   @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
@@ -996,8 +997,8 @@ public class RewardSettings {
   public func setShouldRefreshWidgetOnContentChange(shouldRefreshWidgetOnContentChange: Swift.Bool)
   public func getShouldPreserveWidgetHeightOnRebuild() -> Swift.Bool
   public func setShouldPreserveWidgetHeightOnRebuild(shouldPreserveWidgetHeightOnRebuild: Swift.Bool)
-  public func getShouldAllowFlutterRendering() -> Swift.Bool
-  public func setShouldAllowFlutterRendering(shouldAllowFlutterRendering: Swift.Bool)
+  public func getShouldReportPreloadHeightEarly() -> Swift.Bool
+  public func setShouldReportPreloadHeightEarly(shouldReportPreloadHeightEarly: Swift.Bool)
   public func getShouldSetVisibleOnSameDimensions() -> Swift.Bool
   public func setShouldSetVisibleOnSameDimensions(shouldSetVisibleOnSameDimensions: Swift.Bool)
   @objc public func getShouldGateWidgetSaveOnVisibility() -> Swift.Bool
@@ -1157,6 +1158,7 @@ public class RewardSettings {
   public func getLoadTimeMap() -> Plotline.ConcurrentDictionary<Swift.String, (Swift.Int64, Swift.Int64?)>
   public func getPreloadedHeights() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
   public func getShouldAnimateMap() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Bool>
+  public func getPreloadedLoaderUrls() -> Plotline.ConcurrentDictionary<Swift.String, Swift.String>
   public func getGroupedWidgetScaleFactors() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
   public func getGroupableWidgets() -> Plotline.ConcurrentDictionary<Swift.String, Plotline.GroupableWidgetConfig>
   @objc public static func getPreloadedHeight(elementId: Swift.String) -> Swift.Double

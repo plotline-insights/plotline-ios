@@ -754,6 +754,9 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 /// A tap Flutter reported on a Dart-rendered widget. Runs the same effects and the
 /// same click tracking a native tap would.
 - (void)handleFlutterActionWithAction:(NSString * _Nonnull)action effect:(NSString * _Nonnull)effect target:(NSString * _Nonnull)target platform:(NSString * _Nonnull)platform requireDismiss:(BOOL)requireDismiss isDismiss:(BOOL)isDismiss;
+/// A video depth milestone Flutter reported on a Dart-rendered widget. Saves the same videoWatched
+/// action, under the same duration gate, as the native PlayerView depth callback.
+- (void)handleFlutterVideoWatchedWithPercentage:(NSString * _Nonnull)percentage durationMs:(NSInteger)durationMs;
 - (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
 @end
 
