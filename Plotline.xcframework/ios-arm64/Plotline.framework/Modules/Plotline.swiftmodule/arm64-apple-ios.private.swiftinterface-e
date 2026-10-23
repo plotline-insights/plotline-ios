@@ -903,6 +903,22 @@ public class GridSettings {
   public init()
   @objc deinit
 }
+public class CategoryTabsSettings {
+  public static let ALL_TAB_ID: Swift.String
+  public struct Tab {
+    public let id: Swift.String
+    public let label: Swift.String
+  }
+  public var tabs: [Plotline.CategoryTabsSettings.Tab]
+  public var selectedTabId: Swift.String
+  public var selectedStyles: Plotline.StepStyles
+  public var unselectedStyles: Plotline.StepStyles
+  public var unreadDotColor: Swift.String
+  public var emptyStateText: Swift.String
+  public var emptyStateStyles: Plotline.StepStyles
+  public init(_ json: [Swift.String : Any])
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class BreadcrumbLogger : ObjectiveC.NSObject {
   @objc public static func log(type: Swift.String, name: Swift.String)
   @objc public static func logScreen(_ screenName: Swift.String)
@@ -1108,6 +1124,8 @@ public class RewardSettings {
   public func addAttributeMonitor(_ monitor: Plotline.AttributeMonitor)
   public func getCompositeCodeEventsMap() -> [Swift.String : [[Swift.String : Any]]]
   public func setCompositeCodeEventsMap(sCompositeCodeEventsMap: [Swift.String : [[Swift.String : Any]]])
+  public func setShouldDisableCompositeMapLock(shouldDisableCompositeMapLock: Swift.Bool)
+  public func getShouldDisableCompositeMapLock() -> Swift.Bool
   public func getStudyStore() -> Plotline.StudyStore
   public func getInitialized() -> Swift.Bool
   public func setInitialized(initialized: Swift.Bool)
@@ -1270,6 +1288,9 @@ public class StepLayout {
   public var videoSettings: Plotline.VideoSettings
   public var webViewSettings: Plotline.WebViewSettings
   public var gridSettings: Plotline.GridSettings
+  public var categoryTabsSettings: Plotline.CategoryTabsSettings?
+  public var inboxCategoryId: Swift.String
+  public var inboxSectionOnly: Swift.Bool
   public var floaterSettings: Plotline.FloaterSettings
   public var lottieSettings: Plotline.LottieSettings
   public var rewardSettings: Plotline.RewardSettings
@@ -1764,6 +1785,7 @@ public class Question {
   public var isMandatory: Swift.Bool?
   public var disableDismiss: Swift.Bool?
   public var maxSelections: Swift.Int
+  public var maxSelectionsErrorMessage: Swift.String
   public var ratingValueArray: [Swift.String]?
   public var colorArray: [Swift.String]?
   public var scaleCellHeight: Swift.Double?

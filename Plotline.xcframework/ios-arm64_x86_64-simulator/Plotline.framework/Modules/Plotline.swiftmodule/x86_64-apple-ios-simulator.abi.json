@@ -38277,6 +38277,847 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CategoryTabsSettings",
+        "printedName": "CategoryTabsSettings",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ALL_TAB_ID",
+            "printedName": "ALL_TAB_ID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC10ALL_TAB_IDSSvpZ",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC10ALL_TAB_IDSSvpZ",
+            "moduleName": "Plotline",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC10ALL_TAB_IDSSvgZ",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC10ALL_TAB_IDSSvgZ",
+                "moduleName": "Plotline",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Tab",
+            "printedName": "Tab",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "id",
+                "printedName": "id",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8Plotline20CategoryTabsSettingsC3TabV2idSSvp",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC3TabV2idSSvp",
+                "moduleName": "Plotline",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8Plotline20CategoryTabsSettingsC3TabV2idSSvg",
+                    "mangledName": "$s8Plotline20CategoryTabsSettingsC3TabV2idSSvg",
+                    "moduleName": "Plotline",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "label",
+                "printedName": "label",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8Plotline20CategoryTabsSettingsC3TabV5labelSSvp",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC3TabV5labelSSvp",
+                "moduleName": "Plotline",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8Plotline20CategoryTabsSettingsC3TabV5labelSSvg",
+                    "mangledName": "$s8Plotline20CategoryTabsSettingsC3TabV5labelSSvg",
+                    "moduleName": "Plotline",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:8Plotline20CategoryTabsSettingsC3TabV",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC3TabV",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tabs",
+            "printedName": "tabs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Plotline.CategoryTabsSettings.Tab]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tab",
+                    "printedName": "Plotline.CategoryTabsSettings.Tab",
+                    "usr": "s:8Plotline20CategoryTabsSettingsC3TabV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvp",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Plotline.CategoryTabsSettings.Tab]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tab",
+                        "printedName": "Plotline.CategoryTabsSettings.Tab",
+                        "usr": "s:8Plotline20CategoryTabsSettingsC3TabV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvg",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Plotline.CategoryTabsSettings.Tab]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tab",
+                        "printedName": "Plotline.CategoryTabsSettings.Tab",
+                        "usr": "s:8Plotline20CategoryTabsSettingsC3TabV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvs",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvM",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC4tabsSayAC3TabVGvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedTabId",
+            "printedName": "selectedTabId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC13selectedTabIdSSvp",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC13selectedTabIdSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC13selectedTabIdSSvg",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC13selectedTabIdSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC13selectedTabIdSSvs",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC13selectedTabIdSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC13selectedTabIdSSvM",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC13selectedTabIdSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedStyles",
+            "printedName": "selectedStyles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StepStyles",
+                "printedName": "Plotline.StepStyles",
+                "usr": "s:8Plotline10StepStylesC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0Cvp",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0Cvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepStyles",
+                    "printedName": "Plotline.StepStyles",
+                    "usr": "s:8Plotline10StepStylesC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0Cvg",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0Cvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepStyles",
+                    "printedName": "Plotline.StepStyles",
+                    "usr": "s:8Plotline10StepStylesC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0Cvs",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0Cvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0CvM",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14selectedStylesAA04StepF0CvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unselectedStyles",
+            "printedName": "unselectedStyles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StepStyles",
+                "printedName": "Plotline.StepStyles",
+                "usr": "s:8Plotline10StepStylesC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0Cvp",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0Cvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepStyles",
+                    "printedName": "Plotline.StepStyles",
+                    "usr": "s:8Plotline10StepStylesC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0Cvg",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0Cvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepStyles",
+                    "printedName": "Plotline.StepStyles",
+                    "usr": "s:8Plotline10StepStylesC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0Cvs",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0Cvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0CvM",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC16unselectedStylesAA04StepF0CvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unreadDotColor",
+            "printedName": "unreadDotColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC14unreadDotColorSSvp",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC14unreadDotColorSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14unreadDotColorSSvg",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14unreadDotColorSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14unreadDotColorSSvs",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14unreadDotColorSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14unreadDotColorSSvM",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14unreadDotColorSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emptyStateText",
+            "printedName": "emptyStateText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC14emptyStateTextSSvp",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC14emptyStateTextSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14emptyStateTextSSvg",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14emptyStateTextSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14emptyStateTextSSvs",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14emptyStateTextSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC14emptyStateTextSSvM",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC14emptyStateTextSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emptyStateStyles",
+            "printedName": "emptyStateStyles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StepStyles",
+                "printedName": "Plotline.StepStyles",
+                "usr": "s:8Plotline10StepStylesC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0Cvp",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0Cvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepStyles",
+                    "printedName": "Plotline.StepStyles",
+                    "usr": "s:8Plotline10StepStylesC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0Cvg",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0Cvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StepStyles",
+                    "printedName": "Plotline.StepStyles",
+                    "usr": "s:8Plotline10StepStylesC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0Cvs",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0Cvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0CvM",
+                "mangledName": "$s8Plotline20CategoryTabsSettingsC16emptyStateStylesAA04StepG0CvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CategoryTabsSettings",
+                "printedName": "Plotline.CategoryTabsSettings",
+                "usr": "s:8Plotline20CategoryTabsSettingsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Plotline20CategoryTabsSettingsCyACSDySSypGcfc",
+            "mangledName": "$s8Plotline20CategoryTabsSettingsCyACSDySSypGcfc",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8Plotline20CategoryTabsSettingsC",
+        "mangledName": "$s8Plotline20CategoryTabsSettingsC",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BreadcrumbLogger",
         "printedName": "BreadcrumbLogger",
         "children": [
@@ -44252,6 +45093,54 @@
             "declKind": "Func",
             "usr": "s:8PlotlineAAC25setCompositeCodeEventsMap01scdeF0ySDySSSaySDySSypGGG_tF",
             "mangledName": "$s8PlotlineAAC25setCompositeCodeEventsMap01scdeF0ySDySSSaySDySSypGGG_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setShouldDisableCompositeMapLock",
+            "printedName": "setShouldDisableCompositeMapLock(shouldDisableCompositeMapLock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC32setShouldDisableCompositeMapLock06shoulddefG0ySb_tF",
+            "mangledName": "$s8PlotlineAAC32setShouldDisableCompositeMapLock06shoulddefG0ySb_tF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getShouldDisableCompositeMapLock",
+            "printedName": "getShouldDisableCompositeMapLock()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC32getShouldDisableCompositeMapLockSbyF",
+            "mangledName": "$s8PlotlineAAC32getShouldDisableCompositeMapLockSbyF",
             "moduleName": "Plotline",
             "declAttributes": [
               "AccessControl"
@@ -50932,6 +51821,290 @@
           },
           {
             "kind": "Var",
+            "name": "categoryTabsSettings",
+            "printedName": "categoryTabsSettings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Plotline.CategoryTabsSettings?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CategoryTabsSettings",
+                    "printedName": "Plotline.CategoryTabsSettings",
+                    "usr": "s:8Plotline20CategoryTabsSettingsC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvp",
+            "mangledName": "$s8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Plotline.CategoryTabsSettings?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CategoryTabsSettings",
+                        "printedName": "Plotline.CategoryTabsSettings",
+                        "usr": "s:8Plotline20CategoryTabsSettingsC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvg",
+                "mangledName": "$s8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Plotline.CategoryTabsSettings?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CategoryTabsSettings",
+                        "printedName": "Plotline.CategoryTabsSettings",
+                        "usr": "s:8Plotline20CategoryTabsSettingsC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvs",
+                "mangledName": "$s8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvM",
+                "mangledName": "$s8Plotline10StepLayoutC20categoryTabsSettingsAA08CategoryeF0CSgvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inboxCategoryId",
+            "printedName": "inboxCategoryId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline10StepLayoutC15inboxCategoryIdSSvp",
+            "mangledName": "$s8Plotline10StepLayoutC15inboxCategoryIdSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC15inboxCategoryIdSSvg",
+                "mangledName": "$s8Plotline10StepLayoutC15inboxCategoryIdSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC15inboxCategoryIdSSvs",
+                "mangledName": "$s8Plotline10StepLayoutC15inboxCategoryIdSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC15inboxCategoryIdSSvM",
+                "mangledName": "$s8Plotline10StepLayoutC15inboxCategoryIdSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inboxSectionOnly",
+            "printedName": "inboxSectionOnly",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline10StepLayoutC16inboxSectionOnlySbvp",
+            "mangledName": "$s8Plotline10StepLayoutC16inboxSectionOnlySbvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC16inboxSectionOnlySbvg",
+                "mangledName": "$s8Plotline10StepLayoutC16inboxSectionOnlySbvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC16inboxSectionOnlySbvs",
+                "mangledName": "$s8Plotline10StepLayoutC16inboxSectionOnlySbvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline10StepLayoutC16inboxSectionOnlySbvM",
+                "mangledName": "$s8Plotline10StepLayoutC16inboxSectionOnlySbvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "floaterSettings",
             "printedName": "floaterSettings",
             "children": [
@@ -54835,6 +56008,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Plotline"
       },
       {
         "kind": "Import",
@@ -64732,6 +65922,16 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Plotline",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -80948,6 +82148,93 @@
           },
           {
             "kind": "Var",
+            "name": "maxSelectionsErrorMessage",
+            "printedName": "maxSelectionsErrorMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Plotline8QuestionC25maxSelectionsErrorMessageSSvp",
+            "mangledName": "$s8Plotline8QuestionC25maxSelectionsErrorMessageSSvp",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8QuestionC25maxSelectionsErrorMessageSSvg",
+                "mangledName": "$s8Plotline8QuestionC25maxSelectionsErrorMessageSSvg",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8QuestionC25maxSelectionsErrorMessageSSvs",
+                "mangledName": "$s8Plotline8QuestionC25maxSelectionsErrorMessageSSvs",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Plotline8QuestionC25maxSelectionsErrorMessageSSvM",
+                "mangledName": "$s8Plotline8QuestionC25maxSelectionsErrorMessageSSvM",
+                "moduleName": "Plotline",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "ratingValueArray",
             "printedName": "ratingValueArray",
             "children": [
@@ -93182,63 +94469,63 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "FloatLiteral",
-      "offset": 2729,
+      "offset": 2597,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2772,
+      "offset": 2640,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2932,
+      "offset": 2800,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3041,
+      "offset": 2909,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3071,
+      "offset": 2939,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3258,
+      "offset": 3126,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3374,
+      "offset": 3242,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "StringLiteral",
-      "offset": 3549,
+      "offset": 3417,
       "length": 18,
       "value": "\"PlotlineCheckBox\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/MultiOptionView.swift",
       "kind": "StringLiteral",
-      "offset": 3741,
+      "offset": 3609,
       "length": 18,
       "value": "\"PlotlineCheckBox\""
     },
@@ -94381,7 +95668,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.2.6\""
+      "value": "\"5.2.7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -95721,6 +97008,34 @@
       "value": "8"
     },
     {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/CategoryTabsSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 5,
+      "value": "\"all\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/CategoryTabsSettings.swift",
+      "kind": "Array",
+      "offset": 377,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/CategoryTabsSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/CategoryTabsSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 620,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Crash\/BreadcrumbLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 349,
@@ -96150,308 +97465,308 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 1889,
+      "offset": 2059,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 2146,
+      "offset": 2316,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 2207,
+      "offset": 2377,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 2261,
+      "offset": 2431,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 2312,
+      "offset": 2482,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 2363,
+      "offset": 2533,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 2417,
+      "offset": 2587,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2456,
+      "offset": 2626,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 2527,
+      "offset": 2697,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 2754,
+      "offset": 2924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 2801,
+      "offset": 2971,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2853,
+      "offset": 3023,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 2905,
+      "offset": 3075,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 3053,
+      "offset": 3223,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 3104,
+      "offset": 3274,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 3267,
+      "offset": 3437,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 3310,
+      "offset": 3480,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 3481,
+      "offset": 3651,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 3823,
+      "offset": 3993,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 3870,
+      "offset": 4040,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
+      "offset": 4114,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 4060,
+      "offset": 4230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Dictionary",
-      "offset": 4216,
+      "offset": 4386,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "Array",
-      "offset": 4309,
+      "offset": 4479,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 4897,
+      "offset": 5067,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 5003,
+      "offset": 5173,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6061,
+      "offset": 6231,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6185,
+      "offset": 6355,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6237,
+      "offset": 6407,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6297,
+      "offset": 6467,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6366,
+      "offset": 6536,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6494,
+      "offset": 6664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6687,
+      "offset": 6857,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 6917,
+      "offset": 7087,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6974,
+      "offset": 7144,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 7023,
+      "offset": 7193,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 7174,
+      "offset": 7344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "FloatLiteral",
-      "offset": 7305,
+      "offset": 7475,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 7359,
+      "offset": 7529,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 10659,
+      "offset": 10829,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 10909,
+      "offset": 11079,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 14137,
+      "offset": 14307,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 17685,
+      "offset": 17855,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 18368,
+      "offset": 18538,
       "length": 4,
       "value": "true"
     },
@@ -96492,64 +97807,78 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
+      "kind": "StringLiteral",
+      "offset": 1621,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "BooleanLiteral",
-      "offset": 1801,
+      "offset": 1664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "BooleanLiteral",
-      "offset": 1846,
+      "offset": 2122,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "BooleanLiteral",
-      "offset": 1897,
+      "offset": 2167,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2218,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "IntegerLiteral",
-      "offset": 1943,
+      "offset": 2264,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "BooleanLiteral",
-      "offset": 1996,
+      "offset": 2317,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "BooleanLiteral",
-      "offset": 2045,
+      "offset": 2366,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "BooleanLiteral",
-      "offset": 2102,
+      "offset": 2423,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "BooleanLiteral",
-      "offset": 2276,
+      "offset": 2597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/StepLayout.swift",
       "kind": "Array",
-      "offset": 2379,
+      "offset": 2700,
       "length": 2,
       "value": "[]"
     },
@@ -96577,154 +97906,154 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 83401,
+      "offset": 83572,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 89870,
+      "offset": 90041,
       "length": 16,
       "value": "\"Helvetica Neue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 89908,
+      "offset": 90079,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 89949,
+      "offset": 90120,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 107074,
+      "offset": 112419,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 107136,
+      "offset": 112481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "Array",
-      "offset": 107295,
+      "offset": 112640,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 107419,
+      "offset": 112764,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 107766,
+      "offset": 113111,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 119035,
+      "offset": 124380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 124680,
+      "offset": 130025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 126923,
+      "offset": 132268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 126963,
+      "offset": 132308,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 127007,
+      "offset": 132352,
       "length": 9,
       "value": "\"PLAYING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 127057,
+      "offset": 132402,
       "length": 11,
       "value": "\"BUFFERING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 127105,
+      "offset": 132450,
       "length": 7,
       "value": "\"READY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 126729,
+      "offset": 132074,
       "length": 14,
       "value": "\"Plotline.PlayerObserver\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "Array",
-      "offset": 129688,
+      "offset": 135033,
       "length": 12,
       "value": "[0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 129626,
+      "offset": 134971,
       "length": 15,
       "value": "\"Plotline.ResizableButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "IntegerLiteral",
-      "offset": 130716,
+      "offset": 136061,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 130763,
+      "offset": 136108,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/PlotlineContentView.swift",
       "kind": "StringLiteral",
-      "offset": 130650,
+      "offset": 135995,
       "length": 14,
       "value": "\"Plotline.PlotlineButton\""
     },
@@ -97060,21 +98389,28 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2135,
+      "offset": 1951,
+      "length": 39,
+      "value": "\"plotlineShouldDisableCompositeMapLock\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 2233,
       "length": 26,
       "value": "\"plotlineGroupableWidgets\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2201,
+      "offset": 2299,
       "length": 25,
       "value": "\"plotlinePendingEventsV1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "IntegerLiteral",
-      "offset": 2271,
+      "offset": 2369,
       "length": 3,
       "value": "100"
     },
@@ -97091,6 +98427,90 @@
       "offset": 787,
       "length": 3,
       "value": "800"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "StringLiteral",
+      "offset": 273,
+      "length": 22,
+      "value": "\"DELETE_INBOX_MESSAGE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 392,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 561,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 606,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 653,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 701,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "Array",
+      "offset": 1060,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "Array",
+      "offset": 1096,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/FlowViews\/InboxCategoryTabsView.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 21,
+      "value": "\"Plotline.InboxCategoryTabsView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/DismissedInboxStore.swift",
@@ -97179,7 +98599,7 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/SurveyUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 12472,
+      "offset": 12763,
       "length": 5,
       "value": "false"
     },
@@ -97945,6 +99365,13 @@
       "offset": 266,
       "length": 32,
       "value": "\"plotline.concurrent.dictionary\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/InboxTabFilter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 443,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Helpers\/WidgetVisibilityTracker.swift",
@@ -98796,98 +100223,105 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
-      "length": 17,
-      "value": "\"TEXT_TYPE_TITLE\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1457,
-      "length": 23,
-      "value": "\"TEXT_TYPE_DESCRIPTION\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1527,
-      "length": 23,
-      "value": "\"TEXT_TYPE_OPTION_TEXT\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1597,
-      "length": 23,
-      "value": "\"TEXT_TYPE_BUTTON_TEXT\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1666,
-      "length": 19,
-      "value": "\"MCQ_SINGLE_CHOICE\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1728,
-      "length": 21,
-      "value": "\"MCQ_MULTIPLE_CHOICE\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1789,
-      "length": 6,
-      "value": "\"TEXT\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1832,
-      "length": 8,
-      "value": "\"PROMPT\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1877,
-      "length": 11,
-      "value": "\"SCALE_NPS\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1932,
-      "length": 15,
-      "value": "\"SMILEY_RATING\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 1991,
-      "length": 4,
-      "value": "\".*\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
-      "kind": "StringLiteral",
-      "offset": 2035,
+      "offset": 1240,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
       "kind": "StringLiteral",
-      "offset": 2074,
+      "offset": 1540,
+      "length": 17,
+      "value": "\"TEXT_TYPE_TITLE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 1604,
+      "length": 23,
+      "value": "\"TEXT_TYPE_DESCRIPTION\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 1674,
+      "length": 23,
+      "value": "\"TEXT_TYPE_OPTION_TEXT\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 1744,
+      "length": 23,
+      "value": "\"TEXT_TYPE_BUTTON_TEXT\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 1813,
+      "length": 19,
+      "value": "\"MCQ_SINGLE_CHOICE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 1875,
+      "length": 21,
+      "value": "\"MCQ_MULTIPLE_CHOICE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 1936,
+      "length": 6,
+      "value": "\"TEXT\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 8,
+      "value": "\"PROMPT\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 2024,
+      "length": 11,
+      "value": "\"SCALE_NPS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 2079,
+      "length": 15,
+      "value": "\"SMILEY_RATING\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 4,
+      "value": "\".*\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 2182,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
+      "kind": "StringLiteral",
+      "offset": 2221,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Question.swift",
       "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2272,
       "length": 2,
       "value": "\"\""
     },
