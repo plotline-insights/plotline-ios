@@ -229,8 +229,11 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @objc @_Concurrency.MainActor(unsafe) public func setFlutterPageRowOnScreen(rowKey: Swift.String, onScreen: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func setFlutterShown(isShown: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func setExternalVisibility(visibleFraction: Swift.Double, isObscured: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func setPlotlineWidgetListener(plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
+  @objc @_Concurrency.MainActor(unsafe) public static func setDrawnInFlutter(clientElementId: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, frame: CoreFoundation.CGRect, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) public init(clientElementId: Swift.String, plotlineWidgetListener: any Plotline.PlotlineWidgetListener)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
@@ -245,8 +248,13 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) public func removeAllViews()
   @objc @_Concurrency.MainActor(unsafe) public func getShouldKeepAlive() -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public func renderNatively()
-  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterAction(action: Swift.String, effect: Swift.String, target: Swift.String, platform: Swift.String, requireDismiss: Swift.Bool, isDismiss: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterAction(action: Swift.String, effect: Swift.String, target: Swift.String, platform: Swift.String, requireDismiss: Swift.Bool, isDismiss: Swift.Bool, itemIndex: Swift.Int = -1)
   @objc @_Concurrency.MainActor(unsafe) public func handleFlutterVideoWatched(percentage: Swift.String, durationMs: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterVideoWatched(percentage: Swift.String, durationMs: Swift.Int, videoId: Swift.String?)
+  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterVideoWatched(percentage: Swift.String, durationMs: Swift.Int, videoId: Swift.String?, itemIndex: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterGroupCardShown(itemIndex: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public func handleFlutterGroupCardHidden(itemIndex: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public func loadFlutterGroupRow(itemIndex: Swift.Int, specHash: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func checkForWidgetChange(widgetChangeListener: @escaping (Swift.Bool) -> ())
   @objc deinit
 }
@@ -295,8 +303,22 @@ public class GroupableWidgetConfig {
   public var layoutType: Swift.String
   public var bgColor: Swift.String
   public var carouselSettings: Plotline.CarouselSettings
+  public var containerSettings: Plotline.GroupableWidgetConfig.ContainerSettings
+  public var pageId: Swift.String
   public init(_ json: [Swift.String : Any])
   public func isCarousel() -> Swift.Bool
+  public func isContainer() -> Swift.Bool
+  @_hasMissingDesignatedInitializers public class ContainerSettings {
+    public var backgroundType: Swift.String
+    public var backgroundColor: Swift.String
+    public var backgroundImageUrl: Swift.String
+    public var rowSpacing: Swift.Double
+    public var loaderUrl: Swift.String
+    public func backgroundImage() -> Swift.String
+    public func backgroundColorToPaint() -> Swift.String
+    public func signature() -> Swift.String
+    @objc deinit
+  }
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class CoachRingRenderer : ObjectiveC.NSObject {
@@ -374,7 +396,7 @@ public class EventTask {
   @objc deinit
 }
 public class UpdateWidgetTask {
-  public init(widgetsData: [[Swift.String : Any]], shouldReloadWidgets: Swift.Bool = false, shouldAppendWidgets: Swift.Bool = false)
+  public init(widgetsData: [[Swift.String : Any]], shouldReloadWidgets: Swift.Bool = false, shouldAppendWidgets: Swift.Bool = false, onSaved: (() -> Swift.Void)? = nil)
   @available(iOS 10.0, *)
   public func execute()
   @objc deinit
@@ -489,6 +511,7 @@ public class IdentityManager {
   public static func isValidHexColor(_ value: Swift.String) -> Swift.Bool
   public static func getStoryIdsArray(storiesData: [Plotline.Story]) -> Swift.Set<Swift.String>
   public static let GROUPABLE_LAYOUT_TYPE_CAROUSEL: Swift.String
+  public static let GROUPABLE_LAYOUT_TYPE_CONTAINER: Swift.String
   public static func startBounceAnimation(view: UIKit.UIView)
   public static func applyInitialState(buttonView: UIKit.UIButton, styles: Plotline.StepStyles)
   public static func getChangedAttributedTitleColor(buttonView: UIKit.UIButton, color: Swift.String?) -> Foundation.NSAttributedString?
@@ -676,6 +699,17 @@ public class Campaign {
   @objc deinit
 }
 public struct MarkInfo {
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlotlineWebView : WebKit.WKWebView, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, stepLayout: Plotline.StepLayout, flowStep: Plotline.FlowStep)
+  @_Concurrency.MainActor(unsafe) public func setPlotlineWebViewListener(plotlineWebViewListener: @escaping (Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.Bool, Swift.Bool) -> ())
+  @_Concurrency.MainActor(unsafe) public func setPlotlineCloseButtonListener(plotlineCloseButtonListener: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) public func setWebViewDidLoadCallback(webViewDidLoadCallback: (() -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) public func dispose()
+  @objc deinit
 }
 @objc public class ViewPositionObserver : ObjectiveC.NSObject {
   public init(view: UIKit.UIView, positionCallback: @escaping (CoreFoundation.CGRect) -> ())
@@ -1009,18 +1043,30 @@ public class RewardSettings {
   public func setShouldRefreshDynamicWidgets(shouldRefreshDynamicWidgets: Swift.Bool)
   public func getWidgetPollIntervalMs() -> Swift.Int
   public func setWidgetPollIntervalMs(widgetPollIntervalMs: Swift.Int)
+  public func getShouldRefreshPageRowsIndividually() -> Swift.Bool
+  public func getShouldDeferFlutterWidgetUpdates() -> Swift.Bool
+  public func getFlutterWidgetUpdateMaxDeferralMs() -> Swift.Int
+  public func setFlutterWidgetUpdateDeferral(shouldDefer: Swift.Bool, maxDeferralMs: Swift.Int)
+  public func setShouldRefreshPageRowsIndividually(shouldRefreshPageRowsIndividually: Swift.Bool)
+  public func getShouldLoadPageRowsIndividually() -> Swift.Bool
+  public func setShouldLoadPageRowsIndividually(shouldLoadPageRowsIndividually: Swift.Bool)
   public func getShouldRefreshWidgetOnContentChange() -> Swift.Bool
   public func setShouldRefreshWidgetOnContentChange(shouldRefreshWidgetOnContentChange: Swift.Bool)
   public func getShouldPreserveWidgetHeightOnRebuild() -> Swift.Bool
   public func setShouldPreserveWidgetHeightOnRebuild(shouldPreserveWidgetHeightOnRebuild: Swift.Bool)
   public func getShouldReportPreloadHeightEarly() -> Swift.Bool
   public func setShouldReportPreloadHeightEarly(shouldReportPreloadHeightEarly: Swift.Bool)
+  public func getShouldKeepInitFallbackLoader() -> Swift.Bool
+  public func setShouldKeepInitFallbackLoader(shouldKeepInitFallbackLoader: Swift.Bool)
   public func getShouldSetVisibleOnSameDimensions() -> Swift.Bool
   public func setShouldSetVisibleOnSameDimensions(shouldSetVisibleOnSameDimensions: Swift.Bool)
   @objc public func getShouldGateWidgetSaveOnVisibility() -> Swift.Bool
   public func setShouldGateWidgetSaveOnVisibility(shouldGateWidgetSaveOnVisibility: Swift.Bool)
   public func getShouldClipWidgetOverflow() -> Swift.Bool
   public func setShouldClipWidgetOverflow(shouldClipWidgetOverflow: Swift.Bool)
+  public func getShouldEnableInitFallback() -> Swift.Bool
+  public func setBackendShouldEnableInitFallback(shouldEnableInitFallback: Swift.Bool)
+  @objc public static func setShouldEnableInitFallback(shouldEnableInitFallback: Swift.Bool)
   public func getShouldForwardWidgetVerticalScroll() -> Swift.Bool
   public func setShouldForwardWidgetVerticalScroll(shouldForwardWidgetVerticalScroll: Swift.Bool)
   public func getShouldSendStudyCompletedAfterDismiss() -> Swift.Bool
@@ -1029,6 +1075,8 @@ public class RewardSettings {
   public func setWidgetVisibilityThreshold(widgetVisibilityThreshold: Swift.Double)
   public func getWidgetVisibilityDurationMs() -> Swift.Int
   public func setWidgetVisibilityDurationMs(widgetVisibilityDurationMs: Swift.Int)
+  public func getWidgetRepeatImpressionMinHiddenMs() -> Swift.Int
+  public func setWidgetRepeatImpressionMinHiddenMs(widgetRepeatImpressionMinHiddenMs: Swift.Int)
   public func getDefaultAttributes() -> Plotline.Attributes
   public func getsColors() -> Plotline.SurveySettings
   public func setsColors(sColors: [Swift.String : Any])
@@ -1172,6 +1220,8 @@ public class RewardSettings {
   public func getPageCaptureUsers() -> [Swift.String : Any]?
   public func setPageCaptureUsers(pageCaptureUsersInput: [Swift.String : Any])
   public func setMinVideoAnalyticsDuration(minVideoAnalyticsDuration: Swift.Int)
+  public func getShouldTrackVideoByLayout() -> Swift.Bool
+  public func setShouldTrackVideoByLayout(shouldTrackVideoByLayout: Swift.Bool)
   public func getMinVideoAnalyticsDuration() -> Swift.Int
   public func getLoadTimeMap() -> Plotline.ConcurrentDictionary<Swift.String, (Swift.Int64, Swift.Int64?)>
   public func getPreloadedHeights() -> Plotline.ConcurrentDictionary<Swift.String, Swift.Double>
@@ -1276,6 +1326,7 @@ public class StepLayout {
   public var alignY: Swift.String
   public var layoutDirection: Swift.String
   public var value: Swift.String
+  public var leafNodeId: Swift.String
   public var layoutType: Swift.String
   public var styles: Plotline.StepStyles
   public var distribution: Swift.String
@@ -1307,7 +1358,10 @@ public class StepLayout {
   public var shouldMirrorAlignmentInRTL: Swift.Bool
   public var buttonIntrinsicContentSizeOverride: Swift.Bool
   public var shouldMirrorSwipeStripStartInRTL: Swift.Bool
+  public var shouldLockSwipeStripVerticalScroll: Swift.Bool
+  public var shouldRenderWebViewInFlutter: Swift.Bool
   public var canvasElements: [Plotline.CanvasElement]
+  public static func getVideoAnalyticsProperties(videoId: Swift.String?) -> Swift.String?
   convenience public init()
   public init(_ json: [Swift.String : Any])
   @objc deinit
@@ -1491,7 +1545,7 @@ public class Study : Plotline.Campaign {
 @_hasMissingDesignatedInitializers public class PlotlineNetworkHelper {
   public static func getHeaders() -> [Swift.String : Any]
   public static func getHeadersWhenInBackground() -> [Swift.String : Any]
-  public static func initialize(callback: @escaping ([Swift.String : Any]) -> Swift.Void)
+  public static func initialize(retryDelays: [Foundation.TimeInterval] = [], callback: @escaping ([Swift.String : Any]) -> Swift.Void)
   public static func pollInit(callback: @escaping ([Swift.String : Any]) -> Swift.Void)
   public static func registerEvent(eventName: Swift.String, propertyKeys: [Swift.String]?)
   public static func registerAttributes(attributes: [Swift.String])
@@ -1835,6 +1889,7 @@ public class CanvasElement {
 public class Widget : Plotline.Campaign {
   public static let WIDGET_TYPE_DEFAULT: Swift.String
   public static let WIDGET_TYPE_STORIES: Swift.String
+  public static let WIDGET_TYPE_ROW: Swift.String
   public static let RENDER_MODE_NATIVE: Swift.String
   public static let RENDER_MODE_FLUTTER: Swift.String
   public var clientElementId: Swift.String
@@ -1853,6 +1908,7 @@ public class Widget : Plotline.Campaign {
   public var journeyId: Swift.String?
   public var renderMode: Swift.String
   public var keepAlive: Swift.Bool
+  public var shouldTrackRepeatImpressions: Swift.Bool
   public init(json: [Swift.String : Any])
   @objc deinit
 }

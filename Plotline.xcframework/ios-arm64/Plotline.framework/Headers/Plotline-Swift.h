@@ -284,6 +284,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import UIKit;
 @import UserNotifications;
+@import WebKit;
 #endif
 
 #endif
@@ -532,6 +533,7 @@ SWIFT_CLASS("_TtC8Plotline15PassthroughView")
 SWIFT_CLASS("_TtC8Plotline8Plotline")
 @interface Plotline : NSObject
 - (BOOL)getShouldGateWidgetSaveOnVisibility SWIFT_WARN_UNUSED_RESULT;
++ (void)setShouldEnableInitFallbackWithShouldEnableInitFallback:(BOOL)shouldEnableInitFallback;
 + (void)setPlotlineFrameworkWithFramework:(NSString * _Nonnull)framework;
 - (void)setIsFeatureFlagsLoadedWithIsFeatureFlagsLoaded:(BOOL)isFeatureFlagsLoaded;
 - (void)registerInitCallbackOnInitialized:(void (^ _Nonnull)(void))onInitialized onFailure:(void (^ _Nonnull)(NSString * _Nonnull))onFailure;
@@ -725,6 +727,19 @@ SWIFT_CLASS("_TtC8Plotline19PlotlineTooltipView")
 @end
 
 
+@class WKNavigation;
+@class WKScriptMessage;
+@class WKWebViewConfiguration;
+
+SWIFT_CLASS("_TtC8Plotline15PlotlineWebView")
+@interface PlotlineWebView : WKWebView <WKNavigationDelegate, WKScriptMessageHandler>
+- (void)didMoveToWindow;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
+@end
+
 @class UIWindow;
 @protocol PlotlineWidgetListener;
 
@@ -739,8 +754,14 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (void)layoutSubviews;
 - (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
 - (void)didMoveToWindow;
+/// Flutter page: Dart reports a drawn row coming on or off screen (only when the spec carries holdVisibleRows).
+- (void)setFlutterPageRowOnScreenWithRowKey:(NSString * _Nonnull)rowKey onScreen:(BOOL)onScreen;
+/// Flutter host: Dart reports whether this slot is on screen, whatever it draws and whatever the save gate.
+- (void)setFlutterShownWithIsShown:(BOOL)isShown;
 - (void)setExternalVisibilityWithVisibleFraction:(double)visibleFraction isObscured:(BOOL)isObscured;
 - (void)setPlotlineWidgetListenerWithPlotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener;
+/// Flutter host: the next view created for this slot replaces content Dart already draws, so it shows no loader.
++ (void)setDrawnInFlutterWithClientElementId:(NSString * _Nonnull)clientElementId;
 - (nonnull instancetype)initWithClientElementId:(NSString * _Nonnull)clientElementId frame:(CGRect)frame plotlineWidgetListener:(id <PlotlineWidgetListener> _Nonnull)plotlineWidgetListener OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)reload;
@@ -753,10 +774,22 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (void)renderNatively;
 /// A tap Flutter reported on a Dart-rendered widget. Runs the same effects and the
 /// same click tracking a native tap would.
-- (void)handleFlutterActionWithAction:(NSString * _Nonnull)action effect:(NSString * _Nonnull)effect target:(NSString * _Nonnull)target platform:(NSString * _Nonnull)platform requireDismiss:(BOOL)requireDismiss isDismiss:(BOOL)isDismiss;
+/// <code>itemIndex</code> is the card of a Flutter-drawn group the tap landed on; -1 for a single widget.
+- (void)handleFlutterActionWithAction:(NSString * _Nonnull)action effect:(NSString * _Nonnull)effect target:(NSString * _Nonnull)target platform:(NSString * _Nonnull)platform requireDismiss:(BOOL)requireDismiss isDismiss:(BOOL)isDismiss itemIndex:(NSInteger)itemIndex;
 /// A video depth milestone Flutter reported on a Dart-rendered widget. Saves the same videoWatched
 /// action, under the same duration gate, as the native PlayerView depth callback.
 - (void)handleFlutterVideoWatchedWithPercentage:(NSString * _Nonnull)percentage durationMs:(NSInteger)durationMs;
+- (void)handleFlutterVideoWatchedWithPercentage:(NSString * _Nonnull)percentage durationMs:(NSInteger)durationMs videoId:(NSString * _Nullable)videoId;
+/// <code>itemIndex</code> is the card of a Flutter-drawn group the video plays in; -1 for a single widget.
+- (void)handleFlutterVideoWatchedWithPercentage:(NSString * _Nonnull)percentage durationMs:(NSInteger)durationMs videoId:(NSString * _Nullable)videoId itemIndex:(NSInteger)itemIndex;
+/// A carousel card Flutter reports as the current page, or a page row as on screen: same per-card impression the
+/// native carousel fires.
+- (void)handleFlutterGroupCardShownWithItemIndex:(NSInteger)itemIndex;
+/// A flagged page row Flutter reports off screen (repeat impressions only; other rows never report it).
+- (void)handleFlutterGroupCardHiddenWithItemIndex:(NSInteger)itemIndex;
+/// Dart asks for a row of the page it is drawing as the row comes near its screen: its resources load and its spec
+/// follows (sendGroupRow). Once per row of that page.
+- (void)loadFlutterGroupRowWithItemIndex:(NSInteger)itemIndex specHash:(NSString * _Nonnull)specHash;
 - (void)checkForWidgetChangeWithWidgetChangeListener:(void (^ _Nonnull)(BOOL))widgetChangeListener;
 @end
 
