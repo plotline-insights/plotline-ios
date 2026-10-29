@@ -767,6 +767,7 @@ SWIFT_CLASS("_TtC8Plotline14PlotlineWidget")
 - (void)reload;
 - (void)refreshWidget;
 - (void)awakeFromNib;
+- (void)didMoveToSuperview;
 /// Whether the Flutter side should keep this widget built when it scrolls out of a lazy list.
 - (BOOL)getShouldKeepAlive SWIFT_WARN_UNUSED_RESULT;
 /// Flutter could not draw the spec we sent (unsupported layout, unreadable

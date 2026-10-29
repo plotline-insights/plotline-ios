@@ -245,6 +245,7 @@ public class PStoryView {
   @_Concurrency.MainActor(unsafe) public func setPreloadedHeight(loaderUrl: Swift.String)
   @_Concurrency.MainActor(unsafe) public func removeWidgetLoader()
   @_Concurrency.MainActor(unsafe) public func resetPreloadHeightConstraint()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
   @_Concurrency.MainActor(unsafe) public func removeAllViews()
   @objc @_Concurrency.MainActor(unsafe) public func getShouldKeepAlive() -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public func renderNatively()
@@ -1058,6 +1059,8 @@ public class RewardSettings {
   public func setShouldReportPreloadHeightEarly(shouldReportPreloadHeightEarly: Swift.Bool)
   public func getShouldKeepInitFallbackLoader() -> Swift.Bool
   public func setShouldKeepInitFallbackLoader(shouldKeepInitFallbackLoader: Swift.Bool)
+  public func getShouldPinPreloadWidthToHost() -> Swift.Bool
+  public func setShouldPinPreloadWidthToHost(shouldPinPreloadWidthToHost: Swift.Bool)
   public func getShouldSetVisibleOnSameDimensions() -> Swift.Bool
   public func setShouldSetVisibleOnSameDimensions(shouldSetVisibleOnSameDimensions: Swift.Bool)
   @objc public func getShouldGateWidgetSaveOnVisibility() -> Swift.Bool
