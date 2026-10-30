@@ -1363,6 +1363,7 @@ public class StepLayout {
   public var shouldMirrorSwipeStripStartInRTL: Swift.Bool
   public var shouldLockSwipeStripVerticalScroll: Swift.Bool
   public var shouldRenderWebViewInFlutter: Swift.Bool
+  public var shouldFitWebViewContainerToWidth: Swift.Bool
   public var canvasElements: [Plotline.CanvasElement]
   public static func getVideoAnalyticsProperties(videoId: Swift.String?) -> Swift.String?
   convenience public init()
