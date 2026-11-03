@@ -73821,14 +73821,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PlotlineTooltipView",
-                    "printedName": "Plotline.PlotlineTooltipView",
-                    "usr": "c:@M@Plotline@objc(cs)PlotlineTooltipView"
+                    "name": "Optional",
+                    "printedName": "Plotline.PlotlineTooltipView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlotlineTooltipView",
+                        "printedName": "Plotline.PlotlineTooltipView",
+                        "usr": "c:@M@Plotline@objc(cs)PlotlineTooltipView"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8Plotline0A11TooltipViewC7BuilderC5buildACyF",
-                "mangledName": "$s8Plotline0A11TooltipViewC7BuilderC5buildACyF",
+                "usr": "s:8Plotline0A11TooltipViewC7BuilderC5buildACSgyF",
+                "mangledName": "$s8Plotline0A11TooltipViewC7BuilderC5buildACSgyF",
                 "moduleName": "Plotline",
                 "declAttributes": [
                   "AccessControl"
@@ -98503,7 +98511,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.3.0\""
+      "value": "\"5.3.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",

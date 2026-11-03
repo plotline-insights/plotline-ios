@@ -1710,7 +1710,7 @@ public enum PopoverOption {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
   public class Builder {
     public init(rootView: UIKit.UIView, builtView: UIKit.UIView, anchorRect: CoreFoundation.CGRect)
-    public func build() -> Plotline.PlotlineTooltipView
+    public func build() -> Plotline.PlotlineTooltipView?
     public func flowStep(flowStep: Plotline.FlowStep) -> Plotline.PlotlineTooltipView.Builder
     public func actionListener(actionListener: any Plotline.ActionListener) -> Plotline.PlotlineTooltipView.Builder
     @objc deinit
