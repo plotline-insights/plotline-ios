@@ -370,6 +370,7 @@ public enum DebugCode : Swift.String {
   case PL_E_RESOURCE_LOADING_FAILED
   case PL_I_PUSH_PERMISSION_ALREADY_ACTIVE
   case PL_E_USER_FILTER_REEVALUATION_FAILED
+  case PL_I_AUTO_SCROLL
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1783,6 +1784,8 @@ public class ScreenshotTask {
   public var shouldFitTooltipInsideScreen: Swift.Bool
   public var shouldEnablePushTemplatesUIFixes: Swift.Bool
   public var shouldEnableCardBasedTiles: Swift.Bool
+  public var shouldAutoScrollToElement: Swift.Bool
+  public var revealElementKeyValuePairs: [Swift.String : Swift.String]?
   public var audioUrl: Swift.String
   public var audioRepeat: Swift.Bool
   public var isAudioCorrupted: Swift.Bool
