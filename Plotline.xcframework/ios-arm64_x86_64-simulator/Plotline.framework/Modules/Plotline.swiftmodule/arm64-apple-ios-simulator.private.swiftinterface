@@ -307,6 +307,7 @@ public class GroupableWidgetConfig {
   public var carouselSettings: CarouselSettings
   public var containerSettings: GroupableWidgetConfig.ContainerSettings
   public var pageId: Swift.String
+  public var labels: [Swift.String : Any]?
   public init(_ json: [Swift.String : Any])
   public func isCarousel() -> Swift.Bool
   public func isContainer() -> Swift.Bool
