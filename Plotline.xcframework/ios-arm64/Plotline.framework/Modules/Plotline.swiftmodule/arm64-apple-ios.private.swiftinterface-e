@@ -1053,6 +1053,7 @@ public class RewardSettings {
   public func setFlutterWidgetUpdateDeferral(shouldDefer: Swift.Bool, maxDeferralMs: Swift.Int)
   public func setShouldRefreshPageRowsIndividually(shouldRefreshPageRowsIndividually: Swift.Bool)
   public func getShouldLoadPageRowsIndividually() -> Swift.Bool
+  public func getShouldKeepPageLoaderUntilFirstRow() -> Swift.Bool
   public func setShouldLoadPageRowsIndividually(shouldLoadPageRowsIndividually: Swift.Bool)
   public func getShouldTrackRepeatPageViews() -> Swift.Bool
   public func setShouldTrackRepeatPageViews(shouldTrackRepeatPageViews: Swift.Bool)

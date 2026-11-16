@@ -45598,6 +45598,27 @@
           },
           {
             "kind": "Function",
+            "name": "getShouldKeepPageLoaderUntilFirstRow",
+            "printedName": "getShouldKeepPageLoaderUntilFirstRow()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlotlineAAC36getShouldKeepPageLoaderUntilFirstRowSbyF",
+            "mangledName": "$s8PlotlineAAC36getShouldKeepPageLoaderUntilFirstRowSbyF",
+            "moduleName": "Plotline",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setShouldLoadPageRowsIndividually",
             "printedName": "setShouldLoadPageRowsIndividually(shouldLoadPageRowsIndividually:)",
             "children": [
@@ -99751,134 +99772,141 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8211,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 8357,
+      "offset": 8526,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 8526,
+      "offset": 8695,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 8690,
+      "offset": 8859,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "StringLiteral",
-      "offset": 9191,
+      "offset": 9360,
       "length": 7,
       "value": "\"page_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Dictionary",
-      "offset": 9350,
+      "offset": 9519,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 9497,
+      "offset": 9666,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 9704,
+      "offset": 9873,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 9971,
+      "offset": 10140,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 10022,
+      "offset": 10191,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 10187,
+      "offset": 10356,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 10347,
+      "offset": 10516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 10770,
+      "offset": 10939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "FloatLiteral",
-      "offset": 10839,
+      "offset": 11008,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 11415,
+      "offset": 11584,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "Array",
-      "offset": 11761,
+      "offset": 11930,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "BooleanLiteral",
-      "offset": 11921,
+      "offset": 12090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "IntegerLiteral",
-      "offset": 77287,
+      "offset": 77456,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "FloatLiteral",
-      "offset": 82225,
+      "offset": 82394,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Views\/PlotlineWidget.swift",
       "kind": "StringLiteral",
-      "offset": 171859,
+      "offset": 172819,
       "length": 24,
       "value": "\"didChangeTestUserState\""
     },
@@ -101903,7 +101931,7 @@
       "kind": "StringLiteral",
       "offset": 295,
       "length": 7,
-      "value": "\"5.3.4\""
+      "value": "\"5.3.5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Models\/Attributes.swift",
@@ -103525,119 +103553,133 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 8408,
+      "offset": 8514,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "StringLiteral",
+      "offset": 8585,
+      "length": 28,
+      "value": "\"so.plotline.pageLoaderFlag\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8872,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 8579,
+      "offset": 9043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 8636,
+      "offset": 9100,
       "length": 5,
       "value": "30000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 8802,
+      "offset": 9266,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 9204,
+      "offset": 9668,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 9247,
+      "offset": 9711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "FloatLiteral",
-      "offset": 9301,
+      "offset": 9765,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 9355,
+      "offset": 9819,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 14534,
+      "offset": 16155,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 14784,
+      "offset": 16405,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 15323,
+      "offset": 16944,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 15777,
+      "offset": 17398,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 20031,
+      "offset": 21652,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "IntegerLiteral",
-      "offset": 21123,
+      "offset": 22744,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 24151,
+      "offset": 25772,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 24834,
+      "offset": 26455,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Plotline.swift",
       "kind": "BooleanLiteral",
-      "offset": 44879,
+      "offset": 46500,
       "length": 4,
       "value": "true"
     },
@@ -104330,42 +104372,49 @@
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2708,
+      "offset": 2704,
+      "length": 35,
+      "value": "\"shouldKeepPageLoaderUntilFirstRow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 2910,
       "length": 33,
       "value": "\"shouldDeferFlutterWidgetUpdates\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2804,
+      "offset": 3006,
       "length": 34,
       "value": "\"flutterWidgetUpdateMaxDeferralMs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3004,
+      "offset": 3206,
       "length": 35,
       "value": "\"shouldRefreshPageRowsIndividually\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3199,
+      "offset": 3401,
       "length": 28,
       "value": "\"shouldTrackRepeatPageViews\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3267,
+      "offset": 3469,
       "length": 25,
       "value": "\"plotlinePendingEventsV1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/plotline-sdk\/plotline-sdk\/sdks\/ios\/Plotline\/Plotline\/Utilities\/PlotlineUserDefaults.swift",
       "kind": "IntegerLiteral",
-      "offset": 3337,
+      "offset": 3539,
       "length": 3,
       "value": "100"
     },
