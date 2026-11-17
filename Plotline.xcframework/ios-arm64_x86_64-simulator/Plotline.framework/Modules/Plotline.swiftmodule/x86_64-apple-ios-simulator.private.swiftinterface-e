@@ -1083,6 +1083,8 @@ public class RewardSettings {
   public func setShouldForwardWidgetVerticalScroll(shouldForwardWidgetVerticalScroll: Swift.Bool)
   public func getShouldSendStudyCompletedAfterDismiss() -> Swift.Bool
   public func setShouldSendStudyCompletedAfterDismiss(shouldSendStudyCompletedAfterDismiss: Swift.Bool)
+  public func getShouldUseLiveDefaultAttributes() -> Swift.Bool
+  public func setShouldUseLiveDefaultAttributes(shouldUseLiveDefaultAttributes: Swift.Bool)
   public func getWidgetVisibilityThreshold() -> Swift.Double
   public func setWidgetVisibilityThreshold(widgetVisibilityThreshold: Swift.Double)
   public func getWidgetVisibilityDurationMs() -> Swift.Int
@@ -1595,6 +1597,7 @@ public class Study : Plotline.Campaign {
 }
 public class StepAction {
   public static let ACTION_DISMISS: Swift.String
+  public static let EFFECT_CLOSE_WIDGET: Swift.String
   public var action: Swift.String
   public var effect: Swift.String
   public var target: Swift.String
