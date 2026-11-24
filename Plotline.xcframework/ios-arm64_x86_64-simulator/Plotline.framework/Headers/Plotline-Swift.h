@@ -548,6 +548,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)setShouldUseTopMostWindowWithShouldUseTopMostWindow:(BOOL)shouldUseTopMostWindow;
++ (void)setShouldCaptureKmpOverlaysWithShouldCaptureKmpOverlays:(BOOL)shouldCaptureKmpOverlays;
 + (void)setShouldUseTopMostPresentedControllerWithShouldUseTopMostPresentedController:(BOOL)shouldUseTopMostPresentedController;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
@@ -1422,6 +1423,7 @@ SWIFT_CLASS("_TtC8Plotline8Plotline")
 + (void)setShouldEnableScrollDelegatesWithShouldEnableScrollDelegates:(BOOL)shouldEnableScrollDelegates;
 + (void)setShouldEnableNestedControllersWithShouldEnableNestedControllers:(BOOL)shouldEnableNestedControllers;
 + (void)setShouldUseTopMostWindowWithShouldUseTopMostWindow:(BOOL)shouldUseTopMostWindow;
++ (void)setShouldCaptureKmpOverlaysWithShouldCaptureKmpOverlays:(BOOL)shouldCaptureKmpOverlays;
 + (void)setShouldUseTopMostPresentedControllerWithShouldUseTopMostPresentedController:(BOOL)shouldUseTopMostPresentedController;
 + (void)showMockStudy;
 + (void)setLocaleWithLocale:(NSString * _Nonnull)locale;
