@@ -566,6 +566,7 @@ public class StorySettings {
   public var seenBorderUrl: Swift.String
   public var thumbnailType: Swift.String
   public var closeButtonUrl: Swift.String
+  public var shouldKeepCloseButtonColors: Swift.Bool
   public var padding: [Swift.Double]
   public var storyTitleStyle: StepStyles
   public var slideTitleStyle: StepStyles
